@@ -1,0 +1,24 @@
+baseURL = "https://praveenjuge.netlify.com"
+languageCode = "en-us"
+title = "Praveen Juge"
+
+enableRobotsTXT = true
+enableEmoji = true
+canonifyURLs = true
+enableGitInfo = true
+
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+pygmentsStyle = "manni"
+
+googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  description = "stuff"
+  ogimage = "/images/og.png"
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
