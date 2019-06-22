@@ -7,7 +7,7 @@ header {
     font-weight: 400;
     letter-spacing: .1em;
     font-size: 22px;
-    font-family: 'Unica One';
+    font-family: $font-sans;
     &:visited {
       color: $accent-color;
     }

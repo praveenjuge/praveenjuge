@@ -1,18 +1,20 @@
 {{ define "main" }}
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 itemprop="headline" title="{{ .Title }}">{{ .Title }}</h1>
-  <h6 style="margin-top: 0px">
-    On
-    <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
-      {{ .Date.Format "2 January, 2006" }}
-    </time>
-    &nbsp;·&nbsp; By
-    <span itemprop="author">{{ .Site.Author.name }}</span>
-    &nbsp;·&nbsp; In
-    <span itemprop="wordCount">{{ .WordCount }}</span> words
-  </h6>
-  <br>
+  <div style="text-align: center;">
+    <h1 itemprop="headline" title="{{ .Title }}" style="margin-bottom: 20px;">{{ .Title }}</h1>
+    <h6 style="margin-top: 0px">
+      On
+      <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date.Format "2 January, 2006" }}
+      </time>
+      &nbsp;·&nbsp; By
+      <span itemprop="author">{{ .Site.Author.name }}</span>
+      &nbsp;·&nbsp; In
+      <span itemprop="wordCount">{{ .WordCount }}</span> words
+    </h6>
+  </div>
+  <hr>
   <p class="attention-grabber" itemprop="description">{{ .Description }}</p>
   {{ .Content }}
 </article>

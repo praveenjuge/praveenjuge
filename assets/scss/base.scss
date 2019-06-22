@@ -16,7 +16,7 @@ html {
 main{
   line-height: 26px;
   line-height: 1.625rem;
-  margin: 0rem 20px 1.625rem;
+  margin: 0rem 30px 1.625rem;
   margin-top: 50px;
   @include breakpoint {
     line-height: 31px;
@@ -27,25 +27,5 @@ main{
     max-width: 35rem;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-figure{
-  text-align: center;
-}
-
-figcaption {
-  line-height: 26px;
-  line-height: 1.625rem;
-  color: $text-color;
-  display: block;
-  font-size: .8125rem;
-  font-style: italic;
-  margin-bottom: 0;
-  text-align: center;
-  @include breakpoint {
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-bottom: 0;
   }
 }
