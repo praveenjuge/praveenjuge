@@ -1,3 +1,13 @@
-body{
-  background: #FFFFFF;
+@import "variables";
+@import "mixins";
+@import "sanitize";
+@import "base";
+@import "components/links";
+@import "components/header";
+@import "components/heading";
+@import "components/footer";
+
+.attention-grabber {
+  font-size: 19.2px;
+  font-size: 1.2rem;
 }

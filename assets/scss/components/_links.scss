@@ -1,0 +1,21 @@
+a {
+  background: transparent;
+  color: $text-color;
+  transition: all .3s;
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+  &:hover {
+    color: $accent-color;
+  }
+  &:visited {
+    color: #888;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  &:active {
+    color: #f00;
+  }
+}

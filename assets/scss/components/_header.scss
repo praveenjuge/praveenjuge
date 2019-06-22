@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+  padding: 13px;
+  a {
+    color: $accent-color;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1em;
+    font-size: 22px;
+    font-family: 'Unica One';
+    &:visited {
+      color: $accent-color;
+    }
+  }
+}
