@@ -1,6 +1,7 @@
 header {
   text-align: center;
   padding: 13px;
+  border-bottom: 1px solid #f8cdd2;
   a {
     color: $accent-color;
     text-transform: uppercase;
@@ -8,6 +9,7 @@ header {
     letter-spacing: .1em;
     font-size: 22px;
     font-family: $font-sans;
+    text-decoration: none;
     &:visited {
       color: $accent-color;
     }
