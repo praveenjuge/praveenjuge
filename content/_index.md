@@ -6,7 +6,7 @@ date: 2019-01-01 12:23:42 +0000
 # What's up nerds?
 
 **Praveen Juge is a designer and developer for everything on the web.** 
-He likes basic stuff like Harry Potter and talking about himself in the third person. Originally from Chennai, he spectacularly still lives there. Continue reading below if you want to read the full life history of this marvellous guy.
+He likes basic stuff like Harry Potter, Taylor Swift and talking about himself in the third person. Originally from Chennai, he spectacularly still lives there. Continue reading below if you want to read the full life history of this marvellous guy.
 
 {{< figure src="/images/praveen-juge-photo.jpg" caption="Praveen Juge trying his best to look cool." height="200" width="200" >}}
 
