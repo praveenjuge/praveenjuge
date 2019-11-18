@@ -1,39 +1,5 @@
 {{ define "main" }}
   
-  <h1>What's up nerds?</h1>
-
-  <p><strong>Praveen Juge is a designer and developer for everything on the web.</strong> He likes basic stuff like Harry Potter and talking about himself in the third person. Originally from Chennai, he spectacularly still lives there. Continue reading below if you want to read the full life history of this marvellous guy.</p>
-
-  <figure title="Praveen Juge trying his best to be cool.">
-    <img src="/images/praveen-juge-photo.jpg" alt="Praveen Juge's Photo" width="220" height="220" />
-    <figcaption>Praveen Juge trying his best to look cool.</figcaption>
-  </figure>
-
-  <p>A very very long time ago in a place far far away, on a little place called Hospital, a very little special boy was born. Upon his birth, <strong>God</strong> said unto him "Yo, you will be good at web design, so do that." So from that moment he started learning the Web, before even learning the alphabets he thought himself HTML and CSS. Which might seem silly or even impossible, but hey this is <i>Praveen Juge</i> we are talking about. And soon after that he wandered into the unknown realms of Design, in which he also excelled.</p>
-
-  <p>He now mostly spends his time at <a href="https://www.skcript.com/" target="_blank">Skcript</a> working on the stuff he likes.</p>
-
-  <h2><a href="blog/">Blog Posts</a></h2>
-
-  {{ range where .Site.RegularPages "Type" "blog" }}
-    <a href="{{ .URL }}">{{ .Title }}</a>
-  {{ end }}
-  
-  <h2>You can find me at:</h2>
-  
-  <ul aria-label="Social Links">
-    <li>
-      <a title="Twitter" href="https://twitter.com/{{ .Site.Author.twitter }}" target="_blank" rel="noopener">Twitter</a>
-    </li>
-    <li>
-      <a title="Github" href="https://github.com/{{ .Site.Author.github }}" target="_blank" rel="noopener">Github</a>
-    </li>
-    <li>
-      <a title="Dribbble" href="https://dribbble.com/{{ .Site.Author.dribbble }}" target="_blank" rel="noopener">Dribbble</a>
-    </li>
-    <li>
-      <a title="E-Mail" href="mailto:{{ .Site.Author.email }}?subject=Hello!">Email</a>
-    </li>
-  </ul>
+  {{ .Content }}
 
 {{ end }}

@@ -1,13 +1,13 @@
 a {
   background: transparent;
-  color: $text-color;
+  color: $accent-color;
   transition: all .3s;
   &:active,
   &:hover {
     outline: 0;
   }
   &:hover {
-    color: $accent-color;
+    color: $text-color;
   }
   &:visited {
     color: #888;

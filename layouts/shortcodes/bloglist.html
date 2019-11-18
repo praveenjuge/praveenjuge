@@ -1,0 +1,5 @@
+{{ range where .Site.RegularPages "Type" "blog" }}
+  <div>
+    <a href="{{ .URL }}">{{ .Title }}</a>
+  </div>
+{{ end }}

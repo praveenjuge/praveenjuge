@@ -3,7 +3,9 @@
   <h1>Blog Posts</h1>
 
   {{ range (.Paginator 9).Pages }}
-    <a href="{{ .URL }}">{{ .Title }}</a>
+  <div>
+    <a href="{{ .URL }}">{{ .Title }}</a> 
+  </div>
   {{ end }}
 
   {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
