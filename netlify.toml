@@ -1,13 +1,13 @@
 [build]
-    command = "hugo --minify"
-    publish = "public"
+  command = "hugo --minify"
+  publish = "public"
 
 [build.environment]
-    HUGO_VERSION = "0.59.1"
+  HUGO_VERSION = "0.59.1"
 
 [context.production.environment]
-    HUGO_ENV = "production"
-    NODE_ENV = "production"
+  HUGO_ENV = "production"
+  NODE_ENV = "production"
 
 [build.processing.css]
   bundle = true
