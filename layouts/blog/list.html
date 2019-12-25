@@ -4,7 +4,7 @@
 
   {{ range (.Paginator 9).Pages }}
   <div>
-    <a href="{{ .URL }}">{{ .Title }}</a> 
+    <a href="{{ .Permalink }}">{{ .Title }}</a> 
   </div>
   {{ end }}
 
