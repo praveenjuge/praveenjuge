@@ -20,18 +20,3 @@ He now mostly spends his time at [Skcript](https://www.skcript.com/) working on 
 
 ## You can find me at:
 
-<ul aria-label="Social Links">
-  <li>
-    <a title="Twitter" href="https://twitter.com/{{ .Site.Author.twitter }}" target="_blank" rel="noopener">Twitter</a>
-  </li>
-  <li>
-    <a title="Github" href="https://github.com/{{ .Site.Author.github }}" target="_blank" rel="noopener">Github</a>
-  </li>
-  <li>
-    <a title="Dribbble" href="https://dribbble.com/{{ .Site.Author.dribbble }}" target="_blank"
-      rel="noopener">Dribbble</a>
-  </li>
-  <li>
-    <a title="E-Mail" href="mailto:{{ .Site.Author.email }}?subject=Hello!">Email</a>
-  </li>
-</ul>
