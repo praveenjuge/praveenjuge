@@ -4,7 +4,7 @@
  |  _  | |_| | | | | | | (_| | | | \__ \| |_ >  <| |_ 
  |_| |_|\__,_|_| |_| |_|\__,_|_| |_|___(_)__/_/\_\\__|
                                                       
-/* TEAM */
+/* ME */
 Developer: Praveen Juge
 Twitter: @praveenjuge
 Github: @praveenjuge
@@ -13,4 +13,4 @@ Github: @praveenjuge
 Hugo - gohugo.io
 
 /* SITE */
-Standards: HTML5, CSS3
+Standards: HTML, CSS

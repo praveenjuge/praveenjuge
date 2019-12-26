@@ -1,6 +1,7 @@
 ---
 title: "Home"
-date: 2019-01-01 12:23:42 +0000
+date: 2019-12-25 22:10:00 +0530 IST
+description: "Praveen Juge is a designer and developer for everything on the web."
 ---
 
 # What's up nerds?
@@ -20,3 +21,4 @@ He now mostly spends his time at [Skcript](https://www.skcript.com/) working on 
 
 ## You can find me at:
 
+{{< sociallist >}}
