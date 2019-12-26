@@ -23,14 +23,8 @@
 <meta name="url" content="{{ .Permalink }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 
-<!-- Styles of the Page -->
-{{ partial "css" . }}
-
-<!-- Image of the page -->
-<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
-<meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
-<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
-<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+<!-- Date Tags -->
+<meta property="og:updated_time" content={{ .Lastmod.Format $.Site.Params.ISO8601 }} />
 
 <!-- Sitemap & RSS Feed Links -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />
@@ -60,6 +54,14 @@
 <meta name="theme-color" content="#fff6f6" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
+
+<!-- Image of the page -->
+<meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+<meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+
+<!-- Styles of the Page -->
+{{ partial "css" . }}
