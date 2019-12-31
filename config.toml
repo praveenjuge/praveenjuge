@@ -25,6 +25,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   twitter = "praveenjuge"
   dribbble = "praveenjuge"
   instagram = "praveenjuge"
+  behance = "praveenjuge"
   email = "praveen@skcript.com"
 
 [markup]
