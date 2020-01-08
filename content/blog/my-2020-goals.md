@@ -15,7 +15,7 @@ description: "Another year, another set of goals to keep this year interesting. 
 
 - Learn more about UI, UX and Illustrations with courses on Skillshare.
 - Keep [Dribbble](https://dribbble.com/praveenjuge) and [Instagram](https://instagram.com/praveenjuge) alive with daily posts.
-- Learn other design tools such as Adobe Illustrator.
+- Learn other design tools such as Illustrator, Photoshop and Procreate.
 
 ### Content Goals:
 
