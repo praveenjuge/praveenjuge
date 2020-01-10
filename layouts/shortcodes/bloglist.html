@@ -1,5 +1,7 @@
-{{ range where .Site.RegularPages "Type" "blog" }}
-  <div>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </div>
-{{ end }}
+<ul>
+  {{ range where .Site.RegularPages "Type" "blog" }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>
