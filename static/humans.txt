@@ -6,8 +6,6 @@
 /* ME */
 Twitter & Github: @praveenjuge
 
-/* THANKS */
-Hugo - gohugo.io
-
 /* SITE */
 Standards: HTML, CSS
+Site Generator: Hugo(gohugo.io)
