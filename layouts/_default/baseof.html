@@ -3,12 +3,10 @@
   <head itemscope itemtype="{{ .Site.BaseURL }}">
     {{ partial "meta" . }}
   </head>
-
   <body>
     {{ partial "header" . }}
     <main>
       {{ block "main" . }}
-
       {{ end }}
     </main>
     {{ partial "footer" . }}
