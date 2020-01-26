@@ -1,7 +1,7 @@
 <ul>
   {{ range where .Site.RegularPages "Type" "blog" }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
   {{ end }}
 </ul>

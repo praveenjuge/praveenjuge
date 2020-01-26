@@ -1,17 +1,27 @@
 {{ define "main" }}
 
 <h1>Page not found (404)</h1>
-<p>The page that you are looking for is not available. If you think this is a mistake, please contact me at <a title="Twitter" href="https://twitter.com/{{ .Site.Author.twitter }}" target="_blank" rel="noopener">Twitter</a>.</p>
+<p>
+  The page that you are looking for is not available. If you think this is a
+  mistake, please contact me at
+  <a
+    title="Twitter"
+    href="https://twitter.com/{{ .Site.Author.twitter }}"
+    target="_blank"
+    rel="noopener"
+    >Twitter</a
+  >.
+</p>
 
-<hr>
+<hr />
 
 <h4>Read latest blog posts:</h4>
 
 <ul>
   {{ range where .Site.RegularPages "Type" "blog" }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
   {{ end }}
 </ul>
 
