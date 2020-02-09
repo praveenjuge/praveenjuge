@@ -6,19 +6,19 @@
 
 ::before,
 ::after {
-  text-decoration: inherit; /* 1 */
-  vertical-align: inherit; /* 2 */
+  text-decoration: inherit;
+  vertical-align: inherit;
 }
 
 html {
-  cursor: default; /* 1 */
-  line-height: 1.5; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
-  -webkit-tap-highlight-color: transparent /* 4 */;
-  -ms-text-size-adjust: 100%; /* 5 */
-  -webkit-text-size-adjust: 100%; /* 5 */
-  word-break: break-word; /* 6 */
+  cursor: default;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word;
 }
 
 body {
@@ -38,16 +38,16 @@ ul ul {
 }
 
 hr {
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  height: 0;
+  overflow: visible;
 }
 
-main, 
-header, 
-section, 
-footer, 
-details, 
-article, 
+main,
+header,
+section,
+footer,
+details,
+article,
 summary,
 figure,
 hgroup {
@@ -70,8 +70,8 @@ nav ul {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 /* Text-level semantics
@@ -111,8 +111,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 /**
@@ -219,8 +219,8 @@ select {
  */
 
 button {
-  overflow: visible; /* 1 */
-  text-transform: none; /* 2 */
+  overflow: visible;
+  text-transform: none;
 }
 
 /**
@@ -240,8 +240,8 @@ button,
  */
 
 fieldset {
-  border: 1px solid #a0a0a0; /* 1 */
-  padding: 0.35em 0.75em 0.625em; /* 2 */
+  border: 1px solid #a0a0a0;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
@@ -258,10 +258,10 @@ input {
  */
 
 legend {
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  white-space: normal; /* 1 */
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
 }
 
 /**
@@ -270,8 +270,8 @@ legend {
  */
 
 progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 /**
@@ -289,9 +289,9 @@ select {
  */
 
 textarea {
-  margin: 0; /* 1 */
-  overflow: auto; /* 2 */
-  resize: vertical; /* 3 */
+  margin: 0;
+  overflow: auto;
+  resize: vertical;
 }
 
 /**
@@ -309,8 +309,8 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
 
 /**
@@ -345,8 +345,8 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
 
 /**
@@ -422,8 +422,8 @@ select,
 summary,
 textarea,
 [tabindex] {
-  -ms-touch-action: manipulation; /* 1 */
-  touch-action: manipulation; /* 2 */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 /**
@@ -480,17 +480,6 @@ code,
 kbd,
 samp,
 pre {
-  font-family:
-    /* macOS 10.10+ */ "Menlo",
-    /* Windows 6+ */ "Consolas",
-    /* Android 4+ */ "Roboto Mono",
-    /* Ubuntu 10.10+ */ "Ubuntu Monospace",
-    /* KDE Plasma 5+ */ "Noto Mono",
-    /* KDE Plasma 4+ */ "Oxygen Mono",
-    /* Linux/OpenOffice fallback */ "Liberation Mono",
-    /* fallback */ monospace,
-    /* macOS emoji */ "Apple Color Emoji",
-    /* Windows emoji */ "Segoe UI Emoji",
-    /* Windows emoji */ "Segoe UI Symbol",
-    /* Linux emoji */ "Noto Color Emoji";
+  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }

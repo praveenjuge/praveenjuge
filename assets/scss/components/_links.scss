@@ -1,7 +1,7 @@
 a {
   background: transparent;
   color: $accent-color;
-  transition: all .3s;
+  transition: color 0.3s ease;
   &:active,
   &:hover {
     outline: 0;
