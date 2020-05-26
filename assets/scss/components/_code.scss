@@ -1,5 +1,12 @@
-code{
+pre {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+code {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 85%;
   background: white;
-  padding: 3px 5px;
-  border-radius: 3px;
+  color: red;
 }

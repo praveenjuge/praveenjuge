@@ -6,11 +6,6 @@ enableRobotsTXT = true
 enableEmoji = true
 canonifyURLs = true
 enableGitInfo = true
-
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
-pygmentsStyle = "manni"
-
 googleAnalytics = ""
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
@@ -29,6 +24,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   email = "praveen@skcript.com"
 
 [markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 2
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -38,10 +44,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
       table = true
       taskList = true
       typographer = true
-    [markup.goldmark.parser]
-      attribute = true
-      autoHeadingID = true
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xHTML = false
