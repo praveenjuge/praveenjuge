@@ -95,7 +95,7 @@ You can reproduce it by:
 
 7. You should see add shortcut when you hover over it, I have used `CMD + SHIFT + '` as my shortcut.
 
-8. Any finally add this code to your `bash_profile` to actually open VS code:
+8. And finally add this code to your `bash_profile` to actually open VS code:
 
 ```sh
 alias notes='cd && cd projects/notes && code .'
