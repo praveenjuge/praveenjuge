@@ -1,20 +1,20 @@
 ---
-title: "How I take Notes Using VS Code and GitHub"
-description: "I must have used dozens of note taking apps, read lots and lots of hackernews threads on how different people organize their notes and finally settled on VS Code as an editor and a GitHub Repo as the storage."
+title: "How I take Notes using VS Code and GitHub"
+description: "I have used dozens of note-taking apps, read lots and lots of hacker news threads on how different people organize their notes and finally settled on VS Code as the editor and GitHub Repo as the storage."
 date: 2020-05-26T16:07:25+00:00
 ---
 
-Here is how I did it, what's good about this setup and what's bad about it.
+Here is how I did it and let's see what’s good and what's bad about this setup.
 
 ## GitHub Setup
 
 I got this whole idea when GitHub made private repo free for personal use. I simply created a private repo, cloned it to local for offline access.
 
-Now I just have to push to the repo whenever I make a change to my files. It know it would lead to many unnecessary commits but if I want I can squash commits anytime.
+Now, I just have to push to the repo whenever I make a change to my files. I know it would lead to many unnecessary commits but if I want, I can squash commits anytime.
 
 ![Screenshot of Github Page](2.png)
 
-Be sure to clone it locally for to actually to take notes on.
+Be sure to clone it locally to take notes on.
 
 ## VS Code Setup
 
@@ -34,7 +34,7 @@ Markdown linter is not really necessary but it does help when you are learning m
 
 [**Run on Save**](https://marketplace.visualstudio.com/items?itemName=pucelle.run-on-save)
 
-This helps in pushing the markdown files to git whenever you save it. After installing this extention, in VS code settings.json add this:
+This helps in pushing the markdown files to git whenever you save it. After installing this extention, in VS code settings.json, add this:
 
 ```json
 {
@@ -60,11 +60,11 @@ pushnotes() {
 }
 ```
 
-These will push your code to GitHub with the time and date as the commit messsage. So now whenever you save a file, you push to the repository.
+These will push your code to GitHub with the time and date as the commit messsage. So now, whenever you save a file, you push to the repository.
 
 ## Automator Setup (Only on Mac)
 
-After some days I noticed that starting up VS Code and going to my notes folder was taking a lot of time, precious seconds that I could spend watching Netflix.
+After some days, I noticed that starting up VS Code and going to my notes folder was taking a lot of time, precious seconds that I could spend watching Netflix.
 
 So I made a automator script to open my notes in VS Code with a keyboard shortcut from any application.
 
@@ -110,6 +110,6 @@ alias notes='cd && cd projects/notes && code .'
 
 ## I love it so far...
 
-I've been using this setup for 2 months and I love it so far, but I don't know how long I can go without editing on my mobile or iPad. For now i've been adding notes as tasks in Todoist and transferring once i'm on my laptop.
+I've been using this setup for 2 months and I love it so far, but I don't know how long I can go without editing on my mobile or iPad. For now I've been adding notes as tasks in Todoist and transferring once I'm on my laptop.
 
-So there are some problems, but in this moment i'm happy with this.
+So there are few problems, but in this moment I'm happy with this.
