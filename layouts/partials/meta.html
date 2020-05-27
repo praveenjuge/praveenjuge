@@ -57,11 +57,15 @@
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
 
+<!-- Styles of the Page -->
+{{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
+<style>
+  {{ $style.Content | safeCSS }}
+</style>
+
 <!-- Image of the page -->
 <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
 <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
 <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
 <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
 
-<!-- Styles of the Page -->
-{{ partial "css" . }}

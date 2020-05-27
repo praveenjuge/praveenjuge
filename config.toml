@@ -6,7 +6,6 @@ enableRobotsTXT = true
 enableEmoji = true
 canonifyURLs = true
 enableGitInfo = true
-googleAnalytics = ""
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
