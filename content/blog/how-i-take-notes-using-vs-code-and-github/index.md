@@ -52,7 +52,7 @@ Here the `pushnotes` command executes in the terminal whenever a save occurs. An
 
 ```sh
 pushnotes() {
-  cd && cd projects/orison
+  cd && cd projects/notes
   now=$(date '+%A %d %m %Y %X')
   git add . -v
   git commit -a -s -v -m $now
