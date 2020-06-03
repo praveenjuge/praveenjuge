@@ -1,6 +1,6 @@
 ---
 title: "Install Tailwind on Hugo"
-description: "Hugo has come a long way, now it has postcss support built in so we can now use all the goodness that comes with it. In this blog let's install TailwindCSS on Hugo."
+description: "Hugo has come a long way. Now, it has postcss support built-in, so we can use all the goodness that comes from it. In this blog, let's install TailwindCSS on Hugo."
 date: 2020-06-03T11:37:15+00:00
 ---
 
@@ -17,15 +17,15 @@ hugo new site hugo-tailwind
 cd hugo-tailwind
 ```
 
-Run the above command on your terminal, it will create a new folder called `hugo-tailwind` which contains our new Hugo site.
+Run the above command in your terminal. It will create a new folder called `hugo-tailwind` which will contain your new Hugo site.
 
-Now let's use the command below to remove some folders that we don't need. **Please don't do this on existing sites, I don't have lawyers.**
+Now, let's use the command below to remove the unwanted folders. **Please don't do this on existing sites, I don't have lawyers.**
 
 ```sh
 rm -rf archetypes data static themes content
 ```
 
-Next let's create some files. The command below will create what we need.
+Next, let's create some files. The command below will create what you need.
 
 ```sh
 mkdir assets/css layouts/_default
@@ -69,11 +69,11 @@ In `layouts/index.html`, add:
 
 Screenshot of hugo site without styles -->
 
-Now let's add tailwind.
+Now, let's add tailwind.
 
 ## Install Packages
 
-Run the following command in your terminal to add a package.json file, complete the steps that it asks for.
+Run the following command in your terminal to add a package.json file and complete the required steps.
 
 ```sh
 npm init
@@ -87,7 +87,7 @@ npm install tailwindcss postcss-cli autoprefixer --save
 
 ## Postcss Config
 
-On `postcss.config.js` in the root of our folder, all the following code:
+In the root folder, to `postcss.config.js`, add the following code:
 
 ```js
 module.exports = {
@@ -95,11 +95,11 @@ module.exports = {
 };
 ```
 
-This will make sure you import tailwind on our project.
+This will make sure that you imported tailwind to your project.
 
 ## Tailwind Config
 
-On `tailwind.config.js` in the root of our folder, all the following code:
+In the root folder, to `tailwind.config.js` , add the following code:
 
 ```js
 module.exports = {
@@ -114,7 +114,7 @@ module.exports = {
 };
 ```
 
-This will help us when we are customizing tailwind. Next add the following to `assets/css/main.css` to get the sweet tailwind css on our project.
+This will help while customizing tailwind. Next, add the following to `assets/css/main.css` to get the sweet tailwind css on your project.
 
 ```css
 @tailwind base;
@@ -122,16 +122,16 @@ This will help us when we are customizing tailwind. Next add the following to `a
 @tailwind utilities;
 ```
 
-Now if you run `hugo server` in your terminal and you should see this:
+Now, if you run `hugo server` in your terminal, you should see this:
 
 ![Screenshot of hugo site with tailwind styles](1.png)
 
 ## Limitations
 
-You have to run the final production site with node env for proper purge css to happen on production.
+You have to run the final production site with node env for proper purgecss to happen in production.
 
 ```sh
 NODE_ENV=production hugo
 ```
 
-And the build speed seems to suffer a lot by adding all this. So let me know if there are any better ways for approaching this.
+And the build speed seems to suffer a lot by adding all this. So, let me know if there are any better ways for approaching this.
