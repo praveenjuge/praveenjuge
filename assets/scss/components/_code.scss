@@ -1,12 +1,17 @@
 pre {
   padding: 10px 15px;
   border-radius: 5px;
+  overflow-x: auto;
+  code {
+    padding: 0px !important;
+    font-size: 85%;
+  }
 }
 
-code {
-  padding: 5px 10px;
+p code {
+  padding: 2px 7px;
   border-radius: 5px;
+  color: #f8f8f2;
   font-size: 85%;
-  background: white;
-  color: red;
+  background-color: #282a36;
 }

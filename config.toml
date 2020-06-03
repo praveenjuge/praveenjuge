@@ -32,7 +32,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "github"
+    style = "dracula"
     tabWidth = 2
   [markup.goldmark]
     [markup.goldmark.extensions]
