@@ -4,9 +4,9 @@ description: "Hugo has come a long way. Now, it has postcss support built-in, so
 date: 2020-06-03T11:37:15+00:00
 ---
 
-Tested on Hugo Version 0.72.0 and Tailwind Version 1.4.6, learn how to [install Hugo here](https://gohugo.io/getting-started/installing/).
-
 [Just show me the repo](https://github.com/praveenjuge/hugo-tailwind)
+
+Tested on Hugo Version 0.72.0 and Tailwind Version 1.4.6, learn how to [install Hugo here](https://gohugo.io/getting-started/installing/).
 
 ## Setup New Hugo Site
 
