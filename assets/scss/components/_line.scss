@@ -1,8 +1,10 @@
 hr {
-  margin-top: 52px;
-  margin-top: 3.25rem;
-  margin-bottom: 52px;
-  margin-bottom: 3.25rem;
+  margin-top: 62px;
+  margin-top: 3.444444444444445rem;
+  margin-bottom: 62px;
+  margin-bottom: 3.444444444444445rem;
+  height: 31px;
+  height: 1.722222222222222rem;
   box-sizing: content-box;
   border: 0;
   color: #222;
@@ -11,13 +13,5 @@ hr {
   &:before {
     content: "···";
     letter-spacing: 1em;
-  }
-  @include breakpoint {
-    margin-top: 62px;
-    margin-top: 3.444444444444445rem;
-    margin-bottom: 62px;
-    margin-bottom: 3.444444444444445rem;
-    height: 31px;
-    height: 1.722222222222222rem;
   }
 }
