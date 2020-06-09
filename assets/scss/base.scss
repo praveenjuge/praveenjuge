@@ -29,3 +29,10 @@ main {
     margin-right: auto;
   }
 }
+
+blockquote {
+  background-color: #fdf1f1;
+  padding: 1px 15px;
+  margin: 0px;
+  border-left: 5px solid $accent-color;
+}
