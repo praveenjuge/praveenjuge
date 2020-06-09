@@ -9,11 +9,11 @@ html {
   margin: 0;
   @include breakpoint {
     font-size: 17px;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 }
 
-main{
+main {
   line-height: 26px;
   line-height: 1.625rem;
   margin: 0rem 30px 1.625rem;
