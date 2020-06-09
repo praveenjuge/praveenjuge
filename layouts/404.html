@@ -10,7 +10,7 @@
 
 <h4>Read latest blog posts:</h4>
 
-<ul>
+<ul class="list-unstyled">
   {{ range where .Site.RegularPages "Type" "blog" }}
   <li>
     <a href="{{ .Permalink }}">{{ .Title }}</a>
