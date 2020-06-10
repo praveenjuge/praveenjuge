@@ -22,3 +22,13 @@
 
 [build.processing.images]
   compress = true
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+[[plugins]]
+  package = "netlify-plugin-subfont"
+
+    [plugins.inputs]
+    inlineCss = true
+    inlineFonts = true
