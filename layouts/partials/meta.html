@@ -63,6 +63,55 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/fonts/unica-one-v7-latin-regular.woff2" />
 
 <!-- Styles of the Page -->
+<style>
+  /* merriweather-regular - latin */
+  @font-face {
+    font-family: "Merriweather";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url("{{ "/fonts/merriweather-v21-latin-regular.eot" | absURL }}");
+    src: local("Merriweather Regular"), local("Merriweather-Regular"), url("{{"/fonts/merriweather-v21-latin-regular.eot?#iefix" | absURL}}") format("embedded-opentype"),
+      url("{{"/fonts/merriweather-v21-latin-regular.woff2"| absURL}}") format("woff2"), url("{{"/fonts/merriweather-v21-latin-regular.woff"| absURL}}") format("woff"),
+      url("{{"/fonts/merriweather-v21-latin-regular.ttf"| absURL}}") format("truetype"), url("{{"/fonts/merriweather-v21-latin-regular.svg#Merriweather"| absURL}}") format("svg");
+  }
+
+  /* merriweather-italic - latin */
+  @font-face {
+    font-family: "Merriweather";
+    font-display: swap;
+    font-style: italic;
+    font-weight: 400;
+    src: url("{{"/fonts/merriweather-v21-latin-italic.eot"| absURL}}");
+    src: local("Merriweather Italic"), local("Merriweather-Italic"), url("{{"/fonts/merriweather-v21-latin-italic.eot?#iefix"| absURL}}") format("embedded-opentype"),
+      url("{{"/fonts/merriweather-v21-latin-italic.woff2"| absURL}}") format("woff2"), url("{{"/fonts/merriweather-v21-latin-italic.woff"| absURL}}") format("woff"),
+      url("{{"/fonts/merriweather-v21-latin-italic.ttf"| absURL}}") format("truetype"), url("{{"/fonts/merriweather-v21-latin-italic.svg#Merriweather"| absURL}}") format("svg");
+  }
+
+  /* merriweather-700 - latin */
+  @font-face {
+    font-family: "Merriweather";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url("{{"/fonts/merriweather-v21-latin-700.eot"| absURL}}");
+    src: local("Merriweather Bold"), local("Merriweather-Bold"), url("{{"/fonts/merriweather-v21-latin-700.eot?#iefix"| absURL}}") format("embedded-opentype"),
+      url("{{"/fonts/merriweather-v21-latin-700.woff2"| absURL}}") format("woff2"), url("{{"/fonts/merriweather-v21-latin-700.woff"| absURL}}") format("woff"),
+      url("{{"/fonts/merriweather-v21-latin-700.ttf"| absURL}}") format("truetype"), url("{{"/fonts/merriweather-v21-latin-700.svg#Merriweather"| absURL}}") format("svg");
+  }
+
+  /* unica-one-regular - latin */
+  @font-face {
+    font-family: "Unica One";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url("{{"/fonts/unica-one-v7-latin-regular.eot"| absURL}}");
+    src: local("Unica One"), local("UnicaOne-Regular"), url("{{"/fonts/unica-one-v7-latin-regular.eot?#iefix"| absURL}}") format("embedded-opentype"),
+      url("{{"/fonts/unica-one-v7-latin-regular.woff2"| absURL}}") format("woff2"), url("{{"/fonts/unica-one-v7-latin-regular.woff"| absURL}}") format("woff"),
+      url("{{"/fonts/unica-one-v7-latin-regular.ttf"| absURL}}") format("truetype"), url("{{"/fonts/unica-one-v7-latin-regular.svg#UnicaOne"| absURL}}") format("svg");
+  }
+</style>
 {{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
 <style>
   {{ $style.Content | safeCSS }}
