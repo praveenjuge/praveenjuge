@@ -12,7 +12,9 @@ This book is written by Steven Pressfield who is an author of both fiction and n
 
 > It’s not the writing part that’s hard. What’s hard is sitting down to write.
 
-This book is divided into three parts,
+This book is a quick read on why we put off doing our work and how to procrastinate less. Pressfield writes about his own problems while writing his books and how he overcomes them. This will be a good read for anyone who has a creative pursuit but can't seem to fill the gap of becoming a pro.
+
+The War of Art is divided into three parts,
 
 - Defining our enemy, Resistance
 - Dealing with Resistance by Turning Pro
