@@ -57,6 +57,11 @@
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
 
+<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/fonts/merriweather-v21-latin-regular.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/fonts/merriweather-v21-latin-italic.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/fonts/merriweather-v21-latin-700.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/fonts/unica-one-v7-latin-regular.woff2" />
+
 <!-- Styles of the Page -->
 {{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
 <style>
@@ -68,4 +73,3 @@
 <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
 <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
 <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
-
