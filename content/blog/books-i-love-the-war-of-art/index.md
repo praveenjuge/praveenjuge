@@ -1,6 +1,6 @@
 ---
 title: "Books I Love - The War of Art by Steven Pressfield"
-description: "The War of Art is one of my favorite non-fiction books, it helped me recognize why I put off doing my work and how to fix it easily. I recommend this book to anyone doing creative work where you often second guess yourself and don't ship things."
+description: "The War of Art is one of my favorite non-fiction book, it helped me recognize why I put off doing my work and how to fix it easily. I recommend this book to anyone doing creative work where you often second guess yourself and don't ship things."
 date: 2020-06-09T06:57:23+00:00
 ---
 
@@ -44,11 +44,11 @@ There is however one thing we can do to deal with resistance, turning pro.
 Here are the characteristics of a professional:
 
 - The amateur plays for fun. The professional plays for keeps.
-- To the amateur, the game is his avocation. To the pro, it’s his vocation.
-- The amateur plays part-time, professional full-time.
+- To the amateur, the game is his avocation. To the pro it’s his vocation.
+- The amateur plays part-time, the professional full-time.
 - The amateur is a weekend warrior. The professional is there seven days a week.
 
-> Someone once asked Somerset Maugham if he wrote on a schedule or wrote only when struck by inspiration. “I write only when inspiration strikes,” he replied. “Fortunately it strikes every morning at nine o’clock sharp.” **That’s a pro.**
+> Someone once asked Somerset Maugham if he wrote on a schedule or only when struck by inspiration. “I write only when inspiration strikes,” he replied. “Fortunately it strikes every morning at nine o’clock sharp.” **That’s a pro.**
 
 Some qualities that define us as a professional:
 
