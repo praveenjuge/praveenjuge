@@ -27,4 +27,5 @@
   package = "netlify-plugin-subfont"
 
   [plugins.inputs]
+  inlineCss = true
   fallbacks = false
