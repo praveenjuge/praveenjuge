@@ -22,3 +22,9 @@
 
 [build.processing.images]
   compress = true
+
+[[plugins]]
+  package = "netlify-plugin-subfont"
+
+  [plugins.inputs]
+  fallbacks = false
