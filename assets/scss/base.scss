@@ -41,3 +41,7 @@ blockquote {
   list-style: none;
   padding-left: 0px;
 }
+
+.list-unstyled li + li {
+  margin-top: 6px;
+}
