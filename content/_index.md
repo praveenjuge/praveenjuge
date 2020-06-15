@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Personal Website of Praveen Juge"
 date: 2019-12-25 22:10:00 +0530 IST
 description: "Praveen Juge is a designer and developer for everything on the web."
 ---
