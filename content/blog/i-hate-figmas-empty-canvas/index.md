@@ -19,7 +19,7 @@ While these are important questions to ask, these are the dialogues that will st
 
 Ask these questions at the end.
 
-**Always be stupid and just start anything without thinking.** You would always have time to improve anything.
+**Always be stupid and just start your work without thinking.** You would always have time to improve anything.
 
 For me, adding the first object is the hard part.
 
