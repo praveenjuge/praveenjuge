@@ -13,7 +13,7 @@ Thousands of thoughts run through my head,
 - How will the end design look like?
 - How will people react to it when they see it?
 - Will it be good enough to post on Dribbble?
-- What if no one understands it??
+- What if no one understands it?
 
 While these are important questions to ask, these are the dialogues that will stop you from completing anything.
 
