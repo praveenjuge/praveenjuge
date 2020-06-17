@@ -4,7 +4,7 @@ description: "Figma's empty canvas is where dreams go to die for me. That white 
 date: 2020-06-17T02:03:24+00:00
 ---
 
-Every project I start, starts with the problem of facing an empty canvas. That blank white screens that stares at me.
+Every project I start, starts with the problem of facing an empty canvas. That blank white screens that stare at me.
 
 ![Figma Empty Frame](1.png)
 
@@ -13,19 +13,19 @@ Thousands of thoughts run through my head,
 - How will the end design look like?
 - How will people react to it when they see it?
 - Will it be good enough to post on Dribbble?
-- Will if everyone doesn't understand it?
+- What if no one understands it??
 
 While these are important questions to ask, these are the dialogues that will stop you from completing anything.
 
 Ask these questions at the end.
 
-**Always be stupid and just start your work without thinking.** You would always have time to improve anything.
+**Always be stupid and just start your work without thinking.** You will always have time to improve anything.
 
-For me, adding the first object is the hard part.
+For me, adding the first object is the hardest part.
 
-My advice for beginners and to myself is to start with something, **add the first stroke**, add the first text, add the first rectangle. Then, slowly, you go into flow state where you forget about the difficulty of the situation and just get things done.
+My advice for beginners and to myself is to start with something, **add the first stroke**, add the first text, add the first rectangle. Then, slowly, you go into a flow state where you forget about the difficulty of the situation and just get things done.
 
-You should face the adversity head on and you will always find that it is easier 10x times easier than you imagined.
+You should face adversity head-on and you will always find that it is 10x times easier than you imagined.
 
 ![VINCENT VAN GOGH: The blank canvas](lilvincent.jpg)
 
