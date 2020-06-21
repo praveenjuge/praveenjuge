@@ -18,7 +18,3 @@ He now mostly spends his time at [Skcript](https://www.skcript.com/) working on 
 ## Blog Posts
 
 {{< bloglist >}}
-
-## You can find me at
-
-{{< sociallist >}}
