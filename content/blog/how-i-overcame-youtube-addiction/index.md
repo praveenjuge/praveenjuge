@@ -36,7 +36,7 @@ I’m not raising my skill by watching this, so what’s the point? The only way
 
 #### Self Help (30%)
 
-**Biggest trap of them all.** Productivity, Self Help, Motivational channels might seem to have a good agenda on the onset but realize they can’t profit, if you actually improve yourself.
+**Biggest trap of them all.** Productivity, Self Help, Motivational channels might seem to have a good agenda on the onset but they can’t profit if you actually improve yourself.
 
 Most of the YouTubers in this category are good people at heart. But they know that 90% of the people watching them won’t improve anything in their life. They just like the feeling of improving themselves.
 
@@ -86,7 +86,7 @@ This was the cone of shame for me, I liked reality TV, YouTubers fighting with e
 
 Don’t live on someone else’s life.
 
-I was projecting that I have a simple life with no problems. So, I liked watching other people have problems. I thought I was superior to them in some way and that made me feel good.
+I was projecting. I have a simple life with no problems. So, I liked watching other people have problems. I thought I was superior to them in some way and that made me feel good.
 
 Of course, I was the idiot watching videos while they simply got paid and went home.
 
@@ -108,7 +108,7 @@ You can, however, not participate in its game. Some steps you can take:
 
   Voluntarily having more notifications on your phone is the first step to becoming mindless and have other people dictate where you spend your time.
 
-- **Pause Watching. Pause Search History.**
+- **Pause Watched History and Search History.**
 
   Again, download important videos. 98% of what you watch is not worth it and the other 2% can easily be searched again.
 
@@ -136,9 +136,9 @@ YouTube is a community of people giving free information and entertainment.
 
 - **YouTube gives low-quality information and entertainment.**
 
-  Only 5% of its millions of videos are actually helpful. Don’t take that burden of sifting through all that to find something you like. 
+  Only 5% of its millions of videos are actually helpful. Don’t take that burden of sifting through all that to find something you might like.
 
-## How I Overcame
+## How I Overcame YouTube
 
 Here are some simple and actionable steps that I took over the months,
 
@@ -158,7 +158,7 @@ Here are some simple and actionable steps that I took over the months,
 
    YouTube is available everywhere, it doesn’t need to be on your phone or tablet. You can always watch in your mobile browser for something urgent.
 
-   Mobile apps have 30% higher engagement rate. we go back to an app more often than a website. That’s why everyone keeps pushing you to download their app. Don’t.
+   Mobile apps have 30% higher engagement rate. We actively go back to an app more often than a website. That’s why everyone keeps pushing you to download their app. Don’t.
 
 5. **Remove all subscriptions**
 
