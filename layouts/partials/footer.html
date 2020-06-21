@@ -1,4 +1,26 @@
+<hr />
+
 <footer>
+  <nav aria-label="Footer Links" class="footer-links">
+    <a href="/">Home</a>
+    <p>
+      <a href="/blog/" style="padding-right: 0;">Blog</a>
+      <a href="/blog/index.xml" style="padding-left: 0;">(RSS)</a>
+    </p>
+    <a title="Twitter" href="https://twitter.com/{{ .Site.Author.twitter }}" target="_blank" rel="noopener">
+      Twitter
+    </a>
+    <a title="Instagram" href="https://instagram.com/{{ .Site.Author.instagram }}" target="_blank" rel="noopener">
+      Instagram
+    </a>
+    <a title="Github" href="https://github.com/{{ .Site.Author.github }}" target="_blank" rel="noopener">
+      GitHub
+    </a>
+    <a title="Dribbble" href="https://dribbble.com/{{ .Site.Author.dribbble }}" target="_blank" rel="noopener">
+      Dribbble
+    </a>
+  </nav>
+
   <a href="/" title="Row, Row, Row Your Boat">
     <svg xmlns="http://www.w3.org/2000/svg" width="63" height="62" fill="none">
       <defs />
