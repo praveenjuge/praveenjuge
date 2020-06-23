@@ -93,18 +93,6 @@
       url("/fonts/merriweather-v21-latin-700.woff2") format("woff2"), url("/fonts/merriweather-v21-latin-700.woff") format("woff"),
       url("/fonts/merriweather-v21-latin-700.ttf") format("truetype"), url("/fonts/merriweather-v21-latin-700.svg#Merriweather") format("svg");
   }
-
-  /* unica-one-regular - latin */
-  @font-face {
-    font-family: "Unica One";
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/unica-one-v7-latin-regular.eot");
-    src: local("Unica One"), local("UnicaOne-Regular"), url("/fonts/unica-one-v7-latin-regular.eot?#iefix") format("embedded-opentype"),
-      url("/fonts/unica-one-v7-latin-regular.woff2") format("woff2"), url("/fonts/unica-one-v7-latin-regular.woff") format("woff"),
-      url("/fonts/unica-one-v7-latin-regular.ttf") format("truetype"), url("/fonts/unica-one-v7-latin-regular.svg#UnicaOne") format("svg");
-  }
 </style>
 
 {{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
