@@ -1,7 +1,7 @@
 ---
 title: "You can read this page on July 2030"
 description: "Bookmark this page and come back after 10 years. You will see the same page with same content. But what about after 50 years? After 100? Will the browser you bookmarked this page work after 100 years?"
-date: 2020-06-30T18:37:57+0000
+date: 2020-07-01T02:22:50+00:00
 ---
 
 I love anything that is long lasting. Trees, Tortoise, Hugh Hefner.
