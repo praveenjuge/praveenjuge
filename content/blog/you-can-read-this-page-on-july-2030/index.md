@@ -62,7 +62,7 @@ And I use an Netlify Plugin called [Checklinks](https://github.com/munter/netlif
 
 I get lazy. Netlify doesn’t work anymore. I’ve moved on to carpentry.
 
-Just like that, I may forget about this website. But I don’t want that to happen. So this blog post is my commitment to make it last for at least the next 10 years.
+Just like that, I may forget about this website. But I don’t want that to happen. So this blog post is my commitment to make this website last for at least the next 10 years.
 
 Go ahead and bookmark this page. Visit it after 10 years. It will work as intended and will probably look the same.
 
