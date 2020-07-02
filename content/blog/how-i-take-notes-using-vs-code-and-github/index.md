@@ -98,7 +98,7 @@ You can reproduce it by:
 8. And finally add this code to your `bash_profile` to actually open VS code:
 
 ```sh
-alias notes='cd && cd projects/notes && code .'
+alias opennotes='cd && cd projects/notes && code .'
 ```
 
 ## Pros of this setup
