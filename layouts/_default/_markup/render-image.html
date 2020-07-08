@@ -1,0 +1,12 @@
+{{ if .Title }}
+<a href="{{ .Destination | safeURL }}" target="_blank" rel="noreferrer noopener">
+  <figure>
+    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+    <figcaption>{{ .Title }}</figcaption>
+  </figure>
+</a>
+{{ else }}
+<a href="{{ .Destination | safeURL }}" target="_blank" rel="noreferrer noopener">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+</a>
+{{ end }}
