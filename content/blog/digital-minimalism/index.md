@@ -1,6 +1,6 @@
 ---
 title: "Down to 8 Apps on My Phone"
-description: "It's been a year since I read Cal Newport's Digital Minimalism, he talks about taking back control of your time and to not feel like you need your phone attached to you all the time. Here are some changes I made and some changes I am still working on in my life."
+description: "It's been a year since I read Cal Newport's Digital Minimalism where he talks about taking back control of your time and to not feel like you need your phone attached to you all the time. Here are some steps I took to implement Digital Minimalism in my life."
 date: 2020-07-08T02:22:50+00:00
 ---
 
