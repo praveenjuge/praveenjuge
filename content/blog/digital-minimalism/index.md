@@ -4,7 +4,7 @@ description: "It's been a year since I read Cal Newport's Digital Minimalism whe
 date: 2020-07-08T02:22:50+00:00
 ---
 
-The major takeaway for me was his call to join the attention resistance movement.
+The major takeaway for me was Cal Newport's call to join the attention resistance movement.
 
 I, like most people, have no self control to read a book if I have the opportunity to watch Netflix. So I use the following techniques to trick my brain into doing what I want even when I don't want it.
 
