@@ -6,7 +6,7 @@ date: 2020-07-08T02:22:50+00:00
 
 The major takeaway for me was Cal Newport’s call to join the attention resistance movement.
 
-Like most people, even I don’t have the self-control to read a book if I have the opportunity to watch Netflix. So I use the following techniques to trick my brain into doing what I want even when I don’t want to do it.
+Like most people, I don’t have the self-control to read a book if I have the opportunity to watch Netflix. So I use the following techniques to trick my brain into doing what I want even when I don’t want to do it.
 
 ## Set a list of purposes for each device
 
@@ -45,7 +45,7 @@ I ended up with a total of 8 essential apps on my phone. I have rooted my phone,
 
 ### iPad
 
-iPad is my main entertainment device. Most of the entertainment services on the internet can be accessed via browsers. So I didn’t have the need to install any apps that are already available in the browser. 
+iPad is my main entertainment device. Apart from some, I didn’t have the need to install apps that are already available in the browser.
 
 ![Screenshot of apps in my iPad](ipad.jpg)
 
@@ -57,7 +57,7 @@ As my work device, it has everything I need to get into a flow, attend meetings,
 
 ## Reduce screen time
 
-Already my screen time has been reduced a lot, but there are few more steps I followed:
+Already my screen time has reduced a lot, but here are more steps I followed:
 
 - Turn off all notifications other than the ringer and alarm.
 - Keep your phone and iPad away from your work desk and bed.
@@ -66,7 +66,7 @@ Already my screen time has been reduced a lot, but there are few more steps I fo
 
 ## Where I can improve on
 
-Though I gain more time every day by getting rid of unnecessary apps,  I seem to be spending a lot of time on video games lately which might be an effect of quarantine.
+Though I gain more time every day by getting rid of unnecessary apps, I seem to be spending a lot of time on video games lately which might be an effect of quarantine.
 
 I also observed that playing games for 30 mins to an hour makes me happy. And playing for more than 4 hours a day makes me miserable.
 
