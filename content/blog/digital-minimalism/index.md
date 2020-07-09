@@ -1,14 +1,14 @@
 ---
 title: "Down to 8 Apps on My Phone"
-description: "It's been a year since I read Cal Newport's Digital Minimalism where he talks about taking back control of your time and to not feel like you need your phone attached to you all the time. Here are some steps I took to implement Digital Minimalism in my life."
+description: "It's been a year since I read Cal Newport's Digital Minimalism where he talks about taking back control of your time and not feeling like you need your phone attached to you all the time. Here are some steps I took to implement Digital Minimalism in my life."
 date: 2020-07-08T02:22:50+00:00
 ---
 
-The major takeaway for me was Cal Newport's call to join the attention resistance movement.
+The major takeaway for me was Cal Newport’s call to join the attention resistance movement.
 
-I, like most people, have no self control to read a book if I have the opportunity to watch Netflix. So I use the following techniques to trick my brain into doing what I want even when I don't want it.
+Like most people, even I don’t have the self-control to read a book if I have the opportunity to watch Netflix. So I use the following techniques to trick my brain into doing what I want even when I don’t want to do it.
 
-## Set purpose for each device
+## Set a list of purposes for each device
 
 **Phone:**
 
@@ -35,46 +35,46 @@ I, like most people, have no self control to read a book if I have the opportuni
 
 ## Remove all the other unneeded apps
 
-After I set the main purpose for each device, I got into removing all the other cruft apps that I didn't need.
+After I set the main purpose for each device, I got into removing all the other cruft apps that I didn’t need.
 
 ### Phone
 
-I ended up with total of 8 essential apps on my phone. I have rooted my phone, so I could remove Play Store and other unneeded apps. I installed third party apps with APK from trusted sources which I manually update once a month.
+I ended up with a total of 8 essential apps on my phone. I have rooted my phone, so I could remove Play Store and other unneeded apps. I installed third-party apps with APK from trusted sources which I manually update once a month.
 
 ![Screenshot of apps in my Phone](phone.png)
 
 ### iPad
 
-iPad is my main entertainment device, but most of this occurs in the browser. I haven't found the need to install any apps that are already available in the browser.
+iPad is my main entertainment device. Most of the entertainment services on the internet can be accessed via browsers. So I didn’t have the need to install any apps that are already available in the browser. 
 
 ![Screenshot of apps in my iPad](ipad.jpg)
 
 ### MacBook
 
-As my work device, it has everything I need to get into the flow, attend meetings and collaborate with coworkers.
+As my work device, it has everything I need to get into a flow, attend meetings, and collaborate with my coworkers.
 
 ![Screenshot of apps in my MacBook](mac.png)
 
 ## Reduce screen time
 
-Already my screen time has reduced a lot, but there are some more steps I followed:
+Already my screen time has been reduced a lot, but there are few more steps I followed:
 
 - Turn off all notifications other than the ringer and alarm.
-- Leave phone and iPad on set places away from work and bed.
+- Keep your phone and iPad away from your work desk and bed.
 - Consolidate texting.
 - Set leisure activities in the real world.
 
 ## Where I can improve on
 
-As I gain time from other reducing other apps, I seem to spend even more time on Video Games. This might be due to the quarantine but I am spending a lot of time on it now.
+Though I gain more time every day by getting rid of unnecessary apps,  I seem to be spending a lot of time on video games lately which might be an effect of quarantine.
 
-I also observed I seem to be happy after playing games for 30 mins to an hour. And miserable if I play for more than 4 hours a day.
+I also observed that playing games for 30 mins to an hour makes me happy. And playing for more than 4 hours a day makes me miserable.
 
-So that's my next target, play games for an hour a day and then move on to the next thing.
+So that's my next target. Play games for an hour a day and then move on to the next thing.
 
 ## Next Steps
 
-Here are some steps that Cal Newport suggests that I intend to do more of:
+Here are some steps that Cal Newport suggests which I intend to do more of:
 
 - Be bored on purpose
 - Be alone with my thoughts
