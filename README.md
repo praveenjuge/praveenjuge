@@ -1,3 +1,3 @@
-# praveenjuge.com
+# What's up nerds?
 
-This is the code that powers my [personal site](https://www.praveenjuge.com/).
+My name is Praveen Juge and you're watching Disney channel.
