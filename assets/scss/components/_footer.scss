@@ -2,7 +2,7 @@ footer {
   text-align: center;
   padding: 15px;
   padding-bottom: 70px;
-  @include breakpoint {
+  @media screen and (min-width: 40em) {
     padding: 100px;
     padding-top: 15px;
   }

@@ -20,7 +20,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   dribbble = "praveenjuge"
   instagram = "praveenjuge"
   behance = "praveenjuge"
-  email = "praveen@skcript.com"
 
 [markup]
   defaultMarkdownHandler = "goldmark"

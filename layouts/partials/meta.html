@@ -58,9 +58,7 @@
 <meta name="googlebot" content="index,follow" />
 
 {{ $style := resources.Get "scss/main.scss" | toCSS | minify }}
-<style>
-  {{ $style.Content | safeCSS }}
-</style>
+<style>{{ $style.Content | safeCSS }}</style>
 
 <!-- Image of the page -->
 <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />

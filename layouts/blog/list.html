@@ -2,16 +2,6 @@
 
 <h1>Blog Posts</h1>
 
-<ul class="list-unstyled">
-  {{ range (.Paginator 9).Pages }}
-  <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </li>
-  {{ end }}
-</ul>
-
-{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }} {{ if .Paginator.HasPrev }}
-<a href="{{.Paginator.Prev.URL}}">Previous page</a>
-{{ end }} {{ if .Paginator.HasNext }}
-<a href="{{.Paginator.Next.URL}}">Next page</a>
-{{ end }} {{ end }} {{end}}
+{{ range .Pages }}
+<p style="line-height: 24px;"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+{{ end }} {{end}}

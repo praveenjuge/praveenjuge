@@ -1,13 +1,18 @@
+$text-color: #250404;
+$bg-color: #fff6f6;
+$accent-color: #c31c31;
+$accent-light: #fdf1f1;
+
 html {
   font-size: 16px;
   font-size: 100%;
-  font-family: $font-serif;
+  font-family: Merriweather, Georgia, Times, "Times New Roman", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: $text-color;
   background: $bg-color;
   width: 100%;
   max-width: none;
   margin: 0;
-  @include breakpoint {
+  @media screen and (min-width: 40em) {
     font-size: 17px;
     font-size: 1.1rem;
   }
@@ -18,7 +23,7 @@ main {
   line-height: 1.625rem;
   margin: 0rem 15px 1.625rem;
   margin-top: 50px;
-  @include breakpoint {
+  @media screen and (min-width: 40em) {
     line-height: 31px;
     line-height: 1.72222222rem;
     margin-bottom: 31px;
@@ -28,20 +33,4 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-blockquote {
-  margin: 0px;
-  padding: 1px 15px;
-  background-color: $accent-light;
-  border-left: 5px solid $accent-color;
-}
-
-.list-unstyled {
-  list-style: none;
-  padding-left: 0px;
-}
-
-.list-unstyled li + li {
-  margin-top: 6px;
 }

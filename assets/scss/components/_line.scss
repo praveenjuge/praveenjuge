@@ -15,3 +15,10 @@ hr {
     letter-spacing: 1em;
   }
 }
+
+blockquote {
+  margin: 0px;
+  padding: 1px 15px;
+  background-color: $accent-light;
+  border-left: 5px solid $accent-color;
+}
