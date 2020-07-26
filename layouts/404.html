@@ -8,12 +8,6 @@
 
 <h4>Read latest blog posts:</h4>
 
-<ul class="list-unstyled">
-  {{ range where .Site.RegularPages "Type" "blog" }}
-  <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </li>
-  {{ end }}
-</ul>
-
-{{ end }}
+{{ range where .Site.RegularPages "Type" "blog" }}
+<p style="line-height: 22px;"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+{{ end }} {{ end }}
