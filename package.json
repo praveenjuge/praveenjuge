@@ -1,0 +1,24 @@
+{
+  "name": "praveenjuge",
+  "version": "0.0.1",
+  "description": "My name is Praveen Juge and you're watching Disney channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenjuge/praveenjuge.git"
+  },
+  "keywords": [
+    "praveen",
+    "juge",
+    "praveenjuge"
+  ],
+  "author": "praveenjuge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/praveenjuge/praveenjuge/issues"
+  },
+  "homepage": "https://github.com/praveenjuge/praveenjuge#readme"
+}
