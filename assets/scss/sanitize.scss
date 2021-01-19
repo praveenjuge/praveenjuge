@@ -21,10 +21,7 @@ html {
   word-break: break-word;
 }
 
-body {
-  margin: 0;
-}
-
+body,
 dl dl,
 dl ol,
 dl ul,
@@ -33,13 +30,11 @@ ul dl,
 ol ol,
 ol ul,
 ul ol,
-ul ul {
+ul ul,
+button,
+input,
+select {
   margin: 0;
-}
-
-hr {
-  height: 0;
-  overflow: visible;
 }
 
 main,
@@ -54,36 +49,8 @@ hgroup {
   display: block;
 }
 
-/**
- * Remove the list style on navigation lists in all browsers (opinionated).
- */
-
-nav ol,
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
 /* Text-level semantics
  * ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
 
 /**
  * Add the correct text decoration in Edge 18-, IE, and Safari.
@@ -101,18 +68,6 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 /**
@@ -144,32 +99,18 @@ video {
  */
 
 audio,
-video {
+video,
+canvas {
   display: inline-block;
 }
 
 /**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Remove the border on iframes in all browsers (opinionated).
- */
-
-iframe {
-  border-style: none;
-}
-
-/**
+ * Remove the border on iframe in all browsers (opinionated).
  * Remove the border on images within links in IE 10-.
- */
+*/
 
-img {
+img,
+iframe {
   border-style: none;
 }
 
@@ -202,16 +143,6 @@ table {
 
 /* Forms
  * ========================================================================== */
-
-/**
- * Remove the margin on controls in Safari.
- */
-
-button,
-input,
-select {
-  margin: 0;
-}
 
 /**
  * 1. Show the overflow in IE.
@@ -388,22 +319,6 @@ summary {
 /* Scripting
  * ========================================================================== */
 
-/**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-
-template {
-  display: none;
-}
-
 /* User interaction
  * ========================================================================== */
 
@@ -430,33 +345,9 @@ textarea,
  * Add the correct display in IE 10-.
  */
 
-[hidden] {
+[hidden],
+template {
   display: none;
-}
-
-/* Accessibility
- * ========================================================================== */
-
-[aria-busy="true"] {
-  cursor: progress;
-}
-
-[aria-controls] {
-  cursor: pointer;
-}
-
-[aria-disabled="true"],
-[disabled] {
-  cursor: not-allowed;
-}
-
-[aria-hidden="false"][hidden] {
-  display: initial;
-}
-
-[aria-hidden="false"][hidden]:not(:focus) {
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
 }
 
 /**
@@ -470,16 +361,4 @@ select,
 textarea {
   height: auto;
   max-width: 100%;
-}
-
-/**
- * Use the default monospace user interface font in all browsers (opinionated).
- */
-
-code,
-kbd,
-samp,
-pre {
-  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
 }
