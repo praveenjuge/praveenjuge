@@ -1,12 +1,13 @@
 ---
 title: Add all Tailwind 2 Color Palettes to your config
 description: Tailwind 2 has eight default color palette that you can use in your
-  project, but internally it ships with 22 more colour palettes. Here is how you
-  can import them all. This increases the final css size by a lot, make sure
-  your purge your css for production.
+  project, but internally it ships with 22 colour palettes. Here is how you can
+  import them all. This increases your css size by a lot so make sure you purge
+  during production build.
 date: 2021-02-04T15:40:42.877Z
 ---
 ```javascript
+//tailwind.config.js
 const colors = require("tailwindcss/colors");
 
 module.exports = {
