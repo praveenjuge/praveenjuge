@@ -6,7 +6,7 @@ date: 2021-01-19T08:40:34+00:00
 
 [Just show me the repo](https://github.com/praveenjuge/hugo-tailwind)
 
-Tested on Hugo Version 0.80.0 and Tailwind Version 2.0.1, learn how to [install Hugo here](https://gohugo.io/getting-started/installing/).
+Tested on Hugo Version 0.83.1 and Tailwind Version 2.1.2, learn how to [install Hugo here](https://gohugo.io/getting-started/installing/).
 
 ## Setup New Hugo Site
 
@@ -38,7 +38,7 @@ In `layouts/_default/baseof.html`, add:
     {{ $styles := resources.Get "css/main.css" }} 
     {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }} 
     
-    {{ if hugo.IsProduction }} 
+    {{ if hugo.IsProduction }}
       {{ $styles = $styles | minify }} 
     {{ end }}
 
@@ -72,7 +72,7 @@ npm init
 Then install the following packages,
 
 ```sh
-npm install tailwindcss@latest postcss-cli@latest autoprefixer@latest --save
+npm install tailwindcss@latest postcss@latest postcss-cli@latest autoprefixer@latest --save
 ```
 
 ## Tailwind and Postcss Config
@@ -90,6 +90,7 @@ For proper purging add the following to your `tailwind.config.js` file:
 ```js
 ...
   purge: {
+    enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: ["./layouts/**/*.html", "./content/**/*.md", "./content/**/*.html"],
   },
 ...
@@ -106,13 +107,5 @@ Next, add the following to `assets/css/main.css` to get the sweet tailwind css o
 Now, if you run `hugo server` in your terminal, you should see this:
 
 ![Screenshot of hugo site with tailwind styles](1.png)
-
-## Limitations
-
-You have to run the final production site with node env for proper purge to happen in production.
-
-```sh
-NODE_ENV=production hugo
-```
 
 That's all, tailwind css is integrated into your hugo site!
