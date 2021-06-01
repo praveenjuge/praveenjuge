@@ -22,7 +22,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   behance = "praveenjuge"
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
   [markup.highlight]
     codeFences = true
     guessSyntax = false
