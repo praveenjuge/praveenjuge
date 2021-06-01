@@ -1,6 +1,5 @@
 ---
 title: "Personal Website"
-date: 2019-12-25 22:10:00 +0530 IST
 description: "Praveen Juge is a designer and developer for everything on the web."
 ---
 
@@ -16,5 +15,3 @@ A very very long time ago in a place far far away, on a little place called Hosp
 He now spends his time at [Skcript](https://www.skcript.com/) working on the stuff he likes.
 
 ## Blog Posts
-
-{{< bloglist >}}
