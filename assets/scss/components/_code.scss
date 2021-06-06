@@ -2,25 +2,24 @@ pre {
   overflow-x: auto;
   padding: 3px 12px;
   border-radius: 5px;
-  code {
-    font-size: 85%;
-    padding: 0px !important;
+  code:before,
+  code:after {
+    content: none;
   }
 }
 
-p code {
-  padding: 2px 7px;
-  border-radius: 5px;
-  color: #f8f8f2;
-  font-size: 85%;
-  background-color: #282a36;
+code:before,
+code:after {
+  content: "`";
 }
 
 code,
 kbd,
 samp,
 pre {
-  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace", "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
-  font-size: 1em;
+  font-family: "Menlo", "Consolas", "Roboto Mono", "Ubuntu Monospace",
+    "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  word-break: break-all;
+  font-size: 85%;
 }
