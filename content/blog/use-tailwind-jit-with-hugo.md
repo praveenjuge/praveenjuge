@@ -42,6 +42,14 @@ In `layouts/index.html` add the following code,
 
 ## Add Tailwind
 
+Let's add our tailwind code, add the following code to `static/tailwind.css`,
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
 We have to add our build scripts for Tailwind's new CLI work for us.
 
 In `package.json` add the following code,
