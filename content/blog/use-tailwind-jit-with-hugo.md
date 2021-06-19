@@ -66,7 +66,7 @@ In `package.json` add the following code,
 }
 ```
 
-And the basic Tailwind config, in which we mention our JIT mode, and tell where to purge.
+And next the basic Tailwind config, where we mention our JIT mode, and tell where to purge.
 
 In `tailwind.config.js` add the following code,
 
@@ -79,7 +79,7 @@ module.exports = {
 
 ## Install Dependencies
 
-We only have only tailwind as a dependency, install it by using the following code in your terminal:
+We only have tailwind as a dependency, install it by using the following code in your terminal:
 
 ```sh
 npm install
@@ -103,7 +103,7 @@ And go to [`http://localhost:1313`](http://localhost:1313) to see the Tailwind J
 
 ## Production Build
 
-Our build script will minify the css when building for production, you can use the following combined script for building minified production ready code.
+Our build script will minify the css while building for production, you can use the following combined script for building minified production ready code.
 
 ```sh
 npm run build && hugo --minify
