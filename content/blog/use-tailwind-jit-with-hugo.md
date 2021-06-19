@@ -61,7 +61,7 @@ In `package.json` add the following code,
     "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --jit --minify"
   },
   "dependencies": {
-    "tailwindcss": "^2.2.0-canary.13"
+    "tailwindcss": "^2.2.2"
   }
 }
 ```
