@@ -6,6 +6,7 @@ description: Tailwind 2 has eight default color palette that you can use in your
   during production build.
 date: 2021-02-04T15:40:42.877Z
 ---
+
 ```javascript
 //tailwind.config.js
 const colors = require("tailwindcss/colors");
@@ -22,7 +23,7 @@ module.exports = {
       gray: colors.gray,
       "true-gray": colors.trueGray,
       "warm-gray": colors.warmGray,
-      red: colors.rose,
+      red: colors.red,
       orange: colors.orange,
       amber: colors.amber,
       yellow: colors.yellow,
@@ -31,7 +32,7 @@ module.exports = {
       emerald: colors.emerald,
       teal: colors.teal,
       cyan: colors.cyan,
-      "light-blue": colors.lightBlue,
+      sky: colors.sky,
       blue: colors.blue,
       indigo: colors.indigo,
       violet: colors.violet,
