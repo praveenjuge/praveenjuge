@@ -57,11 +57,11 @@ In `package.json` add the following code,
 ```json
 {
   "scripts": {
-    "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --jit -w",
-    "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --jit --minify"
+    "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css -w",
+    "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./static/tailwind.css -o ./static/main.css --minify"
   },
   "dependencies": {
-    "tailwindcss": "^2.2.2"
+    "tailwindcss": "^3.0.5"
   }
 }
 ```
@@ -72,8 +72,7 @@ In `tailwind.config.js` add the following code,
 
 ```js
 module.exports = {
-  mode: "jit",
-  purge: ["./content/**/*.md", "./content/**/*.html", "./layouts/**/*.html"],
+  content: ["./content/**/*.md", "./content/**/*.html", "./layouts/**/*.html"],
 };
 ```
 
