@@ -1,6 +1,6 @@
 ---
 title: "Creating a Number Badge UI Component"
-description: "We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lots of challenges to figure out. Here is how we solved some of the frontend problems."
+description: "We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems."
 date: 2021-12-18T12:37:47Z
 og: images/number-badge-og.png
 ---
@@ -25,7 +25,7 @@ Displaying the number right next to the tab names seemed a little off as it’s 
 
 I decided that the last idea would be a better solution overall. As it’s easy to understand with the context of the tab name and it has really distinctive active states, it’s easier for people to glance at it while scrolling through it and know how many items are in the current list.
 
-As we have decided on how the UI is going to look, let’s create the needed figma component for it. We have two variants here, the active and normal state. Let’s take use of figma’s variants feature and create it.
+As we decided on how the UI is going to look, let’s create the needed figma component for it. We have two variants here, the active and normal state. Let’s make use of figma’s variants feature and create it.
 
 ![](6.png)
 
@@ -45,7 +45,7 @@ Now, it’s time to create the component in code, let’s take the green theme f
 <span class="text-gray-500 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex">4</span>
 ```
 
-The code above will create the following UI, it has text, background and padding on the same element which works for the following normal badge variant.
+The code above will create the following UI. It has text, background and padding on the same element which works for the following normal badge variant.
 
 !["On light theme and dark theme."](10.png "On light theme and dark theme.")
 
