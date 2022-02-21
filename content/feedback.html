@@ -4,31 +4,72 @@ title: "Feedback"
 
 <h2>Latest changelog:</h2>
 
-<a href="#" id="cl">Click here to see the latest changelog</a>
-
-<script src="https://cl.hellonext.co/HNChangelogWidget.js"></script>
-<script>
-  HNChangelogWidget.init({
-    token: "VdFMOkqzU4dOvMZ1s6vftA",
-    selector: "#cl",
-  });
-</script>
+<a href="#" id="changelogWidgetID">Click here to see the latest changelog</a>
 
 <hr />
 
-<h2>Send me feedback here:</h2>
+<p>Boards with Header:</p>
+<iframe
+  style="border: 0px; height: 100vh; width: 100%"
+  src="https://feedback.praveenjuge.com/embed/b/feedback"
+></iframe>
 
-<iframe style="border: 0px; height: 600px" width="100%" height="100%"
-  src="https://feedback.praveenjuge.com/embed/b/default"></iframe>
+<hr />
 
-<iframe style="border: 0px; height: 600px; margin-top: 50px" width="100%" height="100%"
-  src="https://app.hellonext.co/D15530E839C9ED1D2E0A6C69A4A1FBD8/submission_form_with_key"></iframe>
+<p>Boards without Header:</p>
+<iframe
+  style="border: 0px; height: 100vh; width: 100%"
+  src="https://feedback.praveenjuge.com/embed/b/feedback?no_header=true"
+></iframe>
+
+<hr />
+
+<p>Feedback Collection Form:</p>
+<iframe
+  style="border: 0px; height: 100vh; width: 100%"
+  src="https://feedback.praveenjuge.com/C760D9635FA852F8DC4ACFC54027FE0758CA9D0A256B417F2DDA2BBB41A1EEB7/submission_form_with_key"
+></iframe>
+
+<hr />
+
+<p>Roadmap with header:</p>
+<iframe
+  style="border: 0px; height: 100vh; width: 100%"
+  src="https://feedback.praveenjuge.com/embed/roadmap"
+></iframe>
+
+<hr />
+
+<p>Roadmap without header:</p>
+<iframe
+  style="border: 0px; height: 100vh; width: 100%"
+  src="https://feedback.praveenjuge.com/embed/roadmap?no_header=true"
+></iframe>
+
+<hr />
+
+<p>Changelog embed</p>
+<iframe
+  style="border: 0px; height: 100vh; width: 100%"
+  src="https://feedback.praveenjuge.com/embed/c"
+></iframe>
+
+<script src="https://cl.hellonext.co/HNChangelogWidget.js"></script>
+
+<script>
+  HNChangelogWidget.init({
+    token: "0-j2Ep950V04iZAuS-z_Qg",
+    selector: "#changelogWidgetID", // Widget will open up when this element is clicked
+    placement: "bottom", // Optional: Placement of the element when selector is used
+    enableIndicator: true, // Optional: Enables an indicator if a new update has been posted in last 7 days
+  });
+</script>
 
 <script src="https://widgets.hellonext.co/HNWidget.js"></script>
 <script>
   HNWidget.init({
-    token: "TK9k6lDxvefSzQJaskt2vw",
-    bucketId: "5312", // Optional: This will render only selected bucket in the widget
-    showOnlySubmission: false, // Optional: Toggle for showing only submission form or post list
+    token: "0-j2Ep950V04iZAuS-z_Qg",
+    placement: "bottom", // Optional: Placement of the element when selector is used
+    showOnlySubmission: false, // Optional: Toggle for showing only submission form
   });
 </script>
