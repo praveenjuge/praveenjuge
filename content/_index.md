@@ -3,6 +3,10 @@ title: "Personal Website"
 description: "Praveen Juge is a designer and developer for everything on the web."
 ---
 
+<marquee>
+Checkout <a href="https://mynaui.com" target="_blank" rel="noopener noreferrer">mynaui.com</a>: A collection of UI Components and Elements made with Tailwind CSS ✨
+</marquee>
+
 # What's up nerds?
 
 **Praveen Juge is a designer and developer for everything on the web.**
