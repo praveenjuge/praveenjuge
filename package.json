@@ -26,7 +26,7 @@
     "dev:css": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -o ./static/main.css -w",
     "dev:hugo": "hugo server"
   },
-  "devDependencies": {
+  "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.1.4"
