@@ -9,8 +9,8 @@ enableGitInfo = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-  description = "Praveen Juge is designing and making things for-and-in web, this is his personal website. And he likes speaking about himself in third person."
-  ogimage = "images/praveen-juge.png"
+  description = "I’m Praveen Juge, designer and developer based in Chennai."
+  ogimage = "/og.jpg"
   ISO8601 = "2006-01-02T15:04:05JST"
 
 [author]
