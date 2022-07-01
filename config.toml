@@ -4,7 +4,6 @@ title = "Praveen Juge"
 
 enableRobotsTXT = true
 enableEmoji = true
-canonifyURLs = true
 enableGitInfo = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
