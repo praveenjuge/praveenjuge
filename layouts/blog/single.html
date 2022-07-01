@@ -1,21 +1,21 @@
 {{ define "main" }}
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
-  <div style="text-align: center;">
-    <h1 itemprop="headline" title="{{ .Title }}" style="margin-bottom: 20px;">{{ .Title }}</h1>
-    <h6 style="margin-top: 0px">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="prose prose-lg prose-stone max-w-none">
+  <div>
+    <h1 class="[font-stretch:150%]" itemprop="headline" title="{{ .Title }}">{{ .Title }}</h1>
+    <p class="lead">
       Written on
       <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
         {{ .Date.Format "2 January 2006" }}
       </time>
-      <div style="display: none; visibility: hidden;">
+      <div class="sr-only">
         <span itemprop="wordCount">{{ .WordCount }}</span>
         <span itemprop="author">{{ .Site.Author.name }}</span>
       </div>
-    </h6>
+    </p>
   </div>
   <hr>
-  <p class="attention-grabber" itemprop="description">{{ .Description }}</p>
+  <p class="lead" itemprop="description">{{ .Description }}</p>
   {{ .Content }}
 </article>
 

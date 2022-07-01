@@ -1,7 +1,11 @@
 {{ define "main" }}
 
-<h1>Blog Posts</h1>
+<h1 class="font-extrabold [font-stretch:150%] text-3xl mb-6">Blog Posts</h1>
 
 {{ range .Pages }}
-<p style="line-height: 24px;"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+<a
+  class="flex text-rose-900 hover:text-black my-4 font-medium"
+  href="{{ .Permalink }}"
+  >{{ .Title }}</a
+>
 {{ end }} {{end}}

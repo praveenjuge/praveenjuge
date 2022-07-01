@@ -12,7 +12,7 @@ The only way you can wake up early is by going to bed early. Start slow, if you 
 
 I go to bed by 22:00 with a book and sleep by 22:30 at the most. This is the main reason, I think, that I can wake up early. Whenever I go to bed later at night, I miss my 5:30 deadline in the morning.
 
-> “Early to bed and early to rise makes a man healthy, wealthy, and wise.” ~ Benjamin Franklin
+> Early to bed and early to rise makes a man healthy, wealthy, and wise. ~ Benjamin Franklin
 
 ## No devices
 
@@ -49,5 +49,4 @@ It can be anything you like, one episode from your favorite TV show, coffee or e
 > So you were born to feel “nice”? Instead of doing things and experiencing them? Don’t you see the plants, the birds, the ants and spiders and bees going about their individual tasks, putting the world in order, as best they can? And you’re not willing to do your job as a human being? Why aren’t you running to do what your nature demands?
 
 > You don’t love yourself enough. Or you’d love your nature too, and what it demands of you.
-
 > ~ Marcus Aurelius, Meditations
