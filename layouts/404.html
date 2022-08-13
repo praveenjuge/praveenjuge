@@ -1,13 +1,30 @@
 {{ define "main" }}
 
-<h1>Page not found (404)</h1>
-<p>
-  The page that you are looking for is not available. If you think this is a mistake, please contact me at
-  <a title="Twitter" href="https://twitter.com/{{ .Site.Author.twitter }}" target="_blank" rel="noopener">Twitter</a>.
-</p>
+<div
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+  class="prose md:prose-lg prose-stone dark:prose-invert max-w-none"
+>
+  <h1 class="[font-stretch:150%]" itemprop="headline">Page not found (404)</h1>
 
-<h4>Read latest blog posts:</h4>
+  <p>
+    The page that you are looking for is not available. If you think this is a
+    mistake, please contact me at
+    <a
+      title="Twitter"
+      href="https://twitter.com/{{ .Site.Author.twitter }}"
+      target="_blank"
+      rel="noopener"
+      >Twitter</a
+    >.
+  </p>
 
-{{ range where .Site.RegularPages "Type" "blog" }}
-<p style="line-height: 22px;"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-{{ end }} {{ end }}
+  <hr />
+
+  <h2>Read latest blog posts:</h2>
+
+  {{ range where .Site.RegularPages "Type" "blog" }}
+  <p style="line-height: 22px"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+  {{ end }}
+</div>
+{{ end }}
