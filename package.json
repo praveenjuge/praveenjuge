@@ -24,7 +24,7 @@
     "build:hugo": "hugo --minify",
     "dev": "npm-run-all --parallel dev:*",
     "dev:css": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -o ./static/main.css -w",
-    "dev:hugo": "hugo server --bind 0.0.0.0 --baseURL http://192.168.29.198:1313"
+    "dev:hugo": "hugo server"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
