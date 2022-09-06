@@ -8,6 +8,22 @@ now: true
 ---
 - - -
 
+## September 2022
+
+**What I'm Doing Now**
+
+* Working on developing my UX knowledge
+
+**What I'm Watching Now**
+
+* Vampire Diaries
+* House of the Dragon
+* The Rings of Power
+
+**What I'm Reading Now**
+
+- Norwegian Wood
+
 ## August 2022
 
 **What I'm Doing Now**
