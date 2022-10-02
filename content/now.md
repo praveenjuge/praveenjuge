@@ -8,6 +8,22 @@ now: true
 ---
 - - -
 
+## October 2022
+
+**What I'm Doing Now**
+
+- Started some work on a new UI kit
+
+**What I'm Watching Now**
+
+* Vampire Diaries
+* The Rings of Power
+
+**What I'm Reading Now**
+
+- Lord of the Rings
+
+
 ## September 2022
 
 **What I'm Doing Now**
