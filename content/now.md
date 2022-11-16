@@ -6,6 +6,24 @@ type: blog
 layout: single
 now: true
 ---
+
+---
+
+## November 2022
+
+**What I'm Doing Now**
+
+- 🎵 Work Work Work Work Work 🎵
+
+**What I'm Watching Now**
+
+* Mythic Quest 
+
+**What I'm Reading Now**
+
+- The Midnight Library
+- Project Hail Mary
+
 - - -
 
 ## October 2022
