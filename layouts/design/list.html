@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h1 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mb-6">
+  Designs
+</h1>
+
+{{ range where .Site.RegularPages "Type" "design" }}
+<a
+  target="_blank"
+  rel="noopener noreferrer"
+  href="{{ .Params.Image }}"
+  class="block my-10"
+>
+  <img
+    loading="lazy"
+    alt="{{ .Params.Image }}"
+    src="{{ .Params.Image }}"
+    class="rounded bg-cover w-full h-full bg-stone-100 dark:bg-stone-900"
+  />
+</a>
+
+{{ end }} {{end}}
