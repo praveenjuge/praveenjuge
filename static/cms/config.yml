@@ -16,6 +16,15 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "og", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Design"
+    name: "design"
+    folder: "content/design"
+    create: true
+    identifier_field: image
+    slug: "{{slug}}"
+    fields:
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
   - label: "Home"
     name: "home"
     folder: "content"
