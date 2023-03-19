@@ -24,13 +24,13 @@
     <p>
       I would love to work with you on anything interesting, say hello to me at
       <a
-        href="mailto:hi@praveenjuge.com"
+        href="mailto:hello@praveenjuge.com"
         class="underline underline-offset-1 decoration-2"
-        >hi@praveenjuge.com</a
+        >hello@praveenjuge.com</a
       >
     </p>
   </div>
-  <div class="text-xs space-y-2 text-stone-800 dark:text-stone-300">
+  <div class="text-xs font-medium space-y-2 text-slate-800 dark:text-slate-300">
     <img
       src="/images/praveen-juge-photo.jpg"
       class="rounded"
@@ -40,24 +40,45 @@
   </div>
 </div>
 
-<h2 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mt-20 mb-6">
-  Design
+<h2 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mt-24 mb-6">
+  <a href="/design/">Design</a>
 </h2>
 
-<div class="grid gap-6 grid-cols-2">
-  {{ range first 10 (where .Site.RegularPages "Type" "design") }}
-  <a target="_blank" rel="noopener noreferrer" href="{{ .Params.Image }}">
+<div class="grid gap-6 md:grid-cols-3">
+  {{ range first 11 (where .Site.RegularPages "Type" "design") }}
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="{{ .Params.Image }}"
+    class="flex"
+  >
     <img
       loading="lazy"
       alt="{{ .Params.Image }}"
       src="{{ .Params.Image }}"
-      class="rounded bg-cover w-full h-full bg-stone-100 dark:bg-stone-900"
+      class="rounded bg-cover w-full bg-slate-100 dark:bg-slate-900 border-0 h-full md:h-40 object-cover"
     />
   </a>
   {{ end }}
+  <a
+    href="/design/"
+    class="border-2 rounded flex justify-center items-center border-dashed text-sm font-medium flex-col space-y-2 border-slate-300 hover:border-slate-400 dark:border-slate-700 dark:hover:border-slate-500 transition"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 256 256"
+      class="text-slate-400 dark:text-slate-600 h-6 w-6"
+    >
+      <path
+        d="M232.49,112.49l-48,48a12,12,0,0,1-17-17L195,116H128a84.09,84.09,0,0,0-84,84,12,12,0,0,1-24,0A108.12,108.12,0,0,1,128,92h67L167.51,64.48a12,12,0,0,1,17-17l48,48A12,12,0,0,1,232.49,112.49Z"
+      ></path>
+    </svg>
+    <span>View More</span>
+  </a>
 </div>
 
-<h2 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mt-20 mb-6">
+<h2 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mt-24 mb-6">
   Development
 </h2>
 
@@ -103,13 +124,13 @@
   </a>
 </div>
 
-<h2 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mt-20 mb-6">
-  Blog Posts
+<h2 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl mt-24 mb-6">
+  <a href="/blog/">Blog Posts</a>
 </h2>
 
 {{ range where .Site.RegularPages "Type" "blog" }}
 <a
-  class="flex text-rose-900 dark:text-rose-400 hover:text-black dark:hover:text-stone-200 my-4 font-medium text-lg"
+  class="flex text-rose-900 dark:text-rose-400 hover:text-black dark:hover:text-slate-200 my-4 font-medium text-lg"
   href="{{ .Permalink }}"
   >{{ .Title }}</a
 >

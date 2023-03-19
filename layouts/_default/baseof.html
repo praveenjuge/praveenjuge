@@ -116,10 +116,10 @@
     {{ end }}
   </head>
   <body
-    class="relative antialiased bg-white dark:bg-black text-stone-900 dark:text-stone-200 [font-feature-settings:'salt']"
+    class="relative antialiased bg-white dark:bg-black text-slate-900 dark:text-slate-200 [font-feature-settings:'salt']"
   >
     <div
-      class="absolute inset-0 -z-10 w-full h-56 bg-gradient-to-b from-rose-100 dark:from-rose-900/20 to-white dark:to-black"
+      class="absolute inset-0 -z-10 w-full h-56 bg-gradient-to-b from-rose-100 dark:from-rose-900/40 to-white dark:to-black"
       aria-hidden="true"
     ></div>
 
@@ -128,7 +128,7 @@
     >
       <a href="/" title="Go to Home Page">
         <svg
-          class="text-stone-900 dark:text-stone-100 h-3.5"
+          class="text-slate-900 dark:text-slate-100 h-3.5"
           fill="currentColor"
           viewBox="0 0 174 16"
           xmlns="http://www.w3.org/2000/svg"
@@ -140,14 +140,13 @@
       </a>
       <nav
         aria-label="Footer Links"
-        class="font-medium text-sm flex space-x-3 items-center"
+        class="font-medium text-sm flex space-x-4 items-center"
       >
+        <a href="/design/">Designs</a>
         <p>
           <a href="/blog/">Blog</a>
-          —
-          <a href="/blog/index.xml">RSS</a>
+          <a href="/blog/index.xml">- RSS</a>
         </p>
-        <a href="/design/">Designs</a>
         <a
           title="Github"
           href="https://github.com/{{ .Site.Author.github }}"
@@ -171,6 +170,14 @@
           rel="noopener"
         >
           Dribbble
+        </a>
+        <a
+          title="Layers"
+          href="https://layers.to/{{ .Site.Author.dribbble }}"
+          target="_blank"
+          rel="noopener"
+        >
+          Layers
         </a>
       </nav>
     </header>
