@@ -67,7 +67,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
     <!-- CSS -->
@@ -119,7 +118,7 @@
     class="relative antialiased bg-white dark:bg-black text-slate-900 dark:text-slate-200 [font-feature-settings:'salt']"
   >
     <div
-      class="absolute inset-0 -z-10 w-full h-56 bg-gradient-to-b from-rose-100 dark:from-rose-900/40 to-white dark:to-black"
+      class="absolute inset-0 -z-10 w-full h-56 bg-gradient-to-b from-rose-200/75 dark:from-rose-900/40 to-white dark:to-black select-none pointer-events-none"
       aria-hidden="true"
     ></div>
 
@@ -152,7 +151,7 @@
           title="Github"
           href="https://github.com/{{ .Site.Author.github }}"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -164,7 +163,7 @@
           title="Twitter"
           href="https://twitter.com/{{ .Site.Author.twitter }}"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -176,7 +175,7 @@
           title="Dribbble"
           href="https://dribbble.com/{{ .Site.Author.dribbble }}"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
             <path
@@ -188,7 +187,7 @@
           title="Layers"
           href="https://layers.to/{{ .Site.Author.dribbble }}"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 32 33">
             <path
