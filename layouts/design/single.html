@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <a href="/design/" class="flex text-rose-900 font-medium">← All Images</a>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="{{ .Params.Image }}"
+    class="block my-10"
+  >
+    <img
+      loading="lazy"
+      alt="{{ .Params.Image }}"
+      src="{{ .Params.Image }}"
+      class="rounded bg-cover w-full h-full bg-slate-100 dark:bg-slate-900"
+    />
+  </a>
+</article>
+
+{{end}}
