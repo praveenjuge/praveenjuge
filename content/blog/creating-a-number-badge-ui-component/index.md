@@ -42,7 +42,10 @@ We also have different themes that people can choose and a dark mode. As our sol
 Now, it’s time to create the component in code, let’s take the green theme for example. We are going to use TailwindCSS to make these components.
 
 ```html
-<span class="text-gray-500 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex">4</span>
+<span
+  class="text-gray-500 bg-gray-100 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex"
+  >4</span
+>
 ```
 
 The code above will create the following UI. It has text, background and padding on the same element which works for the following normal badge variant.
@@ -64,8 +67,13 @@ For this, we have to add a decoration component inside the number badge so that 
 The wrapping `span` will have relative position so that we can have an absolute positioned empty background `span` inside it. The order also matters here, inside the wrapper span, the background should come first and then the number `span` should come which is also relatively positioned.
 
 ```html
-<span class="text-primary ml-1 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex relative transition">
-  <span aria-hidden="true" class="bg-primary opacity-5 dark:opacity-10 absolute inset-0 rounded-full select-none transition"></span>
+<span
+  class="text-primary ml-1 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex relative transition"
+>
+  <span
+    aria-hidden="true"
+    class="bg-primary opacity-5 absolute inset-0 rounded-full select-none transition"
+  ></span>
   <span class="relative">393</span>
 </span>
 ```
@@ -77,26 +85,37 @@ This way we can easily add opacity to the background alone and we don’t need a
 TailwindCSS needs to have the full class names present in our files to generate those css, so we need to have some decider functions that will help us set our variant colors.
 
 ```jsx
-import clsx from 'clsx';
+import clsx from "clsx";
 
-export default function NumberBadge({ number = '', variant = 'light' }) {
+export default function NumberBadge({ number = "", variant = "light" }) {
   const setTextColor = (color) => {
-    if (color === 'primary') return 'text-primary';
-    if (color === 'light') return 'text-gray-600 dark:text-gray-200';
-    if (color === 'white') return 'text-gray-600 dark:text-gray-200';
-    return 'text-gray-600';
+    if (color === "primary") return "text-primary";
+    if (color === "light") return "text-gray-600";
+    if (color === "white") return "text-gray-600";
+    return "text-gray-600";
   };
 
   const setBackgroundColor = (color) => {
-    if (color === 'primary') return 'bg-primary opacity-5 dark:opacity-10';
-    if (color === 'light') return 'bg-gray-100 dark:bg-gray-700';
-    if (color === 'white') return 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-800';
-    return 'bg-gray-100';
+    if (color === "primary") return "bg-primary opacity-5";
+    if (color === "light") return "bg-gray-100";
+    if (color === "white") return "bg-white border border-gray-200";
+    return "bg-gray-100";
   };
 
   return (
-    <span className={clsx(setTextColor(variant), 'ml-1 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex relative transition')}>
-      <span aria-hidden="true" className={clsx(setBackgroundColor(variant), 'absolute inset-0 rounded-full select-none transition')} />
+    <span
+      className={clsx(
+        setTextColor(variant),
+        "ml-1 py-px px-1.5 rounded-full font-mono text-xs font-medium inline-flex relative transition"
+      )}
+    >
+      <span
+        aria-hidden="true"
+        className={clsx(
+          setBackgroundColor(variant),
+          "absolute inset-0 rounded-full select-none transition"
+        )}
+      />
       <span className="relative">{number}</span>
     </span>
   );
