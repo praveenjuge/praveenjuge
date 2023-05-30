@@ -1,8 +1,6 @@
 {{ define "main" }}
 
-<h1
-  class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl my-6 dark:text-white"
->
+<h1 class="font-extrabold [font-stretch:150%] text-2xl md:text-3xl my-6">
   What's up nerds?
 </h1>
 
@@ -31,7 +29,7 @@
       >
     </p>
   </div>
-  <div class="text-xs font-medium space-y-2 text-slate-800 dark:text-slate-300">
+  <div class="text-xs font-medium space-y-2 text-slate-800">
     <img
       src="/images/praveen-juge-photo.jpg"
       class="rounded"
@@ -58,19 +56,19 @@
       loading="lazy"
       alt="{{ .Params.Image }}"
       src="{{ .Params.Image }}"
-      class="rounded bg-cover w-full bg-slate-100 dark:bg-slate-900 border-0 h-full md:h-40 object-cover"
+      class="rounded bg-cover w-full bg-slate-100 border-0 h-full md:h-40 object-cover"
     />
   </a>
   {{ end }}
   <a
     href="/design/"
-    class="border-2 rounded flex justify-center items-center border-dashed text-sm font-medium flex-col space-y-2 border-slate-300 hover:border-slate-400 dark:border-slate-700 dark:hover:border-slate-500 transition h-40"
+    class="border-2 rounded flex justify-center items-center border-dashed text-sm font-medium flex-col space-y-2 border-slate-300 hover:border-slate-400 transition h-40"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
       viewBox="0 0 256 256"
-      class="text-slate-400 dark:text-slate-600 h-6 w-6"
+      class="text-slate-400 h-6 w-6"
     >
       <path
         d="M232.49,112.49l-48,48a12,12,0,0,1-17-17L195,116H128a84.09,84.09,0,0,0-84,84,12,12,0,0,1-24,0A108.12,108.12,0,0,1,128,92h67L167.51,64.48a12,12,0,0,1,17-17l48,48A12,12,0,0,1,232.49,112.49Z"
@@ -89,7 +87,7 @@
     target="_blank"
     rel="noopener noreferrer"
     href="https://mynaui.com"
-    class="flex justify-center items-center bg-orange-50 dark:bg-orange-900/20 border-orange-100 dark:border-orange-900/20 border h-60 w-full rounded text-orange-900 dark:text-orange-100"
+    class="flex justify-center items-center bg-orange-50 border-orange-100 border h-60 w-full rounded text-orange-900"
   >
     <svg
       class="h-8"
@@ -109,7 +107,7 @@
     target="_blank"
     rel="noopener noreferrer"
     href="https://copybook.me"
-    class="flex justify-center items-center bg-violet-50 dark:bg-violet-900/20 border-violet-100 dark:border-violet-900/20 border h-60 w-full rounded text-violet-900 dark:text-violet-100"
+    class="flex justify-center items-center bg-violet-50 border-violet-100 border h-60 w-full rounded text-violet-900"
   >
     <svg
       class="h-8"
@@ -132,7 +130,7 @@
 
 {{ range where .Site.RegularPages "Type" "blog" }}
 <a
-  class="flex text-rose-900 dark:text-rose-400 hover:text-black dark:hover:text-slate-200 my-4 font-medium text-lg"
+  class="flex text-rose-900 hover:text-black my-4 font-medium text-lg"
   href="{{ .Permalink }}"
   >{{ .Title }}</a
 >
