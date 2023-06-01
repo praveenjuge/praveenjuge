@@ -2,8 +2,13 @@
   publish = "public"
   command = "npm i && hugo --gc --minify -d public"
 
-[context.production.environment]
+[build.environment]
   HUGO_VERSION = "0.112.6"
+  NODE_VERSION = "18.4.0"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+  NODE_ENV = "production"
 
 [[headers]]
   for = "/*.jpg"
