@@ -4,7 +4,8 @@
   Designs
 </h1>
 
-{{ range where .Site.RegularPages "Type" "design" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "design") }} {{
+range $paginator.Pages }}
 <a
   target="_blank"
   rel="noopener noreferrer"
@@ -19,4 +20,20 @@
   />
 </a>
 
-{{ end }} {{end}}
+{{end}}
+
+<!-- pagination -->
+{{ if ne .Type "page" }}
+<section
+  class="my-8 border-y border-slate-300 text-xl font-bold text-center flex justify-center items-center divide-x divide-slate-300"
+>
+  {{ if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.Prev.URL }}" class="py-8 w-full">← Previous</a>
+  {{ end }} {{ if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}" class="py-8 w-full">Next →</a>
+  {{ end }}
+</section>
+{{ end }}
+<!-- pagination -->
+
+{{end}}
