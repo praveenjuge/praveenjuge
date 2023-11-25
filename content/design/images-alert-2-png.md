@@ -1,4 +1,4 @@
 ---
-date: 2023-06-01T10:31:21.806Z
-image: /images/alert-2.png
+publishedAt: 2023-06-01T10:31:21.806Z
+coverImage: /images/alert-2.png
 ---
