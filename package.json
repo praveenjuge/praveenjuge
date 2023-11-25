@@ -2,15 +2,12 @@
   "name": "praveenjuge",
   "version": "0.0.1",
   "description": "My name is Praveen Juge and you're watching Disney channel.",
-  "homepage": "https://github.com/praveenjuge/praveenjuge#readme",
-  "license": "MIT",
-  "author": "praveenjuge",
-  "main": "index.js",
   "keywords": [
     "praveen",
     "juge",
     "praveenjuge"
   ],
+  "homepage": "https://github.com/praveenjuge/praveenjuge#readme",
   "bugs": {
     "url": "https://github.com/praveenjuge/praveenjuge/issues"
   },
@@ -18,11 +15,77 @@
     "type": "git",
     "url": "git+https://github.com/praveenjuge/praveenjuge.git"
   },
+  "license": "MIT",
+  "author": "praveenjuge",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ],
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "next",
+      "next/core-web-vitals",
+      "plugin:tailwindcss/recommended",
+      "prettier"
+    ],
+    "root": true
+  },
   "dependencies": {
+    "@mynaui/icons-react": "^0.0.39",
+    "geist": "^1.1.0",
+    "next": "14.0.3",
+    "outstatic": "^1.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.16",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@types/rss": "^0.0.32",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "highlight.js": "^11.9.0",
+    "marked": "^10.0.0",
+    "marked-highlight": "^2.0.7",
     "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.3.5"
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "rss": "^1.2.2",
+    "schema-dts": "^1.1.2",
+    "tailwindcss": "insiders",
+    "typescript": "^5.3.2"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {}
+    }
   }
 }
