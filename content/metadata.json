@@ -1,6 +1,6 @@
 {
-  "commit": "baf54279177e34beeba50b600d6daf05be9704da",
-  "generated": "2023-11-26T05:30:06.880Z",
+  "commit": "87d86697ed0d4dba3d9bc6adfd95d119b925ef74",
+  "generated": "2023-11-26T05:30:49.379Z",
   "metadata": [
     {
       "__outstatic": {
@@ -851,6 +851,24 @@
       "slug": "16-11-2024-landing",
       "status": "published",
       "title": "16-11-2024-landing"
+    },
+    {
+      "__outstatic": {
+        "commit": "87d86697ed0d4dba3d9bc6adfd95d119b925ef74",
+        "hash": "1177909468",
+        "path": "content/design/26-11-2023.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/26-11-2023-E5NT.png",
+      "description": "",
+      "publishedAt": "2023-11-26T06:03:18.822Z",
+      "slug": "26-11-2023",
+      "status": "published",
+      "title": "26-11-2023"
     }
   ]
 }
