@@ -1,0 +1,838 @@
+{
+  "commit": "0d189f78e722aeca58e04d2f9c83dbfaf2604f70",
+  "generated": "Sun, 26 Nov 2023 05:17:14 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "340170242bba7536d4e6b8ff1d3c8143f4cf8ee0",
+        "hash": "1799185770",
+        "path": "content/blog/books-i-love-the-war-of-art.md"
+      },
+      "collection": "blog",
+      "description": "The War of Art is one of my favorite non-fiction book, it helped me recognize why I put off doing my work and how to fix it easily. I recommend this book to anyone doing creative work where you often second guess yourself and don't ship things.",
+      "publishedAt": "2020-06-09T06:57:23.000Z",
+      "slug": "books-i-love-the-war-of-art",
+      "title": "Books I Love - The War of Art by Steven Pressfield"
+    },
+    {
+      "__outstatic": {
+        "commit": "aa645190533974ef9609e537dc584c1ab6ab0ea4",
+        "hash": "3348372816",
+        "path": "content/blog/add-all-tailwind-2-color-palette-in-your-config.md"
+      },
+      "collection": "blog",
+      "description": "Tailwind 2 has eight default color palette that you can use in your project, but internally it ships with 22 colour palettes. Here is how you can import them all. This increases your css size by a lot so make sure you purge during production build.",
+      "publishedAt": "2021-02-04T15:40:42.877Z",
+      "slug": "add-all-tailwind-2-color-palette-in-your-config",
+      "title": "Add all Tailwind 2 Color Palettes to your config"
+    },
+    {
+      "__outstatic": {
+        "commit": "e9583f9690f4dbd75134c22ace29618d52333c9e",
+        "hash": "3090558300",
+        "path": "content/blog/audacity-macro-speed-up-bulk-audiobooks.md"
+      },
+      "collection": "blog",
+      "description": "I came by an iPod Shuffle recently, it worked great but I used to listen to my audiobooks at 2x speed which the shuffle does not have. But audacity is there to help.",
+      "publishedAt": "2019-11-18T09:21:22.079Z",
+      "slug": "audacity-macro-speed-up-bulk-audiobooks",
+      "title": "Speed up Audiobooks using Audacity Macros"
+    },
+    {
+      "__outstatic": {
+        "commit": "9c82b617457f2d6b85cf99af413d3afee37cee9a",
+        "hash": "1819022162",
+        "path": "content/blog/creating-a-number-badge-ui-component.md"
+      },
+      "collection": "blog",
+      "coverImage": "images/number-badge-og.png",
+      "description": "We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems.",
+      "publishedAt": "2021-12-18T12:37:47.000Z",
+      "slug": "creating-a-number-badge-ui-component",
+      "title": "Creating a Number Badge UI Component"
+    },
+    {
+      "__outstatic": {
+        "commit": "f023e48309ea17635faaf0ca1a13330d1591c5ea",
+        "hash": "2025010540",
+        "path": "content/blog/i-hate-figmas-empty-canvas.md"
+      },
+      "collection": "blog",
+      "description": "Figma's empty canvas is where dreams go to die for me. That white screen had stopped me from starting my work more than anything else.",
+      "publishedAt": "2020-06-17T02:03:24.000Z",
+      "slug": "i-hate-figmas-empty-canvas",
+      "title": "I Hate Figma's Empty Canvas"
+    },
+    {
+      "__outstatic": {
+        "commit": "ca21ca5b15ac76fd896f2259abad11912e67836d",
+        "hash": "1370365257",
+        "path": "content/blog/how-i-take-notes-using-vs-code-and-github.md"
+      },
+      "collection": "blog",
+      "description": "I have used dozens of note-taking apps, read lots and lots of hacker news threads on how different people organize their notes and finally settled on VS Code as the editor and GitHub Repo as the storage.",
+      "publishedAt": "2020-05-26T16:07:25.000Z",
+      "slug": "how-i-take-notes-using-vs-code-and-github",
+      "title": "How I take Notes using VS Code and GitHub"
+    },
+    {
+      "__outstatic": {
+        "commit": "cb49e2da56986f94b9e29d298029d7a00fc76800",
+        "hash": "200531500",
+        "path": "content/blog/how-i-overcame-youtube-addiction.md"
+      },
+      "collection": "blog",
+      "description": "I don't use social media often, that's by design. I know if I start using it regularly, I will become addicted to it. So, imagine my surprise when on one Sunday afternoon I found out that I spent the entire day doing nothing but watching videos on YouTube.",
+      "publishedAt": "2020-06-21T05:07:47.000Z",
+      "slug": "how-i-overcame-youtube-addiction",
+      "title": "How I Overcame YouTube Addiction"
+    },
+    {
+      "__outstatic": {
+        "commit": "9c4f6dd6b4b720f766a8185b8187640599f1c3dd",
+        "hash": "2304992317",
+        "path": "content/blog/figma-speedruns-watch-me-design-at-lightning-speed.md"
+      },
+      "collection": "blog",
+      "coverImage": "/images/figma-speedruns-2x.jpg",
+      "description": "Dive into Figma speedrun videos and see awesome designs pop up super fast! Come along as I show off my love for design and Figma, and hit me up with what you wanna see on the channel.",
+      "publishedAt": "2023-03-31T19:26:29.237Z",
+      "slug": "figma-speedruns-watch-me-design-at-lightning-speed",
+      "title": "Figma Speedruns: Watch Me Design at Lightning Speed!"
+    },
+    {
+      "__outstatic": {
+        "commit": "0bed4dc997bfb4d7ee627dab36b983fca02c95d7",
+        "hash": "889691359",
+        "path": "content/blog/digital-minimalism.md"
+      },
+      "collection": "blog",
+      "description": "It's been a year since I read Cal Newport's Digital Minimalism where he talks about taking back control of your time and not feeling like you need your phone attached to you all the time. Here are some steps I took to implement Digital Minimalism in my life.",
+      "publishedAt": "2020-07-08T02:22:50.000Z",
+      "slug": "digital-minimalism",
+      "title": "Down to 8 Apps on My Phone"
+    },
+    {
+      "__outstatic": {
+        "commit": "a144f449037a1cb855826179f4a7cc771e69480e",
+        "hash": "3704779616",
+        "path": "content/blog/rise-early.md"
+      },
+      "collection": "blog",
+      "description": "I used to struggle to wake up early, I’ll snooze, talk myself to sleep and just sleep through the alarm sometimes. But that was 5 years ago. Now I wake up at 5:30 am daily, most of the time even before the alarm.",
+      "publishedAt": "2020-07-23T10:06:54.000Z",
+      "slug": "rise-early",
+      "title": " Tips to Wake up Early Everyday"
+    },
+    {
+      "__outstatic": {
+        "commit": "25bb4e6bea984cbc6db9143fa66d77b7fa0cada7",
+        "hash": "2360080034",
+        "path": "content/blog/use-tailwind-jit-with-hugo.md"
+      },
+      "collection": "blog",
+      "description": "Tailwind released a new CLI which made JIT watch mode possible. We can use it to integrate JIT into a Hugo site. Let's see how to do that.",
+      "publishedAt": "2021-06-06T03:57:04.000Z",
+      "slug": "use-tailwind-jit-with-hugo",
+      "title": "Use Tailwind JIT with Hugo"
+    },
+    {
+      "__outstatic": {
+        "commit": "d558b8a0586cee681f80974c2d76a8e75d441b32",
+        "hash": "3561422362",
+        "path": "content/blog/my-2020-goals.md"
+      },
+      "collection": "blog",
+      "description": "Another year, another set of goals to keep this year interesting. Last year I failed almost 70% of my goals so let's set a new record this year.",
+      "publishedAt": "2020-01-07T04:01:53.420Z",
+      "slug": "my-2020-goals",
+      "title": "My 2020 Goals"
+    },
+    {
+      "__outstatic": {
+        "commit": "184ea91f8d85338e8f18b101f57759b6aeb232df",
+        "hash": "2368061264",
+        "path": "content/blog/install-tailwind-on-hugo.md"
+      },
+      "collection": "blog",
+      "description": "Hugo has come a long way. It has postcss support built-in, so we can use all the goodness that comes from it. In this article, let's see how to install TailwindCSS on Hugo.",
+      "publishedAt": "2021-01-19T08:40:34.000Z",
+      "slug": "install-tailwind-on-hugo",
+      "title": "Install Tailwind on Hugo [2021]"
+    },
+    {
+      "__outstatic": {
+        "commit": "a9a57303a0e1bfa23aa71bf584274fd132d361b7",
+        "hash": "2472242631",
+        "path": "content/blog/if-i-had-known-ai-would-write-commit-messages-i-would-have-stayed-as-a-developer.md"
+      },
+      "collection": "blog",
+      "coverImage": "/images/ai-commit.jpg",
+      "description": "Recently, I stumbled upon OpenCommit, a package that generates commit messages based on the files changed with GPT. Now, my skin is clearer, I walk with a brisk step, and I appreciate nature more. If this is what AI does for us, I'll welcome it with open hands.",
+      "publishedAt": "2023-03-22T19:04:12.370Z",
+      "slug": "if-i-had-known-ai-would-write-commit-messages-i-would-have-stayed-as-a-developer",
+      "title": "If I had known AI would write commit messages, I would have stayed as a developer."
+    },
+    {
+      "__outstatic": {
+        "commit": "ad49bc7eb50a805440a24d62372e11d39f5c1a66",
+        "hash": "2932073559",
+        "path": "content/design/1.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/1.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "1"
+    },
+    {
+      "__outstatic": {
+        "commit": "d129b2c09ab25fc0f3f4d5edaca66845fbc0d971",
+        "hash": "1779171627",
+        "path": "content/blog/you-can-read-this-page-on-july-2030.md"
+      },
+      "collection": "blog",
+      "description": "Bookmark this page and come back after 10 years. You will see the same page with the same content. But what about after 50 years? After 100? Will the browser you bookmarked this page work after 100 years?",
+      "publishedAt": "2020-07-01T02:22:50.000Z",
+      "slug": "you-can-read-this-page-on-july-2030",
+      "title": "You can read this page on July 2030"
+    },
+    {
+      "__outstatic": {
+        "commit": "eaa4b5ba0bec7408998ecc0b4e7157d3843ef5e9",
+        "hash": "2488226977",
+        "path": "content/design/1-11-2024.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/1-11-2024.png",
+      "publishedAt": "2023-11-01T12:52:55.000Z",
+      "slug": "1-11-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "8a92a4d454f95e7a3971414fc50eefda93966723",
+        "hash": "455999139",
+        "path": "content/design/2-11-2024.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/2-11-2024.png",
+      "publishedAt": "2023-11-02T07:01:27.000Z",
+      "slug": "2-11-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "99091a9982426453313273d6fa0586d7a50b4090",
+        "hash": "2168673778",
+        "path": "content/design/2.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/2.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "2"
+    },
+    {
+      "__outstatic": {
+        "commit": "b1c765328e80aea2493d5a9537485d32358183ca",
+        "hash": "3163185445",
+        "path": "content/design/31-oct-2.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/notifications.png",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "31-oct-2"
+    },
+    {
+      "__outstatic": {
+        "commit": "06315bb3e411de1e9d18f3b3f34729dab2f17d88",
+        "hash": "3026779579",
+        "path": "content/design/31-oct-3.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/pricing.png",
+      "publishedAt": "2023-10-31T11:09:48.000Z",
+      "slug": "31-oct-3"
+    },
+    {
+      "__outstatic": {
+        "commit": "83e3cbde582c5c0866a3b99df45be916ab494416",
+        "hash": "2086552240",
+        "path": "content/design/3.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/3.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "3"
+    },
+    {
+      "__outstatic": {
+        "commit": "78199f00498eaa5f22f4fbaf0cb224fb5c16ecd0",
+        "hash": "2853200906",
+        "path": "content/design/31-oct-1.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/myna-icons-1.png",
+      "publishedAt": "2023-10-31T11:07:07.000Z",
+      "slug": "31-oct-1"
+    },
+    {
+      "__outstatic": {
+        "commit": "020fce11e3dcfcbf457d41c6741e988cacf5a78d",
+        "hash": "2756535948",
+        "path": "content/design/3-11-2023.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/3-11-2023.png",
+      "publishedAt": "2023-11-03T06:07:39.000Z",
+      "slug": "3-11-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "3e3a6d9d2d1f244c393e9071dd4d9b86d7452b7a",
+        "hash": "2982918587",
+        "path": "content/design/31-oct-4.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/myna-icons-landing.png",
+      "publishedAt": "2023-10-31T11:10:44.000Z",
+      "slug": "31-oct-4"
+    },
+    {
+      "__outstatic": {
+        "commit": "b2b55998802c6fd8e0e8271528e61611d8f4f0ff",
+        "hash": "1155601819",
+        "path": "content/design/31-oct.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/cookies.png",
+      "publishedAt": "2023-10-31T11:05:09.000Z",
+      "slug": "31-oct"
+    },
+    {
+      "__outstatic": {
+        "commit": "138799dc5cb59307520cbd3e344e5fc430fc0c94",
+        "hash": "2195323042",
+        "path": "content/design/4.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/4.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "4"
+    },
+    {
+      "__outstatic": {
+        "commit": "b2b5f338eeb71a35e582bd9fc22fb5165faf570d",
+        "hash": "74055428",
+        "path": "content/design/4-11-2023.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/4-11-2023.png",
+      "publishedAt": "2023-11-04T06:07:39.000Z",
+      "slug": "4-11-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "b79da72d4f04346a5845a5dd0c65681e8eb3c000",
+        "hash": "3347167211",
+        "path": "content/design/31-oct-5.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/myna-icons-12.png",
+      "publishedAt": "2023-10-31T11:12:01.000Z",
+      "slug": "31-oct-5"
+    },
+    {
+      "__outstatic": {
+        "commit": "ed60f5a191b6fbdfc5ba6113cb8f53a95f0ef7eb",
+        "hash": "2598771307",
+        "path": "content/design/5-11-2023.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/5-11-2023.jpg",
+      "publishedAt": "2023-11-05T06:07:39.000Z",
+      "slug": "5-11-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "74c332da761832a87ba6238baa955e11d5619935",
+        "hash": "2495424536",
+        "path": "content/design/5.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/5.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "5"
+    },
+    {
+      "__outstatic": {
+        "commit": "8812c71d0e173b08b21221792f0bbdb700a1e218",
+        "hash": "885767489",
+        "path": "content/design/6.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/6.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "6"
+    },
+    {
+      "__outstatic": {
+        "commit": "be67a17ddda539f17f07d69457a3f7d78927b678",
+        "hash": "3859855197",
+        "path": "content/design/8.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/8.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "8"
+    },
+    {
+      "__outstatic": {
+        "commit": "9aee8bc62582d222a0abcbd5d2a5b435ef7688b2",
+        "hash": "3767993946",
+        "path": "content/design/7.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/7.jpg",
+      "publishedAt": "2023-10-31T11:07:40.000Z",
+      "slug": "7"
+    },
+    {
+      "__outstatic": {
+        "commit": "f052e60cbd2ec6ee7e99dfe53399bf8b0eaf13a6",
+        "hash": "4098050704",
+        "path": "content/design/images-2-2x-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/2-2x.jpg",
+      "publishedAt": "2023-02-13T20:17:05.779Z",
+      "slug": "images-2-2x-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "eab6739ef51adb318a3e68311b3b710866305fb6",
+        "hash": "177585659",
+        "path": "content/design/images-1622481234566983681_2-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/1622481234566983681_2.jpg",
+      "publishedAt": "2023-02-06T09:24:13.681Z",
+      "slug": "images-1622481234566983681_2-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "7365b12036da909bc2ecdf12dff0556420590402",
+        "hash": "3163032259",
+        "path": "content/design/images-1622481234566983681_1-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/1622481234566983681_1.jpg",
+      "publishedAt": "2023-02-06T09:23:38.700Z",
+      "slug": "images-1622481234566983681_1-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "ee40d1101b84fe48805be50d62d5473247c246a5",
+        "hash": "1613440714",
+        "path": "content/design/images-1622481234566983681_3-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/1622481234566983681_3.jpg",
+      "publishedAt": "2023-02-06T09:25:32.858Z",
+      "slug": "images-1622481234566983681_3-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "a7b9372be412a2cc535875b3a883f6195d61f3c5",
+        "hash": "1575625036",
+        "path": "content/design/images-11-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/11.png",
+      "publishedAt": "2023-02-09T09:05:55.068Z",
+      "slug": "images-11-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "bd6a62963851fb5527fdc58c0e1b1c273f1db51b",
+        "hash": "572996612",
+        "path": "content/design/images-alert-3-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/alert-3.png",
+      "publishedAt": "2023-06-01T10:31:53.302Z",
+      "slug": "images-alert-3-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "228e45490c5569b4f4a6ed9c5519f8c0c2b2abdf",
+        "hash": "1168982028",
+        "path": "content/design/images-blog-3-closeup-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/blog-3-closeup.png",
+      "publishedAt": "2023-03-29T21:16:43.332Z",
+      "slug": "images-blog-3-closeup-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "8c7e9171df1380eb8b2f4822b1229d472bf33860",
+        "hash": "1346803370",
+        "path": "content/design/images-alert-2-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/alert-2.png",
+      "publishedAt": "2023-06-01T10:31:21.806Z",
+      "slug": "images-alert-2-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "0d7d9b28a44a49885c7bcc3f1ecbd3784fea288c",
+        "hash": "1993218276",
+        "path": "content/design/images-alert-1-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/alert-1.png",
+      "publishedAt": "2023-06-01T10:30:36.968Z",
+      "slug": "images-alert-1-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "9e6cbb0250c088ddd372dabf8867ce827c8575f8",
+        "hash": "4221382370",
+        "path": "content/design/images-beach-bytes-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/beach-bytes.jpg",
+      "publishedAt": "2023-06-17T16:12:25.733Z",
+      "slug": "images-beach-bytes-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "11d5d11234f5006b734a26422692370c4d2c5104",
+        "hash": "1275481602",
+        "path": "content/design/images-blog-dribbble-2-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/blog-dribbble-2.png",
+      "publishedAt": "2023-03-20T10:22:34.365Z",
+      "slug": "images-blog-dribbble-2-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "be6a654190f7538435c672c323cf30cb069c5c89",
+        "hash": "2552677118",
+        "path": "content/design/images-blog-dribbble-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/blog-dribbble.png",
+      "publishedAt": "2023-03-19T06:25:32.882Z",
+      "slug": "images-blog-dribbble-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "b57ad68fae3ecaed86a98f53763805a49c8badf7",
+        "hash": "1293852211",
+        "path": "content/design/images-blog-3-dribbble-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/blog-3-dribbble.png",
+      "publishedAt": "2023-03-29T21:15:52.710Z",
+      "slug": "images-blog-3-dribbble-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "16e38394ae07e9554753758422a055745ced4cbe",
+        "hash": "1904400659",
+        "path": "content/design/images-blog-closeup-2-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/blog-closeup-2.png",
+      "publishedAt": "2023-03-20T10:22:50.573Z",
+      "slug": "images-blog-closeup-2-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "c01092fef11f68d114e4a91d6c503ae7064ab6f1",
+        "hash": "2321206376",
+        "path": "content/design/images-blog-closeup-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/blog-closeup.png",
+      "publishedAt": "2023-03-19T06:26:09.010Z",
+      "slug": "images-blog-closeup-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "eea0c550d4ce7e2960d9163ce8cea5dbb465ded8",
+        "hash": "4187967748",
+        "path": "content/design/images-illustration-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/illustration.png",
+      "publishedAt": "2023-02-09T10:36:04.796Z",
+      "slug": "images-illustration-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "fb074823cf435de86ef4849b5848a0197f6fa27f",
+        "hash": "2154117504",
+        "path": "content/design/images-dark-icons-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/dark-icons.png",
+      "publishedAt": "2023-03-09T18:23:34.667Z",
+      "slug": "images-dark-icons-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "ba706c6c6ddc8d606bacf62bf3242909098faf11",
+        "hash": "2822364701",
+        "path": "content/design/images-changelog-dribbble-1-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/changelog-dribbble-1.png",
+      "publishedAt": "2023-03-22T14:40:56.322Z",
+      "slug": "images-changelog-dribbble-1-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "0243efeea6a5d896343a8aecff25333f264eee04",
+        "hash": "2432510253",
+        "path": "content/design/images-center-two-cards-2x-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/center-two-cards-2x.jpg",
+      "publishedAt": "2023-02-17T20:54:59.462Z",
+      "slug": "images-center-two-cards-2x-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "b10472ea6acf948d572427adcb33846478db2e1b",
+        "hash": "4174039874",
+        "path": "content/design/images-changelog-closeup-1-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/changelog-closeup-1.png",
+      "publishedAt": "2023-03-22T14:41:22.888Z",
+      "slug": "images-changelog-closeup-1-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "d42eb5e966fe5e3ea5a07af2d6953b4c2ef8d46e",
+        "hash": "3760354924",
+        "path": "content/design/images-lightning-analytics-2-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/lightning-analytics-2.jpg",
+      "publishedAt": "2023-02-25T16:45:30.484Z",
+      "slug": "images-lightning-analytics-2-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc595ad7b55a0d6cbaa46ebdbff1a8f9f58c96c7",
+        "hash": "2761843537",
+        "path": "content/design/images-lightning-analytics-3-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/lightning-analytics-3.jpg",
+      "publishedAt": "2023-02-25T16:45:10.247Z",
+      "slug": "images-lightning-analytics-3-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "c604e57e4768133a2bf893be944ec2c01f67b2f6",
+        "hash": "2723330880",
+        "path": "content/design/images-landing-1-dribbble-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/landing-1-dribbble.png",
+      "publishedAt": "2023-03-27T18:32:30.197Z",
+      "slug": "images-landing-1-dribbble-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "a009725f8d9672196e5956e4d0b3c9f3099d0316",
+        "hash": "3001500027",
+        "path": "content/design/images-landing-1-closeup-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/landing-1-closeup.png",
+      "publishedAt": "2023-03-27T18:31:44.903Z",
+      "slug": "images-landing-1-closeup-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "d18f6da71088edcb545583e1c0b730d1db505f9e",
+        "hash": "1158058147",
+        "path": "content/design/images-lightning-analytics-1-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/lightning-analytics-1.jpg",
+      "publishedAt": "2023-02-25T16:45:53.002Z",
+      "slug": "images-lightning-analytics-1-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "109e1c4b1883b47890eab25472aa7ede8e8f17f0",
+        "hash": "1031800062",
+        "path": "content/design/images-myna-feeds-2-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/myna-feeds-2.jpg",
+      "publishedAt": "2023-02-27T19:35:26.583Z",
+      "slug": "images-myna-feeds-2-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "4104d96a1b9714b188e96c8dc02d5019a061938a",
+        "hash": "2311128781",
+        "path": "content/design/images-personal-website-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/personal-website.png",
+      "publishedAt": "2023-06-08T12:27:16.962Z",
+      "slug": "images-personal-website-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "bf76140bd89b36aa585b20cf6063cd88d0eb2f51",
+        "hash": "2744376323",
+        "path": "content/design/images-logo2x-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/logo2x.png",
+      "publishedAt": "2023-03-15T18:54:33.209Z",
+      "slug": "images-logo2x-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "1e8754e4de1041d969a2ceb121c96d65117520c0",
+        "hash": "358320298",
+        "path": "content/design/images-myna-feeds-1-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/myna-feeds-1.jpg",
+      "publishedAt": "2023-02-27T19:35:07.796Z",
+      "slug": "images-myna-feeds-1-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "b2de37a233271c97827a14428c02b9dc8bca3b76",
+        "hash": "1826276315",
+        "path": "content/design/images-main-cards-2x-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/main-cards-2x.jpg",
+      "publishedAt": "2023-02-19T12:54:36.956Z",
+      "slug": "images-main-cards-2x-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "735190951ba71bea2d0256998eaf90e570d5de6a",
+        "hash": "4191798692",
+        "path": "content/design/images-profile-dropdown-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/profile-dropdown.png",
+      "publishedAt": "2023-05-31T13:35:35.706Z",
+      "slug": "images-profile-dropdown-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "a2eb116fb41ab5739c841aeb857a51b18eabbdb2",
+        "hash": "3314555065",
+        "path": "content/design/images-reports-closeup-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/reports-closeup.png",
+      "publishedAt": "2023-03-25T18:35:06.074Z",
+      "slug": "images-reports-closeup-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "a6635c9a0c12a2b9d5129b78db77269828151a07",
+        "hash": "2884560755",
+        "path": "content/design/images-reports-dribbble-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/reports-dribbble.png",
+      "publishedAt": "2023-03-25T18:34:40.419Z",
+      "slug": "images-reports-dribbble-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "01dbcd151f27b6b747e6d1b23439d4b1a203fcb3",
+        "hash": "3598276128",
+        "path": "content/design/images-resume-1-2x-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/resume-1-2x.jpg",
+      "publishedAt": "2023-02-23T18:54:48.687Z",
+      "slug": "images-resume-1-2x-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "3dd978f987c1c9294b999e8c00ef46287b85067f",
+        "hash": "2013120941",
+        "path": "content/design/images-resume-2-2x-jpg.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/resume-2-2x.jpg",
+      "publishedAt": "2023-02-23T18:55:19.090Z",
+      "slug": "images-resume-2-2x-jpg"
+    },
+    {
+      "__outstatic": {
+        "commit": "ec498052ea8a632391d5aa322299e25c7b8715fc",
+        "hash": "779425646",
+        "path": "content/design/images-testimonial-dribbble-2-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/testimonial-dribbble-2.png",
+      "publishedAt": "2023-03-23T20:24:02.579Z",
+      "slug": "images-testimonial-dribbble-2-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "dbd64652fed1ad20b76520c9bd8d553cddebdd85",
+        "hash": "543842130",
+        "path": "content/design/images-testimonial-closeup-1-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/testimonial-closeup-1.png",
+      "publishedAt": "2023-03-21T14:35:36.385Z",
+      "slug": "images-testimonial-closeup-1-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "8fd250d1915f756f03728fe5f5bb0963867a2d34",
+        "hash": "3400836651",
+        "path": "content/design/images-sidebar-3x-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/sidebar-3x.png",
+      "publishedAt": "2023-02-09T13:24:36.924Z",
+      "slug": "images-sidebar-3x-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "2ee3fdb379acffa73fb686f2b90399c525754ebe",
+        "hash": "1247649634",
+        "path": "content/design/images-testimonial-closeup-3-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/testimonial-closeup-3.png",
+      "publishedAt": "2023-03-24T20:02:46.364Z",
+      "slug": "images-testimonial-closeup-3-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "9f32178ff3ca09847cb5ec2a7ce1adb1f0c30b3b",
+        "hash": "3892871506",
+        "path": "content/design/images-share-modal-png.md"
+      },
+      "collection": "design",
+      "coverImage": "/images/share-modal.png",
+      "publishedAt": "2023-05-29T12:55:20.381Z",
+      "slug": "images-share-modal-png"
+    }
+  ]
+}
