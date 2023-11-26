@@ -4,7 +4,6 @@ import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 import 'tailwindcss/tailwind.css';
 
-export const dynamic = 'force-static';
 export const viewport: Viewport = { themeColor: '#F8DBDF' };
 
 export const metadata: Metadata = {
