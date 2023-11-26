@@ -1,6 +1,6 @@
 {
-  "commit": "0d189f78e722aeca58e04d2f9c83dbfaf2604f70",
-  "generated": "Sun, 26 Nov 2023 05:17:14 GMT",
+  "commit": "baf54279177e34beeba50b600d6daf05be9704da",
+  "generated": "2023-11-26T05:30:06.880Z",
   "metadata": [
     {
       "__outstatic": {
@@ -833,6 +833,24 @@
       "coverImage": "/images/share-modal.png",
       "publishedAt": "2023-05-29T12:55:20.381Z",
       "slug": "images-share-modal-png"
+    },
+    {
+      "__outstatic": {
+        "commit": "baf54279177e34beeba50b600d6daf05be9704da",
+        "hash": "2603424061",
+        "path": "content/design/16-11-2024-landing.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/16-11-2024-landing-Y3OT.jpg",
+      "description": "",
+      "publishedAt": "2023-11-26T05:57:19.042Z",
+      "slug": "16-11-2024-landing",
+      "status": "published",
+      "title": "16-11-2024-landing"
     }
   ]
 }
