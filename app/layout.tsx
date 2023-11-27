@@ -34,6 +34,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: './'
   },
+  verification: {
+    other: {
+      me: [
+        'https://mastodon.social/@praveenjuge',
+        'https://twitter.com/praveenjuge'
+      ]
+    }
+  },
   openGraph: {
     siteName: 'Personal Website | Praveen Juge',
     url: './',
