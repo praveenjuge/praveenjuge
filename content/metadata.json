@@ -1,6 +1,6 @@
 {
-  "commit": "248da9cc184a029774416bc6ade7a465a9dfea96",
-  "generated": "2023-11-27T07:29:18.177Z",
+  "commit": "7335f0c4a21a4e0058c04cce53761562cfe1b0af",
+  "generated": "2023-11-27T07:47:40.612Z",
   "metadata": [
     {
       "__outstatic": {
@@ -887,6 +887,24 @@
       "slug": "27-11-2023",
       "status": "published",
       "title": "27-11-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "7335f0c4a21a4e0058c04cce53761562cfe1b0af",
+        "hash": "2797728093",
+        "path": "content/blog/default-apps-2023.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "Some of the default apps I use based on the list by this podcast https://defaults.rknight.me",
+      "publishedAt": "2023-11-27T08:05:42.526Z",
+      "slug": "default-apps-2023",
+      "status": "published",
+      "title": "Default Apps 2023 "
     }
   ]
 }
