@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 export const size = { width: 2400, height: 1260 };
 export const contentType = 'image/png';
 
-export default function Image({ params }: { params: { slug: string } }) {
+export default async function Image({ params }: { params: { slug: string } }) {
   const titleCase = params.slug
     .split('-')
     .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
@@ -2114,7 +2114,17 @@ export default function Image({ params }: { params: { slug: string } }) {
       </div>
     ),
     {
-      ...size
+      ...size,
+      fonts: [
+        {
+          name: 'Inter',
+          data: await fetch(
+            new URL('../../../public/Inter-Bold.ttf', import.meta.url)
+          ).then((res) => res.arrayBuffer()),
+          style: 'normal',
+          weight: 700
+        }
+      ]
     }
   );
 }
