@@ -1,6 +1,6 @@
 {
-  "commit": "7335f0c4a21a4e0058c04cce53761562cfe1b0af",
-  "generated": "2023-11-27T07:47:40.612Z",
+  "commit": "cce82847e5d4b0dc9a6a2e36eb6af350ba66b374",
+  "generated": "2023-11-28T18:28:46.119Z",
   "metadata": [
     {
       "__outstatic": {
@@ -905,6 +905,24 @@
       "slug": "default-apps-2023",
       "status": "published",
       "title": "Default Apps 2023 "
+    },
+    {
+      "__outstatic": {
+        "commit": "cce82847e5d4b0dc9a6a2e36eb6af350ba66b374",
+        "hash": "1534330716",
+        "path": "content/design/28-11-2023.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/28-11-2023-k1Mz.png",
+      "description": "",
+      "publishedAt": "2023-11-28T19:01:33.821Z",
+      "slug": "28-11-2023",
+      "status": "published",
+      "title": "28-11-2023"
     }
   ]
 }
