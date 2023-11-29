@@ -38,7 +38,12 @@ export const metadata: Metadata = {
     other: {
       me: [
         'https://mastodon.social/@praveenjuge',
-        'https://twitter.com/praveenjuge'
+        'https://twitter.com/praveenjuge',
+        'https://github.com/praveenjuge',
+        'https://instagram.com/praveenjuge',
+        'https://dribbble.com/praveenjuge',
+        'hello@praveenjuge.com',
+        'https://praveenjuge.com'
       ]
     }
   },
@@ -74,6 +79,7 @@ export default function RootLayout({
           <Link href="/" title="Go to Home Page">
             <svg
               className="h-9"
+              height={36}
               fill="currentColor"
               viewBox="0 0 277 59"
               xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +98,7 @@ export default function RootLayout({
               title="Github"
               href="https://github.com/praveenjuge"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer me"
             >
               <BrandGithub className="h-5 w-5" stroke={1.75} />
             </Link>
@@ -100,7 +106,7 @@ export default function RootLayout({
               title="Twitter"
               href="https://twitter.com/praveenjuge"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer me"
             >
               <BrandTwitter className="h-5 w-5" stroke={1.75} />
             </Link>
@@ -108,10 +114,17 @@ export default function RootLayout({
               title="Dribbble"
               href="https://dribbble.com/praveenjuge"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer me"
             >
               <BrandDribbble className="h-5 w-5" stroke={1.75} />
             </Link>
+            <a
+              rel="me"
+              href="https://mastodon.social/@praveenjuge"
+              style={{ display: 'none' }}
+            >
+              Mastodon
+            </a>
           </nav>
         </header>
         <main className="mx-auto max-w-3xl p-4">{children}</main>
