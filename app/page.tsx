@@ -94,6 +94,7 @@ export default async function Page() {
             alt="MynaUI Icons"
             width={800}
             height={500}
+            priority={true}
           />
         </div>
       </a>
