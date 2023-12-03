@@ -1,6 +1,6 @@
 {
-  "commit": "c7847a753f1c9c27aa4cd4fa05cdb1e471ab9efb",
-  "generated": "2023-12-03T15:24:48.001Z",
+  "commit": "47c77be8775e71de0d7d884225345fc6dc7a66e7",
+  "generated": "2023-12-03T17:33:29.119Z",
   "metadata": [
     {
       "__outstatic": {
@@ -959,6 +959,24 @@
       "slug": "3-12-2023",
       "status": "published",
       "title": "3-12-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "47c77be8775e71de0d7d884225345fc6dc7a66e7",
+        "hash": "2867600332",
+        "path": "content/blog/a-late-review-of-folklore.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "Yesterday, I watched Taylor Swift's Eras Tour Movie (for the third time), reaffirming that 'Folklore' is my favorite album. Here, I share why this album resonates so deeply with me.",
+      "publishedAt": "2023-12-03T16:58:50.702Z",
+      "slug": "a-late-review-of-folklore",
+      "status": "published",
+      "title": "A Late Review of Folklore"
     }
   ]
 }
