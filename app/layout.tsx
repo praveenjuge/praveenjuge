@@ -2,6 +2,7 @@ import { BrandDribbble, BrandGithub, BrandTwitter } from '@mynaui/icons-react';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
+import { Person, WithContext } from 'schema-dts';
 import 'tailwindcss/tailwind.css';
 
 export const viewport: Viewport = { themeColor: '#F8DBDF' };
@@ -58,6 +59,33 @@ export const metadata: Metadata = {
     site: '@praveenjuge',
     creator: '@praveenjuge'
   }
+};
+
+const jsonLd: WithContext<Person> = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Praveen Juge',
+  url: 'https://praveenjuge.com',
+  image: 'https://praveenjuge.com/images/praveen-juge-photo.jpg',
+  jobTitle: 'UI Designer & Developer',
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      email: 'hello@praveenjuge.com',
+      contactType: 'New Projects'
+    }
+  ],
+  sameAs: [
+    'https://praveenjuge.com',
+    'https://twitter.com/praveenjuge',
+    'https://twitter.com/praveenjuge',
+    'https://dribbble.com/praveenjuge',
+    'https://instagram.com/praveenjuge',
+    'https://www.linkedin.com/in/praveenjuge',
+    'https://layers.to/praveenjuge',
+    'https://threads.net/praveenjuge',
+    'https://bsky.app/profile/praveenjuge.com'
+  ]
 };
 
 export default function RootLayout({
@@ -147,6 +175,10 @@ export default function RootLayout({
             </svg>
           </Link>
         </footer>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

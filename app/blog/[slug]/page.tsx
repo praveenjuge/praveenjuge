@@ -4,6 +4,7 @@ import { markedHighlight } from 'marked-highlight';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getDocumentSlugs, load } from 'outstatic/server';
+import { BlogPosting, WithContext } from 'schema-dts';
 
 interface Params {
   params: {
@@ -32,11 +33,31 @@ export default async function Blog(params: Params) {
     day: 'numeric'
   });
 
+  const jsonLd: WithContext<BlogPosting> = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: blog.title,
+    datePublished: blog.publishedAt,
+    dateModified: blog.publishedAt,
+    author: {
+      '@type': 'Person',
+      name: 'Praveen Juge',
+      url: 'https://praveenjuge.com'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Praveen Juge',
+      url: 'https://praveenjuge.com',
+      logo: 'https://praveenjuge.com/images/praveen-juge-photo.jpg'
+    }
+  };
+
   return (
-    <article
-      itemScope
-      itemType="http://schema.org/BlogPosting"
-      className="prose prose-slate max-w-none md:prose-lg prose-h2:tracking-tight prose-h3:tracking-tight prose-pre:bg-slate-950 [&_.hljs-addition]:bg-green-950 
+    <>
+      <article
+        itemScope
+        itemType="http://schema.org/BlogPosting"
+        className="prose prose-slate max-w-none md:prose-lg prose-h2:tracking-tight prose-h3:tracking-tight prose-pre:bg-slate-950 [&_.hljs-addition]:bg-green-950 
       [&_.hljs-addition]:text-emerald-200 
       [&_.hljs-attr]:text-sky-300 
       [&_.hljs-attribute]:text-sky-300 
@@ -85,27 +106,32 @@ export default async function Blog(params: Params) {
       [&_.hljs]:text-slate-200
       [&_code.hljs]:block
       [&_code.hljs]:overflow-x-auto"
-    >
-      {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
-      <p className="lead">
-        Written on{' '}
-        <time itemProp="datePublished" dateTime={blog.publishedAt}>
-          {formattedDate}
-        </time>
-      </p>
-      <span className="sr-only" itemProp="author">
-        Praveen Juge
-      </span>
-      <h1 className="tracking-tight" itemProp="headline">
-        {blog.title}
-      </h1>
-      <hr />
-      {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
-      <p className="lead" itemProp="description">
-        {blog.description}
-      </p>
-      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
-    </article>
+      >
+        {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
+        <p className="lead">
+          Written on{' '}
+          <time itemProp="datePublished" dateTime={blog.publishedAt}>
+            {formattedDate}
+          </time>
+        </p>
+        <span className="sr-only" itemProp="author">
+          Praveen Juge
+        </span>
+        <h1 className="tracking-tight" itemProp="headline">
+          {blog.title}
+        </h1>
+        <hr />
+        {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
+        <p className="lead" itemProp="description">
+          {blog.description}
+        </p>
+        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+      </article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+    </>
   );
 }
 
