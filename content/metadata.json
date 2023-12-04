@@ -1,6 +1,6 @@
 {
-  "commit": "47c77be8775e71de0d7d884225345fc6dc7a66e7",
-  "generated": "2023-12-03T17:33:29.119Z",
+  "commit": "f3b6a3a138befb637f0e61473fcffae9ae20f628",
+  "generated": "2023-12-04T09:33:27.401Z",
   "metadata": [
     {
       "__outstatic": {
@@ -977,6 +977,24 @@
       "slug": "a-late-review-of-folklore",
       "status": "published",
       "title": "A Late Review of Folklore"
+    },
+    {
+      "__outstatic": {
+        "commit": "f3b6a3a138befb637f0e61473fcffae9ae20f628",
+        "hash": "3182796897",
+        "path": "content/design/4-12-2023.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/4-12-2023-g4Mj.jpg",
+      "description": "",
+      "publishedAt": "2023-12-04T10:05:32.217Z",
+      "slug": "4-12-2023",
+      "status": "published",
+      "title": "4-12-2023"
     }
   ]
 }
