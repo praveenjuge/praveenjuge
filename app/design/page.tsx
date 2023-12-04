@@ -28,7 +28,7 @@ export default async function Page() {
         >
           <Image
             width={700}
-            height={1000}
+            height={800}
             alt={item.slug}
             src={item.coverImage ?? ''}
             className="h-full w-full rounded bg-slate-200 bg-cover ring-1 ring-slate-100"

@@ -4,7 +4,7 @@ import { markedHighlight } from 'marked-highlight';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getDocumentSlugs, load } from 'outstatic/server';
-import { BlogPosting, WithContext } from 'schema-dts';
+import { BlogPosting, BreadcrumbList, WithContext } from 'schema-dts';
 
 interface Params {
   params: {
@@ -39,6 +39,7 @@ export default async function Blog(params: Params) {
     headline: blog.title,
     datePublished: blog.publishedAt,
     dateModified: blog.publishedAt,
+    image: `https://praveenjuge.com/blog/${blog.slug}/opengraph-image`,
     author: {
       '@type': 'Person',
       name: 'Praveen Juge',
@@ -50,6 +51,32 @@ export default async function Blog(params: Params) {
       url: 'https://praveenjuge.com',
       logo: 'https://praveenjuge.com/images/praveen-juge-photo.jpg'
     }
+  };
+
+  const breadJsonLd: WithContext<BreadcrumbList> = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    name: blog.title,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://praveenjuge.com'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: 'https://praveenjuge.com/blog'
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: blog.title,
+        item: `https://praveenjuge.com/blog/${blog.slug}`
+      }
+    ]
   };
 
   return (
@@ -114,8 +141,19 @@ export default async function Blog(params: Params) {
             {formattedDate}
           </time>
         </p>
-        <span className="sr-only" itemProp="author">
-          Praveen Juge
+        <meta
+          itemProp="image"
+          content={`https://praveenjuge.com/blog/${blog.slug}/opengraph-image`}
+        />
+        <span
+          className="sr-only"
+          itemProp="author"
+          itemScope
+          itemType="https://schema.org/Person"
+        >
+          <a itemProp="url" href="https://praveenjuge.com">
+            <span itemProp="name">Praveen Juge</span>
+          </a>
         </span>
         <h1 className="tracking-tight" itemProp="headline">
           {blog.title}
@@ -130,6 +168,10 @@ export default async function Blog(params: Params) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadJsonLd) }}
       />
     </>
   );
