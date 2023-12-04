@@ -159,7 +159,7 @@ export default async function Page() {
         <Link href="/design">Design</Link>
       </h2>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {allDesigns.map((item, id) => (
           <Link key={id} href={`${item.coverImage}`} target="_blank">
             <Image
@@ -173,7 +173,7 @@ export default async function Page() {
         ))}
         <Link
           href="/design"
-          className="flex h-40 flex-col items-center justify-center space-y-2 rounded border-2 border-dashed border-slate-200 text-sm font-medium transition hover:border-slate-300"
+          className="flex h-40 flex-col items-center justify-center gap-2 rounded border-2 border-dashed border-slate-200 font-medium transition hover:border-slate-300"
         >
           <ArrowUpRight className="h-6 w-6 text-slate-400" />
           <span>View More</span>

@@ -2117,9 +2117,9 @@ export default async function Image({ params }: { params: { slug: string } }) {
       ...size,
       fonts: [
         {
-          name: 'Inter',
+          name: 'Geist',
           data: await fetch(
-            new URL('../../../public/Inter-Bold.ttf', import.meta.url)
+            new URL('../../../public/Geist-Bold.otf', import.meta.url)
           ).then((res) => res.arrayBuffer()),
           style: 'normal',
           weight: 700
