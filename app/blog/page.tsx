@@ -18,7 +18,7 @@ export default async function Page() {
         <span className="flex shrink-0 gap-2">
           Blog Posts
           <span> - </span>
-          <Link href="/blog/rss.xml" className="underline">
+          <Link href="/blog/rss.xml" className="underline" prefetch={false}>
             RSS Feed
           </Link>
         </span>

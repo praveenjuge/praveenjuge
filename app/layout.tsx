@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   creator: 'Praveen Juge',
   keywords: ['praveen', 'praveenjuge', 'juge'],
   category: 'UI Designer',
-  referrer: 'origin-when-cross-origin',
+  referrer: 'same-origin',
   authors: [
     {
       name: 'Praveen Juge',
