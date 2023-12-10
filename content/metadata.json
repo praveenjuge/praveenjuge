@@ -1,6 +1,6 @@
 {
-  "commit": "06aae40dcfd8e2b5c767cc1e1a1789ccca679dd2",
-  "generated": "2023-12-10T09:55:34.260Z",
+  "commit": "827a2bcc3678dc5b9c7388871049d8bb3a8d4284",
+  "generated": "2023-12-10T09:56:26.045Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1088,24 +1088,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d144290a9005c5df37aa63981d24e8fccadae7ac",
-        "hash": "337600343",
-        "path": "content/design/10-12-2023-1.md"
-      },
-      "author": {
-        "name": "Praveen Juge",
-        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
-      },
-      "collection": "design",
-      "coverImage": "/images/10-12-2023-1-E3NT.png",
-      "description": "",
-      "publishedAt": "2023-12-10T10:27:47.772Z",
-      "slug": "10-12-2023-1",
-      "status": "published",
-      "title": "10-12-2023 1"
-    },
-    {
-      "__outstatic": {
         "commit": "06aae40dcfd8e2b5c767cc1e1a1789ccca679dd2",
         "hash": "2124115683",
         "path": "content/design/10-12-2023-2.md"
@@ -1121,6 +1103,24 @@
       "slug": "10-12-2023-2",
       "status": "published",
       "title": "10-12-2023 2"
+    },
+    {
+      "__outstatic": {
+        "commit": "827a2bcc3678dc5b9c7388871049d8bb3a8d4284",
+        "hash": "1726283001",
+        "path": "content/design/10-12-2023-1.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/10-12-2023-1-E3NT.png",
+      "description": "",
+      "publishedAt": "2023-12-10T09:32:47.772Z",
+      "slug": "10-12-2023-1",
+      "status": "published",
+      "title": "10-12-2023 1"
     }
   ]
 }
