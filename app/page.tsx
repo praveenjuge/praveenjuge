@@ -657,7 +657,7 @@ export default async function Page() {
         rel="noopener noreferrer"
         className="relative my-4 grid grid-cols-1 gap-8 overflow-hidden rounded bg-stone-950 p-6 text-stone-50 transition hover:border-slate-300 md:grid-cols-2"
       >
-        <div className="absolute left-0 top-0 flex h-60 shrink-0">
+        <div className="absolute inset-0 flex h-60 shrink-0">
           <svg
             className="fill-stone-900"
             viewBox="0 0 120 120"
