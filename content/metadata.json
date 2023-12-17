@@ -1,6 +1,6 @@
 {
-  "commit": "a9003bf0f6c76aa7ec056683057db6f76cf162d8",
-  "generated": "2023-12-16T12:28:13.223Z",
+  "commit": "81ebdb45742231c7cc824495b15703addefddd25",
+  "generated": "2023-12-17T18:28:34.667Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1229,6 +1229,24 @@
       "slug": "16-12-2023",
       "status": "published",
       "title": "16-12-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "81ebdb45742231c7cc824495b15703addefddd25",
+        "hash": "1310870204",
+        "path": "content/design/17-12-2023.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/17-12-2023-A3MD.jpg",
+      "description": "",
+      "publishedAt": "2023-12-16T19:01:14.000Z",
+      "slug": "17-12-2023",
+      "status": "published",
+      "title": "17-12-2023"
     }
   ]
 }
