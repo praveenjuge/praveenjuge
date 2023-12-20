@@ -79,6 +79,8 @@ export default async function Blog(params: Params) {
     ]
   };
 
+  if (!blog) notFound();
+
   return (
     <>
       <article

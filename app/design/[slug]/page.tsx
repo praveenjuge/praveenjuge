@@ -17,15 +17,15 @@ export default async function Design({ params }: { params: { slug: string } }) {
       </Link>
       <Link
         target="_blank"
-        href={`${design.coverImage}`}
         className="my-10 block"
+        href={design.coverImage ?? ''}
       >
         <Image
-          alt={design.slug}
-          src={design.coverImage ?? ''}
           priority
           width={700}
           height={1000}
+          alt={design.coverImage ?? ''}
+          src={design.coverImage ?? ''}
           className="h-full w-full rounded bg-slate-200 bg-cover ring-1 ring-slate-100"
         />
       </Link>

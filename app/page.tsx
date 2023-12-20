@@ -4,26 +4,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { load } from 'outstatic/server';
 
-const headingClass =
-  'font-extrabold tracking-tight text-2xl md:text-3xl mt-20 mb-6';
-
-const contentCopy = [
-  'Zilch. Nada. Nothing.',
-  'You’re one step away from your dream.',
-  'Your subscription has been renewed.',
-  'Your settings have been updated.',
-  'Your satisfaction is our priority.',
-  'You have not muted any topics yet.',
-  'What will you build with us?',
-  'Share insights with the whole team',
-  'Share data across platforms.'
-];
-
 export default async function Page() {
+  const headingClass =
+    'font-extrabold tracking-tight text-2xl md:text-3xl mt-20 mb-6';
+
+  const contentCopy = [
+    'Zilch. Nada. Nothing.',
+    'You’re one step away from your dream.',
+    'Your subscription has been renewed.',
+    'Your settings have been updated.',
+    'Your satisfaction is our priority.',
+    'You have not muted any topics yet.',
+    'What will you build with us?',
+    'Share insights with the whole team',
+    'Share data across platforms.'
+  ];
+
   const db = await load();
 
   const allDesigns = await db
-    .find({ collection: 'design' }, ['coverImage', 'slug'])
+    .find({ collection: 'design' }, ['coverImage'])
     .sort({ publishedAt: -1 })
     .limit(11)
     .toArray();
@@ -35,7 +35,7 @@ export default async function Page() {
 
   return (
     <>
-      <h1 className={headingClass + ' ' + '!mt-8'}>What&rsquo;s up nerds?</h1>
+      <h1 className={headingClass + ' ' + '!mt-6'}>What&rsquo;s up nerds?</h1>
 
       <p className="text-lg">
         <b className="font-semibold">
@@ -68,11 +68,11 @@ export default async function Page() {
         </div>
         <div className="space-y-2 text-xs font-medium text-slate-800">
           <Image
+            priority
+            quality={90}
             src={profilePic}
             className="rounded bg-slate-100"
             alt="Praveen Juge trying his best to look cool."
-            priority={true}
-            quality={90}
           />
           <p>Trying my best to look cool.</p>
         </div>
@@ -657,7 +657,7 @@ export default async function Page() {
         rel="noopener noreferrer"
         className="relative my-4 grid grid-cols-1 gap-8 overflow-hidden rounded bg-stone-950 p-6 text-stone-50 transition hover:border-slate-300 md:grid-cols-2"
       >
-        <div className="absolute inset-0 flex h-60 shrink-0">
+        <div className="absolute inset-0 hidden h-60 shrink-0 md:flex">
           <svg
             className="fill-stone-900"
             viewBox="0 0 120 120"
@@ -693,7 +693,7 @@ export default async function Page() {
           </span>
         </div>
         <div
-          className="pointer-events-none relative grid h-44 select-none grid-cols-3 gap-4"
+          className="pointer-events-none relative grid h-44 select-none grid-cols-3 gap-2"
           aria-hidden="true"
         >
           {contentCopy.map((content) => (
@@ -713,13 +713,13 @@ export default async function Page() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {allDesigns.map((item, id) => (
-          <Link key={id} href={`${item.coverImage}`} target="_blank">
+          <Link key={id} href={item.coverImage ?? ''} target="_blank">
             <Image
-              alt={item.slug}
+              width={300}
+              height={300}
+              alt={item.coverImage ?? ''}
               src={item.coverImage ?? ''}
-              width={500}
-              height={500}
-              className="h-full w-full rounded border-0 bg-slate-100 bg-cover object-cover ring-1 ring-slate-300/50 md:h-[172px] md:max-h-[172px]"
+              className="h-full w-full rounded bg-slate-100 bg-cover object-cover ring-1 ring-slate-100 md:h-[172px] md:max-h-[172px]"
             />
           </Link>
         ))}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   const allDesigns = await (await load())
-    .find({ collection: 'design' }, ['coverImage', 'slug'])
+    .find({ collection: 'design' }, ['coverImage'])
     .sort({ publishedAt: -1 })
     .toArray();
 
@@ -24,12 +24,13 @@ export default async function Page() {
           key={id}
           target="_blank"
           className="my-10 block"
-          href={`${item.coverImage}`}
+          href={item.coverImage ?? ''}
         >
           <Image
             width={700}
             height={800}
-            alt={item.slug}
+            priority={id === 0}
+            alt={item.coverImage ?? ''}
             src={item.coverImage ?? ''}
             className="h-full w-full rounded bg-slate-200 bg-cover ring-1 ring-slate-100"
           />
