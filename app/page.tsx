@@ -35,6 +35,13 @@ export default async function Page() {
 
   return (
     <>
+      <a
+        href="mailto:hello@praveenjuge.com"
+        className="inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-600"
+      >
+        <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-700"></span>
+        <span>Available for New Projects</span>
+      </a>
       <h1 className={headingClass + ' ' + '!mt-6'}>What&rsquo;s up nerds?</h1>
 
       <p className="text-lg">
