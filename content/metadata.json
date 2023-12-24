@@ -1,6 +1,6 @@
 {
-  "commit": "1e6005e01e62dd803a72642c1b67b82a4ad5a7d6",
-  "generated": "2023-12-23T07:14:51.856Z",
+  "commit": "a7e5d1e0cd49ca99880c4246ce7e8c7cade85668",
+  "generated": "2023-12-24T18:43:29.584Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1355,6 +1355,24 @@
       "slug": "command-menu-s-are-so-fun-to-design",
       "status": "published",
       "title": "Command menu's are so fun to design ⌘"
+    },
+    {
+      "__outstatic": {
+        "commit": "a7e5d1e0cd49ca99880c4246ce7e8c7cade85668",
+        "hash": "3455376811",
+        "path": "content/design/24-12-2023.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/24-12-2023-c5Nj.jpg",
+      "description": "",
+      "publishedAt": "2023-12-23T19:16:10.000Z",
+      "slug": "24-12-2023",
+      "status": "published",
+      "title": "24-12-2023"
     }
   ]
 }
