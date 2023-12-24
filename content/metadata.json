@@ -1,6 +1,6 @@
 {
-  "commit": "a7e5d1e0cd49ca99880c4246ce7e8c7cade85668",
-  "generated": "2023-12-24T18:43:29.584Z",
+  "commit": "654d9cc1a76fad57195212d92f912097eb5bf3f0",
+  "generated": "2023-12-24T18:43:55.548Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1340,24 +1340,6 @@
     },
     {
       "__outstatic": {
-        "commit": "1e6005e01e62dd803a72642c1b67b82a4ad5a7d6",
-        "hash": "1441436800",
-        "path": "content/design/command-menu-s-are-so-fun-to-design.md"
-      },
-      "author": {
-        "name": "Praveen Juge",
-        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
-      },
-      "collection": "design",
-      "coverImage": "/images/23-12-2023-E1OT.jpg",
-      "description": "",
-      "publishedAt": "2023-12-23T07:47:32.831Z",
-      "slug": "command-menu-s-are-so-fun-to-design",
-      "status": "published",
-      "title": "Command menu's are so fun to design ⌘"
-    },
-    {
-      "__outstatic": {
         "commit": "a7e5d1e0cd49ca99880c4246ce7e8c7cade85668",
         "hash": "3455376811",
         "path": "content/design/24-12-2023.md"
@@ -1373,6 +1355,24 @@
       "slug": "24-12-2023",
       "status": "published",
       "title": "24-12-2023"
+    },
+    {
+      "__outstatic": {
+        "commit": "654d9cc1a76fad57195212d92f912097eb5bf3f0",
+        "hash": "3952666812",
+        "path": "content/design/command-menu-s-are-so-fun-to-design.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/23-12-2023-E1OT.jpg",
+      "description": "",
+      "publishedAt": "2023-12-23T07:47:32.831Z",
+      "slug": "command-menu-s-are-so-fun-to-design",
+      "status": "published",
+      "title": "23-12-2023"
     }
   ]
 }

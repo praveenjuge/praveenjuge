@@ -1,5 +1,5 @@
 ---
-title: 'Command menu''s are so fun to design ⌘'
+title: '23-12-2023'
 status: 'published'
 author:
   name: 'Praveen Juge'
@@ -10,4 +10,4 @@ coverImage: '/images/23-12-2023-E1OT.jpg'
 publishedAt: '2023-12-23T07:47:32.831Z'
 ---
 
-23-12-2023
+Command menu's are so fun to design ⌘
