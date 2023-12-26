@@ -1,4 +1,4 @@
-import { BrandDribbble, BrandGithub, BrandTwitter } from '@mynaui/icons-react';
+import { BrandDribbble, BrandGithub, BrandX } from '@mynaui/icons-react';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
@@ -103,7 +103,7 @@ export default function RootLayout({
           className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-rose-200/75 to-white"
           aria-hidden="true"
         ></div>
-        <header className="top-0 mx-auto mb-24 flex max-w-7xl flex-col items-center space-y-5 px-4 py-6 text-sm font-medium md:sticky md:flex-row md:justify-between md:space-y-0">
+        <header className="top-0 mx-auto mb-24 flex max-w-7xl flex-col space-y-5 px-4 py-6 text-sm font-medium sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
           <Link href="/" title="Go to Home Page">
             <svg
               className="h-9"
@@ -117,7 +117,7 @@ export default function RootLayout({
           </Link>
           <nav
             aria-label="Navigation Links"
-            className="flex items-center gap-5"
+            className="flex items-center gap-6 md:gap-5"
           >
             <Link href="/design">Designs</Link>
             <Link href="/blog">Blog</Link>
@@ -130,14 +130,7 @@ export default function RootLayout({
             >
               <BrandGithub className="h-5 w-5" stroke={1.75} />
             </Link>
-            <Link
-              title="Twitter"
-              href="https://twitter.com/praveenjuge"
-              target="_blank"
-              rel="noopener noreferrer me"
-            >
-              <BrandTwitter className="h-5 w-5" stroke={1.75} />
-            </Link>
+
             <Link
               title="Dribbble"
               href="https://dribbble.com/praveenjuge"
@@ -145,6 +138,14 @@ export default function RootLayout({
               rel="noopener noreferrer me"
             >
               <BrandDribbble className="h-5 w-5" stroke={1.75} />
+            </Link>
+            <Link
+              title="X (Twitter)"
+              href="https://twitter.com/praveenjuge"
+              target="_blank"
+              rel="noopener noreferrer me"
+            >
+              <BrandX className="h-5 w-5" stroke={1.75} />
             </Link>
             <a
               rel="me"
@@ -155,7 +156,7 @@ export default function RootLayout({
             </a>
           </nav>
         </header>
-        <main className="mx-auto max-w-3xl p-4">{children}</main>
+        <main id="main">{children}</main>
         <footer className="flex items-center justify-center bg-gradient-to-b from-white to-rose-100 px-4 py-24">
           <Link href="/" title="Row, Row, Row Your Boat">
             <svg
