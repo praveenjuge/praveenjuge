@@ -14,7 +14,7 @@ export default async function Page() {
     .toArray();
 
   return (
-    <>
+    <section className="mx-auto max-w-3xl p-4">
       <h2 className="my-6 text-2xl font-extrabold tracking-tight md:text-3xl">
         Design
       </h2>
@@ -36,6 +36,6 @@ export default async function Page() {
           />
         </Link>
       ))}
-    </>
+    </section>
   );
 }
