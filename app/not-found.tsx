@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="prose prose-slate max-w-none py-40">
+    <div className="prose prose-slate mx-auto max-w-3xl p-4 py-40">
       <h1 itemProp="headline" className="mb-0 tracking-tight">
         Page not found (404)
       </h1>

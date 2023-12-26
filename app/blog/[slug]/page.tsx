@@ -86,7 +86,7 @@ export default async function Blog(params: Params) {
       <article
         itemScope
         itemType="http://schema.org/BlogPosting"
-        className="prose prose-slate max-w-none md:prose-lg prose-h2:tracking-tight prose-h3:tracking-tight prose-pre:bg-slate-950 [&_.hljs-addition]:bg-green-950 
+        className="prose prose-slate mx-auto max-w-3xl p-4 md:prose-lg prose-h2:tracking-tight prose-h3:tracking-tight prose-pre:bg-slate-950 [&_.hljs-addition]:bg-green-950 
       [&_.hljs-addition]:text-emerald-200 
       [&_.hljs-attr]:text-sky-300 
       [&_.hljs-attribute]:text-sky-300 

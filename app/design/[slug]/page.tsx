@@ -11,7 +11,11 @@ export default async function Design({ params }: { params: { slug: string } }) {
   if (!design) notFound();
 
   return (
-    <article itemScope itemType="http://schema.org/BlogPosting">
+    <article
+      itemScope
+      itemType="http://schema.org/BlogPosting"
+      className="mx-auto max-w-3xl p-4"
+    >
       <Link href="/design" className="flex font-medium text-rose-900">
         ← All Designs
       </Link>

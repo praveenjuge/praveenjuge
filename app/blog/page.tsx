@@ -13,7 +13,7 @@ export default async function Page() {
     .toArray();
 
   return (
-    <>
+    <section className="mx-auto max-w-3xl p-4">
       <h2 className="my-6 text-2xl font-extrabold tracking-tight md:text-3xl">
         <span className="flex shrink-0 gap-2">
           Blog Posts
@@ -33,6 +33,6 @@ export default async function Page() {
           {item.title}
         </Link>
       ))}
-    </>
+    </section>
   );
 }
