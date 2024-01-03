@@ -1,6 +1,6 @@
 {
-  "commit": "31d0b0455452358ccb19552a1645803083feaf93",
-  "generated": "2024-01-03T07:26:06.799Z",
+  "commit": "3f5398c2102932a5824a7fbeeb4127dd0a52394d",
+  "generated": "2024-01-03T07:26:30.520Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1556,8 +1556,8 @@
     },
     {
       "__outstatic": {
-        "commit": "31d0b0455452358ccb19552a1645803083feaf93",
-        "hash": "1695008096",
+        "commit": "3f5398c2102932a5824a7fbeeb4127dd0a52394d",
+        "hash": "2828298873",
         "path": "content/design/03-01-2024.md"
       },
       "author": {
@@ -1570,7 +1570,7 @@
       "publishedAt": "2024-01-03T07:58:50.977Z",
       "slug": "03-01-2024",
       "status": "published",
-      "title": "03-01-2024"
+      "title": "03-01-2024 - email"
     }
   ]
 }
