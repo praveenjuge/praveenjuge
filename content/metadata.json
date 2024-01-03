@@ -1,6 +1,6 @@
 {
-  "commit": "3f5398c2102932a5824a7fbeeb4127dd0a52394d",
-  "generated": "2024-01-03T07:26:30.520Z",
+  "commit": "a7503cbe7433970340994c9cb4dde346075a65cc",
+  "generated": "2024-01-03T15:12:36.551Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1556,8 +1556,8 @@
     },
     {
       "__outstatic": {
-        "commit": "3f5398c2102932a5824a7fbeeb4127dd0a52394d",
-        "hash": "2828298873",
+        "commit": "a7503cbe7433970340994c9cb4dde346075a65cc",
+        "hash": "1886243279",
         "path": "content/design/03-01-2024.md"
       },
       "author": {
@@ -1565,12 +1565,12 @@
         "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
       },
       "collection": "design",
-      "coverImage": "/images/03-01-2024--email-k3Nz.jpg",
+      "coverImage": "/images/03-01-2024-QxNT.jpg",
       "description": "",
-      "publishedAt": "2024-01-03T07:58:50.977Z",
+      "publishedAt": "2024-01-03T15:45:18.095Z",
       "slug": "03-01-2024",
       "status": "published",
-      "title": "03-01-2024 - email"
+      "title": "03-01-2024"
     }
   ]
 }
