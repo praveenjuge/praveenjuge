@@ -1,6 +1,6 @@
 {
-  "commit": "2ecf0e54d1f15cdc6cf89b864a7e8b2a3e6640fa",
-  "generated": "2024-01-04T13:48:25.035Z",
+  "commit": "8386d143c1f2cba4c4282e391d89cb587d1549ae",
+  "generated": "2024-01-04T13:49:06.288Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1574,8 +1574,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2ecf0e54d1f15cdc6cf89b864a7e8b2a3e6640fa",
-        "hash": "3000549226",
+        "commit": "8386d143c1f2cba4c4282e391d89cb587d1549ae",
+        "hash": "3840554092",
         "path": "content/design/04-01-2024.md"
       },
       "author": {
