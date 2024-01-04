@@ -1,6 +1,6 @@
 {
-  "commit": "8386d143c1f2cba4c4282e391d89cb587d1549ae",
-  "generated": "2024-01-04T13:49:06.288Z",
+  "commit": "61cb2298a0f8f170d672faaad8f8acd790c1dcc7",
+  "generated": "2024-01-04T13:49:30.569Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1589,6 +1589,24 @@
       "slug": "04-01-2024",
       "status": "published",
       "title": "04-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "61cb2298a0f8f170d672faaad8f8acd790c1dcc7",
+        "hash": "3915568849",
+        "path": "content/design/04-01-2024-second.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/04-01-2024-IxOT.jpg",
+      "description": "",
+      "publishedAt": "2024-01-04T14:22:10.364Z",
+      "slug": "04-01-2024-second",
+      "status": "published",
+      "title": "04-01-2024 second"
     }
   ]
 }
