@@ -1,6 +1,6 @@
 {
-  "commit": "61cb2298a0f8f170d672faaad8f8acd790c1dcc7",
-  "generated": "2024-01-04T13:49:30.569Z",
+  "commit": "a82b46ca99b712218d49d34983f3fa6555161885",
+  "generated": "2024-01-05T06:57:30.522Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1607,6 +1607,24 @@
       "slug": "04-01-2024-second",
       "status": "published",
       "title": "04-01-2024 second"
+    },
+    {
+      "__outstatic": {
+        "commit": "a82b46ca99b712218d49d34983f3fa6555161885",
+        "hash": "1022046920",
+        "path": "content/design/05-01-2024-icons.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/05-01-2024---icons-A0OD.jpg",
+      "description": "",
+      "publishedAt": "2024-01-05T07:30:11.644Z",
+      "slug": "05-01-2024-icons",
+      "status": "published",
+      "title": "05-01-2024 icons"
     }
   ]
 }
