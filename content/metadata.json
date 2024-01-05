@@ -1,6 +1,6 @@
 {
-  "commit": "a82b46ca99b712218d49d34983f3fa6555161885",
-  "generated": "2024-01-05T06:57:30.522Z",
+  "commit": "f5fc407fe2cc22e286fa2f4fe006dc796a0bc14d",
+  "generated": "2024-01-05T17:41:05.877Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1625,6 +1625,24 @@
       "slug": "05-01-2024-icons",
       "status": "published",
       "title": "05-01-2024 icons"
+    },
+    {
+      "__outstatic": {
+        "commit": "f5fc407fe2cc22e286fa2f4fe006dc796a0bc14d",
+        "hash": "1201624288",
+        "path": "content/design/05-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/05-01-2024-AxOT.jpg",
+      "description": "",
+      "publishedAt": "2024-01-05T18:13:52.388Z",
+      "slug": "05-01-2024",
+      "status": "published",
+      "title": "05-01-2024"
     }
   ]
 }
