@@ -1,6 +1,6 @@
 {
-  "commit": "61ec6de8e98504de962f25663edd6247c608c254",
-  "generated": "2024-01-06T17:57:16.975Z",
+  "commit": "48d57072e09161b4e9a00fc6f3d9eb8dfb0bf980",
+  "generated": "2024-01-07T13:01:56.906Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1679,6 +1679,24 @@
       "slug": "06-01-2024-email",
       "status": "published",
       "title": "06-01-2024-email"
+    },
+    {
+      "__outstatic": {
+        "commit": "48d57072e09161b4e9a00fc6f3d9eb8dfb0bf980",
+        "hash": "833106800",
+        "path": "content/design/07-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/07-01-2024-A3Nz.jpg",
+      "description": "",
+      "publishedAt": "2024-01-07T13:34:46.552Z",
+      "slug": "07-01-2024",
+      "status": "published",
+      "title": "07-01-2024"
     }
   ]
 }
