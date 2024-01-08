@@ -1,6 +1,6 @@
 {
-  "commit": "aa787fe6583a936046c53ef169c0ad3b4b6ff441",
-  "generated": "2024-01-08T14:00:15.498Z",
+  "commit": "d56721e9d2b74da25493dc2a14262d06424161bd",
+  "generated": "2024-01-08T14:53:44.228Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1715,6 +1715,24 @@
       "slug": "08-01-2024",
       "status": "published",
       "title": "08-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "d56721e9d2b74da25493dc2a14262d06424161bd",
+        "hash": "3327816007",
+        "path": "content/design/08-01-2024-logo.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/08-01-2024---logo-Y1OD.png",
+      "description": "",
+      "publishedAt": "2024-01-08T15:26:20.876Z",
+      "slug": "08-01-2024-logo",
+      "status": "published",
+      "title": "08-01-2024-logo"
     }
   ]
 }
