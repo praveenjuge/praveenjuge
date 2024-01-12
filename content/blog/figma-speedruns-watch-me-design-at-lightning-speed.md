@@ -4,7 +4,6 @@ publishedAt: 2023-03-31T19:26:29.237Z
 description: Dive into Figma speedrun videos and see awesome designs pop up
   super fast! Come along as I show off my love for design and Figma, and hit me
   up with what you wanna see on the channel.
-coverImage: /images/figma-speedruns-2x.jpg
 ---
 
 You know how we all enjoy watching those mesmerizing speed drawing and speed art videos on YouTube, right? I mean, who doesn't love seeing a blank canvas transform into a stunning piece of art in just a matter of minutes?
