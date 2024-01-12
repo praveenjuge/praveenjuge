@@ -45,7 +45,6 @@
         "path": "content/blog/creating-a-number-badge-ui-component.md"
       },
       "collection": "blog",
-      "coverImage": "images/number-badge-og.png",
       "description": "We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems.",
       "publishedAt": "2021-12-18T12:37:47.000Z",
       "slug": "creating-a-number-badge-ui-component",
@@ -94,7 +93,6 @@
         "path": "content/blog/figma-speedruns-watch-me-design-at-lightning-speed.md"
       },
       "collection": "blog",
-      "coverImage": "/images/figma-speedruns-2x.jpg",
       "description": "Dive into Figma speedrun videos and see awesome designs pop up super fast! Come along as I show off my love for design and Figma, and hit me up with what you wanna see on the channel.",
       "publishedAt": "2023-03-31T19:26:29.237Z",
       "slug": "figma-speedruns-watch-me-design-at-lightning-speed",
@@ -167,7 +165,6 @@
         "path": "content/blog/if-i-had-known-ai-would-write-commit-messages-i-would-have-stayed-as-a-developer.md"
       },
       "collection": "blog",
-      "coverImage": "/images/ai-commit.jpg",
       "description": "Recently, I stumbled upon OpenCommit, a package that generates commit messages based on the files changed with GPT. Now, my skin is clearer, I walk with a brisk step, and I appreciate nature more. If this is what AI does for us, I'll welcome it with open hands.",
       "publishedAt": "2023-03-22T19:04:12.370Z",
       "slug": "if-i-had-known-ai-would-write-commit-messages-i-would-have-stayed-as-a-developer",
@@ -899,7 +896,6 @@
         "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
       },
       "collection": "blog",
-      "coverImage": "",
       "description": "Some of the default apps I use based on the list by this podcast https://defaults.rknight.me",
       "publishedAt": "2023-11-27T08:05:42.526Z",
       "slug": "default-apps-2023",
@@ -971,7 +967,6 @@
         "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
       },
       "collection": "blog",
-      "coverImage": "",
       "description": "Yesterday, I watched Taylor Swift's Eras Tour Movie (for the third time), reaffirming that 'Folklore' is my favorite album. Here, I share why this album resonates so deeply with me.",
       "publishedAt": "2023-12-03T16:58:50.702Z",
       "slug": "a-late-review-of-folklore",
@@ -1799,7 +1794,6 @@
         "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
       },
       "collection": "blog",
-      "coverImage": "",
       "description": "As a longtime fan of the series, particularly for its storytelling, I approached this game with high expectations. While it may not surpass the legendary status of Far Cry 3 in terms of its story, it certainly carves its own niche with compelling characters and a vivid, expansive world.",
       "publishedAt": "2024-01-12T05:32:40.903Z",
       "slug": "far-cry-6-review",
