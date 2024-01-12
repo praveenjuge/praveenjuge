@@ -1,6 +1,6 @@
 {
-  "commit": "9f52b26696723458e1a7959125f175fe92107878",
-  "generated": "2024-01-12T05:11:33.565Z",
+  "commit": "05233e27bedd8eede2f00cc572c6de0b9f420208",
+  "generated": "2024-01-12T13:00:26.377Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1799,6 +1799,24 @@
       "slug": "far-cry-6-review",
       "status": "published",
       "title": "Far Cry 6 Review"
+    },
+    {
+      "__outstatic": {
+        "commit": "05233e27bedd8eede2f00cc572c6de0b9f420208",
+        "hash": "1926311223",
+        "path": "content/design/12-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/12-01-2024-k0MD.jpg",
+      "description": "",
+      "publishedAt": "2024-01-12T13:33:12.979Z",
+      "slug": "12-01-2024",
+      "status": "published",
+      "title": "12-01-2024"
     }
   ]
 }
