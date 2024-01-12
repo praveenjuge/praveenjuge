@@ -16,7 +16,7 @@ export default async function Page() {
   return (
     <section className="mx-auto max-w-3xl p-4">
       <h2 className="my-6 text-2xl font-extrabold tracking-tight md:text-3xl">
-        Design
+        Designs
       </h2>
 
       {allDesigns.map((item, id) => (
