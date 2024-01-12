@@ -1,5 +1,6 @@
 import { Feed } from 'feed';
 import { load } from 'outstatic/server';
+import { markdownToHtml } from '../[slug]/page';
 
 export const dynamic = 'force-static';
 const SITE_URL = 'https://praveenjuge.com/';
@@ -30,6 +31,9 @@ export async function GET() {
     language: 'en',
     favicon: `${SITE_URL}favicon.ico`,
     copyright: SITE_AUTHOR_NAME,
+    feedLinks: {
+      atom: `${SITE_URL}blog/rss.xml`
+    },
     author: {
       name: SITE_AUTHOR_NAME,
       email: SITE_AUTHOR_EMAIL,
@@ -39,10 +43,12 @@ export async function GET() {
 
   allBlogs.forEach((post) => {
     const url = `${SITE_URL}blog/${post.slug}`;
+    const content = markdownToHtml(post.content) as string;
     feed.addItem({
       title: post.title || '',
       id: url,
       link: url,
+      content: content,
       description: post.description || '',
       date: new Date(post.publishedAt || ''),
       image: post.coverImage,
@@ -65,7 +71,7 @@ export async function GET() {
     link: SITE_URL
   });
 
-  return new Response(feed.rss2(), {
+  return new Response(feed.atom1(), {
     headers: {
       'Content-Type': 'application/xml'
     }
