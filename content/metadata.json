@@ -1,6 +1,6 @@
 {
-  "commit": "5fab1d84284f53c3ac390bd00e11a9ef14436db6",
-  "generated": "2024-01-11T12:37:52.976Z",
+  "commit": "9f52b26696723458e1a7959125f175fe92107878",
+  "generated": "2024-01-12T05:11:33.565Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1787,6 +1787,24 @@
       "slug": "11-01-2024",
       "status": "published",
       "title": "11-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "9f52b26696723458e1a7959125f175fe92107878",
+        "hash": "103358953",
+        "path": "content/blog/far-cry-6-review.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "As a longtime fan of the series, particularly for its storytelling, I approached this game with high expectations. While it may not surpass the legendary status of Far Cry 3 in terms of its story, it certainly carves its own niche with compelling characters and a vivid, expansive world.",
+      "publishedAt": "2024-01-12T05:32:40.903Z",
+      "slug": "far-cry-6-review",
+      "status": "published",
+      "title": "Far Cry 6 Review"
     }
   ]
 }
