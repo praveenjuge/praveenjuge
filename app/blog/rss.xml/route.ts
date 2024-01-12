@@ -44,7 +44,6 @@ export async function GET() {
       id: url,
       link: url,
       description: post.description || '',
-      content: post.content,
       date: new Date(post.publishedAt || ''),
       image: post.coverImage,
       author: [
