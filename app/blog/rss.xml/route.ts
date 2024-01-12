@@ -1,6 +1,6 @@
 import { Feed } from 'feed';
 import { load } from 'outstatic/server';
-import { markdownToHtml } from '../[slug]/page';
+import { markdownToHtml } from '../utils';
 
 export const dynamic = 'force-static';
 const SITE_URL = 'https://praveenjuge.com/';
