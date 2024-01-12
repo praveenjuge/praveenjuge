@@ -48,7 +48,7 @@ export async function GET() {
       title: post.title || '',
       id: url,
       link: url,
-      content: content,
+      content: post.description + '<br />' + content,
       description: post.description || '',
       date: new Date(post.publishedAt || ''),
       image: post.coverImage,
