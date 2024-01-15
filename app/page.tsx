@@ -31,6 +31,7 @@ export default async function Page() {
   const allBlogs = await db
     .find({ collection: 'blog' }, ['title', 'slug'])
     .sort({ publishedAt: -1 })
+    .limit(14)
     .toArray();
 
   return (
@@ -135,6 +136,13 @@ export default async function Page() {
             {item.title}
           </Link>
         ))}
+        <Link
+          href="/blog"
+          className="flex items-center gap-2 text-lg font-medium text-rose-900 transition hover:text-black"
+        >
+          <span>Read More</span>
+          <ArrowLongRight className="h-6 w-6" />
+        </Link>
 
         <h2 className={headingClass}>Projects</h2>
 

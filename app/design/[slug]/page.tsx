@@ -30,7 +30,7 @@ export default async function Design({ params }: { params: { slug: string } }) {
           height={1000}
           alt={design.coverImage ?? ''}
           src={design.coverImage ?? ''}
-          className="h-full w-full rounded bg-slate-200 bg-cover ring-1 ring-slate-100"
+          className="h-full w-full rounded bg-slate-200"
         />
       </Link>
     </article>
