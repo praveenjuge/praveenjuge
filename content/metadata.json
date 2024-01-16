@@ -1,6 +1,6 @@
 {
-  "commit": "2bdf74d92be34bb43f9fc56de10ab1c3b419fa5f",
-  "generated": "2024-01-15T14:55:44.668Z",
+  "commit": "5ce568d66bb6abb8303b11b8cf4c7f2c7c4f3015",
+  "generated": "2024-01-16T05:13:50.003Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1871,6 +1871,24 @@
       "slug": "15-01-2024",
       "status": "published",
       "title": "15-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "5ce568d66bb6abb8303b11b8cf4c7f2c7c4f3015",
+        "hash": "4140972621",
+        "path": "content/blog/fewer-better-features.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "People gravitate towards simplicity. ",
+      "publishedAt": "2024-01-16T05:07:15.059Z",
+      "slug": "fewer-better-features",
+      "status": "published",
+      "title": "Fewer, Better Features"
     }
   ]
 }
