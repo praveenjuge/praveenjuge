@@ -1,6 +1,6 @@
 {
-  "commit": "5ce568d66bb6abb8303b11b8cf4c7f2c7c4f3015",
-  "generated": "2024-01-16T05:13:50.003Z",
+  "commit": "8e439d1bf06cf58ceb302327d172cf351c078431",
+  "generated": "2024-01-16T11:43:49.965Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1889,6 +1889,24 @@
       "slug": "fewer-better-features",
       "status": "published",
       "title": "Fewer, Better Features"
+    },
+    {
+      "__outstatic": {
+        "commit": "8e439d1bf06cf58ceb302327d172cf351c078431",
+        "hash": "2792140520",
+        "path": "content/design/16-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/16-01-2024-EzMT.jpg",
+      "description": "",
+      "publishedAt": "2024-01-16T12:16:32.201Z",
+      "slug": "16-01-2024",
+      "status": "published",
+      "title": "16-01-2024"
     }
   ]
 }
