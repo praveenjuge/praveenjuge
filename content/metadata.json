@@ -1,6 +1,6 @@
 {
-  "commit": "234ee9c33d4bf53d81defd28bd30b32228c7d246",
-  "generated": "2024-01-17T10:32:31.422Z",
+  "commit": "643c43ed11cee00a1c2d908851bda2ada047ad94",
+  "generated": "2024-01-17T16:51:22.442Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1925,6 +1925,24 @@
       "slug": "is-training-necessary-for-ui-design",
       "status": "published",
       "title": "Is Training Necessary for UI Design?"
+    },
+    {
+      "__outstatic": {
+        "commit": "643c43ed11cee00a1c2d908851bda2ada047ad94",
+        "hash": "1086850816",
+        "path": "content/design/17-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/17-01-2024-U4Mj.jpg",
+      "description": "",
+      "publishedAt": "2024-01-17T17:24:08.516Z",
+      "slug": "17-01-2024",
+      "status": "published",
+      "title": "17-01-2024"
     }
   ]
 }
