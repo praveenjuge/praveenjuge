@@ -1,6 +1,6 @@
 {
-  "commit": "643c43ed11cee00a1c2d908851bda2ada047ad94",
-  "generated": "2024-01-17T16:51:22.442Z",
+  "commit": "bbaedbf5d1d96cf3e9a36b9ab0aa4993e0f02a3c",
+  "generated": "2024-01-18T10:56:40.319Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1943,6 +1943,24 @@
       "slug": "17-01-2024",
       "status": "published",
       "title": "17-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "bbaedbf5d1d96cf3e9a36b9ab0aa4993e0f02a3c",
+        "hash": "1552837836",
+        "path": "content/blog/50-days-of-daily-design.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "I embarked on an exciting challenge: to post a new design every day. Now, 50 days in, I've not only sharpened my skills but also doubled my Twitter following. This daily commitment, initially just an experiment, has turned into a goal to continue for at least a year.",
+      "publishedAt": "2024-01-18T11:28:41.729Z",
+      "slug": "50-days-of-daily-design",
+      "status": "published",
+      "title": "50 Days of Daily Design"
     }
   ]
 }
