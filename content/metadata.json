@@ -1,6 +1,6 @@
 {
-  "commit": "d0a409dbba9d8bef48309de513f534f329ca39a3",
-  "generated": "2024-01-18T11:00:02.967Z",
+  "commit": "a3f69344f6e4647b343030d56fd925d45c6d1881",
+  "generated": "2024-01-18T11:15:14.583Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1946,24 +1946,6 @@
     },
     {
       "__outstatic": {
-        "commit": "bbaedbf5d1d96cf3e9a36b9ab0aa4993e0f02a3c",
-        "hash": "1552837836",
-        "path": "content/blog/50-days-of-daily-design.md"
-      },
-      "author": {
-        "name": "Praveen Juge",
-        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
-      },
-      "collection": "blog",
-      "coverImage": "",
-      "description": "I embarked on an exciting challenge: to post a new design every day. Now, 50 days in, I've not only sharpened my skills but also doubled my Twitter following. This daily commitment, initially just an experiment, has turned into a goal to continue for at least a year.",
-      "publishedAt": "2024-01-18T11:28:41.729Z",
-      "slug": "50-days-of-daily-design",
-      "status": "published",
-      "title": "50 Days of Daily Design"
-    },
-    {
-      "__outstatic": {
         "commit": "d0a409dbba9d8bef48309de513f534f329ca39a3",
         "hash": "297574553",
         "path": "content/design/18-01-2024.md"
@@ -1979,6 +1961,24 @@
       "slug": "18-01-2024",
       "status": "published",
       "title": "18-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "a3f69344f6e4647b343030d56fd925d45c6d1881",
+        "hash": "3388335962",
+        "path": "content/blog/50-days-of-daily-design.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "I embarked on an exciting challenge: to post a new design every day. Now, 50 days in, I've not only sharpened my skills but also doubled my Twitter following. This daily commitment, initially just an experiment, has turned into a goal to continue for at least a year.",
+      "publishedAt": "2024-01-18T11:28:41.729Z",
+      "slug": "50-days-of-daily-design",
+      "status": "published",
+      "title": "50 Days of Daily Design"
     }
   ]
 }
