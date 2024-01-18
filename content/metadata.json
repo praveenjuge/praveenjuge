@@ -1,6 +1,6 @@
 {
-  "commit": "bbaedbf5d1d96cf3e9a36b9ab0aa4993e0f02a3c",
-  "generated": "2024-01-18T10:56:40.319Z",
+  "commit": "d0a409dbba9d8bef48309de513f534f329ca39a3",
+  "generated": "2024-01-18T11:00:02.967Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1961,6 +1961,24 @@
       "slug": "50-days-of-daily-design",
       "status": "published",
       "title": "50 Days of Daily Design"
+    },
+    {
+      "__outstatic": {
+        "commit": "d0a409dbba9d8bef48309de513f534f329ca39a3",
+        "hash": "297574553",
+        "path": "content/design/18-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/18-01-2024-gxNz.jpg",
+      "description": "",
+      "publishedAt": "2024-01-18T11:29:57.685Z",
+      "slug": "18-01-2024",
+      "status": "published",
+      "title": "18-01-2024"
     }
   ]
 }
