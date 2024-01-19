@@ -1,6 +1,6 @@
 {
-  "commit": "2235f99a28af9c3140ec9844dab09d134f4eff1d",
-  "generated": "2024-01-19T07:37:51.993Z",
+  "commit": "11a13eb34c7665030a4eb501b51512b336ccf1a2",
+  "generated": "2024-01-19T13:54:21.187Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1997,6 +1997,24 @@
       "slug": "designing-for-everyone",
       "status": "published",
       "title": "Designing for Everyone"
+    },
+    {
+      "__outstatic": {
+        "commit": "11a13eb34c7665030a4eb501b51512b336ccf1a2",
+        "hash": "2257716715",
+        "path": "content/design/19-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/19-01-2024-A0Mj.jpg",
+      "description": "",
+      "publishedAt": "2024-01-19T14:27:08.419Z",
+      "slug": "19-01-2024",
+      "status": "published",
+      "title": "19-01-2024"
     }
   ]
 }
