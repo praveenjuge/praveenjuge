@@ -1,6 +1,6 @@
 {
-  "commit": "a3f69344f6e4647b343030d56fd925d45c6d1881",
-  "generated": "2024-01-18T11:15:14.583Z",
+  "commit": "2235f99a28af9c3140ec9844dab09d134f4eff1d",
+  "generated": "2024-01-19T07:37:51.993Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1979,6 +1979,24 @@
       "slug": "50-days-of-daily-design",
       "status": "published",
       "title": "50 Days of Daily Design"
+    },
+    {
+      "__outstatic": {
+        "commit": "2235f99a28af9c3140ec9844dab09d134f4eff1d",
+        "hash": "2403777520",
+        "path": "content/blog/designing-for-everyone.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "In today's digital age, it's important to design websites and apps that everyone can use. Inclusive design is about making sure that all sorts of people, including those with different abilities, can have a good experience when they use these digital platforms.",
+      "publishedAt": "2024-01-19T08:08:00.633Z",
+      "slug": "designing-for-everyone",
+      "status": "published",
+      "title": "Designing for Everyone"
     }
   ]
 }
