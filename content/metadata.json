@@ -1,6 +1,6 @@
 {
-  "commit": "1f2619f4eccb646312098ae110be8e2605160e41",
-  "generated": "2024-01-21T17:50:46.890Z",
+  "commit": "9dc38f3b5698511d3f5db47ed12d41e5e98f5374",
+  "generated": "2024-01-21T18:19:23.976Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2069,6 +2069,24 @@
       "slug": "open-source-tips",
       "status": "published",
       "title": "Open Source Tips"
+    },
+    {
+      "__outstatic": {
+        "commit": "9dc38f3b5698511d3f5db47ed12d41e5e98f5374",
+        "hash": "1028832117",
+        "path": "content/blog/pushing-to-the-front-book-review.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "As a designer, I'm always on the lookout for inspiration, not just in visuals but in words too. That's how I stumbled upon \"Pushing to the Front\" by Orison Swett Marden. This book, although over a century old, surprisingly resonates with the creative struggles and triumphs we face today.",
+      "publishedAt": "2024-01-21T18:23:51.761Z",
+      "slug": "pushing-to-the-front-book-review",
+      "status": "published",
+      "title": "Pushing to the Front - Book Review"
     }
   ]
 }
