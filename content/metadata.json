@@ -1,6 +1,6 @@
 {
-  "commit": "ca1d2d8389cffe6b2940af72f1fcacc1f1e288f7",
-  "generated": "2024-01-20T17:39:46.533Z",
+  "commit": "8c5022d535ea0a41c5e56ab62425f33afaff72ed",
+  "generated": "2024-01-21T17:50:19.726Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2051,6 +2051,24 @@
       "slug": "open-source-tips",
       "status": "published",
       "title": "Open Source Tips"
+    },
+    {
+      "__outstatic": {
+        "commit": "8c5022d535ea0a41c5e56ab62425f33afaff72ed",
+        "hash": "3678743152",
+        "path": "content/design/21-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/21-01-2024-QyND.jpg",
+      "description": "",
+      "publishedAt": "2024-01-21T18:23:06.722Z",
+      "slug": "21-01-2024",
+      "status": "published",
+      "title": "21-01-2024"
     }
   ]
 }
