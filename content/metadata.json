@@ -1,6 +1,6 @@
 {
-  "commit": "8c5022d535ea0a41c5e56ab62425f33afaff72ed",
-  "generated": "2024-01-21T17:50:19.726Z",
+  "commit": "1f2619f4eccb646312098ae110be8e2605160e41",
+  "generated": "2024-01-21T17:50:46.890Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2036,24 +2036,6 @@
     },
     {
       "__outstatic": {
-        "commit": "ca1d2d8389cffe6b2940af72f1fcacc1f1e288f7",
-        "hash": "1154513466",
-        "path": "content/blog/open-source-tips.md"
-      },
-      "author": {
-        "name": "Praveen Juge",
-        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
-      },
-      "collection": "blog",
-      "coverImage": "",
-      "description": "Imagine the open source community as a bustling city, alive with people sharing, learning, and creating together. It's an exciting place for both experienced developers and newcomers. Like any new adventure, knowing a few essential tips can make your journey smoother and more rewarding.",
-      "publishedAt": "2024-01-20T18:06:29.949Z",
-      "slug": "open-source-tips",
-      "status": "published",
-      "title": "Open Source Tips"
-    },
-    {
-      "__outstatic": {
         "commit": "8c5022d535ea0a41c5e56ab62425f33afaff72ed",
         "hash": "3678743152",
         "path": "content/design/21-01-2024.md"
@@ -2069,6 +2051,24 @@
       "slug": "21-01-2024",
       "status": "published",
       "title": "21-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "1f2619f4eccb646312098ae110be8e2605160e41",
+        "hash": "2504190893",
+        "path": "content/blog/open-source-tips.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "Imagine the open source community as a bustling city, alive with people sharing, learning, and creating together. It's an exciting place for both experienced developers and newcomers. Like any new adventure, knowing a few essential tips can make your journey smoother and more rewarding.",
+      "publishedAt": "2024-01-20T18:06:29.949Z",
+      "slug": "open-source-tips",
+      "status": "published",
+      "title": "Open Source Tips"
     }
   ]
 }

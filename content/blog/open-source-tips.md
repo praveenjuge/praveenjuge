@@ -16,4 +16,4 @@ When coding, remember the saying, "Slow and steady wins the race." Regular, smal
 
 Open source isn't just about the code – it's about building a friendly neighborhood. A Code of Conduct is like the rules of a clubhouse, making sure everyone feels safe and welcome. Licenses are the signs that tell others how they can use and share your project, so pick them thoughtfully.
 
-To sum up, succeeding in the open source world is about being organized, communicating clearly, and always being ready to learn and grow. By following these tips, you'll not only contribute something meaningful but also learn from a vast network of skilled people, pushing forward the world of software.
+To sum up, succeeding in the open source world is about being organized, communicating clearly, and always being ready to learn and grow.
