@@ -1,6 +1,6 @@
 {
-  "commit": "9dc38f3b5698511d3f5db47ed12d41e5e98f5374",
-  "generated": "2024-01-21T18:19:23.976Z",
+  "commit": "9633174df2bb39c1587970869de98001bb1381cf",
+  "generated": "2024-01-22T17:08:32.897Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2087,6 +2087,24 @@
       "slug": "pushing-to-the-front-book-review",
       "status": "published",
       "title": "Pushing to the Front - Book Review"
+    },
+    {
+      "__outstatic": {
+        "commit": "9633174df2bb39c1587970869de98001bb1381cf",
+        "hash": "1576989501",
+        "path": "content/design/22-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/22-01-2024-AxNj.jpg",
+      "description": "",
+      "publishedAt": "2024-01-22T17:41:22.151Z",
+      "slug": "22-01-2024",
+      "status": "published",
+      "title": "22-01-2024"
     }
   ]
 }
