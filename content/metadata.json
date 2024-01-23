@@ -1,6 +1,6 @@
 {
-  "commit": "f5a7b122028dbd874737bc4f1f04bb2d197fe20c",
-  "generated": "2024-01-23T18:01:45.615Z",
+  "commit": "518cb2cc3b0e7ae3270e00d705acf67cf8e61241",
+  "generated": "2024-01-23T18:21:19.424Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2123,6 +2123,24 @@
       "slug": "23-01-2024",
       "status": "published",
       "title": "23-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "518cb2cc3b0e7ae3270e00d705acf67cf8e61241",
+        "hash": "3956357193",
+        "path": "content/blog/why-simplicity-matters.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "Simplicity in design makes technology accessible and products intuitive, focusing on user needs and usability. ",
+      "publishedAt": "2024-01-23T18:50:14.498Z",
+      "slug": "why-simplicity-matters",
+      "status": "published",
+      "title": "Why Simplicity Matters"
     }
   ]
 }
