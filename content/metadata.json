@@ -1,6 +1,6 @@
 {
-  "commit": "518cb2cc3b0e7ae3270e00d705acf67cf8e61241",
-  "generated": "2024-01-23T18:21:19.424Z",
+  "commit": "cda166953bff4439fb4709744a56243f05466567",
+  "generated": "2024-01-24T17:41:40.005Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2141,6 +2141,24 @@
       "slug": "why-simplicity-matters",
       "status": "published",
       "title": "Why Simplicity Matters"
+    },
+    {
+      "__outstatic": {
+        "commit": "cda166953bff4439fb4709744a56243f05466567",
+        "hash": "1100455106",
+        "path": "content/design/24-01-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/24-01-2024-k3Nj.jpg",
+      "description": "",
+      "publishedAt": "2024-01-24T18:14:23.088Z",
+      "slug": "24-01-2024",
+      "status": "published",
+      "title": "24-01-2024"
     }
   ]
 }
