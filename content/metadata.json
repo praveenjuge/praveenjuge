@@ -1,6 +1,6 @@
 {
-  "commit": "1f565da68261cb822472987539d74b7992ca23bc",
-  "generated": "2024-01-29T16:09:47.114Z",
+  "commit": "67aa61752fd351f8e2a7a1926e77e9f4530a3eba",
+  "generated": "2024-01-30T17:16:05.087Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2249,6 +2249,24 @@
       "slug": "29-01-2024",
       "status": "published",
       "title": "29-01-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "67aa61752fd351f8e2a7a1926e77e9f4530a3eba",
+        "hash": "335237646",
+        "path": "content/design/30-1-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/30-01-2024-EzOT.jpg",
+      "description": "",
+      "publishedAt": "2024-01-30T17:48:53.940Z",
+      "slug": "30-1-2024",
+      "status": "published",
+      "title": "30-1-2024"
     }
   ]
 }
