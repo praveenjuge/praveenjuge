@@ -19,7 +19,7 @@ export default async function Page() {
         Designs
       </h2>
 
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {allDesigns.map((item, id) => (
           <Link
             key={id}
@@ -28,13 +28,13 @@ export default async function Page() {
             href={item.coverImage ?? ''}
           >
             <Image
-              width={700}
-              height={800}
+              width={612}
+              height={459}
               priority={id === 0}
               loading={id > 10 ? 'lazy' : 'eager'}
               alt={item.coverImage ?? ''}
               src={item.coverImage ?? ''}
-              className="h-full w-full rounded bg-slate-200 bg-cover bg-center ring-1 ring-slate-100"
+              className="size-full rounded bg-slate-200 bg-cover bg-center ring-1 ring-slate-100"
             />
           </Link>
         ))}

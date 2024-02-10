@@ -41,7 +41,7 @@ export default async function Page() {
           href="mailto:hello@praveenjuge.com"
           className="inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-600"
         >
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-700"></span>
+          <span className="size-1.5 animate-pulse rounded-full bg-emerald-700"></span>
           <span>Available for New Projects</span>
         </a>
         <h1 className={headingClass + ' ' + '!mt-6'}>What&rsquo;s up nerds?</h1>
@@ -96,7 +96,7 @@ export default async function Page() {
             className="flex items-center justify-center gap-2 font-medium text-rose-900 transition hover:text-black"
           >
             <span>View More</span>
-            <ArrowLongRight className="h-6 w-6" />
+            <ArrowLongRight className="size-6" />
           </Link>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default async function Page() {
           className="flex items-center gap-2 text-lg font-medium text-rose-900 transition hover:text-black"
         >
           <span>Read More</span>
-          <ArrowLongRight className="h-6 w-6" />
+          <ArrowLongRight className="size-6" />
         </Link>
 
         <h2 className={headingClass}>Projects</h2>
@@ -153,7 +153,7 @@ export default async function Page() {
             rel="noopener noreferrer"
             className="relative my-4 block overflow-hidden rounded bg-slate-950 px-6 pb-32 pt-8 text-white transition hover:border-slate-300 sm:py-8 md:grid-cols-2"
           >
-            <div className="pointer-events-none absolute -right-1 top-24 flex h-44 w-full select-none flex-wrap gap-2 text-slate-600 sm:-right-6 sm:-top-6 sm:w-[65%] sm:rotate-[8deg] [&_svg]:h-6 [&_svg]:w-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
+            <div className="pointer-events-none absolute -right-1 top-24 flex h-44 w-full select-none flex-wrap gap-2 text-slate-600 sm:-right-6 sm:-top-6 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
                 <path d="M9.5 12c0-1.178.0-1.768.366-2.134S10.822 9.5 12 9.5s1.768.0 2.134.366.366.956.366 2.134.0 1.768-.366 2.134-.956.366-2.134.366-1.768.0-2.134-.366S9.5 13.178 9.5 12z"></path>
                 <circle cx="12" cy="12" r="9"></circle>
@@ -616,7 +616,7 @@ export default async function Page() {
               </svg>
             </div>
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 h-full w-full select-none bg-gradient-to-b from-slate-950 via-slate-950/90 sm:bg-gradient-to-r"
+              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-slate-950 via-slate-950/90 sm:bg-gradient-to-r"
               aria-hidden="true"
             ></div>
             <div className="relative flex w-full flex-col items-start justify-between sm:w-1/2">
@@ -630,7 +630,7 @@ export default async function Page() {
               </div>
               <span className="flex items-center gap-1.5 rounded bg-white px-3.5 py-2.5 text-sm font-medium text-slate-950">
                 <span>View Project</span>
-                <ArrowUpRight className="inline-block h-4 w-4" stroke={2} />
+                <ArrowUpRight className="inline-block size-4" stroke={2} />
               </span>
             </div>
           </a>
@@ -704,7 +704,7 @@ export default async function Page() {
               </div>
               <span className="flex items-center gap-1.5 rounded bg-white px-3.5 py-2.5 text-sm font-medium text-slate-950">
                 <span>View Project</span>
-                <ArrowUpRight className="inline-block h-4 w-4" stroke={2} />
+                <ArrowUpRight className="inline-block size-4" stroke={2} />
               </span>
             </div>
             <div className="relative h-44">
@@ -758,7 +758,7 @@ export default async function Page() {
               </div>
               <span className="flex items-center gap-1.5 rounded bg-white px-3.5 py-2.5 text-sm font-medium text-slate-950">
                 <span>View Project</span>
-                <ArrowUpRight className="inline-block h-4 w-4" stroke={2} />
+                <ArrowUpRight className="inline-block size-4" stroke={2} />
               </span>
             </div>
             <div
