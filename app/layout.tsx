@@ -128,7 +128,7 @@ export default function RootLayout({
               target="_blank"
               rel="noopener noreferrer me"
             >
-              <BrandGithub className="h-5 w-5" stroke={1.75} />
+              <BrandGithub className="size-5" stroke={1.75} />
             </Link>
 
             <Link
@@ -137,7 +137,7 @@ export default function RootLayout({
               target="_blank"
               rel="noopener noreferrer me"
             >
-              <BrandDribbble className="h-5 w-5" stroke={1.75} />
+              <BrandDribbble className="size-5" stroke={1.75} />
             </Link>
             <Link
               title="X (Twitter)"
@@ -145,7 +145,7 @@ export default function RootLayout({
               target="_blank"
               rel="noopener noreferrer me"
             >
-              <BrandX className="h-5 w-5" stroke={1.75} />
+              <BrandX className="size-5" stroke={1.75} />
             </Link>
             <a
               rel="me"
