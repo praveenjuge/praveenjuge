@@ -1,6 +1,6 @@
 {
-  "commit": "5b2b06f6e659b986a492274aa3e198d74cc49dae",
-  "generated": "2024-02-15T09:02:04.833Z",
+  "commit": "0bd3500a373008d8c17feb6a935f2d857ff73705",
+  "generated": "2024-02-15T16:05:22.255Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2555,6 +2555,24 @@
       "slug": "15-02-2024",
       "status": "published",
       "title": "15-02-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "0bd3500a373008d8c17feb6a935f2d857ff73705",
+        "hash": "3702665354",
+        "path": "content/blog/all-the-ai-subscriptions-i-have.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "I recently decided to list all the subscriptions I have in Excel to determine which category is the largest. Spoiler alert: it's AI.",
+      "publishedAt": "2024-02-15T16:21:09.700Z",
+      "slug": "all-the-ai-subscriptions-i-have",
+      "status": "published",
+      "title": "All the AI Subscriptions I Have"
     }
   ]
 }
