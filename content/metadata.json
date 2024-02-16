@@ -1,6 +1,6 @@
 {
-  "commit": "0bd3500a373008d8c17feb6a935f2d857ff73705",
-  "generated": "2024-02-15T16:05:22.255Z",
+  "commit": "6c203cd020d01938dba737b3030f3b52333fefcd",
+  "generated": "2024-02-16T16:20:44.196Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2573,6 +2573,24 @@
       "slug": "all-the-ai-subscriptions-i-have",
       "status": "published",
       "title": "All the AI Subscriptions I Have"
+    },
+    {
+      "__outstatic": {
+        "commit": "6c203cd020d01938dba737b3030f3b52333fefcd",
+        "hash": "1380191830",
+        "path": "content/design/16-02-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/16-02-2024-UzNz.jpg",
+      "description": "",
+      "publishedAt": "2024-02-16T16:53:32.119Z",
+      "slug": "16-02-2024",
+      "status": "published",
+      "title": "16-02-2024"
     }
   ]
 }
