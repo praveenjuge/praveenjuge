@@ -37,13 +37,13 @@ export default async function Page() {
   return (
     <>
       <div className="mx-auto max-w-3xl p-4">
-        <a
+        {/* <a
           href="mailto:hello@praveenjuge.com"
           className="inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-600"
         >
           <span className="size-1.5 animate-pulse rounded-full bg-emerald-700"></span>
           <span>Available for New Projects</span>
-        </a>
+        </a> */}
         <h1 className={headingClass + ' ' + '!mt-6'}>What&rsquo;s up nerds?</h1>
 
         <p className="text-lg">
@@ -131,7 +131,7 @@ export default async function Page() {
           <Link
             key={id}
             href={`/blog/${item.slug}`}
-            className="my-4 flex text-lg font-medium text-rose-900 hover:text-black"
+            className="my-4 flex items-center gap-2 text-lg font-medium text-rose-900 transition hover:text-black"
           >
             {item.title}
           </Link>
@@ -146,12 +146,12 @@ export default async function Page() {
 
         <h2 className={headingClass}>Projects</h2>
 
-        <div id="projects">
+        <div id="projects" className="space-y-5">
           <a
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative my-4 block overflow-hidden rounded bg-slate-950 px-6 pb-32 pt-8 text-white transition hover:border-slate-300 sm:py-8 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-white md:grid-cols-2"
           >
             <div className="pointer-events-none absolute -right-1 top-24 flex h-44 w-full select-none flex-wrap gap-2 text-slate-600 sm:-right-6 sm:-top-6 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
@@ -619,16 +619,16 @@ export default async function Page() {
               className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-slate-950 via-slate-950/90 sm:bg-gradient-to-r"
               aria-hidden="true"
             ></div>
-            <div className="relative flex w-full flex-col items-start justify-between sm:w-1/2">
+            <div className="relative flex h-44 w-full flex-col items-start justify-between">
               <div>
                 <h3 className="text-lg font-semibold tracking-tight">
                   MynaUI Icons
                 </h3>
-                <p className="mb-10 mt-1 text-slate-400">
+                <p className="mb-6 text-slate-400">
                   Beautifully crafted open-source icons for your next project.
                 </p>
               </div>
-              <span className="flex items-center gap-1.5 rounded bg-white px-3.5 py-2.5 text-sm font-medium text-slate-950">
+              <span className="flex items-center gap-1.5 rounded border-[0.5px] border-slate-800 bg-slate-900 px-3.5 py-2.5 text-sm font-medium text-white">
                 <span>View Project</span>
                 <ArrowUpRight className="inline-block size-4" stroke={2} />
               </span>
@@ -639,75 +639,21 @@ export default async function Page() {
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative my-4 grid grid-cols-1 gap-4 overflow-hidden rounded bg-slate-950 p-6 text-white transition hover:border-slate-300 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-white md:grid-cols-2"
           >
-            <svg
-              viewBox="0 0 881 211"
-              fill="white"
-              aria-hidden="true"
-              className="pointer-events-none absolute left-0 top-0 h-full w-3/4 select-none opacity-50"
-            >
-              <circle cx="101" cy="116" r="1"></circle>
-              <circle cx="140" cy="36" r="1"></circle>
-              <circle cx="149" cy="134" r="1"></circle>
-              <circle cx="162" cy="74" r="1"></circle>
-              <circle cx="171" cy="96" r="1"></circle>
-              <circle cx="210" cy="56" r="1"></circle>
-              <circle cx="235" cy="90" r="1" opacity="0.3"></circle>
-              <circle cx="247" cy="103" r="1" opacity="0.3"></circle>
-              <circle cx="261" cy="86" r="1"></circle>
-              <circle cx="275" cy="82" r="1"></circle>
-              <circle cx="306" cy="6" r="1"></circle>
-              <circle cx="307" cy="104" r="1" opacity="0.5"></circle>
-              <circle cx="307" cy="64" r="1" opacity="0.5"></circle>
-              <circle cx="357" cy="36" r="1"></circle>
-              <circle cx="36" cy="22" r="1" opacity="0.3"></circle>
-              <circle cx="380" cy="108" r="1"></circle>
-              <circle cx="380" cy="68" r="1"></circle>
-              <circle cx="391" cy="148" r="1"></circle>
-              <circle cx="4" cy="4" r="1"></circle>
-              <circle cx="4" cy="44" r="1"></circle>
-              <circle cx="405" cy="18" r="1" opacity="0.3"></circle>
-              <circle cx="412" cy="86" r="1"></circle>
-              <circle cx="426" cy="210" r="1" opacity="0.5"></circle>
-              <circle cx="427" cy="56" r="1"></circle>
-              <circle cx="440" cy="107" r="1"></circle>
-              <circle cx="477" cy="180" r="1"></circle>
-              <circle cx="491" cy="62" r="1"></circle>
-              <circle cx="50" cy="146" r="1"></circle>
-              <circle cx="516" cy="100" r="1" opacity="0.3"></circle>
-              <circle cx="538" cy="138" r="1"></circle>
-              <circle cx="563" cy="88" r="1"></circle>
-              <circle cx="586" cy="120" r="1"></circle>
-              <circle cx="611" cy="154" r="1"></circle>
-              <circle cx="637" cy="150" r="1" opacity="0.5"></circle>
-              <circle cx="64" cy="43" r="1"></circle>
-              <circle cx="651" cy="146" r="1"></circle>
-              <circle cx="682" cy="70" r="1"></circle>
-              <circle cx="683" cy="128" r="1" opacity="0.5"></circle>
-              <circle cx="733" cy="100" r="1"></circle>
-              <circle cx="76" cy="30" r="1"></circle>
-              <circle cx="781" cy="82" r="1"></circle>
-              <circle cx="785" cy="158" r="1" opacity="0.3"></circle>
-              <circle cx="803" cy="120" r="1" opacity="0.5"></circle>
-              <circle cx="823" cy="164" r="1"></circle>
-              <circle cx="832" cy="146" r="1"></circle>
-              <circle cx="852" cy="89" r="1"></circle>
-              <circle cx="879" cy="113" r="1"></circle>
-            </svg>
-            <div className="relative flex flex-col items-start justify-between">
+            <div className="relative flex h-44 w-full flex-col items-start justify-between">
               <div>
                 <h3 className="text-lg font-semibold tracking-tight">MynaUI</h3>
-                <p className="mb-6 mt-1 text-slate-400">
+                <p className="mb-6 text-slate-400">
                   Figma File and HTML Code with Tailwind CSS Design System.
                 </p>
               </div>
-              <span className="flex items-center gap-1.5 rounded bg-white px-3.5 py-2.5 text-sm font-medium text-slate-950">
+              <span className="flex items-center gap-1.5 rounded border-[0.5px] border-slate-800 bg-slate-900 px-3.5 py-2.5 text-sm font-medium text-white">
                 <span>View Project</span>
                 <ArrowUpRight className="inline-block size-4" stroke={2} />
               </span>
             </div>
-            <div className="relative h-44">
+            <div className="relative h-44 select-none">
               <Image
                 src="/images/grid.png"
                 className="relative rounded opacity-75 md:absolute md:-right-3 md:-top-8"
@@ -722,53 +668,30 @@ export default async function Page() {
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative my-4 grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-slate-50 transition hover:border-slate-300 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-white md:grid-cols-2"
           >
-            <div className="absolute inset-0 hidden h-60 shrink-0 opacity-50 md:flex">
-              <svg
-                className="fill-slate-900"
-                viewBox="0 0 120 120"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M9,0 L11,0 L11,20 L9,20 L9,0 Z M34.1339746,0.839745962 L35.8660254,1.83974596 L25.8660254,19.160254 L24.1339746,18.160254 L34.1339746,0.839745962 Z M14.1339746,20.839746 L15.8660254,21.839746 L5.8660254,39.160254 L4.1339746,38.160254 L14.1339746,20.839746 Z M58.160254,4.1339746 L59.160254,5.8660254 L41.839746,15.8660254 L40.839746,14.1339746 L58.160254,4.1339746 Z M18.160254,44.1339746 L19.160254,45.8660254 L1.83974596,55.8660254 L0.839745962,54.1339746 L18.160254,44.1339746 Z M80,9 L80,11 L60,11 L60,9 L80,9 Z M20,69 L20,71 L0,71 L0,69 L20,69 Z M99.3205081,14 L98.3205081,15.7320508 L81,5.73205081 L82,4 L99.3205081,14 Z M19.3205081,94 L18.3205081,95.7320508 L1,85.7320508 L2,84 L19.3205081,94 Z M115.866025,18.160254 L114.133975,19.160254 L104.133975,1.83974596 L105.866025,0.839745962 L115.866025,18.160254 Z M15.8660254,118.160254 L14.1339746,119.160254 L4.1339746,101.839746 L5.8660254,100.839746 L15.8660254,118.160254 Z M38.160254,24.1339746 L39.160254,25.8660254 L21.839746,35.8660254 L20.839746,34.1339746 L38.160254,24.1339746 Z M60,29 L60,31 L40,31 L40,29 L60,29 Z M79.3205081,34 L78.3205081,35.7320508 L61,25.7320508 L62,24 L79.3205081,34 Z M95.8660254,38.160254 L94.1339746,39.160254 L84.1339746,21.839746 L85.8660254,20.839746 L95.8660254,38.160254 Z M111,40 L109,40 L109,20 L111,20 L111,40 Z M114.133975,40.839746 L115.866025,41.839746 L105.866025,59.160254 L104.133975,58.160254 L114.133975,40.839746 Z M40,49 L40,51 L20,51 L20,49 L40,49 Z M59.3205081,54 L58.3205081,55.7320508 L41,45.7320508 L42,44 L59.3205081,54 Z M75.8660254,58.160254 L74.1339746,59.160254 L64.1339746,41.839746 L65.8660254,40.839746 L75.8660254,58.160254 Z M91,60 L89,60 L89,40 L91,40 L91,60 Z M94.1339746,60.839746 L95.8660254,61.839746 L85.8660254,79.160254 L84.1339746,78.160254 L94.1339746,60.839746 Z M118.160254,64.1339746 L119.160254,65.8660254 L101.839746,75.8660254 L100.839746,74.1339746 L118.160254,64.1339746 Z M39.3205081,74 L38.3205081,75.7320508 L21,65.7320508 L22,64 L39.3205081,74 Z M55.8660254,78.160254 L54.1339746,79.160254 L44.1339746,61.839746 L45.8660254,60.839746 L55.8660254,78.160254 Z M71,80 L69,80 L69,60 L71,60 L71,80 Z M74.1339746,80.839746 L75.8660254,81.839746 L65.8660254,99.160254 L64.1339746,98.160254 L74.1339746,80.839746 Z M98.160254,84.1339746 L99.160254,85.8660254 L81.839746,95.8660254 L80.839746,94.1339746 L98.160254,84.1339746 Z M120,89 L120,91 L100,91 L100,89 L120,89 Z M35.8660254,98.160254 L34.1339746,99.160254 L24.1339746,81.839746 L25.8660254,80.839746 L35.8660254,98.160254 Z M51,100 L49,100 L49,80 L51,80 L51,100 Z M54.1339746,100.839746 L55.8660254,101.839746 L45.8660254,119.160254 L44.1339746,118.160254 L54.1339746,100.839746 Z M78.160254,104.133975 L79.160254,105.866025 L61.839746,115.866025 L60.839746,114.133975 L78.160254,104.133975 Z M100,109 L100,111 L80,111 L80,109 L100,109 Z M119.320508,114 L118.320508,115.732051 L101,105.732051 L102,104 L119.320508,114 Z M31,120 L29,120 L29,100 L31,100 L31,120 Z"></path>
-              </svg>
-              <svg
-                className="fill-slate-900"
-                viewBox="0 0 120 120"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M9,0 L11,0 L11,20 L9,20 L9,0 Z M34.1339746,0.839745962 L35.8660254,1.83974596 L25.8660254,19.160254 L24.1339746,18.160254 L34.1339746,0.839745962 Z M14.1339746,20.839746 L15.8660254,21.839746 L5.8660254,39.160254 L4.1339746,38.160254 L14.1339746,20.839746 Z M58.160254,4.1339746 L59.160254,5.8660254 L41.839746,15.8660254 L40.839746,14.1339746 L58.160254,4.1339746 Z M18.160254,44.1339746 L19.160254,45.8660254 L1.83974596,55.8660254 L0.839745962,54.1339746 L18.160254,44.1339746 Z M80,9 L80,11 L60,11 L60,9 L80,9 Z M20,69 L20,71 L0,71 L0,69 L20,69 Z M99.3205081,14 L98.3205081,15.7320508 L81,5.73205081 L82,4 L99.3205081,14 Z M19.3205081,94 L18.3205081,95.7320508 L1,85.7320508 L2,84 L19.3205081,94 Z M115.866025,18.160254 L114.133975,19.160254 L104.133975,1.83974596 L105.866025,0.839745962 L115.866025,18.160254 Z M15.8660254,118.160254 L14.1339746,119.160254 L4.1339746,101.839746 L5.8660254,100.839746 L15.8660254,118.160254 Z M38.160254,24.1339746 L39.160254,25.8660254 L21.839746,35.8660254 L20.839746,34.1339746 L38.160254,24.1339746 Z M60,29 L60,31 L40,31 L40,29 L60,29 Z M79.3205081,34 L78.3205081,35.7320508 L61,25.7320508 L62,24 L79.3205081,34 Z M95.8660254,38.160254 L94.1339746,39.160254 L84.1339746,21.839746 L85.8660254,20.839746 L95.8660254,38.160254 Z M111,40 L109,40 L109,20 L111,20 L111,40 Z M114.133975,40.839746 L115.866025,41.839746 L105.866025,59.160254 L104.133975,58.160254 L114.133975,40.839746 Z M40,49 L40,51 L20,51 L20,49 L40,49 Z M59.3205081,54 L58.3205081,55.7320508 L41,45.7320508 L42,44 L59.3205081,54 Z M75.8660254,58.160254 L74.1339746,59.160254 L64.1339746,41.839746 L65.8660254,40.839746 L75.8660254,58.160254 Z M91,60 L89,60 L89,40 L91,40 L91,60 Z M94.1339746,60.839746 L95.8660254,61.839746 L85.8660254,79.160254 L84.1339746,78.160254 L94.1339746,60.839746 Z M118.160254,64.1339746 L119.160254,65.8660254 L101.839746,75.8660254 L100.839746,74.1339746 L118.160254,64.1339746 Z M39.3205081,74 L38.3205081,75.7320508 L21,65.7320508 L22,64 L39.3205081,74 Z M55.8660254,78.160254 L54.1339746,79.160254 L44.1339746,61.839746 L45.8660254,60.839746 L55.8660254,78.160254 Z M71,80 L69,80 L69,60 L71,60 L71,80 Z M74.1339746,80.839746 L75.8660254,81.839746 L65.8660254,99.160254 L64.1339746,98.160254 L74.1339746,80.839746 Z M98.160254,84.1339746 L99.160254,85.8660254 L81.839746,95.8660254 L80.839746,94.1339746 L98.160254,84.1339746 Z M120,89 L120,91 L100,91 L100,89 L120,89 Z M35.8660254,98.160254 L34.1339746,99.160254 L24.1339746,81.839746 L25.8660254,80.839746 L35.8660254,98.160254 Z M51,100 L49,100 L49,80 L51,80 L51,100 Z M54.1339746,100.839746 L55.8660254,101.839746 L45.8660254,119.160254 L44.1339746,118.160254 L54.1339746,100.839746 Z M78.160254,104.133975 L79.160254,105.866025 L61.839746,115.866025 L60.839746,114.133975 L78.160254,104.133975 Z M100,109 L100,111 L80,111 L80,109 L100,109 Z M119.320508,114 L118.320508,115.732051 L101,105.732051 L102,104 L119.320508,114 Z M31,120 L29,120 L29,100 L31,100 L31,120 Z"></path>
-              </svg>
-              <svg
-                className="fill-slate-900"
-                viewBox="0 0 120 120"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M9,0 L11,0 L11,20 L9,20 L9,0 Z M34.1339746,0.839745962 L35.8660254,1.83974596 L25.8660254,19.160254 L24.1339746,18.160254 L34.1339746,0.839745962 Z M14.1339746,20.839746 L15.8660254,21.839746 L5.8660254,39.160254 L4.1339746,38.160254 L14.1339746,20.839746 Z M58.160254,4.1339746 L59.160254,5.8660254 L41.839746,15.8660254 L40.839746,14.1339746 L58.160254,4.1339746 Z M18.160254,44.1339746 L19.160254,45.8660254 L1.83974596,55.8660254 L0.839745962,54.1339746 L18.160254,44.1339746 Z M80,9 L80,11 L60,11 L60,9 L80,9 Z M20,69 L20,71 L0,71 L0,69 L20,69 Z M99.3205081,14 L98.3205081,15.7320508 L81,5.73205081 L82,4 L99.3205081,14 Z M19.3205081,94 L18.3205081,95.7320508 L1,85.7320508 L2,84 L19.3205081,94 Z M115.866025,18.160254 L114.133975,19.160254 L104.133975,1.83974596 L105.866025,0.839745962 L115.866025,18.160254 Z M15.8660254,118.160254 L14.1339746,119.160254 L4.1339746,101.839746 L5.8660254,100.839746 L15.8660254,118.160254 Z M38.160254,24.1339746 L39.160254,25.8660254 L21.839746,35.8660254 L20.839746,34.1339746 L38.160254,24.1339746 Z M60,29 L60,31 L40,31 L40,29 L60,29 Z M79.3205081,34 L78.3205081,35.7320508 L61,25.7320508 L62,24 L79.3205081,34 Z M95.8660254,38.160254 L94.1339746,39.160254 L84.1339746,21.839746 L85.8660254,20.839746 L95.8660254,38.160254 Z M111,40 L109,40 L109,20 L111,20 L111,40 Z M114.133975,40.839746 L115.866025,41.839746 L105.866025,59.160254 L104.133975,58.160254 L114.133975,40.839746 Z M40,49 L40,51 L20,51 L20,49 L40,49 Z M59.3205081,54 L58.3205081,55.7320508 L41,45.7320508 L42,44 L59.3205081,54 Z M75.8660254,58.160254 L74.1339746,59.160254 L64.1339746,41.839746 L65.8660254,40.839746 L75.8660254,58.160254 Z M91,60 L89,60 L89,40 L91,40 L91,60 Z M94.1339746,60.839746 L95.8660254,61.839746 L85.8660254,79.160254 L84.1339746,78.160254 L94.1339746,60.839746 Z M118.160254,64.1339746 L119.160254,65.8660254 L101.839746,75.8660254 L100.839746,74.1339746 L118.160254,64.1339746 Z M39.3205081,74 L38.3205081,75.7320508 L21,65.7320508 L22,64 L39.3205081,74 Z M55.8660254,78.160254 L54.1339746,79.160254 L44.1339746,61.839746 L45.8660254,60.839746 L55.8660254,78.160254 Z M71,80 L69,80 L69,60 L71,60 L71,80 Z M74.1339746,80.839746 L75.8660254,81.839746 L65.8660254,99.160254 L64.1339746,98.160254 L74.1339746,80.839746 Z M98.160254,84.1339746 L99.160254,85.8660254 L81.839746,95.8660254 L80.839746,94.1339746 L98.160254,84.1339746 Z M120,89 L120,91 L100,91 L100,89 L120,89 Z M35.8660254,98.160254 L34.1339746,99.160254 L24.1339746,81.839746 L25.8660254,80.839746 L35.8660254,98.160254 Z M51,100 L49,100 L49,80 L51,80 L51,100 Z M54.1339746,100.839746 L55.8660254,101.839746 L45.8660254,119.160254 L44.1339746,118.160254 L54.1339746,100.839746 Z M78.160254,104.133975 L79.160254,105.866025 L61.839746,115.866025 L60.839746,114.133975 L78.160254,104.133975 Z M100,109 L100,111 L80,111 L80,109 L100,109 Z M119.320508,114 L118.320508,115.732051 L101,105.732051 L102,104 L119.320508,114 Z M31,120 L29,120 L29,100 L31,100 L31,120 Z"></path>
-              </svg>
-            </div>
-            <div className="relative flex flex-col items-start justify-between">
+            <div className="relative flex h-44 w-full flex-col items-start justify-between">
               <div>
                 <h3 className="text-lg font-semibold tracking-tight">
                   Copy Book
                 </h3>
-                <p className="mb-6 mt-1 text-slate-400">
+                <p className="mb-6 text-slate-400">
                   Copy book is a collection of commonly used texts.
                 </p>
               </div>
-              <span className="flex items-center gap-1.5 rounded bg-white px-3.5 py-2.5 text-sm font-medium text-slate-950">
+              <span className="flex items-center gap-1.5 rounded border-[0.5px] border-slate-800 bg-slate-900 px-3.5 py-2.5 text-sm font-medium text-white">
                 <span>View Project</span>
                 <ArrowUpRight className="inline-block size-4" stroke={2} />
               </span>
             </div>
             <div
-              className="pointer-events-none relative grid h-44 select-none grid-cols-3 gap-2 opacity-90"
+              className="pointer-events-none relative grid h-44 select-none grid-cols-3 gap-2 text-[8px] font-medium text-slate-300 opacity-90"
               aria-hidden="true"
             >
               {contentCopy.map((content) => (
                 <div
                   key={content}
-                  className="rounded bg-slate-900 p-2 pb-4 text-[8px] font-medium text-slate-300 ring-1 ring-slate-800/90"
+                  className="rounded bg-slate-900 p-2 pb-4 ring-1 ring-slate-800/90"
                 >
                   {content}
                 </div>

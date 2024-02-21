@@ -106,7 +106,6 @@ export default function RootLayout({
         <header className="top-0 mx-auto mb-24 flex max-w-7xl flex-col space-y-5 px-4 py-6 text-sm font-medium sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
           <Link href="/" title="Go to Home Page">
             <svg
-              className="h-9"
               height={36}
               fill="currentColor"
               viewBox="0 0 277 59"
@@ -158,13 +157,12 @@ export default function RootLayout({
         </header>
         <main id="main">{children}</main>
         <footer className="flex items-center justify-center bg-gradient-to-b from-white to-rose-100 px-4 py-24">
-          <Link href="/" title="Row, Row, Row Your Boat">
+          <Link href="/" title="Go to Home Page">
             <svg
               className="fill-rose-900 transition duration-1000 hover:rotate-180"
               width="60"
               height="60"
               viewBox="0 0 60 60"
-              fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M26.9398 27.0508C27.3655 26.6091 27.886 26.2594 28.4685 26.0343C27.8323 24.2937 27.5388 22.4342 27.6181 20.5669C27.6253 20.3972 27.7444 20.2539 27.9106 20.2186C28.1561 20.1664 28.3769 20.369 28.3667 20.6198C28.2938 22.3989 28.5782 24.1704 29.1912 25.8269C29.453 25.7764 29.7234 25.75 29.9999 25.75C30.5025 25.75 30.9846 25.8372 31.4321 25.9974C32.6721 22.9478 34.9027 20.3778 37.8103 18.7828C37.935 18.0383 37.9999 17.2736 37.9999 16.4936C37.9999 10.9525 34.7223 6.17698 30 4C25.2776 6.17697 21.9999 10.9525 21.9999 16.4937C21.9999 20.7354 23.9206 24.5285 26.9398 27.0508Z" />
