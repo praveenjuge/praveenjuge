@@ -10,13 +10,7 @@ export default async function Page() {
 
   const contentCopy = [
     'Zilch. Nada. Nothing.',
-    'You’re one step away from your dream.',
     'Your subscription has been renewed.',
-    'Your settings have been updated.',
-    'Your satisfaction is our priority.',
-    'You have not muted any topics yet.',
-    'What will you build with us?',
-    'Share insights with the whole team',
     'Share data across platforms.'
   ];
 
@@ -148,12 +142,27 @@ export default async function Page() {
 
         <div id="projects" className="space-y-5">
           <a
+            href="https://teak.praveenjuge.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between gap-8 rounded border border-rose-50 bg-rose-50/50 p-6 pb-7"
+          >
+            <div>
+              <h3 className="font-semibold">Teak</h3>
+              <p className="text-slate-500">
+                Mac app to curate your UI inspirations.
+              </p>
+            </div>
+            <ArrowUpRight className="shrink-0 text-rose-900" />
+          </a>
+
+          <a
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-white md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border border-rose-50 bg-rose-50/50 p-6 pb-7 md:grid-cols-2"
           >
-            <div className="pointer-events-none absolute -right-1 top-24 flex h-44 w-full select-none flex-wrap gap-2 text-slate-600 sm:-right-6 sm:-top-6 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
+            <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-rose-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
                 <path d="M9.5 12c0-1.178.0-1.768.366-2.134S10.822 9.5 12 9.5s1.768.0 2.134.366.366.956.366 2.134.0 1.768-.366 2.134-.956.366-2.134.366-1.768.0-2.134-.366S9.5 13.178 9.5 12z"></path>
                 <circle cx="12" cy="12" r="9"></circle>
@@ -616,82 +625,53 @@ export default async function Page() {
               </svg>
             </div>
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-slate-950 via-slate-950/90 sm:bg-gradient-to-r"
+              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-[#FEF8F9] via-[#FEF8F9]/95 sm:bg-gradient-to-r"
               aria-hidden="true"
             ></div>
-            <div className="relative flex h-44 w-full flex-col items-start justify-between">
-              <div>
-                <h3 className="text-lg font-semibold tracking-tight">
-                  MynaUI Icons
-                </h3>
-                <p className="mb-6 text-slate-400">
-                  Beautifully crafted open-source icons for your next project.
-                </p>
-              </div>
-              <span className="flex items-center gap-1.5 rounded border-[0.5px] border-slate-800 bg-slate-900 px-3.5 py-2.5 text-sm font-medium text-white">
-                <span>View Project</span>
-                <ArrowUpRight className="inline-block size-4" stroke={2} />
-              </span>
+            <div className="relative">
+              <h3 className="font-semibold">MynaUI Icons</h3>
+              <p className="text-slate-500">
+                Beautifully crafted open-source icons for your next project.
+              </p>
             </div>
+            <div className="h-16 md:h-0"></div>
           </a>
 
           <a
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-white md:grid-cols-2"
+            className="flex items-center justify-between gap-8 rounded border border-rose-50 bg-rose-50/50 p-6 pb-7"
           >
-            <div className="relative flex h-44 w-full flex-col items-start justify-between">
-              <div>
-                <h3 className="text-lg font-semibold tracking-tight">MynaUI</h3>
-                <p className="mb-6 text-slate-400">
-                  Figma File and HTML Code with Tailwind CSS Design System.
-                </p>
-              </div>
-              <span className="flex items-center gap-1.5 rounded border-[0.5px] border-slate-800 bg-slate-900 px-3.5 py-2.5 text-sm font-medium text-white">
-                <span>View Project</span>
-                <ArrowUpRight className="inline-block size-4" stroke={2} />
-              </span>
+            <div>
+              <h3 className="font-semibold">MynaUI</h3>
+              <p className="text-slate-500">
+                Figma File and HTML Code with Tailwind CSS Design System.
+              </p>
             </div>
-            <div className="relative h-44 select-none">
-              <Image
-                src="/images/grid.png"
-                className="relative rounded opacity-75 md:absolute md:-right-3 md:-top-8"
-                alt="MynaUI Icons"
-                width={800}
-                height={500}
-              />
-            </div>
+            <ArrowUpRight className="shrink-0 text-rose-900" />
           </a>
 
           <a
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded bg-slate-950 p-6 text-white md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border border-rose-50 bg-rose-50/50 p-6 pb-7 md:grid-cols-2"
           >
-            <div className="relative flex h-44 w-full flex-col items-start justify-between">
-              <div>
-                <h3 className="text-lg font-semibold tracking-tight">
-                  Copy Book
-                </h3>
-                <p className="mb-6 text-slate-400">
-                  Copy book is a collection of commonly used texts.
-                </p>
-              </div>
-              <span className="flex items-center gap-1.5 rounded border-[0.5px] border-slate-800 bg-slate-900 px-3.5 py-2.5 text-sm font-medium text-white">
-                <span>View Project</span>
-                <ArrowUpRight className="inline-block size-4" stroke={2} />
-              </span>
+            <div>
+              <h3 className="font-semibold">Copy Book</h3>
+              <p className="text-slate-500">
+                Copy book is a collection of commonly used texts.
+              </p>
             </div>
             <div
-              className="pointer-events-none relative grid h-44 select-none grid-cols-3 gap-2 text-[8px] font-medium text-slate-300 opacity-90"
+              className="pointer-events-none grid select-none gap-2 text-[8px] font-medium sm:grid-cols-3"
               aria-hidden="true"
             >
               {contentCopy.map((content) => (
                 <div
                   key={content}
-                  className="rounded bg-slate-900 p-2 pb-4 ring-1 ring-slate-800/90"
+                  className="rounded bg-rose-50 p-2 ring-[0.5px] ring-rose-200"
                 >
                   {content}
                 </div>
