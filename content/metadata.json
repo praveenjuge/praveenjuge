@@ -1,6 +1,6 @@
 {
-  "commit": "467ba6b297fe577ddc1dcd4d81d9d7684e72733f",
-  "generated": "2024-02-24T18:05:30.247Z",
+  "commit": "f365d6feeef166944c3bd553241e310cfc63a537",
+  "generated": "2024-02-24T18:06:11.389Z",
   "metadata": [
     {
       "__outstatic": {
@@ -2720,8 +2720,8 @@
     },
     {
       "__outstatic": {
-        "commit": "467ba6b297fe577ddc1dcd4d81d9d7684e72733f",
-        "hash": "2225573021",
+        "commit": "f365d6feeef166944c3bd553241e310cfc63a537",
+        "hash": "4207172059",
         "path": "content/design/24-02-2024.md"
       },
       "author": {
@@ -2731,7 +2731,7 @@
       "collection": "design",
       "coverImage": "/images/24-02-2024-AxMj.jpg",
       "description": "",
-      "publishedAt": "2024-02-24T18:38:17.913Z",
+      "publishedAt": "2024-02-23T18:38:17.000Z",
       "slug": "24-02-2024",
       "status": "published",
       "title": "24-02-2024"
