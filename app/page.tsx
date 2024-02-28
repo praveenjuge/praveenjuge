@@ -145,7 +145,7 @@ export default async function Page() {
             href="https://teak.praveenjuge.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-8 rounded border border-rose-50 bg-rose-50/50 p-6 pb-7"
+            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7"
           >
             <div>
               <h3 className="font-semibold">Teak</h3>
@@ -160,7 +160,7 @@ export default async function Page() {
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border border-rose-50 bg-rose-50/50 p-6 pb-7 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
           >
             <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-rose-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
@@ -625,7 +625,7 @@ export default async function Page() {
               </svg>
             </div>
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-[#FEF8F9] via-[#FEF8F9]/95 sm:bg-gradient-to-r"
+              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-[#FEFCFC] via-[#FEFCFC]/95 sm:bg-gradient-to-r"
               aria-hidden="true"
             ></div>
             <div className="relative">
@@ -641,7 +641,7 @@ export default async function Page() {
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-8 rounded border border-rose-50 bg-rose-50/50 p-6 pb-7"
+            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7"
           >
             <div>
               <h3 className="font-semibold">MynaUI</h3>
@@ -656,7 +656,7 @@ export default async function Page() {
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border border-rose-50 bg-rose-50/50 p-6 pb-7 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
           >
             <div>
               <h3 className="font-semibold">Copy Book</h3>
