@@ -1,5 +1,9 @@
 ---
 title: 'Figma Speedruns: Watch Me Design at Lightning Speed!'
+status: 'published'
+author:
+  name: 'Praveen Juge'
+  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 publishedAt: 2023-03-31T19:26:29.237Z
 description: Dive into Figma speedrun videos and see awesome designs pop up
   super fast! Come along as I show off my love for design and Figma, and hit me

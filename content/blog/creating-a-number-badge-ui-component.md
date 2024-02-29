@@ -1,5 +1,9 @@
 ---
 title: 'Creating a Number Badge UI Component'
+status: 'published'
+author:
+  name: 'Praveen Juge'
+  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: 'We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems.'
 publishedAt: 2021-12-18T12:37:47Z
 coverImage: images/number-badge-og.png
