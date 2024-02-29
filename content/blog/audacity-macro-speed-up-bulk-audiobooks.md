@@ -1,5 +1,9 @@
 ---
 title: 'Speed up Audiobooks using Audacity Macros'
+status: 'published'
+author:
+  name: 'Praveen Juge'
+  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: 'I came by an iPod Shuffle recently, it worked great but I used to listen to my audiobooks at 2x speed which the shuffle does not have. But audacity is there to help.'
 publishedAt: 2019-11-18T09:21:22.079Z
 ---

@@ -1,6 +1,10 @@
 ---
-title: "You can read this page on July 2030"
-description: "Bookmark this page and come back after 10 years. You will see the same page with the same content. But what about after 50 years? After 100? Will the browser you bookmarked this page work after 100 years?"
+title: 'You can read this page on July 2030'
+status: 'published'
+author:
+  name: 'Praveen Juge'
+  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
+description: 'Bookmark this page and come back after 10 years. You will see the same page with the same content. But what about after 50 years? After 100? Will the browser you bookmarked this page work after 100 years?'
 publishedAt: 2020-07-01T02:22:50+00:00
 ---
 

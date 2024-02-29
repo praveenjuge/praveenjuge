@@ -1,6 +1,10 @@
 ---
 title: If I had known AI would write commit messages, I would have stayed as a
   developer.
+status: 'published'
+author:
+  name: 'Praveen Juge'
+  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 publishedAt: 2023-03-22T19:04:12.370Z
 description: Recently, I stumbled upon OpenCommit, a package that generates
   commit messages based on the files changed with GPT. Now, my skin is clearer,

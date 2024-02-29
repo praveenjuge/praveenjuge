@@ -1,5 +1,9 @@
 ---
 title: "I Hate Figma's Empty Canvas"
+status: 'published'
+author:
+  name: 'Praveen Juge'
+  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: "Figma's empty canvas is where dreams go to die for me. That white screen had stopped me from starting my work more than anything else."
 publishedAt: 2020-06-17T02:03:24+00:00
 ---
