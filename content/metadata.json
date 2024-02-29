@@ -1,6 +1,6 @@
 {
-  "commit": "ea8f0710a582386c9e38fc465b46b6694242be01",
-  "generated": "Thu, 29 Feb 2024 15:03:09 GMT",
+  "commit": "40e9a5180343cfea98ae0db1a089f5b7f3107d4f",
+  "generated": "2024-02-29T15:12:17.088Z",
   "metadata": [
     {
       "__outstatic": {
@@ -1693,24 +1693,6 @@
     },
     {
       "__outstatic": {
-        "commit": "e5751309d0406c290fd18623d3e18d40b996ca6f",
-        "hash": "4207172059",
-        "path": "content/design/24-02-2024.md"
-      },
-      "author": {
-        "name": "Praveen Juge",
-        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
-      },
-      "collection": "design",
-      "coverImage": "/images/24-02-2024-AxMj.jpg",
-      "description": "",
-      "publishedAt": "2024-02-23T18:38:17.000Z",
-      "slug": "24-02-2024",
-      "status": "published",
-      "title": "24-02-2024"
-    },
-    {
-      "__outstatic": {
         "commit": "05217b3a768c9e970e620b9590e94ced9b541e9b",
         "hash": "1100455106",
         "path": "content/design/24-01-2024.md"
@@ -3182,6 +3164,24 @@
       "publishedAt": "2023-05-29T12:55:20.381Z",
       "slug": "images-share-modal-png",
       "status": "published"
+    },
+    {
+      "__outstatic": {
+        "commit": "40e9a5180343cfea98ae0db1a089f5b7f3107d4f",
+        "hash": "1608797763",
+        "path": "content/design/24-02-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/24-02-2024-AxMj.jpg",
+      "description": "",
+      "publishedAt": "2024-02-23T22:34:17.000Z",
+      "slug": "24-02-2024",
+      "status": "published",
+      "title": "24-02-2024"
     }
   ]
 }
