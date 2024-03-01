@@ -1,6 +1,6 @@
 {
-  "commit": "82e766e2c3ddc4f39675becd40b610d2b411d843",
-  "generated": "2024-02-29T15:55:00.962Z",
+  "commit": "1dc2f30ccb57ebdc8b10229f71b41f606c073970",
+  "generated": "2024-03-01T05:27:04.931Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3200,6 +3200,24 @@
       "slug": "29-02-2024",
       "status": "published",
       "title": "29-02-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "1dc2f30ccb57ebdc8b10229f71b41f606c073970",
+        "hash": "2675162148",
+        "path": "content/blog/to-use-or-not-to-use-auto-layout-in-figma.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "The debate on whether or not to use Auto Layout in Figma is a hot topic that frequently surfaces on Twitter. Based on my experience with this feature, I've developed some insights and guidelines on when and how to leverage Auto Layout to its full potential.",
+      "publishedAt": "2024-03-01T05:16:06.767Z",
+      "slug": "to-use-or-not-to-use-auto-layout-in-figma",
+      "status": "published",
+      "title": "To Use or Not to Use Auto Layout in Figma"
     }
   ]
 }
