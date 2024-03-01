@@ -1,6 +1,6 @@
 {
-  "commit": "1dc2f30ccb57ebdc8b10229f71b41f606c073970",
-  "generated": "2024-03-01T05:27:04.931Z",
+  "commit": "791db26f998d6ce4c9c16a8a85c2a5f296a9354b",
+  "generated": "2024-03-01T08:08:11.553Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3218,6 +3218,24 @@
       "slug": "to-use-or-not-to-use-auto-layout-in-figma",
       "status": "published",
       "title": "To Use or Not to Use Auto Layout in Figma"
+    },
+    {
+      "__outstatic": {
+        "commit": "791db26f998d6ce4c9c16a8a85c2a5f296a9354b",
+        "hash": "52036716",
+        "path": "content/design/01-03-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/01-03-2024-E4OT.jpg",
+      "description": "",
+      "publishedAt": "2024-03-01T08:41:00.192Z",
+      "slug": "01-03-2024",
+      "status": "published",
+      "title": "01-03-2024"
     }
   ]
 }
