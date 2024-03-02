@@ -1,6 +1,6 @@
 {
-  "commit": "791db26f998d6ce4c9c16a8a85c2a5f296a9354b",
-  "generated": "2024-03-01T08:08:11.553Z",
+  "commit": "373a645913050dab60c4f2f3a00d4aa9a11b4191",
+  "generated": "2024-03-02T04:02:43.391Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3236,6 +3236,24 @@
       "slug": "01-03-2024",
       "status": "published",
       "title": "01-03-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "373a645913050dab60c4f2f3a00d4aa9a11b4191",
+        "hash": "818401301",
+        "path": "content/blog/one-more-next-js-starter-kit.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "There are, quite literally, a million starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter.",
+      "publishedAt": "2024-03-02T04:35:22.805Z",
+      "slug": "one-more-next-js-starter-kit",
+      "status": "published",
+      "title": "One More Next.js Starter Kit"
     }
   ]
 }
