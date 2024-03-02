@@ -1,6 +1,6 @@
 {
-  "commit": "373a645913050dab60c4f2f3a00d4aa9a11b4191",
-  "generated": "2024-03-02T04:02:43.391Z",
+  "commit": "63a1518f4e587af5a316aab80af57c3caffd41c0",
+  "generated": "2024-03-02T04:03:00.386Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3239,8 +3239,8 @@
     },
     {
       "__outstatic": {
-        "commit": "373a645913050dab60c4f2f3a00d4aa9a11b4191",
-        "hash": "818401301",
+        "commit": "63a1518f4e587af5a316aab80af57c3caffd41c0",
+        "hash": "2851213235",
         "path": "content/blog/one-more-next-js-starter-kit.md"
       },
       "author": {
@@ -3249,7 +3249,7 @@
       },
       "collection": "blog",
       "coverImage": "",
-      "description": "There are, quite literally, a million starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter.",
+      "description": "There are, quite literally, a thousand starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter.",
       "publishedAt": "2024-03-02T04:35:22.805Z",
       "slug": "one-more-next-js-starter-kit",
       "status": "published",

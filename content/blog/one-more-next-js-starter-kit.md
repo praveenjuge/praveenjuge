@@ -5,7 +5,7 @@ author:
   name: 'Praveen Juge'
   picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 slug: 'one-more-next-js-starter-kit'
-description: 'There are, quite literally, a million starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter.'
+description: 'There are, quite literally, a thousand starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter.'
 coverImage: ''
 publishedAt: '2024-03-02T04:35:22.805Z'
 ---
