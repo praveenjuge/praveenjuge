@@ -1,6 +1,6 @@
 {
-  "commit": "63a1518f4e587af5a316aab80af57c3caffd41c0",
-  "generated": "2024-03-02T04:03:00.386Z",
+  "commit": "b15b51704c53c810b5fcdc17aae014ce218e992f",
+  "generated": "2024-03-02T04:07:13.827Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3239,8 +3239,8 @@
     },
     {
       "__outstatic": {
-        "commit": "63a1518f4e587af5a316aab80af57c3caffd41c0",
-        "hash": "2851213235",
+        "commit": "b15b51704c53c810b5fcdc17aae014ce218e992f",
+        "hash": "1654851143",
         "path": "content/blog/one-more-next-js-starter-kit.md"
       },
       "author": {

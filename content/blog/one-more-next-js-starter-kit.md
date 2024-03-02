@@ -22,4 +22,6 @@ This kit contains just 5 files but comes packed with everything you need right o
 - ESLint
 - Geist Font
 
-When starting a new project, I either duplicate this template or simply copy and paste the 5 files. This method saves me the hassle of removing unwanted code from other starter kits and ensures Prettier and ESLint are configured exactly to my liking.
+When starting a new project, I either duplicate this template or simply copy and paste the 5 files. This method saves me the hassle of removing unwanted code from other starter kits and ensures Prettier and ESLint are configured exactly to my liking.\
+\
+See it here: [github.com/praveenjuge/nextjs-minimal-starter](https://github.com/praveenjuge/nextjs-minimal-starter)
