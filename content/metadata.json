@@ -1,6 +1,6 @@
 {
-  "commit": "b15b51704c53c810b5fcdc17aae014ce218e992f",
-  "generated": "2024-03-02T04:07:13.827Z",
+  "commit": "82cadb4e960d58f4c6569d7f9e27cbdc1fa46ca4",
+  "generated": "2024-03-02T17:29:25.906Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3254,6 +3254,24 @@
       "slug": "one-more-next-js-starter-kit",
       "status": "published",
       "title": "One More Next.js Starter Kit"
+    },
+    {
+      "__outstatic": {
+        "commit": "82cadb4e960d58f4c6569d7f9e27cbdc1fa46ca4",
+        "hash": "2722638589",
+        "path": "content/design/02-03-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/02-03-2024-ExND.jpg",
+      "description": "",
+      "publishedAt": "2024-03-02T18:02:15.114Z",
+      "slug": "02-03-2024",
+      "status": "published",
+      "title": "02-03-2024"
     }
   ]
 }
