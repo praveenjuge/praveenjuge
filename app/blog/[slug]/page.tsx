@@ -134,13 +134,15 @@ export default async function Blog(params: Params) {
       [&_code.hljs]:block
       [&_code.hljs]:overflow-x-auto"
       >
-        {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
-        <p className="lead">
+        <p>
           Written on{' '}
           <time itemProp="datePublished" dateTime={blog.publishedAt}>
             {formattedDate}
           </time>
         </p>
+        <h1 className="tracking-tight" itemProp="headline">
+          {blog.title}
+        </h1>
         <meta
           itemProp="image"
           content={`https://praveenjuge.com/blog/${blog.slug}/opengraph-image`}
@@ -155,14 +157,8 @@ export default async function Blog(params: Params) {
             <span itemProp="name">Praveen Juge</span>
           </a>
         </span>
-        <h1 className="tracking-tight" itemProp="headline">
-          {blog.title}
-        </h1>
         <hr />
-        {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
-        <p className="lead" itemProp="description">
-          {blog.description}
-        </p>
+        <p itemProp="description">{blog.description}</p>
         <div dangerouslySetInnerHTML={{ __html: blog.content }} />
       </article>
       <script
