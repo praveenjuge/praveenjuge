@@ -1,6 +1,6 @@
 {
-  "commit": "1243808109bb42a2490bd0ed311d8d39aa0a468b",
-  "generated": "2024-03-05T05:21:06.136Z",
+  "commit": "7eafaf75891f8b7837242d8153d1246d0c751715",
+  "generated": "2024-03-05T05:26:27.868Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3329,8 +3329,8 @@
     },
     {
       "__outstatic": {
-        "commit": "1243808109bb42a2490bd0ed311d8d39aa0a468b",
-        "hash": "4275307832",
+        "commit": "7eafaf75891f8b7837242d8153d1246d0c751715",
+        "hash": "2414408640",
         "path": "content/blog/where-i-look-for-design-inspirations.md"
       },
       "author": {
