@@ -1,6 +1,6 @@
 {
-  "commit": "7eafaf75891f8b7837242d8153d1246d0c751715",
-  "generated": "2024-03-05T05:26:27.868Z",
+  "commit": "a4098a21aa8a770ea9db66bf770b10aeaceebeeb",
+  "generated": "2024-03-06T10:34:55.153Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3344,6 +3344,24 @@
       "slug": "where-i-look-for-design-inspirations",
       "status": "published",
       "title": "Where I look for Design Inspirations"
+    },
+    {
+      "__outstatic": {
+        "commit": "a4098a21aa8a770ea9db66bf770b10aeaceebeeb",
+        "hash": "1751127324",
+        "path": "content/design/06-03-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/06-03-2024-gyMD.jpg",
+      "description": "",
+      "publishedAt": "2024-03-06T11:07:40.788Z",
+      "slug": "06-03-2024",
+      "status": "published",
+      "title": "06-03-2024"
     }
   ]
 }
