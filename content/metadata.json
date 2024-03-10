@@ -1,6 +1,6 @@
 {
-  "commit": "5c1e22e08bd9fa61ad2bd94a92c1bc14d31c592e",
-  "generated": "2024-03-09T17:22:06.282Z",
+  "commit": "ca5cabfb844cd0a9d5c71fb8421c354fc9a887bf",
+  "generated": "2024-03-10T14:27:44.518Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3401,8 +3401,8 @@
     },
     {
       "__outstatic": {
-        "commit": "5c1e22e08bd9fa61ad2bd94a92c1bc14d31c592e",
-        "hash": "4184760155",
+        "commit": "ca5cabfb844cd0a9d5c71fb8421c354fc9a887bf",
+        "hash": "68277088",
         "path": "content/design/09-03-2024.md"
       },
       "author": {
@@ -3410,7 +3410,7 @@
         "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
       },
       "collection": "design",
-      "coverImage": "/images/09-03-2024-AzMj.jpg",
+      "coverImage": "/images/09-03-2024-QxMj.jpg",
       "description": "",
       "publishedAt": "2024-03-09T17:54:53.650Z",
       "slug": "09-03-2024",
