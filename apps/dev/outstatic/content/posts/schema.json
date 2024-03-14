@@ -1,0 +1,13 @@
+{
+  "title": "posts",
+  "type": "object",
+  "properties": {
+    "category": {
+      "required": false,
+      "description": "Add a category",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Category"
+    }
+  }
+}
