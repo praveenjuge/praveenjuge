@@ -66,10 +66,10 @@ export default async function Page() {
             </p>
           </div>
           <Image
-            priority
             quality={100}
+            priority={true}
             src={profilePic}
-            className="rounded bg-rose-50 brightness-105"
+            className="rounded bg-slate-50 brightness-105"
             alt="Praveen Juge trying his best to look cool."
           />
         </div>
@@ -87,6 +87,7 @@ export default async function Page() {
               <Image
                 width={500}
                 height={500}
+                priority={true}
                 alt={item.coverImage ?? ''}
                 src={item.coverImage ?? ''}
                 className="block h-[360px] w-[30rem] rounded bg-slate-50 bg-cover object-cover ring-1 ring-slate-100"
