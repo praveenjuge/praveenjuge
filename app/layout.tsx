@@ -100,7 +100,7 @@ export default function RootLayout({
     >
       <body className="relative bg-white">
         <div
-          className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-rose-200/75 to-white"
+          className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-rose-200/60 to-white"
           aria-hidden="true"
         ></div>
         <header className="top-0 mx-auto mb-24 flex max-w-7xl flex-col space-y-5 px-4 py-6 text-sm font-medium sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">

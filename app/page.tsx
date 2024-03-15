@@ -1,4 +1,4 @@
-import profilePic from '@/public/images/praveen-juge-photo.jpg';
+import profilePic from '@/public/praveenjuge.jpg';
 import { ArrowLongRight, ArrowUpRight } from '@mynaui/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -30,7 +30,7 @@ export default async function Page() {
 
   return (
     <>
-      <div className="mx-auto max-w-3xl p-4">
+      <section className="mx-auto max-w-3xl p-4 pb-24">
         {/* <a
           href="mailto:hello@praveenjuge.com"
           className="inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-600"
@@ -40,62 +40,42 @@ export default async function Page() {
         </a> */}
         <h1 className={headingClass + ' ' + '!mt-6'}>What&rsquo;s up nerds?</h1>
 
-        <p className="text-lg">
-          <b className="font-semibold">
-            I&rsquo;m Praveen Juge, a designer and developer based in Chennai.
-          </b>{' '}
-          I create beautiful and accessible experiences on the web. I enjoy
-          reading my Kindle, listening to Taylor Swift, and my recent obsession,
-          playing Assassin&rsquo;s Creed Mirage.
-        </p>
-
         <div className="my-6 grid gap-10 text-lg sm:grid-cols-3">
-          <div className="col-span-2">
+          <div className="col-span-2 space-y-5">
             <p>
-              I specialize in UI design, accessibility, design systems, CSS, and
-              have an eye for getting pixel-perfect results. I also work on
-              open-source UI projects to help the design community.
+              I&rsquo;m Praveen Juge, a designer and developer. I enjoy reading
+              books, listening to Taylor Swift, but I spend most of my time
+              playing Rocket League.
             </p>
-            <br />
 
             <p>
-              I would love to work with you on anything interesting. Feel free
-              to say hello to me at{' '}
+              I specialize in UI design, accessibility, CSS and design systems
+              with a knack for pixel-perfect outcomes. I also contribute to
+              open-source projects to support the design community.
+            </p>
+            <p>
+              Excited to collaborate with you on intriguing projects — reach out
+              at{' '}
               <a
                 href="mailto:hello@praveenjuge.com"
                 className="underline decoration-2 underline-offset-1"
               >
                 hello@praveenjuge.com
               </a>
+              .
             </p>
           </div>
-          <div className="space-y-2 text-xs text-slate-700">
-            <Image
-              priority
-              quality={90}
-              src={profilePic}
-              className="rounded bg-slate-200/75"
-              alt="Praveen Juge trying his best to look cool."
-            />
-            <p>Trying my best to look cool.</p>
-          </div>
+          <Image
+            priority
+            quality={100}
+            src={profilePic}
+            className="rounded bg-rose-50 brightness-105"
+            alt="Praveen Juge trying his best to look cool."
+          />
         </div>
+      </section>
 
-        <div className="mb-2 mt-24 flex w-full items-center justify-between">
-          <h2 className={headingClass + ' ' + '!my-0'}>
-            <Link href="/design">Designs</Link>
-          </h2>
-          <Link
-            href="/design"
-            className="flex items-center justify-center gap-2 font-medium text-rose-900 transition hover:text-black"
-          >
-            <span>View More</span>
-            <ArrowLongRight className="size-6" />
-          </Link>
-        </div>
-      </div>
-
-      <div className="overflow-hidden py-5">
+      <section className="overflow-hidden py-5">
         <div className="inline-flex animate-[slide_infinite_linear_60s] gap-6">
           {allDesigns.map((item, id) => (
             <Link
@@ -109,14 +89,14 @@ export default async function Page() {
                 height={500}
                 alt={item.coverImage ?? ''}
                 src={item.coverImage ?? ''}
-                className="block h-[360px] w-[30rem] rounded bg-slate-100 bg-cover object-cover shadow-sm"
+                className="block h-[360px] w-[30rem] rounded bg-slate-50 bg-cover object-cover ring-1 ring-slate-100"
               />
             </Link>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="mx-auto max-w-3xl p-4">
+      <section className="mx-auto max-w-3xl p-4">
         <h2 className={headingClass}>
           <Link href="/blog">Blog</Link>
         </h2>
@@ -145,7 +125,7 @@ export default async function Page() {
             href="https://teak.praveenjuge.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7"
+            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7"
           >
             <div>
               <h3 className="font-semibold">Teak</h3>
@@ -160,7 +140,7 @@ export default async function Page() {
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
           >
             <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-rose-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
@@ -641,7 +621,7 @@ export default async function Page() {
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7"
+            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7"
           >
             <div>
               <h3 className="font-semibold">MynaUI</h3>
@@ -656,7 +636,7 @@ export default async function Page() {
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/75 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
+            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
           >
             <div>
               <h3 className="font-semibold">Copy Book</h3>
@@ -679,7 +659,7 @@ export default async function Page() {
             </div>
           </a>
         </div>
-      </div>
+      </section>
     </>
   );
 }
