@@ -11,26 +11,20 @@ export default async function Design({ params }: { params: { slug: string } }) {
   if (!design) notFound();
 
   return (
-    <article
-      itemScope
-      itemType="http://schema.org/BlogPosting"
-      className="mx-auto max-w-3xl p-4"
-    >
-      <Link href="/design" className="flex font-medium text-rose-900">
+    <article className="mx-auto flex max-w-2xl flex-col space-y-6 p-4">
+      <Link
+        href="/design"
+        className="font-medium text-red-900 hover:text-black"
+      >
         ← All Designs
       </Link>
-      <Link
-        target="_blank"
-        className="my-10 block"
-        href={design.coverImage ?? ''}
-      >
+      <Link target="_blank" href={design.coverImage ?? ''}>
         <Image
           priority
           width={700}
           height={1000}
           alt={design.coverImage ?? ''}
           src={design.coverImage ?? ''}
-          className="size-full rounded bg-slate-200"
         />
       </Link>
     </article>

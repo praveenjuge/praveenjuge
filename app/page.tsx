@@ -5,15 +5,6 @@ import Link from 'next/link';
 import { load } from 'outstatic/server';
 
 export default async function Page() {
-  const headingClass =
-    'font-extrabold tracking-tight text-2xl md:text-3xl mt-20 mb-6';
-
-  const contentCopy = [
-    'Zilch. Nada. Nothing.',
-    'Your subscription has been renewed.',
-    'Share data across platforms.'
-  ];
-
   const db = await load();
 
   const allDesigns = await db
@@ -30,7 +21,7 @@ export default async function Page() {
 
   return (
     <>
-      <section className="mx-auto max-w-3xl p-4 pb-24">
+      <section className="mx-auto max-w-2xl p-4">
         {/* <a
           href="mailto:hello@praveenjuge.com"
           className="inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-600"
@@ -38,10 +29,10 @@ export default async function Page() {
           <span className="size-1.5 animate-pulse rounded-full bg-emerald-700"></span>
           <span>Available for New Projects</span>
         </a> */}
-        <h1 className={headingClass + ' ' + '!mt-6'}>What&rsquo;s up nerds?</h1>
+        <h1 className="font-semibold tracking-tight">What&rsquo;s up nerds?</h1>
 
-        <div className="my-6 grid gap-10 text-lg sm:grid-cols-3">
-          <div className="col-span-2 space-y-5">
+        <div className="my-4 grid gap-10 sm:grid-cols-3">
+          <div className="col-span-2 space-y-5 leading-relaxed">
             <p>
               I&rsquo;m Praveen Juge, a designer and developer. I enjoy reading
               books, listening to Taylor Swift, but I spend most of my time
@@ -69,36 +60,36 @@ export default async function Page() {
             quality={100}
             priority={true}
             src={profilePic}
-            className="rounded bg-slate-50 brightness-105"
+            className="rounded-md bg-gray-50 brightness-105"
             alt="Praveen Juge trying his best to look cool."
           />
         </div>
       </section>
 
-      <section className="overflow-hidden py-5">
+      <section className="overflow-hidden py-14">
         <div className="inline-flex animate-[slide_infinite_linear_60s] gap-6">
           {allDesigns.map((item, id) => (
             <Link
               key={id}
               target="_blank"
-              className="block h-[360px] w-[30rem] odd:rotate-2 even:-rotate-2"
+              className="block w-96 odd:rotate-2 even:-rotate-2"
               href={item.coverImage ?? ''}
             >
               <Image
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 priority={true}
                 alt={item.coverImage ?? ''}
                 src={item.coverImage ?? ''}
-                className="block h-[360px] w-[30rem] rounded bg-slate-50 bg-cover object-cover ring-1 ring-slate-100"
+                className="block w-96 rounded bg-gray-50 bg-cover object-cover ring-1 ring-gray-100"
               />
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl p-4">
-        <h2 className={headingClass}>
+      <section className="mx-auto max-w-2xl p-4">
+        <h2 className="mt-6 font-semibold tracking-tight">
           <Link href="/blog">Blog</Link>
         </h2>
 
@@ -106,44 +97,44 @@ export default async function Page() {
           <Link
             key={id}
             href={`/blog/${item.slug}`}
-            className="my-4 flex items-center gap-2 text-lg font-medium text-rose-900 transition hover:text-black"
+            className="my-4 flex items-center gap-2 font-medium text-red-900 hover:text-black"
           >
             {item.title}
           </Link>
         ))}
         <Link
           href="/blog"
-          className="flex items-center gap-2 text-lg font-medium text-rose-900 transition hover:text-black"
+          className="flex items-center gap-2 font-medium text-red-900 hover:text-black"
         >
           <span>Read More</span>
           <ArrowLongRight className="size-6" />
         </Link>
 
-        <h2 className={headingClass}>Projects</h2>
+        <h2 className="mt-20 font-semibold tracking-tight">Projects</h2>
 
-        <div id="projects" className="space-y-5">
+        <div id="projects" className="my-6 space-y-5">
           <a
             href="https://teak.praveenjuge.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7"
+            className="relative flex items-center justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
           >
             <div>
               <h3 className="font-semibold">Teak</h3>
-              <p className="text-slate-500">
+              <p className="opacity-60">
                 Mac app to curate your UI inspirations.
               </p>
             </div>
-            <ArrowUpRight className="shrink-0 text-rose-900" />
+            <ArrowUpRight className="shrink-0 text-red-900" />
           </a>
 
           <a
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
+            className="relative flex items-start justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
           >
-            <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-rose-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
+            <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-red-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
                 <path d="M9.5 12c0-1.178.0-1.768.366-2.134S10.822 9.5 12 9.5s1.768.0 2.134.366.366.956.366 2.134.0 1.768-.366 2.134-.956.366-2.134.366-1.768.0-2.134-.366S9.5 13.178 9.5 12z"></path>
                 <circle cx="12" cy="12" r="9"></circle>
@@ -606,58 +597,46 @@ export default async function Page() {
               </svg>
             </div>
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-[#FEFCFC] via-[#FEFCFC]/95 sm:bg-gradient-to-r"
+              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-[#FEFCFC] via-[#FEFCFC] sm:bg-gradient-to-r"
               aria-hidden="true"
             ></div>
             <div className="relative">
               <h3 className="font-semibold">MynaUI Icons</h3>
-              <p className="text-slate-500">
-                Beautifully crafted open-source icons for your next project.
+              <p className="opacity-60">
+                Beautiful open-source icons for your next project.
               </p>
             </div>
-            <div className="h-16 md:h-0"></div>
+            <div className="h-32 sm:h-0"></div>
           </a>
 
           <a
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between gap-8 rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7"
+            className="relative flex items-center justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
           >
             <div>
               <h3 className="font-semibold">MynaUI</h3>
-              <p className="text-slate-500">
+              <p className="opacity-60">
                 Figma File and HTML Code with Tailwind CSS Design System.
               </p>
             </div>
-            <ArrowUpRight className="shrink-0 text-rose-900" />
+            <ArrowUpRight className="shrink-0 text-red-900" />
           </a>
 
           <a
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative grid grid-cols-1 gap-8 overflow-hidden rounded border-[0.5px] border-rose-300/40 bg-rose-50/25 p-6 pb-7 md:grid-cols-2"
+            className="relative flex items-center justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
           >
             <div>
               <h3 className="font-semibold">Copy Book</h3>
-              <p className="text-slate-500">
+              <p className="opacity-60">
                 Copy book is a collection of commonly used texts.
               </p>
             </div>
-            <div
-              className="pointer-events-none grid select-none gap-2 text-[8px] font-medium sm:grid-cols-3"
-              aria-hidden="true"
-            >
-              {contentCopy.map((content) => (
-                <div
-                  key={content}
-                  className="rounded bg-rose-50 p-2 ring-[0.5px] ring-rose-200"
-                >
-                  {content}
-                </div>
-              ))}
-            </div>
+            <ArrowUpRight className="shrink-0 text-red-900" />
           </a>
         </div>
       </section>

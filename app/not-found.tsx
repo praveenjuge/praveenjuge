@@ -6,19 +6,16 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="prose prose-slate mx-auto max-w-3xl p-4 py-40">
-      <h1 itemProp="headline" className="mb-0 tracking-tight">
-        Page not found (404)
-      </h1>
+    <div className="mx-auto max-w-2xl space-y-2 px-4 py-48 text-center">
+      <h1 className="font-bold tracking-tight">Page not found (404)</h1>
 
-      {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
-      <p className="lead">
-        The page that you are looking for is not available. If you think this is
-        a mistake, please contact me at{' '}
+      <p className="text-gray-600">
+        If you think this is a mistake, please let me know at{' '}
         <a
-          href="https://twitter.com/praveenjuge"
-          target="_blank"
           rel="noopener"
+          target="_blank"
+          className="underline"
+          href="https://twitter.com/praveenjuge"
         >
           Twitter
         </a>

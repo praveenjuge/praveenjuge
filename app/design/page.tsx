@@ -14,12 +14,10 @@ export default async function Page() {
     .toArray();
 
   return (
-    <section className="mx-auto max-w-7xl p-4">
-      <h2 className="my-6 text-2xl font-extrabold tracking-tight md:text-3xl">
-        Designs
-      </h2>
+    <section className="mx-auto max-w-2xl p-4">
+      <h2 className="font-bold">Designs</h2>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="my-6 grid gap-6">
         {allDesigns.map((item, id) => (
           <Link
             key={id}
@@ -34,7 +32,7 @@ export default async function Page() {
               loading={id > 10 ? 'lazy' : 'eager'}
               alt={item.coverImage ?? ''}
               src={item.coverImage ?? ''}
-              className="size-full rounded bg-slate-200 bg-cover bg-center ring-1 ring-slate-100"
+              className="size-full rounded bg-gray-200 bg-cover bg-center ring-1 ring-gray-100"
             />
           </Link>
         ))}

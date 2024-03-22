@@ -51,33 +51,32 @@
     "root": true
   },
   "dependencies": {
-    "@mynaui/icons-react": "^0.2.0",
+    "@mynaui/icons-react": "^0.2.1",
     "geist": "^1.2.2",
-    "next": "14.1.0",
-    "outstatic": "^1.3.0",
+    "next": "latest",
+    "outstatic": "^1.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-tailwindcss": "^3.14.3",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.4",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-tailwindcss": "^3.15.1",
     "feed": "^4.2.2",
     "highlight.js": "^11.9.0",
-    "marked": "^12.0.0",
+    "marked": "^12.0.1",
     "marked-highlight": "^2.1.1",
-    "postcss": "^8.4.35",
+    "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prettier-plugin-tailwindcss": "^0.5.12",
     "schema-dts": "^1.1.2",
     "tailwindcss": "insiders",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "postcss": {
     "plugins": {

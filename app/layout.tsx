@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Person, WithContext } from 'schema-dts';
 import 'tailwindcss/tailwind.css';
 
-export const viewport: Viewport = { themeColor: '#F8DBDF' };
+export const viewport: Viewport = { themeColor: '#FEE2E1' };
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://praveenjuge.com'),
@@ -96,17 +96,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} text-slate-900 antialiased [font-family:var(--font-geist-sans)] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation]`}
+      className={`${GeistSans.variable} text-gray-800 antialiased [font-family:var(--font-geist-sans)] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation]`}
     >
-      <body className="relative bg-white">
+      <body>
         <div
-          className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-rose-200/60 to-white"
+          className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-red-100 to-white"
           aria-hidden="true"
         ></div>
-        <header className="top-0 mx-auto mb-24 flex max-w-7xl flex-col space-y-5 px-4 py-6 text-sm font-medium sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
+        <header className="top-0 mx-auto mb-24 flex max-w-2xl flex-col space-y-5 px-4 py-6 sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
           <Link href="/" title="Go to Home Page">
             <svg
-              height={36}
+              height={30}
               fill="currentColor"
               viewBox="0 0 277 59"
               xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ export default function RootLayout({
           </Link>
           <nav
             aria-label="Navigation Links"
-            className="flex items-center gap-6 md:gap-5"
+            className="flex items-center gap-6 text-sm font-medium md:gap-4"
           >
             <Link href="/design">Designs</Link>
             <Link href="/blog">Blog</Link>
@@ -156,12 +156,12 @@ export default function RootLayout({
           </nav>
         </header>
         <main id="main">{children}</main>
-        <footer className="flex items-center justify-center bg-gradient-to-b from-white to-rose-100 px-4 py-24">
+        <footer className="grid place-items-center py-24">
           <Link href="/" title="Go to Home Page">
             <svg
-              className="fill-rose-900 transition duration-1000 hover:rotate-180"
-              width="60"
-              height="60"
+              className="fill-red-900 transition duration-1000 hover:rotate-180"
+              width="50"
+              height="50"
               viewBox="0 0 60 60"
               xmlns="http://www.w3.org/2000/svg"
             >
