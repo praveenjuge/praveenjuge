@@ -13,22 +13,19 @@ export default async function Page() {
     .toArray();
 
   return (
-    <section className="mx-auto max-w-3xl p-4">
-      <h2 className="my-6 text-2xl font-extrabold tracking-tight md:text-3xl">
-        <span className="flex shrink-0 gap-2">
-          Blog
-          <span> — </span>
-          <Link href="/blog/rss.xml" className="underline" prefetch={false}>
-            RSS Feed
-          </Link>
-        </span>
+    <section className="mx-auto flex max-w-2xl flex-col space-y-4 p-4 font-medium">
+      <h2 className="font-bold">
+        Blog <span> — </span>
+        <Link href="/blog/rss.xml" className="underline" prefetch={false}>
+          RSS Feed
+        </Link>
       </h2>
 
       {allBlogs.map((item, id) => (
         <Link
           key={id}
           href={`/blog/${item.slug}`}
-          className="my-4 flex text-lg font-medium text-rose-900 hover:text-black"
+          className="text-red-900 hover:text-black"
         >
           {item.title}
         </Link>

@@ -84,7 +84,7 @@ export default async function Blog(params: Params) {
       <article
         itemScope
         itemType="http://schema.org/BlogPosting"
-        className="prose prose-slate mx-auto max-w-3xl p-4 md:prose-lg prose-h2:tracking-tight prose-h3:tracking-tight prose-pre:bg-slate-950 [&_.hljs-addition]:bg-green-950 
+        className="prose mx-auto max-w-2xl p-4 prose-h2:tracking-tight prose-h3:tracking-tight prose-pre:bg-slate-950 [&_.hljs-addition]:bg-green-950 
       [&_.hljs-addition]:text-emerald-200 
       [&_.hljs-attr]:text-sky-300 
       [&_.hljs-attribute]:text-sky-300 
@@ -92,7 +92,7 @@ export default async function Blog(params: Params) {
       [&_.hljs-bullet]:text-amber-300
       [&_.hljs-code]:text-slate-400
       [&_.hljs-comment]:text-slate-400
-      [&_.hljs-deletion]:bg-rose-950
+      [&_.hljs-deletion]:bg-red-950
       [&_.hljs-deletion]:text-red-100
       [&_.hljs-doctag]:text-red-400
       [&_.hljs-emphasis]:italic
@@ -157,7 +157,6 @@ export default async function Blog(params: Params) {
             <span itemProp="name">Praveen Juge</span>
           </a>
         </span>
-        <hr />
         <p itemProp="description">{blog.description}</p>
         <div dangerouslySetInnerHTML={{ __html: blog.content }} />
       </article>
