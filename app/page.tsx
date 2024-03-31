@@ -1,4 +1,4 @@
-import profilePic from '@/public/praveenjuge.jpg';
+import profilePic from '@/public/praveenjuge.webp';
 import { ArrowLongRight, ArrowUpRight } from '@mynaui/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -57,11 +57,12 @@ export default async function Page() {
             </p>
           </div>
           <Image
-            quality={100}
+            width={1000}
+            loading="eager"
             priority={true}
             src={profilePic}
-            className="rounded-md bg-gray-50 brightness-105"
             alt="Praveen Juge trying his best to look cool."
+            className="rounded-md bg-gray-50 brightness-105"
           />
         </div>
       </section>
@@ -78,7 +79,8 @@ export default async function Page() {
               <Image
                 width={400}
                 height={400}
-                priority={true}
+                priority={id > 5 ? false : true}
+                loading={id > 5 ? 'lazy' : 'eager'}
                 alt={item.coverImage ?? ''}
                 src={item.coverImage ?? ''}
                 className="block w-96 rounded bg-gray-50 bg-cover object-cover ring-1 ring-gray-100"
