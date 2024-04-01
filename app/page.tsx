@@ -119,7 +119,7 @@ export default async function Page() {
             href="https://teak.praveenjuge.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
+            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
           >
             <div>
               <h3 className="font-semibold">Teak</h3>
@@ -134,7 +134,7 @@ export default async function Page() {
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-start justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
+            className="relative flex items-start justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
           >
             <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-red-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
@@ -615,12 +615,12 @@ export default async function Page() {
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
+            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
           >
             <div>
               <h3 className="font-semibold">MynaUI</h3>
               <p className="opacity-60">
-                Figma File and HTML Code with Tailwind CSS Design System.
+                TailwindCSS and shadcn/ui UI Kit for Figma and React.
               </p>
             </div>
             <ArrowUpRight className="shrink-0 text-red-900" />
@@ -630,7 +630,7 @@ export default async function Page() {
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-between overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-6"
+            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
           >
             <div>
               <h3 className="font-semibold">Copy Book</h3>
