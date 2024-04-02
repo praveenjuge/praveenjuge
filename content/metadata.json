@@ -1,6 +1,6 @@
 {
-  "commit": "1932d78d47585b415beaa9359d815d50fa2b2f73",
-  "generated": "2024-04-01T18:52:33.431Z",
+  "commit": "8b512ef2d7b07c8f60b2972c1d23d4cbbba13445",
+  "generated": "2024-04-02T17:23:20.443Z",
   "metadata": [
     {
       "__outstatic": {
@@ -3830,6 +3830,24 @@
       "slug": "01-04-2024",
       "status": "published",
       "title": "01-04-2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "8b512ef2d7b07c8f60b2972c1d23d4cbbba13445",
+        "hash": "46999198",
+        "path": "content/design/02-04-2024.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/02-04-2024-gxMT.jpg",
+      "description": "",
+      "publishedAt": "2024-04-02T17:56:09.166Z",
+      "slug": "02-04-2024",
+      "status": "published",
+      "title": "02-04-2024"
     }
   ]
 }
