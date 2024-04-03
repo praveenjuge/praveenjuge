@@ -77,10 +77,10 @@ export default async function Page() {
               href={item.coverImage ?? ''}
             >
               <Image
-                width={400}
-                height={400}
-                priority={id > 5 ? false : true}
-                loading={id > 5 ? 'lazy' : 'eager'}
+                width={384}
+                height={288}
+                priority={true}
+                loading={'eager'}
                 alt={item.coverImage ?? ''}
                 src={item.coverImage ?? ''}
                 className="block w-96 rounded bg-gray-50 bg-cover object-cover ring-1 ring-gray-100"
