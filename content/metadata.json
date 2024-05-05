@@ -1,6 +1,6 @@
 {
-  "commit": "01a9421b4baf7e35d6f6422513f358160178babf",
-  "generated": "2024-05-05T12:21:37.273Z",
+  "commit": "e70b9cf88c155d544b863a85149ba3d396f4096f",
+  "generated": "2024-05-05T12:22:11.200Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4445,8 +4445,8 @@
     },
     {
       "__outstatic": {
-        "commit": "01a9421b4baf7e35d6f6422513f358160178babf",
-        "hash": "3569009120",
+        "commit": "e70b9cf88c155d544b863a85149ba3d396f4096f",
+        "hash": "523658709",
         "path": "content/blog/excited-for-css-masonry-layout.md"
       },
       "author": {
@@ -4455,7 +4455,7 @@
       },
       "collection": "blog",
       "coverImage": "",
-      "description": "Everyone's talking about the new updates in CSS Grid Layouts, thanks to some cool insights from WebKit and Chrome. ",
+      "description": "Everyone's talking about the upcoming updates in CSS Grid Layouts, thanks to some cool insights from WebKit and Chrome. ",
       "publishedAt": "2024-05-05T12:45:36.725Z",
       "slug": "excited-for-css-masonry-layout",
       "status": "published",
