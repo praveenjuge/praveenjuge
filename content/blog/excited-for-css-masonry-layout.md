@@ -12,7 +12,7 @@ publishedAt: '2024-05-05T12:45:36.725Z'
 
 [WebKit](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/) is working on adding masonry layouts to CSS Grid. This means we might soon get to create these layouts easily without needing JavaScript or tricky CSS.
 
-[Chrome](https://developer.chrome.com/blog/masonry) is showing off how `display: masonry` works, and it’s pretty slick. It lets us manage content of different sizes in a grid without any ugly gaps. This could make building attractive and dynamic websites a lot easier. No more wrestling with the grid system to get things to line up right!
+[Chrome](https://developer.chrome.com/blog/masonry) is showing off how `display: masonry` works, and it’s pretty slick. It lets us manage content of different sizes in a grid without any ugly gaps. No more wrestling with the grid system to get things to line up right!
 
 I can't wait until `display: masonry` is something we can all use. It’s going to change how we design frontends by saving us a ton of time and letting us get more creative without fussing over layout issues.
 

@@ -1,6 +1,6 @@
 {
-  "commit": "e70b9cf88c155d544b863a85149ba3d396f4096f",
-  "generated": "2024-05-05T12:22:41.276Z",
+  "commit": "0404ccd13254dd42d06645907ff9eaff1dfae329",
+  "generated": "2024-05-05T12:25:54.840Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4445,8 +4445,8 @@
     },
     {
       "__outstatic": {
-        "commit": "e70b9cf88c155d544b863a85149ba3d396f4096f",
-        "hash": "1233755608",
+        "commit": "0404ccd13254dd42d06645907ff9eaff1dfae329",
+        "hash": "3443649059",
         "path": "content/blog/excited-for-css-masonry-layout.md"
       },
       "author": {
