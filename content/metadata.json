@@ -1,6 +1,6 @@
 {
-  "commit": "749fc4b2ce8164a28cfe4b043a9bfd190e618ad1",
-  "generated": "2024-05-05T11:36:56.767Z",
+  "commit": "01a9421b4baf7e35d6f6422513f358160178babf",
+  "generated": "2024-05-05T12:21:37.273Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4442,6 +4442,24 @@
       "slug": "2024-may-5",
       "status": "published",
       "title": "2024 may 5"
+    },
+    {
+      "__outstatic": {
+        "commit": "01a9421b4baf7e35d6f6422513f358160178babf",
+        "hash": "3569009120",
+        "path": "content/blog/excited-for-css-masonry-layout.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "Everyone's talking about the new updates in CSS Grid Layouts, thanks to some cool insights from WebKit and Chrome. ",
+      "publishedAt": "2024-05-05T12:45:36.725Z",
+      "slug": "excited-for-css-masonry-layout",
+      "status": "published",
+      "title": "Excited for CSS Masonry Layout"
     }
   ]
 }
