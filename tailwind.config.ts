@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       keyframes: {
         slide: {
-          to: { transform: 'translateX(-69%)' }
+          to: { transform: 'translateX(-169%)' }
         }
       }
     }

@@ -103,7 +103,7 @@ export default function RootLayout({
           className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-red-100 to-white"
           aria-hidden="true"
         ></div>
-        <header className="top-0 mx-auto mb-24 flex max-w-2xl flex-col space-y-5 px-4 py-6 sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
+        <header className="top-0 mx-auto mb-24 flex max-w-2xl flex-col space-y-5 px-4 py-6 backdrop-blur-sm sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
           <Link href="/" title="Go to Home Page">
             <svg
               height={30}

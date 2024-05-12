@@ -1,7 +1,6 @@
 import { Feed } from 'feed';
 import { load } from 'outstatic/server';
 
-export const dynamic = 'force-static';
 const SITE_URL = 'https://praveenjuge.com/';
 const SITE_AUTHOR_NAME = 'Praveen Juge';
 const SITE_AUTHOR_EMAIL = 'hi@praveenjuge.com';

@@ -18,7 +18,11 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
     title: blog.title,
     description: blog.description,
     openGraph: {
-      type: 'article'
+      type: 'article',
+      images: {
+        url: `https://praveenjuge.com/blog/${blog.slug}/opengraph-image`,
+        alt: blog.title
+      }
     }
   };
 }
@@ -140,7 +144,7 @@ export default async function Blog(params: Params) {
             {formattedDate}
           </time>
         </p>
-        <h1 className="tracking-tight" itemProp="headline">
+        <h1 className="text-balance tracking-tighter" itemProp="headline">
           {blog.title}
         </h1>
         <meta
