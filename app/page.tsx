@@ -68,26 +68,23 @@ export default async function Page() {
       </section>
 
       <section className="overflow-hidden py-14">
-        <div className="inline-flex animate-[slide_infinite_linear_60s] gap-6">
+        <Link
+          href="/design"
+          className="-gap-8 inline-flex animate-[slide_infinite_linear_60s]"
+        >
           {allDesigns.map((item, id) => (
-            <Link
+            <Image
               key={id}
-              target="_blank"
-              className="block w-96 odd:rotate-2 even:-rotate-2"
-              href={item.coverImage ?? ''}
-            >
-              <Image
-                width={384}
-                height={288}
-                priority={true}
-                loading={'eager'}
-                alt={item.coverImage ?? ''}
-                src={item.coverImage ?? ''}
-                className="block w-96 rounded bg-gray-50 bg-cover object-cover ring-1 ring-gray-100"
-              />
-            </Link>
+              width={384}
+              height={288}
+              priority={true}
+              loading={'eager'}
+              alt={item.coverImage ?? ''}
+              src={item.coverImage ?? ''}
+              className="block w-96 rounded bg-gray-50 bg-cover object-cover ring-4 ring-white odd:rotate-2 even:-rotate-2"
+            />
           ))}
-        </div>
+        </Link>
       </section>
 
       <section className="mx-auto max-w-2xl p-4">

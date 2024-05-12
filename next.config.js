@@ -41,15 +41,6 @@ const nextConfig = {
         ]
       }
     ];
-  },
-  async redirects() {
-    return [
-      {
-        source: '/blog/index.xml',
-        destination: '/blog/rss.xml',
-        permanent: true
-      }
-    ];
   }
 };
 
