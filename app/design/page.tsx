@@ -14,7 +14,7 @@ export default async function Page() {
     .toArray();
 
   return (
-    <section className="mx-auto max-w-2xl p-4">
+    <section className="mx-auto max-w-xl p-4">
       <h2 className="font-bold">Designs</h2>
 
       <div className="my-6 grid gap-6">

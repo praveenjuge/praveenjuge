@@ -13,7 +13,7 @@ export default async function Page() {
     .toArray();
 
   return (
-    <section className="mx-auto flex max-w-2xl flex-col space-y-4 p-4 font-medium">
+    <section className="mx-auto flex max-w-xl flex-col space-y-4 p-4 font-medium">
       <h2 className="font-bold">
         Blog <span> — </span>
         <Link href="/blog/rss.xml" className="underline" prefetch={false}>
