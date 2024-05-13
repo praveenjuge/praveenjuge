@@ -11,7 +11,7 @@ export default async function Design({ params }: { params: { slug: string } }) {
   if (!design) notFound();
 
   return (
-    <article className="mx-auto flex max-w-2xl flex-col space-y-6 p-4">
+    <article className="mx-auto flex max-w-xl flex-col space-y-6 p-4">
       <Link
         href="/design"
         className="font-medium text-red-900 hover:text-black"

@@ -21,7 +21,7 @@ export default async function Page() {
 
   return (
     <>
-      <section className="mx-auto max-w-2xl p-4">
+      <section className="mx-auto max-w-xl space-y-4 p-4 leading-relaxed">
         {/* <a
           href="mailto:hello@praveenjuge.com"
           className="inline-flex items-center gap-2 overflow-hidden rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-600"
@@ -29,45 +29,39 @@ export default async function Page() {
           <span className="size-1.5 animate-pulse rounded-full bg-emerald-700"></span>
           <span>Available for New Projects</span>
         </a> */}
-        <h1 className="font-semibold tracking-tight">What&rsquo;s up nerds?</h1>
+        <Image
+          width={100}
+          height={100}
+          loading="eager"
+          priority={true}
+          src={profilePic}
+          alt="Photo of Praveen Juge"
+          className="h-20 w-20 rounded-full bg-gray-50 bg-cover bg-center object-cover brightness-105"
+        />
 
-        <div className="my-4 grid gap-10 sm:grid-cols-3">
-          <div className="col-span-2 space-y-5 leading-relaxed">
-            <p>
-              I&rsquo;m Praveen Juge, a designer and developer. I enjoy reading
-              books, listening to Taylor Swift, but I spend most of my time
-              playing Rocket League.
-            </p>
+        <h1 className="font-medium tracking-tight">
+          What&rsquo;s up nerds? I&rsquo;m Praveen Juge, a designer and
+          developer.
+        </h1>
 
-            <p>
-              I specialize in UI design, accessibility, CSS and design systems
-              with a knack for pixel-perfect outcomes. I also contribute to
-              open-source projects to support the design community.
-            </p>
-            <p>
-              Excited to collaborate with you on intriguing projects — reach out
-              at{' '}
-              <a
-                href="mailto:hello@praveenjuge.com"
-                className="underline decoration-2 underline-offset-1"
-              >
-                hello@praveenjuge.com
-              </a>
-              .
-            </p>
-          </div>
-          <Image
-            width={1000}
-            loading="eager"
-            priority={true}
-            src={profilePic}
-            alt="Praveen Juge trying his best to look cool."
-            className="rounded-md bg-gray-50 brightness-105"
-          />
-        </div>
+        <p>
+          I specialize in UI design, accessibility, CSS and design systems with
+          a knack for pixel-perfect outcomes. I also contribute to open-source
+          projects to support the design community.
+        </p>
+
+        <p>
+          Excited to collaborate with you on intriguing projects — reach out at{' '}
+          <a
+            href="mailto:hello@praveenjuge.com"
+            className="underline decoration-2 underline-offset-1"
+          >
+            hello@praveenjuge.com
+          </a>
+        </p>
       </section>
 
-      <section className="overflow-hidden py-14">
+      <section className="overflow-hidden py-16">
         <Link
           href="/design"
           className="-gap-8 inline-flex animate-[slide_infinite_linear_60s]"
@@ -87,7 +81,7 @@ export default async function Page() {
         </Link>
       </section>
 
-      <section className="mx-auto max-w-2xl p-4">
+      <section className="mx-auto max-w-xl p-4">
         <h2 className="mt-6 font-semibold tracking-tight">
           <Link href="/blog">Blog</Link>
         </h2>
@@ -116,7 +110,7 @@ export default async function Page() {
             href="https://teak.praveenjuge.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
+            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 p-5"
           >
             <div>
               <h3 className="font-semibold">Teak</h3>
@@ -124,14 +118,14 @@ export default async function Page() {
                 Mac app to curate your UI inspirations.
               </p>
             </div>
-            <ArrowUpRight className="shrink-0 text-red-900" />
+            <ArrowUpRight className="shrink-0" />
           </a>
 
           <a
             href="https://icons.mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-start justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
+            className="relative flex items-start justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 p-5"
           >
             <div className="pointer-events-none absolute -top-8 right-0 flex h-44 w-full select-none flex-wrap gap-2 text-red-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-current [&_svg]:stroke-[1.5] [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
               <svg>
@@ -596,7 +590,7 @@ export default async function Page() {
               </svg>
             </div>
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-[#FEFCFC] via-[#FEFCFC] sm:bg-gradient-to-r"
+              className="pointer-events-none absolute inset-y-0 left-0 size-full select-none bg-gradient-to-b from-white via-white sm:bg-gradient-to-r"
               aria-hidden="true"
             ></div>
             <div className="relative">
@@ -612,7 +606,7 @@ export default async function Page() {
             href="https://mynaui.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
+            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 p-5"
           >
             <div>
               <h3 className="font-semibold">MynaUI</h3>
@@ -620,14 +614,14 @@ export default async function Page() {
                 TailwindCSS and shadcn/ui UI Kit for Figma and React.
               </p>
             </div>
-            <ArrowUpRight className="shrink-0 text-red-900" />
+            <ArrowUpRight className="shrink-0" />
           </a>
 
           <a
             href="https://copybook.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 bg-red-50/25 p-5"
+            className="relative flex items-center justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 p-5"
           >
             <div>
               <h3 className="font-semibold">Copy Book</h3>
@@ -635,7 +629,7 @@ export default async function Page() {
                 Copy book is a collection of commonly used texts.
               </p>
             </div>
-            <ArrowUpRight className="shrink-0 text-red-900" />
+            <ArrowUpRight className="shrink-0" />
           </a>
         </div>
       </section>
