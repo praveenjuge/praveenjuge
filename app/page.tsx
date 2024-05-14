@@ -39,7 +39,7 @@ export default async function Page() {
           className="h-20 w-20 rounded-full bg-gray-50 bg-cover bg-center object-cover brightness-105"
         />
 
-        <h1 className="font-medium tracking-tight">
+        <h1 className="font-semibold">
           What&rsquo;s up nerds? I&rsquo;m Praveen Juge, a designer and
           developer.
         </h1>
