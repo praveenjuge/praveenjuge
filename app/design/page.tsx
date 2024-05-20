@@ -32,7 +32,7 @@ export default async function Page() {
               loading={id > 10 ? 'lazy' : 'eager'}
               alt={item.coverImage ?? ''}
               src={item.coverImage ?? ''}
-              className="size-full rounded bg-gray-200 bg-cover bg-center ring-1 ring-gray-100"
+              className="size-full rounded bg-gray-200 bg-cover bg-center"
             />
           </Link>
         ))}
