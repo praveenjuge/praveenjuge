@@ -90,14 +90,14 @@ export default async function Page() {
           <Link
             key={id}
             href={`/blog/${item.slug}`}
-            className="my-4 flex items-center gap-2 font-medium text-red-900 hover:text-black"
+            className="my-4 flex items-center gap-2 font-medium text-red-900"
           >
             {item.title}
           </Link>
         ))}
         <Link
           href="/blog"
-          className="flex items-center gap-2 font-medium text-red-900 hover:text-black"
+          className="flex items-center gap-2 font-medium text-red-900"
         >
           <span>Read More</span>
           <ArrowLongRight className="size-6" />
