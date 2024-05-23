@@ -11,16 +11,12 @@ export default async function Design({ params }: { params: { slug: string } }) {
   if (!design) notFound();
 
   return (
-    <article className="mx-auto flex max-w-xl flex-col space-y-6 p-4">
-      <Link
-        href="/design"
-        className="font-medium text-red-900 hover:text-black"
-      >
+    <article className="mx-auto flex max-w-xl flex-col gap-6 p-4">
+      <Link href="/design" className="font-medium text-red-900">
         ← All Designs
       </Link>
       <Link target="_blank" href={design.coverImage ?? ''}>
         <Image
-          priority
           width={700}
           height={1000}
           alt={design.coverImage ?? ''}

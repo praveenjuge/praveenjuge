@@ -13,7 +13,7 @@ export default async function Page() {
     .toArray();
 
   return (
-    <section className="mx-auto flex max-w-xl flex-col space-y-4 p-4 font-medium">
+    <section className="mx-auto flex max-w-xl flex-col gap-4 p-4">
       <h2 className="font-bold">
         Blog <span> — </span>
         <Link href="/blog/rss.xml" className="underline" prefetch={false}>
@@ -25,7 +25,7 @@ export default async function Page() {
         <Link
           key={id}
           href={`/blog/${item.slug}`}
-          className="text-red-900 hover:text-black"
+          className="font-medium text-red-900"
         >
           {item.title}
         </Link>

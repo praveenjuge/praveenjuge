@@ -18,7 +18,7 @@ export function markdownToHtml(markdown: string) {
       heading(text: string, level: number) {
         const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 
-        return `<a class="!no-underline hover:underline" href="#${escapedText}">
+        return `<a href="#${escapedText}">
                   <h${level} id="${escapedText}">${text}</h${level}>
                 </a>`;
       },

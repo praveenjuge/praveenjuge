@@ -152,9 +152,9 @@ export default async function Blog(params: Params) {
           content={`https://praveenjuge.com/blog/${blog.slug}/opengraph-image`}
         />
         <span
-          className="sr-only"
-          itemProp="author"
           itemScope
+          itemProp="author"
+          className="sr-only"
           itemType="https://schema.org/Person"
         >
           <a itemProp="url" href="https://praveenjuge.com">
