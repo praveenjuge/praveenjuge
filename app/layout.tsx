@@ -40,6 +40,7 @@ export const metadata: Metadata = {
       me: [
         'https://mastodon.social/@praveenjuge',
         'https://twitter.com/praveenjuge',
+        'https://x.com/praveenjuge',
         'https://github.com/praveenjuge',
         'https://instagram.com/praveenjuge',
         'https://dribbble.com/praveenjuge',
@@ -78,7 +79,7 @@ const jsonLd: WithContext<Person> = {
   sameAs: [
     'https://praveenjuge.com',
     'https://twitter.com/praveenjuge',
-    'https://twitter.com/praveenjuge',
+    'https://x.com/praveenjuge',
     'https://dribbble.com/praveenjuge',
     'https://instagram.com/praveenjuge',
     'https://www.linkedin.com/in/praveenjuge',
@@ -96,7 +97,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} text-gray-800 antialiased [font-family:var(--font-geist-sans)] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation]`}
+      className={`${GeistSans.variable} text-gray-800 antialiased [font-family:var(--font-geist-sans)] [font-feature-settings:"ss02","ss03","ss09"] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation]`}
     >
       <body>
         <div
@@ -140,7 +141,7 @@ export default function RootLayout({
             </Link>
             <Link
               title="X (Twitter)"
-              href="https://twitter.com/praveenjuge"
+              href="https://x.com/praveenjuge"
               target="_blank"
               rel="noopener noreferrer me"
             >
