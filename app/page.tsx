@@ -36,7 +36,7 @@ export default async function Page() {
           priority={true}
           src={profilePic}
           alt="Photo of Praveen Juge"
-          className="h-20 w-20 rounded-full bg-gray-50 bg-cover bg-center object-cover brightness-105"
+          className="h-20 w-20 rounded-full bg-gray-100 bg-cover bg-center object-cover brightness-105"
         />
 
         <h1 className="font-semibold">
@@ -83,7 +83,7 @@ export default async function Page() {
               loading={'eager'}
               alt={item.coverImage ?? ''}
               src={item.coverImage ?? ''}
-              className="block w-96 rounded bg-gray-50 bg-cover object-cover ring-4 ring-white odd:rotate-2 even:-rotate-2"
+              className="block w-96 rounded bg-gray-100 bg-cover object-cover ring-4 ring-white odd:rotate-2 even:-rotate-2"
             />
           ))}
         </Link>
