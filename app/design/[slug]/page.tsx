@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getDocumentSlugs, load } from 'outstatic/server';
+import { getDocumentBySlug, getDocumentSlugs } from 'outstatic/server';
 
 export default async function Design({ params }: { params: { slug: string } }) {
-  const design = await (await load())
-    .find({ collection: 'design', slug: params.slug }, ['slug', 'coverImage'])
-    .first();
+  const design = getDocumentBySlug('design', params.slug, [
+    'slug',
+    'coverImage'
+  ]);
 
   if (!design) notFound();
 
