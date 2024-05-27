@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getDocumentSlugs, load } from 'outstatic/server';
+import { getDocumentBySlug, getDocumentSlugs } from 'outstatic/server';
 import { BlogPosting, BreadcrumbList, WithContext } from 'schema-dts';
 import { markdownToHtml } from '../utils';
 
@@ -177,18 +177,14 @@ export default async function Blog(params: Params) {
 }
 
 async function getData({ params }: Params) {
-  const db = await load();
-
-  const blog = await db
-    .find({ collection: 'blog', slug: params.slug }, [
-      'title',
-      'publishedAt',
-      'description',
-      'slug',
-      'content',
-      'coverImage'
-    ])
-    .first();
+  const blog = getDocumentBySlug('blog', params.slug, [
+    'title',
+    'publishedAt',
+    'description',
+    'slug',
+    'content',
+    'coverImage'
+  ]);
 
   if (!blog) notFound();
 

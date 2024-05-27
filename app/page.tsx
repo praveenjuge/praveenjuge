@@ -61,10 +61,18 @@ export default async function Page() {
         </p>
       </section>
 
+      <style>{`
+        @keyframes slide {
+          to { 
+            transform: translateX(-169%);
+          }
+        }
+      `}</style>
+
       <section className="overflow-hidden py-16">
         <Link
           href="/design"
-          className="-gap-8 inline-flex animate-[slide_infinite_linear_60s]"
+          className="inline-flex animate-[slide_infinite_linear_60s] -space-x-2"
         >
           {allDesigns.map((item, id) => (
             <Image
