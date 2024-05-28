@@ -1,6 +1,6 @@
 {
-  "commit": "c08fd87e0119a5a8313f692a8af73e34047474e4",
-  "generated": "2024-05-27T15:21:22.222Z",
+  "commit": "de537c5cc9edc34e35db382ae0737b788cda0cf7",
+  "generated": "2024-05-28T12:47:38.038Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4856,6 +4856,24 @@
       "slug": "2024-may-27",
       "status": "published",
       "title": "2024 may 27"
+    },
+    {
+      "__outstatic": {
+        "commit": "de537c5cc9edc34e35db382ae0737b788cda0cf7",
+        "hash": "2170461139",
+        "path": "content/design/2024-may-28.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-may-28-AwMz.jpg",
+      "description": "",
+      "publishedAt": "2024-05-28T13:20:25.258Z",
+      "slug": "2024-may-28",
+      "status": "published",
+      "title": "2024 may 28"
     }
   ]
 }
