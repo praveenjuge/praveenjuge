@@ -1,6 +1,6 @@
 {
-  "commit": "a90a4160aaf1165179d5f683a6d81f02453a2e05",
-  "generated": "2024-06-01T15:27:44.739Z",
+  "commit": "ae4a34c57106146f28338fbc426f8133c754817e",
+  "generated": "2024-06-02T10:19:21.561Z",
   "metadata": [
     {
       "__outstatic": {
@@ -4946,6 +4946,24 @@
       "slug": "2024-june-1",
       "status": "published",
       "title": "2024 june 1"
+    },
+    {
+      "__outstatic": {
+        "commit": "ae4a34c57106146f28338fbc426f8133c754817e",
+        "hash": "461621906",
+        "path": "content/design/2024-june-2.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-june-2-ExNj.jpg",
+      "description": "",
+      "publishedAt": "2024-06-02T10:52:10.655Z",
+      "slug": "2024-june-2",
+      "status": "published",
+      "title": "2024 june 2"
     }
   ]
 }
