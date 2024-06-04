@@ -4,6 +4,8 @@ import { getDocumentBySlug, getDocumentSlugs } from 'outstatic/server';
 import { BlogPosting, BreadcrumbList, WithContext } from 'schema-dts';
 import { markdownToHtml } from '../utils';
 
+export const dynamic = 'force-static';
+
 interface Params {
   params: {
     slug: string;

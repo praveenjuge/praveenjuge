@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getDocumentBySlug, getDocumentSlugs } from 'outstatic/server';
 
+export const dynamic = 'force-static';
+
 export default async function Design({ params }: { params: { slug: string } }) {
   const design = getDocumentBySlug('design', params.slug, [
     'slug',
