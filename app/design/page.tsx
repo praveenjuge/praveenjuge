@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { load } from 'outstatic/server';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Designs | Praveen Juge'
 };
