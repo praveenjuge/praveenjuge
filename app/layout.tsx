@@ -104,7 +104,7 @@ export default function RootLayout({
           className="pointer-events-none absolute inset-0 -z-10 h-56 w-full select-none bg-gradient-to-b from-red-100 to-white"
           aria-hidden="true"
         ></div>
-        <header className="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 sm:items-center md:sticky md:flex-row md:justify-between md:space-y-0">
+        <header className="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 text-sm font-medium sm:items-center md:flex-row md:justify-between md:space-y-0">
           <Link href="/" title="Go to Home Page">
             <svg
               height={28}
@@ -117,13 +117,13 @@ export default function RootLayout({
           </Link>
           <nav
             aria-label="Navigation Links"
-            className="flex items-center gap-6 text-sm font-medium md:gap-4"
+            className="flex items-center gap-6 md:gap-4"
           >
             <Link href="/design">Designs</Link>
             <Link href="/blog">Blog</Link>
 
             <Link
-              title="Github"
+              title="GitHub"
               href="https://github.com/praveenjuge"
               target="_blank"
               rel="noopener noreferrer me"
@@ -160,11 +160,11 @@ export default function RootLayout({
         <footer className="grid place-items-center py-24">
           <Link href="/" title="Go to Home Page">
             <svg
-              className="fill-red-900 transition duration-1000 hover:rotate-180"
               width="50"
               height="50"
               viewBox="0 0 60 60"
               xmlns="http://www.w3.org/2000/svg"
+              className="fill-red-900 transition duration-1000 hover:rotate-180"
             >
               <path d="M26.9398 27.0508C27.3655 26.6091 27.886 26.2594 28.4685 26.0343C27.8323 24.2937 27.5388 22.4342 27.6181 20.5669C27.6253 20.3972 27.7444 20.2539 27.9106 20.2186C28.1561 20.1664 28.3769 20.369 28.3667 20.6198C28.2938 22.3989 28.5782 24.1704 29.1912 25.8269C29.453 25.7764 29.7234 25.75 29.9999 25.75C30.5025 25.75 30.9846 25.8372 31.4321 25.9974C32.6721 22.9478 34.9027 20.3778 37.8103 18.7828C37.935 18.0383 37.9999 17.2736 37.9999 16.4936C37.9999 10.9525 34.7223 6.17698 30 4C25.2776 6.17697 21.9999 10.9525 21.9999 16.4937C21.9999 20.7354 23.9206 24.5285 26.9398 27.0508Z" />
               <path d="M26.6365 27.4017C24.119 25.2799 22.3638 22.3641 21.7452 19.1056C21.0758 18.7569 20.3685 18.4589 19.6268 18.2179C14.3568 16.5056 8.80216 18.1471 5.27246 21.9656C5.8836 27.1295 9.41258 31.7225 14.6825 33.4348C18.7163 34.7454 22.917 34.0911 26.2487 31.9995C25.9645 31.4674 25.7902 30.8678 25.7561 30.231C23.9038 30.2984 22.0442 30.0028 20.2925 29.3503C20.1334 29.291 20.0339 29.1334 20.0516 28.9645C20.0778 28.7149 20.3388 28.5675 20.5742 28.6547C22.2438 29.2738 24.0166 29.5507 25.7815 29.4796C25.8763 28.7028 26.1807 27.9907 26.6365 27.4017Z" />
