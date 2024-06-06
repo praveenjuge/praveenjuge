@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { load } from 'outstatic/server';
 
+export const dynamic = 'force-static';
+
 export default async function Page() {
   const db = await load();
 

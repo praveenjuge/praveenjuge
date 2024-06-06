@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { getDocumentSlugs } from 'outstatic/server';
 
+export const dynamic = 'force-static';
+
 const domain = 'https://praveenjuge.com';
 
 export type sitemap = {
