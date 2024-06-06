@@ -14,10 +14,8 @@ export default async function Design({ params }: { params: { slug: string } }) {
   if (!design) notFound();
 
   return (
-    <article className="mx-auto flex max-w-xl flex-col gap-6 p-4">
-      <Link href="/design" className="font-medium text-red-900">
-        ← All Designs
-      </Link>
+    <article className="mx-auto flex max-w-xl flex-col gap-6 p-4 font-medium">
+      <Link href="/design">← All Designs</Link>
       <Link target="_blank" href={design.coverImage ?? ''}>
         <Image
           width={700}
