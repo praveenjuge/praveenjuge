@@ -48,8 +48,9 @@ Now, it’s time to create the component in code, let’s take the green theme f
 ```html
 <span
   class="inline-flex rounded-full bg-gray-100 px-1.5 py-px font-mono text-xs font-medium text-gray-500"
-  >4</span
 >
+  4
+</span>
 ```
 
 The code above will create the following UI. It has text, background and padding on the same element which works for the following normal badge variant.
