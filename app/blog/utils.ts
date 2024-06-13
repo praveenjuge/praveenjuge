@@ -1,9 +1,9 @@
 import hljs from 'highlight.js';
-import { Marked } from 'marked';
+import { Tokens, marked } from 'marked';
 import { markedHighlight } from 'marked-highlight';
 
 export function markdownToHtml(markdown: string) {
-  const marked = new Marked(
+  marked.use(
     markedHighlight({
       langPrefix: 'hljs language-',
       highlight(code, lang) {
@@ -14,32 +14,27 @@ export function markdownToHtml(markdown: string) {
   );
 
   marked.use({
+    useNewRenderer: true,
     renderer: {
-      heading(text: string, level: number) {
-        const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+      heading(token: Tokens.Heading) {
+        let text = token.text.replace(/\*\*/g, ''); // Remove **
+        let escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+        escapedText = escapedText.replace(/-+$/, ''); // Remove trailing dashes
 
-        return `<a href="#${escapedText}">
-                  <h${level} id="${escapedText}">${text}</h${level}>
-                </a>`;
+        return `<h${token.depth} id="${escapedText}" class="tracking-tight">
+                  <a href="#${escapedText}" class="font-semibold">${text}</a>
+                </h${token.depth}>`;
       },
-      image(href: string, title: string | null, text: string) {
-        if (href === null) {
-          return text;
+      image(token: Tokens.Image) {
+        if (token.href === null) {
+          return token.text;
         }
-        const out =
-          '<a target="_blank" rel="noreferrer noopener" href="' +
-          href +
-          '"><img src="https://praveenjuge.com' +
-          href +
-          '" alt="' +
-          text +
-          '" loading="lazy" /></a>';
-        return out;
-      },
-      link(href: string, title: string | null | undefined, text: string) {
-        return `<a href="${href}" target="_blank" rel="noopener noreferrer">
-                ${text}
+        return `<a target="_blank" rel="noreferrer noopener" href="${token.href}">
+                  <img src="${token.href}" alt="${token.text}" loading="lazy" />
                 </a>`;
+      },
+      link(token: Tokens.Link) {
+        return `<a href="${token.href}" target="_blank" rel="noopener noreferrer">${token.text}</a>`;
       }
     }
   });
