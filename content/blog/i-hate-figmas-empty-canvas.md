@@ -35,6 +35,6 @@ You should face adversity head-on and you will always find that it is 10x times 
 
 [VINCENT VAN GOGH: The blank canvas by Zen Pencils](https://www.zenpencils.com/comic/lilvincent/)
 
-> "Many painters are afraid of the blank canvas, but the blank canvas is afraid of the truly passionate painter who dares-and who has once broken the spell of 'you can't.'" ~ Vincent Van Gogh
+> Many painters are afraid of the blank canvas, but the blank canvas is afraid of the truly passionate painter who dares-and who has once broken the spell of 'you can't.' ~ Vincent Van Gogh
 
 _Reminder to myself: Come back and read this whenever I start something new._

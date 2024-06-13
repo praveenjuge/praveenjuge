@@ -30,13 +30,13 @@ I already use VS Code for development and it has a sweet markdown viewer, so we 
 
 And I also use these extensions:
 
-[**Code Spell Checker**](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+**[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)**
 
-[**markdownlint**](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+**[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)**
 
 Markdown linter is not really necessary but it does help when you are learning markdown for the first time.
 
-[**Run on Save**](https://marketplace.visualstudio.com/items?itemName=pucelle.run-on-save)
+**[Run on Save](https://marketplace.visualstudio.com/items?itemName=pucelle.run-on-save)**
 
 This helps in pushing the markdown files to git whenever you save it. After installing this extention, in VS code settings.json, add this:
 

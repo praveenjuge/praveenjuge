@@ -1,43 +1,56 @@
 import hljs from 'highlight.js';
-import { Tokens, marked } from 'marked';
-import { markedHighlight } from 'marked-highlight';
+import MarkdownIt from 'markdown-it';
 
-export function markdownToHtml(markdown: string) {
-  marked.use(
-    markedHighlight({
-      langPrefix: 'hljs language-',
-      highlight(code, lang) {
-        const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-        return hljs.highlight(code, { language }).value;
-      }
-    })
-  );
-
-  marked.use({
-    useNewRenderer: true,
-    renderer: {
-      heading(token: Tokens.Heading) {
-        let text = token.text.replace(/\*\*/g, ''); // Remove **
-        let escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
-        escapedText = escapedText.replace(/-+$/, ''); // Remove trailing dashes
-
-        return `<h${token.depth} id="${escapedText}" class="tracking-tight">
-                  <a href="#${escapedText}" class="font-semibold">${text}</a>
-                </h${token.depth}>`;
-      },
-      image(token: Tokens.Image) {
-        if (token.href === null) {
-          return token.text;
-        }
-        return `<a target="_blank" rel="noreferrer noopener" href="${token.href}">
-                  <img src="${token.href}" alt="${token.text}" loading="lazy" />
-                </a>`;
-      },
-      link(token: Tokens.Link) {
-        return `<a href="${token.href}" target="_blank" rel="noopener noreferrer">${token.text}</a>`;
-      }
+const md = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: true,
+  highlight: (str, lang) => {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(str, { language: lang }).value;
+      } catch (__) {}
     }
-  });
+    return '';
+  }
+});
 
-  return marked.parse(markdown);
+const defaultLinkRender =
+  md.renderer.rules.link_open ||
+  ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options));
+
+md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+  const token = tokens[idx];
+  token.attrPush(['target', '_blank']);
+  token.attrPush(['rel', 'noopener noreferrer']);
+  return defaultLinkRender(tokens, idx, options, env, self);
+};
+
+md.renderer.rules.heading_open = (tokens, idx) => {
+  const token = tokens[idx];
+  const level = token.tag;
+  const text = tokens[idx + 1].content;
+  const slug = text
+    .toLowerCase()
+    .replace(/[^\w]+/g, '-')
+    .replace(/-+$/, '');
+  token.attrSet('id', slug);
+  token.attrJoin('class', 'tracking-tight');
+
+  return `<${level} id="${slug}" class="tracking-tight"><a href="#${slug}" class="font-semibold">`;
+};
+md.renderer.rules.heading_close = (tokens, idx) => {
+  return `</a></${tokens[idx].tag}>`;
+};
+
+md.renderer.rules.image = (tokens, idx) => {
+  const token = tokens[idx];
+  const href = token.attrGet('src');
+  return `<a target="_blank" rel="noreferrer noopener" href="${href}">
+            <img src="${href}" alt="${token.content}" loading="lazy" />
+          </a>`;
+};
+
+export default function markdownToHtml(markdown: string) {
+  return md.render(markdown);
 }
