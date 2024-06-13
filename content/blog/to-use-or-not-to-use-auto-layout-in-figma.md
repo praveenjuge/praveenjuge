@@ -5,14 +5,14 @@ author:
   name: 'Praveen Juge'
   picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 slug: 'to-use-or-not-to-use-auto-layout-in-figma'
-description: 'The debate on whether or not to use Auto Layout in Figma is a hot topic that frequently surfaces on Twitter. Based on my experience with this feature, I''ve developed some insights and guidelines on when and how to leverage Auto Layout to its full potential.'
+description: "The debate on whether or not to use Auto Layout in Figma is a hot topic that frequently surfaces on Twitter. Based on my experience with this feature, I've developed some insights and guidelines on when and how to leverage Auto Layout to its full potential."
 coverImage: ''
 publishedAt: '2024-03-01T05:16:06.767Z'
 ---
 
 Here's a breakdown, based on personal experience, of where Auto Layout shines and where it might not be the best fit:
 
-### **When to Use Auto Layout:**
+### When to Use Auto Layout:
 
 1. **Design Systems:** Auto Layout is invaluable for creating design systems. It ensures consistency across components and layouts, making it easier to maintain and update your design system over time.
 
@@ -20,7 +20,7 @@ Here's a breakdown, based on personal experience, of where Auto Layout shines an
 
 3. **Landing Page Content:** When it comes to the content sections of landing pages, Auto Layout can help manage the flow of text, buttons, and images seamlessly.
 
-### **When Not to Use Auto Layout:**
+### When Not to Use Auto Layout:
 
 1. **Landing Page Graphics:** For more graphic-intensive elements of a landing page, such as hero images or complex visual compositions, Auto Layout may not offer the flexibility needed to achieve the desired outcome. In these cases, manual adjustments might provide better control over the design.
 

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getDocumentBySlug, getDocumentSlugs } from 'outstatic/server';
 import { BlogPosting, BreadcrumbList, WithContext } from 'schema-dts';
-import { markdownToHtml } from '../utils';
+import markdownToHtml from '../utils';
 
 export const dynamic = 'force-static';
 

@@ -180,4 +180,4 @@ Today, after all this, I realized that I’m not addicted to YouTube anymore. I 
 
 And always remember,
 
-> "Too much of anything can make you sick" ~ Cheryl Cole
+> Too much of anything can make you sick ~ Cheryl Cole
