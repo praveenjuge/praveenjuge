@@ -1,6 +1,6 @@
 {
-  "commit": "4bb1c28995ea263ab4b4a007335e1b21e27094e7",
-  "generated": "2024-06-17T11:03:42.717Z",
+  "commit": "a9d627e79a2f688605a52a47ff449a7b213e8625",
+  "generated": "2024-06-17T18:07:45.541Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5234,6 +5234,24 @@
       "slug": "2024-june-17",
       "status": "published",
       "title": "2024 june 17"
+    },
+    {
+      "__outstatic": {
+        "commit": "a9d627e79a2f688605a52a47ff449a7b213e8625",
+        "hash": "2373778635",
+        "path": "content/blog/thoughts-on-wwdc24.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "I just finished watching the WWDC24 sessions and wanted to share my thoughts on the announcements. Here’s a quick rundown of what stood out to me, especially the things I might actually use in my daily routine.",
+      "publishedAt": "2024-06-17T18:38:47.393Z",
+      "slug": "thoughts-on-wwdc24",
+      "status": "published",
+      "title": "Thoughts on WWDC24"
     }
   ]
 }
