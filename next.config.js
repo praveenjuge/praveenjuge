@@ -26,10 +26,6 @@ const nextConfig = {
             value: 'same-origin'
           },
           {
-            key: 'Permissions-Policy',
-            value: 'geolocation=(), camera=(), microphone=(), fullscreen=(self)'
-          },
-          {
             key: 'Strict-Transport-Security',
             value: 'max-age=63072000; includeSubDomains; preload'
           },

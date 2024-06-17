@@ -7,15 +7,13 @@ import { load } from 'outstatic/server';
 export const dynamic = 'force-static';
 
 export default async function Page() {
-  const db = await load();
-
-  const allDesigns = await db
+  const allDesigns = await (await load())
     .find({ collection: 'design' }, ['coverImage'])
     .sort({ publishedAt: -1 })
     .limit(11)
     .toArray();
 
-  const allBlogs = await db
+  const allBlogs = await (await load())
     .find({ collection: 'blog' }, ['title', 'slug'])
     .sort({ publishedAt: -1 })
     .limit(14)
@@ -66,7 +64,7 @@ export default async function Page() {
       <style>{`
         @keyframes slide {
           to { 
-            transform: translateX(-169%);
+            transform: translateX(-69%);
           }
         }
       `}</style>
@@ -85,7 +83,7 @@ export default async function Page() {
               loading={'eager'}
               alt={item.coverImage ?? ''}
               src={item.coverImage ?? ''}
-              className="block w-96 rounded bg-gray-100 bg-cover object-cover ring-4 ring-white odd:rotate-2 even:-rotate-2"
+              className="block min-h-72 w-96 min-w-96 rounded bg-gray-100 bg-cover object-cover ring-4 ring-white odd:rotate-2 even:-rotate-2"
             />
           ))}
         </Link>
