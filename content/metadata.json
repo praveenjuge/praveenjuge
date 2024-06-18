@@ -1,6 +1,6 @@
 {
-  "commit": "aa32cdb93ac5240f8c45a30cbeacb818e5233918",
-  "generated": "2024-06-18T13:23:30.788Z",
+  "commit": "d1d986b1860df5e12163946bd201ea9f231ee47e",
+  "generated": "2024-06-18T18:46:09.238Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5270,6 +5270,24 @@
       "slug": "2024-june-18",
       "status": "published",
       "title": "2024 june 18"
+    },
+    {
+      "__outstatic": {
+        "commit": "d1d986b1860df5e12163946bd201ea9f231ee47e",
+        "hash": "1813643158",
+        "path": "content/blog/how-i-start-a-new-figma-project-nowadays.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "Today, I want to share with you how I start a new Figma project nowadays, whether it's for work or a personal endeavor. Over time, I've honed a process that revolves around a few key tools and design systems that make my workflow efficient and enjoyable. Let’s dive in!",
+      "publishedAt": "2024-06-18T19:16:52.660Z",
+      "slug": "how-i-start-a-new-figma-project-nowadays",
+      "status": "published",
+      "title": "How I Start a New Figma Project Nowadays"
     }
   ]
 }
