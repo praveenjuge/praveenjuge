@@ -15,8 +15,8 @@ export default async function Page() {
     .toArray();
 
   return (
-    <section className="mx-auto flex max-w-xl flex-col gap-4 p-4">
-      <h2 className="font-bold">
+    <section className="mx-auto flex max-w-xl flex-col gap-4 p-4 font-medium text-red-900">
+      <h2 className="font-bold text-gray-800">
         Blog <span> — </span>
         <Link href="/blog/rss.xml" className="underline" prefetch={false}>
           RSS Feed
@@ -24,11 +24,7 @@ export default async function Page() {
       </h2>
 
       {allBlogs.map((item, id) => (
-        <Link
-          key={id}
-          href={`/blog/${item.slug}`}
-          className="font-medium text-red-900"
-        >
+        <Link key={id} href={`/blog/${item.slug}`}>
           {item.title}
         </Link>
       ))}
