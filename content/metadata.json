@@ -1,6 +1,6 @@
 {
-  "commit": "a9d627e79a2f688605a52a47ff449a7b213e8625",
-  "generated": "2024-06-17T18:07:45.541Z",
+  "commit": "aa32cdb93ac5240f8c45a30cbeacb818e5233918",
+  "generated": "2024-06-18T13:23:30.788Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5252,6 +5252,24 @@
       "slug": "thoughts-on-wwdc24",
       "status": "published",
       "title": "Thoughts on WWDC24"
+    },
+    {
+      "__outstatic": {
+        "commit": "aa32cdb93ac5240f8c45a30cbeacb818e5233918",
+        "hash": "2776502351",
+        "path": "content/design/2024-june-18.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-june-18-gzMT.jpg",
+      "description": "",
+      "publishedAt": "2024-06-18T13:56:20.584Z",
+      "slug": "2024-june-18",
+      "status": "published",
+      "title": "2024 june 18"
     }
   ]
 }
