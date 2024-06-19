@@ -1,6 +1,6 @@
 {
-  "commit": "d1d986b1860df5e12163946bd201ea9f231ee47e",
-  "generated": "2024-06-18T18:46:09.238Z",
+  "commit": "d003b64b27bbff5f83856e361ded80b4c2ea461a",
+  "generated": "2024-06-19T06:48:04.292Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5288,6 +5288,24 @@
       "slug": "how-i-start-a-new-figma-project-nowadays",
       "status": "published",
       "title": "How I Start a New Figma Project Nowadays"
+    },
+    {
+      "__outstatic": {
+        "commit": "d003b64b27bbff5f83856e361ded80b4c2ea461a",
+        "hash": "2411943634",
+        "path": "content/design/2024-june-19.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-june-19-QwNz.jpg",
+      "description": "",
+      "publishedAt": "2024-06-19T07:20:49.859Z",
+      "slug": "2024-june-19",
+      "status": "published",
+      "title": "2024 june 19"
     }
   ]
 }
