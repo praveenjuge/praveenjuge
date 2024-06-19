@@ -9,9 +9,7 @@ const SITE_AUTHOR_NAME = 'Praveen Juge';
 const SITE_AUTHOR_EMAIL = 'hi@praveenjuge.com';
 
 export async function GET() {
-  const db = await load();
-
-  const allBlogs = await db
+  const allBlogs = await (await load())
     .find({ collection: 'blog' }, [
       'title',
       'publishedAt',

@@ -16,7 +16,7 @@ export default async function Page() {
   const allBlogs = await (await load())
     .find({ collection: 'blog' }, ['title', 'slug'])
     .sort({ publishedAt: -1 })
-    .limit(14)
+    .limit(18)
     .toArray();
 
   return (
