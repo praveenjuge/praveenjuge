@@ -26,7 +26,7 @@ The gameplay in Odyssey is engaging, with a variety of activities to keep you oc
 
 **![](/images/vg06olq-U0MD.jpeg)**
 
-Odyssey also introduces a new Mercenary system which adds an extra layer of challenge and excitement to the game. The naval combat, a beloved feature from Black Flag, makes a triumphant return, allowing players to engage in epic sea battles.
+Odyssey also introduces a new Mercenary system which adds an extra layer of challenge and excitement to the game. The naval combat, a beloved feature from Black Flag, allows players to engage in epic sea battles.
 
 **Graphics and Sound**
 
