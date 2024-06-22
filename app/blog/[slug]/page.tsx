@@ -14,12 +14,9 @@ function getData(slug: string) {
 		"description",
 		"slug",
 		"content",
-		"coverImage",
 	]);
 
-	if (!blog) {
-		notFound();
-	}
+	if (!blog) notFound();
 
 	return { ...blog, content: markdownToHtml(blog.content) };
 }
@@ -35,7 +32,7 @@ export async function generateMetadata({
 		openGraph: {
 			type: "article",
 			images: {
-				url: `https://praveenjuge.com/blog/${blog.slug}/opengraph-image`,
+				url: `https://praveenjuge.com/og/blog/${blog.slug}.jpg`,
 				alt: blog.title,
 			},
 		},
@@ -56,7 +53,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
 		headline: blog.title,
 		datePublished: blog.publishedAt,
 		dateModified: blog.publishedAt,
-		image: `https://praveenjuge.com/blog/${blog.slug}/opengraph-image`,
+		image: `https://praveenjuge.com/og/blog/${blog.slug}.jpg`,
 		author: {
 			"@type": "Person",
 			name: "Praveen Juge",
@@ -113,7 +110,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
 			</h1>
 			<meta
 				itemProp="image"
-				content={`https://praveenjuge.com/blog/${blog.slug}/opengraph-image`}
+				content={`https://praveenjuge.com/og/blog/${blog.slug}.jpg`}
 			/>
 			<span
 				itemScope={true}

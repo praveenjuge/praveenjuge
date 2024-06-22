@@ -12,9 +12,7 @@ export default function Design({ params }: { params: { slug: string } }) {
 		"coverImage",
 	]);
 
-	if (!design) {
-		notFound();
-	}
+	if (!design) notFound();
 
 	return (
 		<article className="mx-auto flex max-w-xl flex-col gap-6 p-4 font-medium">

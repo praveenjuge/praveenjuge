@@ -14,7 +14,6 @@ const allBlogs = await (await load())
 		"description",
 		"content",
 		"slug",
-		"coverImage",
 	])
 	.sort({ publishedAt: -1 })
 	.toArray();
@@ -49,7 +48,7 @@ export function GET() {
 			content: `${post.description}<br />${content}`,
 			description: post.description || "",
 			date: new Date(post.publishedAt || ""),
-			image: post.coverImage,
+			image: `https://praveenjuge.com/og/blog/${post.slug}.jpg`,
 			author: [
 				{
 					name: SITE_AUTHOR_NAME,
