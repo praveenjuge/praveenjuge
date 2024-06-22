@@ -31,10 +31,9 @@ export async function generateMetadata({
 		description: blog.description,
 		openGraph: {
 			type: "article",
-			images: {
-				url: `https://praveenjuge.com/og/blog/${blog.slug}.jpg`,
-				alt: blog.title,
-			},
+			siteName: "Praveen Juge",
+			url: "./",
+			locale: "en_US",
 		},
 	};
 }
