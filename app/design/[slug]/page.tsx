@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
 
 export const dynamic = "force-static";
+export const revalidate = false;
 
-export default async function Design({ params }: { params: { slug: string } }) {
+export default function Design({ params }: { params: { slug: string } }) {
 	const design = getDocumentBySlug("design", params.slug, [
 		"slug",
 		"coverImage",
@@ -30,6 +31,6 @@ export default async function Design({ params }: { params: { slug: string } }) {
 	);
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
 	return getDocumentSlugs("design").map((slug) => ({ slug }));
 }
