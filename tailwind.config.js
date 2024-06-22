@@ -1,4 +1,4 @@
 module.exports = {
-  content: ['./app/**/*.tsx'],
-  plugins: [require('@tailwindcss/typography')]
+	content: ["./app/**/*.tsx"],
+	plugins: [require("@tailwindcss/typography")],
 };
