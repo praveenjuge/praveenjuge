@@ -1,85 +1,44 @@
 {
-  "name": "praveenjuge",
-  "version": "0.0.1",
-  "description": "Praveen Juge is a designer and developer for everything on the web.",
-  "keywords": [
-    "praveen",
-    "juge",
-    "praveenjuge"
-  ],
-  "homepage": "https://praveenjuge.com/",
-  "bugs": {
-    "url": "https://github.com/praveenjuge/praveenjuge/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/praveenjuge/praveenjuge.git"
-  },
-  "license": "MIT",
-  "author": "praveenjuge",
-  "main": "index.js",
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "lint": "next lint",
-    "start": "next start"
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "plugins": [
-      "prettier-plugin-organize-imports",
-      "prettier-plugin-tailwindcss"
-    ],
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none"
-  },
-  "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "next",
-      "next/core-web-vitals",
-      "plugin:tailwindcss/recommended",
-      "prettier"
-    ],
-    "root": true
-  },
-  "dependencies": {
-    "@mynaui/icons-react": "^0.2.1",
-    "feed": "^4.2.2",
-    "geist": "^1.3.0",
-    "highlight.js": "^11.9.0",
-    "markdown-it": "^14.1.0",
-    "next": "canary",
-    "outstatic": "^1.4.8",
-    "react": "rc",
-    "react-dom": "rc"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13",
-    "@typescript-eslint/eslint-plugin": "^7.13.0",
-    "@typescript-eslint/parser": "^7.13.0",
-    "eslint": "^9.5.0",
-    "eslint-config-next": "^14.2.4",
-    "eslint-plugin-react": "^7.34.2",
-    "eslint-plugin-tailwindcss": "^3.17.3",
-    "postcss": "^8.4.38",
-    "prettier": "^3.3.2",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "schema-dts": "^1.1.2",
-    "tailwindcss": "3.4.4",
-    "typescript": "^5.4.5"
-  },
-  "postcss": {
-    "plugins": {
-      "tailwindcss": {}
-    }
-  }
+	"name": "praveenjuge",
+	"version": "0.0.1",
+	"description": "Praveen Juge is a designer and developer for everything on the web.",
+	"keywords": ["praveen", "juge", "praveenjuge"],
+	"homepage": "https://praveenjuge.com/",
+	"bugs": {
+		"url": "https://github.com/praveenjuge/praveenjuge/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/praveenjuge/praveenjuge.git"
+	},
+	"license": "MIT",
+	"author": "praveenjuge",
+	"main": "index.js",
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@biomejs/biome": "1.8.2",
+		"@mynaui/icons-react": "^0.2.1",
+		"@tailwindcss/typography": "^0.5.13",
+		"feed": "^4.2.2",
+		"geist": "^1.3.0",
+		"highlight.js": "^11.9.0",
+		"markdown-it": "^14.1.0",
+		"next": "canary",
+		"outstatic": "^1.4.8",
+		"postcss": "^8.4.38",
+		"react": "rc",
+		"react-dom": "rc",
+		"schema-dts": "^1.1.2",
+		"tailwindcss": "3.4.4",
+		"typescript": "^5.5.2"
+	},
+	"postcss": {
+		"plugins": {
+			"tailwindcss": {}
+		}
+	}
 }
