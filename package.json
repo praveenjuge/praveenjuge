@@ -15,7 +15,7 @@
 	"author": "praveenjuge",
 	"main": "index.js",
 	"scripts": {
-		"build": "next build",
+		"build": "next build && node captureScreenshots.js",
 		"dev": "next dev",
 		"start": "next start"
 	},
@@ -30,6 +30,7 @@
 		"next": "canary",
 		"outstatic": "^1.4.8",
 		"postcss": "^8.4.38",
+		"puppeteer": "^22.12.0",
 		"react": "rc",
 		"react-dom": "rc",
 		"schema-dts": "^1.1.2",
