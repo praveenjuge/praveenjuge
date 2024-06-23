@@ -1,6 +1,6 @@
 {
-  "commit": "85048f10f392ad954485efd20bb32bb3b6328ac6",
-  "generated": "2024-06-22T12:50:45.485Z",
+  "commit": "c94a0a0413f67ca582e778be18fae9c0cc836a2f",
+  "generated": "2024-06-23T15:09:39.219Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5378,6 +5378,24 @@
       "slug": "review-of-assassin-s-creed-odyssey-and-valhalla",
       "status": "published",
       "title": "Review of Assassin's Creed Odyssey and Valhalla"
+    },
+    {
+      "__outstatic": {
+        "commit": "c94a0a0413f67ca582e778be18fae9c0cc836a2f",
+        "hash": "3725099601",
+        "path": "content/design/2024-june-23.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-june-23-M4MD.jpg",
+      "description": "",
+      "publishedAt": "2024-06-23T15:42:28.515Z",
+      "slug": "2024-june-23",
+      "status": "published",
+      "title": "2024 june 23"
     }
   ]
 }
