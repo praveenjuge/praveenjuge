@@ -31,7 +31,7 @@ FreshRSS may not have the flashiest UI, but its UX is top-notch, making it the b
 
 Here's an example of my `fly.toml` configuration for FreshRSS:
 
-```null
+```toml
 app = 'praveenjuge-freshrss'
 kill_signal = 'SIGINT'
 kill_timeout = '5s'
