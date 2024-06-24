@@ -1,6 +1,6 @@
 {
-  "commit": "1567e2a1a0f487f39d702c9d68dc83e2460ceeb6",
-  "generated": "2024-06-23T15:21:43.263Z",
+  "commit": "f12a6c6c923293c1322962c93c6f9fb31178a88e",
+  "generated": "2024-06-24T18:28:49.911Z",
   "metadata": [
     {
       "__outstatic": {
@@ -5414,6 +5414,24 @@
       "slug": "exploring-freshrss-and-fly-io-a-designer-s-perspective",
       "status": "published",
       "title": "Exploring FreshRSS and Fly.io: A Designer's Perspective"
+    },
+    {
+      "__outstatic": {
+        "commit": "f12a6c6c923293c1322962c93c6f9fb31178a88e",
+        "hash": "4072664257",
+        "path": "content/design/2024-june-24.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-june-24-AzMD.jpg",
+      "description": "",
+      "publishedAt": "2024-06-23T19:01:36.000Z",
+      "slug": "2024-june-24",
+      "status": "published",
+      "title": "2024 june 24"
     }
   ]
 }
