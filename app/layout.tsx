@@ -128,7 +128,7 @@ export default function RootLayout({
 							target="_blank"
 							rel="noopener noreferrer me"
 						>
-							<svg role="presentation" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M15.172 15.299c1.202-.25 2.293-.682 3.14-1.316 1.448-1.084 2.188-2.758 2.188-4.411 0-1.16-.44-2.243-1.204-3.16-.425-.511.819-3.872-.286-3.359-1.105.514-2.725 1.198-3.574.947-.909-.268-1.9-.416-2.936-.416-.9 0-1.766.111-2.574.317-1.174.298-2.296-.363-3.426-.848-1.13-.484-.513 3.008-.849 3.422C4.921 7.38 4.5 8.44 4.5 9.572c0 1.653.895 3.327 2.343 4.41.965.722 2.174 1.183 3.527 1.41" /><path d="M10.37 15.391q-.87.954-.869 1.813V21m5.671-5.701q.823 1.078.823 1.936V21M3.5 15.668q.675.081 1 .618c.326.537 1.537 2.526 2.913 2.526H9.5" /></svg>
+							<svg role="presentation" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M15.172 15.299c1.202-.25 2.293-.682 3.14-1.316 1.448-1.084 2.188-2.758 2.188-4.411 0-1.16-.44-2.243-1.204-3.16-.425-.511.819-3.872-.286-3.359-1.105.514-2.725 1.198-3.574.947-.909-.268-1.9-.416-2.936-.416-.9 0-1.766.111-2.574.317-1.174.298-2.296-.363-3.426-.848-1.13-.484-.513 3.008-.849 3.422C4.921 7.38 4.5 8.44 4.5 9.572c0 1.653.895 3.327 2.343 4.41.965.722 2.174 1.183 3.527 1.41" /><path d="M10.37 15.391q-.87.954-.869 1.813V21m5.671-5.701q.823 1.078.823 1.936V21M3.5 15.668q.675.081 1 .618c.326.537 1.537 2.526 2.913 2.526H9.5" /></svg>
 						</Link>
 
 						<Link
@@ -137,7 +137,7 @@ export default function RootLayout({
 							target="_blank"
 							rel="noopener noreferrer me"
 						>
-							<svg role="presentation" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 12c-1.313 0-4.936-.495-8.178.928-3.522 1.547-6.072 3.946-7.184 5.438"/><path d="M8.625 3.654c1.409 1.3 4.482 4.61 5.625 7.896s1.566 7.326 1.827 8.476"/><path d="M3.07 10.875c1.7.102 6.2.195 9.08-1.035s5.358-3.492 6.208-4.21"/><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18"/></svg>
+							<svg role="presentation" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 12c-1.313 0-4.936-.495-8.178.928-3.522 1.547-6.072 3.946-7.184 5.438"/><path d="M8.625 3.654c1.409 1.3 4.482 4.61 5.625 7.896s1.566 7.326 1.827 8.476"/><path d="M3.07 10.875c1.7.102 6.2.195 9.08-1.035s5.358-3.492 6.208-4.21"/><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18"/></svg>
 						</Link>
 						<Link
 							title="X (Twitter)"
@@ -145,7 +145,7 @@ export default function RootLayout({
 							target="_blank"
 							rel="noopener noreferrer me"
 						>
-							<svg role="presentation" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="m19 4-5.93 6.93M5 20l5.93-6.93m0 0 5.795 6.587c.19.216.483.343.794.343h1.474c.836 0 1.307-.85.793-1.435L13.07 10.93m-2.14 2.14L4.214 5.435C3.7 4.85 4.17 4 5.007 4h1.474c.31 0 .604.127.794.343l5.795 6.587"/></svg>
+							<svg role="presentation" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="m19 4-5.93 6.93M5 20l5.93-6.93m0 0 5.795 6.587c.19.216.483.343.794.343h1.474c.836 0 1.307-.85.793-1.435L13.07 10.93m-2.14 2.14L4.214 5.435C3.7 4.85 4.17 4 5.007 4h1.474c.31 0 .604.127.794.343l5.795 6.587"/></svg>
 						</Link>
 						<a
 							rel="me"

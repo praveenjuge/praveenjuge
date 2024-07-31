@@ -124,7 +124,7 @@ export default function Page() {
 								Mac app to curate your UI inspirations.
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
@@ -133,7 +133,7 @@ export default function Page() {
 						rel="noopener noreferrer"
 						className="relative flex items-start justify-between gap-8 overflow-hidden rounded border-[0.5px] border-red-200 p-5"
 					>
-						<div className="-top-8 pointer-events-none absolute right-0 flex h-44 w-full select-none flex-wrap gap-2 text-red-400 [&_svg]:size-6 sm:w-[65%] sm:rotate-[8deg] [&_svg]:fill-none [&_svg]:stroke-[1.5] [&_svg]:stroke-current [&_svg]:[stroke-linecap:round] [&_svg]:[stroke-linejoin:round]">
+						<div className="-top-8 pointer-events-none absolute right-0 flex h-44 w-full select-none flex-wrap gap-2 text-red-400 [&_svg]:size-6 sm:w-[65%] sm:rotate-[8deg] [&_svg]:fill-none [&_svg]:stroke-[1.5] [&_svg]:stroke-current [&_svg]:[strokeLinecap:round] [&_svg]:[strokeLinejoin:round]">
 							<svg aria-hidden="true">
 								<path d="M9.5 12c0-1.178.0-1.768.366-2.134S10.822 9.5 12 9.5s1.768.0 2.134.366.366.956.366 2.134.0 1.768-.366 2.134-.956.366-2.134.366-1.768.0-2.134-.366S9.5 13.178 9.5 12z" />
 								<circle cx="12" cy="12" r="9" />
@@ -620,7 +620,7 @@ export default function Page() {
 								TailwindCSS and shadcn/ui UI Kit for Figma and React.
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
@@ -635,7 +635,7 @@ export default function Page() {
 								Copy book is a collection of commonly used texts.
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 				</div>
 			</section>
