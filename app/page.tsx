@@ -1,5 +1,4 @@
 import profilePic from "@/public/praveenjuge.webp";
-import { ArrowLongRight, ArrowUpRight } from "@mynaui/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { load } from "outstatic/server";
@@ -107,8 +106,7 @@ export default function Page() {
 					href="/blog"
 					className="flex items-center gap-2 font-medium text-red-900"
 				>
-					<span>Read More</span>
-					<ArrowLongRight className="size-6" />
+					<span>Read More {" "}{"-->"}</span>
 				</Link>
 
 				<h2 className="mt-20 font-semibold tracking-tight">Projects</h2>
@@ -126,7 +124,7 @@ export default function Page() {
 								Mac app to curate your UI inspirations.
 							</p>
 						</div>
-						<ArrowUpRight className="shrink-0" />
+						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
@@ -622,7 +620,7 @@ export default function Page() {
 								TailwindCSS and shadcn/ui UI Kit for Figma and React.
 							</p>
 						</div>
-						<ArrowUpRight className="shrink-0" />
+						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
@@ -637,7 +635,7 @@ export default function Page() {
 								Copy book is a collection of commonly used texts.
 							</p>
 						</div>
-						<ArrowUpRight className="shrink-0" />
+						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 				</div>
 			</section>

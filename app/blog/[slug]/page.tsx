@@ -35,7 +35,7 @@ export async function generateMetadata({
 			url: "./",
 			locale: "en_US",
 			images: {
-				url: `https://praveenjuge.com/og/blog/${blog.slug}.jpg`,
+				url: `https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${blog.slug}`,
 				alt: blog.title,
 			},
 		},
@@ -56,7 +56,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
 		headline: blog.title,
 		datePublished: blog.publishedAt,
 		dateModified: blog.publishedAt,
-		image: `https://praveenjuge.com/og/blog/${blog.slug}.jpg`,
+		image: `https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${blog.slug}`,
 		author: {
 			"@type": "Person",
 			name: "Praveen Juge",
@@ -113,7 +113,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
 			</h1>
 			<meta
 				itemProp="image"
-				content={`https://praveenjuge.com/og/blog/${blog.slug}.jpg`}
+				content={`https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${blog.slug}`}
 			/>
 			<span
 				itemScope={true}
