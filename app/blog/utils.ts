@@ -1,17 +1,9 @@
-import hljs from "highlight.js";
+import Shiki from '@shikijs/markdown-it'
 import MarkdownIt from "markdown-it";
 
 const md = new MarkdownIt({
 	html: true,
-	typographer: true,
-	highlight: (str, lang) => {
-		if (lang && hljs.getLanguage(lang)) {
-			try {
-				return hljs.highlight(str, { language: lang }).value;
-			} catch (__) {}
-		}
-		return "";
-	},
+	typographer: true
 });
 
 const defaultLinkRender =
@@ -50,6 +42,12 @@ md.renderer.rules.image = (tokens, idx) => {
             <img src="${href}" alt="${token.content}" loading="lazy" />
           </a>`;
 };
+
+md.use(await Shiki({
+  themes: {
+    light: 'github-dark',
+  }
+}))
 
 export default function markdownToHtml(markdown: string) {
 	return md.render(markdown);
