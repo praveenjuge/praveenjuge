@@ -1,6 +1,6 @@
 {
-  "commit": "e9a129ba046f13c9ba9b6da275932ee998e73567",
-  "generated": "2024-08-14T11:58:17.713Z",
+  "commit": "8dc6c2db5fa797a9b87aa864b4dd72a806c9cbf3",
+  "generated": "2024-08-14T13:10:00.350Z",
   "metadata": [
     {
       "__outstatic": {
@@ -6350,6 +6350,24 @@
       "slug": "2024-aug-14",
       "status": "published",
       "title": "2024 aug 14"
+    },
+    {
+      "__outstatic": {
+        "commit": "8dc6c2db5fa797a9b87aa864b4dd72a806c9cbf3",
+        "hash": "1509565500",
+        "path": "content/blog/my-top-raycast-extensions.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "If you're a Mac user like me, you probably know how valuable a good launcher can be. Enter Raycast—it's more than just a Mac launcher; it's a productivity powerhouse that makes managing your tasks and apps incredibly efficient. Today, I'm sharing some of my favorite Raycast extensions that help me streamline my workflow every day. This isn’t a ranked list—just a collection of tools I find indispensable.",
+      "publishedAt": "2024-08-14T13:41:51.706Z",
+      "slug": "my-top-raycast-extensions",
+      "status": "published",
+      "title": "My Top Raycast Extensions"
     }
   ]
 }
