@@ -1,6 +1,6 @@
 {
-  "commit": "8dc6c2db5fa797a9b87aa864b4dd72a806c9cbf3",
-  "generated": "2024-08-14T13:10:00.350Z",
+  "commit": "3b1df8821796fc47d8b22eb003adba37d4800f23",
+  "generated": "2024-08-15T16:00:51.907Z",
   "metadata": [
     {
       "__outstatic": {
@@ -6368,6 +6368,24 @@
       "slug": "my-top-raycast-extensions",
       "status": "published",
       "title": "My Top Raycast Extensions"
+    },
+    {
+      "__outstatic": {
+        "commit": "3b1df8821796fc47d8b22eb003adba37d4800f23",
+        "hash": "1942847955",
+        "path": "content/design/2024-aug-15.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-aug-15-g4ND.jpg",
+      "description": "",
+      "publishedAt": "2024-08-15T16:33:41.451Z",
+      "slug": "2024-aug-15",
+      "status": "published",
+      "title": "2024 aug 15"
     }
   ]
 }
