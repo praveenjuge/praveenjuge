@@ -1,6 +1,6 @@
 {
-  "commit": "bc7b5c71f142ecb984821deff76f17f2c63f390e",
-  "generated": "2024-08-19T18:14:01.938Z",
+  "commit": "2a1dd5ffa9244e7884f52bbcfda1d5cc6bf6601f",
+  "generated": "2024-08-19T18:14:11.525Z",
   "metadata": [
     {
       "__outstatic": {
@@ -6443,8 +6443,8 @@
     },
     {
       "__outstatic": {
-        "commit": "bc7b5c71f142ecb984821deff76f17f2c63f390e",
-        "hash": "953068907",
+        "commit": "2a1dd5ffa9244e7884f52bbcfda1d5cc6bf6601f",
+        "hash": "3318431969",
         "path": "content/design/2024-aug-19.md"
       },
       "author": {
@@ -6454,7 +6454,7 @@
       "collection": "design",
       "coverImage": "/images/2024-aug-19-U0MT.jpg",
       "description": "",
-      "publishedAt": "2024-08-19T18:46:52.845Z",
+      "publishedAt": "2024-08-18T18:46:52.000Z",
       "slug": "2024-aug-19",
       "status": "published",
       "title": "2024 aug 19"
