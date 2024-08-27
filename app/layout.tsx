@@ -2,7 +2,7 @@ import { GeistSans } from "geist/font/sans";
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import type { Person, WithContext } from "schema-dts";
-import "tailwindcss/tailwind.css";
+import "./globals.css";
 
 export const viewport: Viewport = { themeColor: "#FEE2E1" };
 
@@ -103,7 +103,7 @@ export default function RootLayout({
 					className="-z-10 pointer-events-none absolute inset-0 h-56 w-full select-none bg-gradient-to-b from-red-100 to-white"
 					aria-hidden="true"
 				/>
-				<header className="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 font-medium text-sm md:flex-row sm:items-center md:justify-between md:space-y-0">
+				<header className="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 font-medium text-sm sm:items-center md:flex-row md:justify-between md:space-y-0">
 					<Link href="/" title="Go to Home Page">
 						<svg
 							height={28}
