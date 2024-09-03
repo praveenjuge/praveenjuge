@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Person, WithContext } from "schema-dts";
 import "./globals.css";
 
-export const viewport: Viewport = { themeColor: "#FEE2E1" };
+export const viewport: Viewport = { themeColor: "#ffedd5" };
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://praveenjuge.com"),
