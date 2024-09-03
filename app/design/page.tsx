@@ -32,7 +32,7 @@ export default function Page() {
 						priority={id === 0}
 						alt={item.coverImage ?? ""}
 						src={item.coverImage ?? ""}
-						className="rounded bg-gray-200"
+						className="rounded bg-orange-50"
 						loading={id > 10 ? "lazy" : "eager"}
 					/>
 				</Link>
