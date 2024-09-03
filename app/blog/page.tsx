@@ -16,8 +16,8 @@ const allBlogs = await (await load())
 
 export default function Page() {
 	return (
-		<section className="mx-auto flex max-w-xl flex-col gap-4 p-4 font-medium text-red-900">
-			<h2 className="font-bold text-gray-800">
+		<section className="mx-auto flex max-w-xl flex-col gap-4 p-4 font-medium">
+			<h2 className="font-bold">
 				Blog <span> — </span>
 				<Link href="/blog/rss.xml" className="underline" prefetch={false}>
 					RSS Feed
