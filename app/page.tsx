@@ -97,14 +97,14 @@ export default function Page() {
 					<Link
 						key={item.slug}
 						href={`/blog/${item.slug}`}
-						className="my-4 flex items-center gap-2 font-medium text-orange-900"
+						className="my-4 flex items-center gap-2 font-medium"
 					>
 						{item.title}
 					</Link>
 				))}
 				<Link
 					href="/blog"
-					className="flex items-center gap-2 font-medium text-orange-900"
+					className="flex items-center gap-2 font-medium"
 				>
 					<span>Read More {" "}{"-->"}</span>
 				</Link>
@@ -150,7 +150,7 @@ export default function Page() {
 					rel="noopener noreferrer"
 					className="relative flex items-start justify-between gap-8 overflow-hidden rounded border border-orange-100 p-5 hover:border-orange-200"
 				>
-					<div className="-top-8 pointer-events-none absolute right-0 flex h-44 w-full select-none flex-wrap gap-2 text-orange-400 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-[1.5] [&_svg]:stroke-current [&_svg]:[strokeLinecap:round] [&_svg]:[strokeLinejoin:round]">
+					<div className="-top-8 pointer-events-none absolute right-0 flex h-44 w-full select-none flex-wrap gap-2 opacity-30 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-[1.5] [&_svg]:stroke-current [&_svg]:[strokeLinecap:round] [&_svg]:[strokeLinejoin:round]">
 						<svg aria-hidden="true">
 							<path d="M9.5 12c0-1.178.0-1.768.366-2.134S10.822 9.5 12 9.5s1.768.0 2.134.366.366.956.366 2.134.0 1.768-.366 2.134-.956.366-2.134.366-1.768.0-2.134-.366S9.5 13.178 9.5 12z" />
 							<circle cx="12" cy="12" r="9" />
