@@ -1,12 +1,10 @@
 import { GeistSans } from "geist/font/sans";
-import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import type { Person, WithContext } from "schema-dts";
 import "./globals.css";
 
-export const viewport: Viewport = { themeColor: "#e5e7eb" };
+export const viewport = { themeColor: "#e5e7eb" };
 
-export const metadata: Metadata = {
+export const metadata = {
 	metadataBase: new URL("https://praveenjuge.com"),
 	title: "Personal Website | Praveen Juge",
 	description:
@@ -61,7 +59,7 @@ export const metadata: Metadata = {
 	},
 };
 
-const jsonLd: WithContext<Person> = {
+const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
 	name: "Praveen Juge",
@@ -88,11 +86,7 @@ const jsonLd: WithContext<Person> = {
 	],
 };
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"

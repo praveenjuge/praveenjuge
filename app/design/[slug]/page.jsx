@@ -3,10 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
 
-export const dynamic = "force-static";
-export const revalidate = false;
-
-export default function Design({ params }: { params: { slug: string } }) {
+export default function Design({ params }) {
 	const design = getDocumentBySlug("design", params.slug, [
 		"slug",
 		"coverImage",

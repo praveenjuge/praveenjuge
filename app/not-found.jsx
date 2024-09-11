@@ -1,6 +1,4 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
+export const metadata = {
 	title: "Page not found (404) | Praveen Juge",
 };
 

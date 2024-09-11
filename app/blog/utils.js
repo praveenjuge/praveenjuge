@@ -49,6 +49,6 @@ md.use(await Shiki({
   }
 }))
 
-export default function markdownToHtml(markdown: string) {
+export default function markdownToHtml(markdown) {
 	return md.render(markdown);
 }
