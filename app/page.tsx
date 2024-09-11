@@ -35,7 +35,7 @@ export default function Page() {
 					priority={true}
 					src={profilePic}
 					alt="Photo of Praveen Juge"
-					className="h-20 w-20 rounded-full bg-center bg-cover bg-orange-50 object-cover brightness-105"
+					className="h-20 w-20 rounded-full bg-center bg-cover object-cover brightness-105"
 				/>
 
 				<h1 className="font-semibold">
@@ -82,7 +82,7 @@ export default function Page() {
 							loading={"eager"}
 							alt={item.coverImage ?? ""}
 							src={item.coverImage ?? ""}
-							className="even:-rotate-2 block min-h-72 w-96 min-w-96 rounded bg-cover bg-orange-50 object-cover ring-4 ring-white odd:rotate-2"
+							className="even:-rotate-2 block min-h-72 w-96 min-w-96 rounded bg-cover object-cover ring-4 ring-white odd:rotate-2"
 						/>
 					))}
 				</Link>
@@ -117,7 +117,7 @@ export default function Page() {
 					href="https://mosaicimg.com/"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-orange-100 p-5 hover:border-orange-200"
+					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
 				>
 					<div>
 						<h3 className="font-semibold">Mosaic</h3>
@@ -133,7 +133,7 @@ export default function Page() {
 					href="https://mynaui.com/"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-orange-100 p-5 hover:border-orange-200"
+					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
 				>
 					<div>
 						<h3 className="font-semibold">MynaUI</h3>
@@ -148,7 +148,7 @@ export default function Page() {
 					href="https://mynaui.com/icons"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="relative flex items-start justify-between gap-8 overflow-hidden rounded border border-orange-100 p-5 hover:border-orange-200"
+					className="relative flex items-start justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
 				>
 					<div className="-top-8 pointer-events-none absolute right-0 flex h-44 w-full select-none flex-wrap gap-2 opacity-30 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-[1.5] [&_svg]:stroke-current [&_svg]:[strokeLinecap:round] [&_svg]:[strokeLinejoin:round]">
 						<svg aria-hidden="true">
@@ -629,7 +629,7 @@ export default function Page() {
 					href="https://copybook.me/"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-orange-100 p-5 hover:border-orange-200"
+					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
 				>
 					<div>
 						<h3 className="font-semibold">Copy Book</h3>
@@ -644,7 +644,7 @@ export default function Page() {
 					href="https://teak.praveenjuge.com/"
 					target="_blank"
 					rel="noopener noreferrer"
-					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-orange-100 p-5 hover:border-orange-200"
+					className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
 				>
 					<div>
 						<h3 className="font-semibold">Teak</h3>
