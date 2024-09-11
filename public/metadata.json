@@ -6,7 +6,7 @@
       "__outstatic": {
         "commit": "7584565f6b8ef3aac79a07d5a55464f1851b1659",
         "hash": "2986617257",
-        "path": "content/blog/audacity-macro-speed-up-bulk-audiobooks.md"
+        "path": "public/blog/audacity-macro-speed-up-bulk-audiobooks.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -23,7 +23,7 @@
       "__outstatic": {
         "commit": "bed90dfe983d800921198c125ae67987e21487ab",
         "hash": "3388335962",
-        "path": "content/blog/50-days-of-daily-design.md"
+        "path": "public/blog/50-days-of-daily-design.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -41,7 +41,7 @@
       "__outstatic": {
         "commit": "56bb1f1b84f6c2a8f239bf09b6fc682768b80ec5",
         "hash": "2073527611",
-        "path": "content/blog/add-all-tailwind-2-color-palette-in-your-config.md"
+        "path": "public/blog/add-all-tailwind-2-color-palette-in-your-config.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -58,7 +58,7 @@
       "__outstatic": {
         "commit": "07776c9a47bcc2efc7321cb7e34a6a5c3cfaf836",
         "hash": "2867600332",
-        "path": "content/blog/a-late-review-of-folklore.md"
+        "path": "public/blog/a-late-review-of-folklore.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -76,7 +76,7 @@
       "__outstatic": {
         "commit": "6853f867dc3df0bf3fcd968e282d2a5d1f9bf7c1",
         "hash": "3702665354",
-        "path": "content/blog/all-the-ai-subscriptions-i-have.md"
+        "path": "public/blog/all-the-ai-subscriptions-i-have.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -94,7 +94,7 @@
       "__outstatic": {
         "commit": "11bb9d9c4592a02d0a1cdf32e9de8e83bf758055",
         "hash": "2797728093",
-        "path": "content/blog/default-apps-2023.md"
+        "path": "public/blog/default-apps-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -112,7 +112,7 @@
       "__outstatic": {
         "commit": "2c51101e526dfb7dba5d24ef41076c8816cf6fa8",
         "hash": "2403777520",
-        "path": "content/blog/designing-for-everyone.md"
+        "path": "public/blog/designing-for-everyone.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -130,7 +130,7 @@
       "__outstatic": {
         "commit": "52e168ab07213dbe57f3cc7e34896d71f7088826",
         "hash": "483559595",
-        "path": "content/blog/digital-minimalism.md"
+        "path": "public/blog/digital-minimalism.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -147,7 +147,7 @@
       "__outstatic": {
         "commit": "05c7b0302a97ca3d3252006789fec70ab851880a",
         "hash": "3191007014",
-        "path": "content/blog/books-i-love-the-war-of-art.md"
+        "path": "public/blog/books-i-love-the-war-of-art.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -164,7 +164,7 @@
       "__outstatic": {
         "commit": "7590a4b80ac5626a2a6880e4c0b74c702b6ef83e",
         "hash": "3252557295",
-        "path": "content/blog/creating-a-number-badge-ui-component.md"
+        "path": "public/blog/creating-a-number-badge-ui-component.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -182,7 +182,7 @@
       "__outstatic": {
         "commit": "0ecdb6ae13ce58c3e3009966727427adc36429e6",
         "hash": "3180261173",
-        "path": "content/blog/far-cry-6-review.md"
+        "path": "public/blog/far-cry-6-review.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -200,7 +200,7 @@
       "__outstatic": {
         "commit": "bcc0fa114f7ea2aca6cab9e0e75a5f999e287180",
         "hash": "4140972621",
-        "path": "content/blog/fewer-better-features.md"
+        "path": "public/blog/fewer-better-features.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -218,7 +218,7 @@
       "__outstatic": {
         "commit": "f8d40f8e257f7c4c279d1434976d618c3e125f01",
         "hash": "3650093988",
-        "path": "content/blog/how-i-overcame-youtube-addiction.md"
+        "path": "public/blog/how-i-overcame-youtube-addiction.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -235,7 +235,7 @@
       "__outstatic": {
         "commit": "de3aed531db0d0c7f3ac5fcb90137cc1ba9f3653",
         "hash": "791643653",
-        "path": "content/blog/how-i-take-notes-using-vs-code-and-github.md"
+        "path": "public/blog/how-i-take-notes-using-vs-code-and-github.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -252,7 +252,7 @@
       "__outstatic": {
         "commit": "9a3513ce71eb72db29b4b0fa67893bf33dc4d835",
         "hash": "3490221481",
-        "path": "content/blog/figma-speedruns-watch-me-design-at-lightning-speed.md"
+        "path": "public/blog/figma-speedruns-watch-me-design-at-lightning-speed.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -269,7 +269,7 @@
       "__outstatic": {
         "commit": "a1b892d66c4062b4103107c293f3a3a6b503010e",
         "hash": "1167260516",
-        "path": "content/blog/i-hate-figmas-empty-canvas.md"
+        "path": "public/blog/i-hate-figmas-empty-canvas.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -286,7 +286,7 @@
       "__outstatic": {
         "commit": "4edfede9057c97d5ff37fff5d34ec5abab6b57c4",
         "hash": "953960397",
-        "path": "content/blog/install-tailwind-on-hugo.md"
+        "path": "public/blog/install-tailwind-on-hugo.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -303,7 +303,7 @@
       "__outstatic": {
         "commit": "69323be19e48d728575b386e37b53a9d7f40597a",
         "hash": "1039066319",
-        "path": "content/blog/if-i-had-known-ai-would-write-commit-messages-i-would-have-stayed-as-a-developer.md"
+        "path": "public/blog/if-i-had-known-ai-would-write-commit-messages-i-would-have-stayed-as-a-developer.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -321,7 +321,7 @@
       "__outstatic": {
         "commit": "977f7112807775934f32d03937d1d896ef35f555",
         "hash": "4113429711",
-        "path": "content/blog/is-training-necessary-for-ui-design.md"
+        "path": "public/blog/is-training-necessary-for-ui-design.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -339,7 +339,7 @@
       "__outstatic": {
         "commit": "0149f3dbd8fc6a03c4686d89e056da6e3de67041",
         "hash": "3796141796",
-        "path": "content/blog/my-2020-goals.md"
+        "path": "public/blog/my-2020-goals.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -356,7 +356,7 @@
       "__outstatic": {
         "commit": "3ee9bea56bc30051eb2cd54b84c6f07dea04af8b",
         "hash": "1654851143",
-        "path": "content/blog/one-more-next-js-starter-kit.md"
+        "path": "public/blog/one-more-next-js-starter-kit.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -374,7 +374,7 @@
       "__outstatic": {
         "commit": "4a1ce20820c6ffe01253f388a4141950043c25ab",
         "hash": "2675162148",
-        "path": "content/blog/to-use-or-not-to-use-auto-layout-in-figma.md"
+        "path": "public/blog/to-use-or-not-to-use-auto-layout-in-figma.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -392,7 +392,7 @@
       "__outstatic": {
         "commit": "0dcb997da6c67df7a66f1da75998e771e4170e44",
         "hash": "2040165568",
-        "path": "content/blog/rise-early.md"
+        "path": "public/blog/rise-early.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -409,7 +409,7 @@
       "__outstatic": {
         "commit": "d3a14afb46c02a5094051e7c50294a1db230c356",
         "hash": "1028832117",
-        "path": "content/blog/pushing-to-the-front-book-review.md"
+        "path": "public/blog/pushing-to-the-front-book-review.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -427,7 +427,7 @@
       "__outstatic": {
         "commit": "83ead6dcc809c74fddc82201d96795adaf4be20b",
         "hash": "2504190893",
-        "path": "content/blog/open-source-tips.md"
+        "path": "public/blog/open-source-tips.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -445,7 +445,7 @@
       "__outstatic": {
         "commit": "02f0f55cce48e823b71896d8f7c4e23c47399dae",
         "hash": "1507235643",
-        "path": "content/blog/you-can-read-this-page-on-july-2030.md"
+        "path": "public/blog/you-can-read-this-page-on-july-2030.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -462,7 +462,7 @@
       "__outstatic": {
         "commit": "729c00711a017c273ab90a1de98330fc96986f9f",
         "hash": "3956357193",
-        "path": "content/blog/why-simplicity-matters.md"
+        "path": "public/blog/why-simplicity-matters.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -480,7 +480,7 @@
       "__outstatic": {
         "commit": "271517facbd3be5834b2ed5be79faed74ce4cb74",
         "hash": "2081278959",
-        "path": "content/blog/use-tailwind-jit-with-hugo.md"
+        "path": "public/blog/use-tailwind-jit-with-hugo.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -497,7 +497,7 @@
       "__outstatic": {
         "commit": "fd118e6c109edab8316ebc81e22acb511e32a29d",
         "hash": "2414408640",
-        "path": "content/blog/where-i-look-for-design-inspirations.md"
+        "path": "public/blog/where-i-look-for-design-inspirations.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -515,7 +515,7 @@
       "__outstatic": {
         "commit": "3dbd37e1ffe9c50309710aefc5d569b867aedde6",
         "hash": "64270282",
-        "path": "content/design/01-01-2024.md"
+        "path": "public/design/01-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -533,7 +533,7 @@
       "__outstatic": {
         "commit": "99a6746f835ef00e0ffcd808cb0fad186e4208bc",
         "hash": "3447372955",
-        "path": "content/design/01-04-2024.md"
+        "path": "public/design/01-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -551,7 +551,7 @@
       "__outstatic": {
         "commit": "b24aa3c6d44d09a90a166b55dbb0406584d131d2",
         "hash": "52036716",
-        "path": "content/design/01-03-2024.md"
+        "path": "public/design/01-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -569,7 +569,7 @@
       "__outstatic": {
         "commit": "c441da5129eea4add77f59ba919903a34322b402",
         "hash": "3390505200",
-        "path": "content/design/01-02-2024.md"
+        "path": "public/design/01-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -587,7 +587,7 @@
       "__outstatic": {
         "commit": "2d387c4466c4662772982ef576b31b37450619f1",
         "hash": "4263998437",
-        "path": "content/design/02-02-2024.md"
+        "path": "public/design/02-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -605,7 +605,7 @@
       "__outstatic": {
         "commit": "359cdc81bdc7f8a31d823f8e6ecb197b214cb9cf",
         "hash": "788759769",
-        "path": "content/design/02-01-2024.md"
+        "path": "public/design/02-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -623,7 +623,7 @@
       "__outstatic": {
         "commit": "67f8e0de036965edb37dbb21726b3a6e8b75b418",
         "hash": "3404329279",
-        "path": "content/design/03-02-2024.md"
+        "path": "public/design/03-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -641,7 +641,7 @@
       "__outstatic": {
         "commit": "e1750354cc534a15405dd76f80bdcad43c3f89b9",
         "hash": "3736776209",
-        "path": "content/design/03-03-2024.md"
+        "path": "public/design/03-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -659,7 +659,7 @@
       "__outstatic": {
         "commit": "5c4efd516cff8f51105193a4b359ce605540045e",
         "hash": "1886243279",
-        "path": "content/design/03-01-2024.md"
+        "path": "public/design/03-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -677,7 +677,7 @@
       "__outstatic": {
         "commit": "c11a77f67fd4f8fc7bd3a41bb70e40b1aad3a4f5",
         "hash": "2722638589",
-        "path": "content/design/02-03-2024.md"
+        "path": "public/design/02-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -695,7 +695,7 @@
       "__outstatic": {
         "commit": "a8847bd115848f3551f77993645f5bb7b781ffbc",
         "hash": "46999198",
-        "path": "content/design/02-04-2024.md"
+        "path": "public/design/02-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -713,7 +713,7 @@
       "__outstatic": {
         "commit": "88887f94a655ede4b92787072e092a581a93412c",
         "hash": "2079927482",
-        "path": "content/design/03-04-2024.md"
+        "path": "public/design/03-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -731,7 +731,7 @@
       "__outstatic": {
         "commit": "84e75ebfbfbed893f5eb59f1723975ade0e1491a",
         "hash": "2104852186",
-        "path": "content/design/04-02-2024.md"
+        "path": "public/design/04-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -749,7 +749,7 @@
       "__outstatic": {
         "commit": "2a1bbc4ed24c5e8446522bfe106f31f08e598f6a",
         "hash": "3840554092",
-        "path": "content/design/04-01-2024.md"
+        "path": "public/design/04-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -767,7 +767,7 @@
       "__outstatic": {
         "commit": "10ad8eec4ec41b18b76fea648e56b04d23f491a6",
         "hash": "3915568849",
-        "path": "content/design/04-01-2024-second.md"
+        "path": "public/design/04-01-2024-second.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -785,7 +785,7 @@
       "__outstatic": {
         "commit": "5dec455cff32960555f09eb0b648ddc0b5a66ba9",
         "hash": "916671770",
-        "path": "content/design/04-03-2024.md"
+        "path": "public/design/04-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -803,7 +803,7 @@
       "__outstatic": {
         "commit": "02e446755ef08dee86d26b67bcb36cb8aacbce27",
         "hash": "870507247",
-        "path": "content/design/05-03-2024.md"
+        "path": "public/design/05-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -821,7 +821,7 @@
       "__outstatic": {
         "commit": "6ad189371cc6834c934c3270e2b7089cc742f4f7",
         "hash": "848535773",
-        "path": "content/design/05-02-2024.md"
+        "path": "public/design/05-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -839,7 +839,7 @@
       "__outstatic": {
         "commit": "ce0ded9f92c8633a3a38aaad00523c9c0d3d2efc",
         "hash": "140280304",
-        "path": "content/design/04-04-2024.md"
+        "path": "public/design/04-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -857,7 +857,7 @@
       "__outstatic": {
         "commit": "d6227145e11896dbef0530c8ca29208c17357fd6",
         "hash": "1022046920",
-        "path": "content/design/05-01-2024-icons.md"
+        "path": "public/design/05-01-2024-icons.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -875,7 +875,7 @@
       "__outstatic": {
         "commit": "84f9a0526933790af15936f2fac140a3040246f5",
         "hash": "1201624288",
-        "path": "content/design/05-01-2024.md"
+        "path": "public/design/05-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -893,7 +893,7 @@
       "__outstatic": {
         "commit": "7f2fe3f2710092a9a421b16e8423dd3a3ab78e5b",
         "hash": "3218088911",
-        "path": "content/design/05-04-2024.md"
+        "path": "public/design/05-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -911,7 +911,7 @@
       "__outstatic": {
         "commit": "cc90e4da3b05f04c45e9dd5eecccf353fc9c6bae",
         "hash": "1751127324",
-        "path": "content/design/06-03-2024.md"
+        "path": "public/design/06-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -929,7 +929,7 @@
       "__outstatic": {
         "commit": "05e5ee40f5fc08887a4d938e7567d2b68b82fc0c",
         "hash": "3941359813",
-        "path": "content/design/06-01-2024-email.md"
+        "path": "public/design/06-01-2024-email.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -947,7 +947,7 @@
       "__outstatic": {
         "commit": "7ee4f42e3651936d37ebca3cae0474b392ee7482",
         "hash": "1671404627",
-        "path": "content/design/06-02-2024.md"
+        "path": "public/design/06-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -965,7 +965,7 @@
       "__outstatic": {
         "commit": "782a131914000a7b323eb836f41cc5c68637ebf2",
         "hash": "2791108464",
-        "path": "content/design/06-01-2024.md"
+        "path": "public/design/06-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -983,7 +983,7 @@
       "__outstatic": {
         "commit": "cb06eeb2380de2cf7ff3747bb660533231a0c227",
         "hash": "2267819160",
-        "path": "content/design/07-03-2024.md"
+        "path": "public/design/07-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1001,7 +1001,7 @@
       "__outstatic": {
         "commit": "8ee2e80dfb74f73ff5c899adac076db3756c2676",
         "hash": "3051137442",
-        "path": "content/design/07-02-2024.md"
+        "path": "public/design/07-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1019,7 +1019,7 @@
       "__outstatic": {
         "commit": "ae9bd28a3bcf2ee1c7e16814cd3728426646adb3",
         "hash": "833106800",
-        "path": "content/design/07-01-2024.md"
+        "path": "public/design/07-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1037,7 +1037,7 @@
       "__outstatic": {
         "commit": "125cb934810f7e314d8031f388de187cd7925856",
         "hash": "4128566141",
-        "path": "content/design/07-04-2024.md"
+        "path": "public/design/07-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1055,7 +1055,7 @@
       "__outstatic": {
         "commit": "2d4da45d967802f273212f710322a8d2a0b5acef",
         "hash": "3430318689",
-        "path": "content/design/06-04-2024.md"
+        "path": "public/design/06-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1073,7 +1073,7 @@
       "__outstatic": {
         "commit": "2c69feec11e85cd243d9fc492874ab0b4449363b",
         "hash": "3333563744",
-        "path": "content/design/08-01-2024.md"
+        "path": "public/design/08-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1091,7 +1091,7 @@
       "__outstatic": {
         "commit": "a9c1f26c463f310ba7c8ce752ae248098e81495b",
         "hash": "577523386",
-        "path": "content/design/08-04-2024.md"
+        "path": "public/design/08-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1109,7 +1109,7 @@
       "__outstatic": {
         "commit": "599e41392407a52f385ab3c52db5af922732535c",
         "hash": "1000400797",
-        "path": "content/design/08-03-2024.md"
+        "path": "public/design/08-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1127,7 +1127,7 @@
       "__outstatic": {
         "commit": "ab7a8a028f326af1389086636a1bb7e5dd88eb26",
         "hash": "2310014550",
-        "path": "content/design/08-02-2024.md"
+        "path": "public/design/08-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1145,7 +1145,7 @@
       "__outstatic": {
         "commit": "d03ec837f56e6a17fdda31b951b83a54d4267f6a",
         "hash": "3327816007",
-        "path": "content/design/08-01-2024-logo.md"
+        "path": "public/design/08-01-2024-logo.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1163,7 +1163,7 @@
       "__outstatic": {
         "commit": "320256a0301f2bb90720d25490c21e19a9d61501",
         "hash": "154063003",
-        "path": "content/design/09-04-2024.md"
+        "path": "public/design/09-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1181,7 +1181,7 @@
       "__outstatic": {
         "commit": "0dbc9a7cc14c03e8d69dcea797451b91d1354cfa",
         "hash": "1422299581",
-        "path": "content/design/1-11-2024.md"
+        "path": "public/design/1-11-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1197,7 +1197,7 @@
       "__outstatic": {
         "commit": "813c5e8cae3ec3049384e699d52d81d4a2d0980d",
         "hash": "255847849",
-        "path": "content/design/09-02-2024.md"
+        "path": "public/design/09-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1215,7 +1215,7 @@
       "__outstatic": {
         "commit": "6173ef102613db35be56b55dc5e7eb936995a42e",
         "hash": "68277088",
-        "path": "content/design/09-03-2024.md"
+        "path": "public/design/09-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1233,7 +1233,7 @@
       "__outstatic": {
         "commit": "d13d571fc59fd0db7dfd17ba0c903049ea000fc4",
         "hash": "776608381",
-        "path": "content/design/09-01-2024.md"
+        "path": "public/design/09-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1251,7 +1251,7 @@
       "__outstatic": {
         "commit": "19bc277a1d97139d4c31cb3782fb217700c2d4f1",
         "hash": "2825314091",
-        "path": "content/design/10-01-2024.md"
+        "path": "public/design/10-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1269,7 +1269,7 @@
       "__outstatic": {
         "commit": "564ffae57e2441a3b153a9a9157b894ef09d94a8",
         "hash": "989310208",
-        "path": "content/design/10-03-2024.md"
+        "path": "public/design/10-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1287,7 +1287,7 @@
       "__outstatic": {
         "commit": "bdc2ded62bb5bec07df337943bc1205c65a60cd4",
         "hash": "2785297540",
-        "path": "content/design/1.md"
+        "path": "public/design/1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1303,7 +1303,7 @@
       "__outstatic": {
         "commit": "b09ae2c18d34dba87110c87921fdb8cbe2f0359a",
         "hash": "2755768683",
-        "path": "content/design/1-12-2023.md"
+        "path": "public/design/1-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1321,7 +1321,7 @@
       "__outstatic": {
         "commit": "0a677237c8956098a7f5e35bc7205f87ef4104ae",
         "hash": "2330476185",
-        "path": "content/design/10-02-2024.md"
+        "path": "public/design/10-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1339,7 +1339,7 @@
       "__outstatic": {
         "commit": "b1adfdb05c39fbe3dfb93c72ca4a4add80b48013",
         "hash": "4233893182",
-        "path": "content/design/11-02-2024.md"
+        "path": "public/design/11-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1357,7 +1357,7 @@
       "__outstatic": {
         "commit": "043d4b6954e4a5c62c6da624cec0708f58ec8dc2",
         "hash": "3624684591",
-        "path": "content/design/10-12-2023-2.md"
+        "path": "public/design/10-12-2023-2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1375,7 +1375,7 @@
       "__outstatic": {
         "commit": "042468a231015bb48ba24b5b11ba740f5d689888",
         "hash": "3422778853",
-        "path": "content/design/10-04-2024.md"
+        "path": "public/design/10-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1393,7 +1393,7 @@
       "__outstatic": {
         "commit": "f407efafeeee1f92ca57ccf98538662dd5cc899b",
         "hash": "2296130847",
-        "path": "content/design/11-01-2024.md"
+        "path": "public/design/11-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1411,7 +1411,7 @@
       "__outstatic": {
         "commit": "1038604f9c48ff746826fcc23d94c3e2103f69cd",
         "hash": "2404786519",
-        "path": "content/design/10-12-2023-1.md"
+        "path": "public/design/10-12-2023-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1429,7 +1429,7 @@
       "__outstatic": {
         "commit": "19b3cd8fdc2ac008380fd0ff78c38f2f0ef89974",
         "hash": "1926311223",
-        "path": "content/design/12-01-2024.md"
+        "path": "public/design/12-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1447,7 +1447,7 @@
       "__outstatic": {
         "commit": "42fced43424df812f9896d40c8a0e572f0433342",
         "hash": "2619983831",
-        "path": "content/design/11-04-2024.md"
+        "path": "public/design/11-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1465,7 +1465,7 @@
       "__outstatic": {
         "commit": "fc69ee43db84ffae4cde11e79fd13669ead757a1",
         "hash": "1054198956",
-        "path": "content/design/11-03-2024.md"
+        "path": "public/design/11-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1483,7 +1483,7 @@
       "__outstatic": {
         "commit": "501ddd672b21f183d223a0010d0b4ed3f0f3b82c",
         "hash": "73538688",
-        "path": "content/design/12-02-2024.md"
+        "path": "public/design/12-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1501,7 +1501,7 @@
       "__outstatic": {
         "commit": "73a513d821227c7eaaac12ab43cfe6045e14bccc",
         "hash": "3213892176",
-        "path": "content/design/11-12-2023.md"
+        "path": "public/design/11-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1519,7 +1519,7 @@
       "__outstatic": {
         "commit": "2442e3dc443da9788f536f84c556ce0dc3137848",
         "hash": "803121732",
-        "path": "content/design/13-02-2024.md"
+        "path": "public/design/13-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1537,7 +1537,7 @@
       "__outstatic": {
         "commit": "b4950645851d24dde58862604fa34f17590d9e1f",
         "hash": "1987284385",
-        "path": "content/design/12-12-2023.md"
+        "path": "public/design/12-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1555,7 +1555,7 @@
       "__outstatic": {
         "commit": "6fe4940068ce1d5701365c5a3d7104dbbf53b178",
         "hash": "3923220190",
-        "path": "content/design/12-04-2024.md"
+        "path": "public/design/12-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1573,7 +1573,7 @@
       "__outstatic": {
         "commit": "451a50a71578934bb9ecee8790cdfeb94723dde4",
         "hash": "2301106073",
-        "path": "content/design/12-03-2024.md"
+        "path": "public/design/12-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1591,7 +1591,7 @@
       "__outstatic": {
         "commit": "f8bdaae62ccb3e28c86fc40403e2b16f162ec4f1",
         "hash": "1287275810",
-        "path": "content/design/13-01-2024.md"
+        "path": "public/design/13-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1609,7 +1609,7 @@
       "__outstatic": {
         "commit": "3f5fd6c83f240e235b61848496b04bd66bc30e82",
         "hash": "2492248547",
-        "path": "content/design/13-12-2023.md"
+        "path": "public/design/13-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1627,7 +1627,7 @@
       "__outstatic": {
         "commit": "8491bddbd62b12943c17f8868c568764d9c79052",
         "hash": "1660547829",
-        "path": "content/design/13-03-2024.md"
+        "path": "public/design/13-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1645,7 +1645,7 @@
       "__outstatic": {
         "commit": "3e798d9d364b1aaf3b53a85cffd1193212140618",
         "hash": "158377333",
-        "path": "content/design/14-02-2024.md"
+        "path": "public/design/14-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1663,7 +1663,7 @@
       "__outstatic": {
         "commit": "c0074a14cfb0a9e2b618847bbafe284c745f6a79",
         "hash": "1507425960",
-        "path": "content/design/13-04-2024.md"
+        "path": "public/design/13-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1681,7 +1681,7 @@
       "__outstatic": {
         "commit": "cba0091fc9703c7d89d50405fb7f6436b05d2d36",
         "hash": "2766859451",
-        "path": "content/design/14-01-2024.md"
+        "path": "public/design/14-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1699,7 +1699,7 @@
       "__outstatic": {
         "commit": "a364b9eff1e4b9c2a2ca6ce5577bff9f8ce81f38",
         "hash": "3423002765",
-        "path": "content/design/15-02-2024.md"
+        "path": "public/design/15-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1717,7 +1717,7 @@
       "__outstatic": {
         "commit": "bd803d1c76fa9541b94e21ef934f7712b41355b3",
         "hash": "1978062555",
-        "path": "content/design/14-03-2024.md"
+        "path": "public/design/14-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1735,7 +1735,7 @@
       "__outstatic": {
         "commit": "fc26dc302a48e849d745fd6b3adcc428a24aed63",
         "hash": "3400674575",
-        "path": "content/design/14-04-2024.md"
+        "path": "public/design/14-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1753,7 +1753,7 @@
       "__outstatic": {
         "commit": "ae6bf6f0754536aebd609c457a3a6aca7879f11b",
         "hash": "3811648141",
-        "path": "content/design/15-01-2024.md"
+        "path": "public/design/15-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1771,7 +1771,7 @@
       "__outstatic": {
         "commit": "c43b5933b5bf408edda2eb5a8bca82b3585caabd",
         "hash": "3508039731",
-        "path": "content/design/14-12-2023.md"
+        "path": "public/design/14-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1789,7 +1789,7 @@
       "__outstatic": {
         "commit": "26fb1834be08a06fcc38d3eb963905df12930d83",
         "hash": "768416279",
-        "path": "content/design/15-04-2024.md"
+        "path": "public/design/15-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1807,7 +1807,7 @@
       "__outstatic": {
         "commit": "706efc5c9422620eddad6235574c5a5546be8c8f",
         "hash": "2033166947",
-        "path": "content/design/15-03-2024.md"
+        "path": "public/design/15-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1825,7 +1825,7 @@
       "__outstatic": {
         "commit": "bd33c6c1f154f63f864c7863b28a41b408f6cbba",
         "hash": "2792140520",
-        "path": "content/design/16-01-2024.md"
+        "path": "public/design/16-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1843,7 +1843,7 @@
       "__outstatic": {
         "commit": "a0bab925d199dc9ce8ae72927f9f6c4d4d669e87",
         "hash": "2308844784",
-        "path": "content/design/15-12-2023.md"
+        "path": "public/design/15-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1861,7 +1861,7 @@
       "__outstatic": {
         "commit": "445d7ed025da6b06ab2341cfd9e966f82acbd2b4",
         "hash": "1380191830",
-        "path": "content/design/16-02-2024.md"
+        "path": "public/design/16-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1879,7 +1879,7 @@
       "__outstatic": {
         "commit": "02996f6295c1e030a8166d930fc87a35623e2a16",
         "hash": "1086850816",
-        "path": "content/design/17-01-2024.md"
+        "path": "public/design/17-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1897,7 +1897,7 @@
       "__outstatic": {
         "commit": "80125cb404841528e85f160930e735e183438afb",
         "hash": "2603424061",
-        "path": "content/design/16-11-2024-landing.md"
+        "path": "public/design/16-11-2024-landing.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1915,7 +1915,7 @@
       "__outstatic": {
         "commit": "a2b5d7a24e0fb67cda7a759b6e5655db6708d2c3",
         "hash": "3529571485",
-        "path": "content/design/16-12-2023.md"
+        "path": "public/design/16-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1933,7 +1933,7 @@
       "__outstatic": {
         "commit": "dfa8c9f26a41b62e291a9d217faa0ace96f5b0b5",
         "hash": "2120121668",
-        "path": "content/design/16-03-2024.md"
+        "path": "public/design/16-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1951,7 +1951,7 @@
       "__outstatic": {
         "commit": "9b42e87f759c33d6e0a3f276144714e5e699a0bb",
         "hash": "3551589977",
-        "path": "content/design/16-04-2024.md"
+        "path": "public/design/16-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1969,7 +1969,7 @@
       "__outstatic": {
         "commit": "4cfa8b43033d05f57f6597d4b904e0c8f14c2059",
         "hash": "3981363106",
-        "path": "content/design/17-03-2024.md"
+        "path": "public/design/17-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -1987,7 +1987,7 @@
       "__outstatic": {
         "commit": "7b8b26ee99e3db1279e2e854ee6d52760f86fd76",
         "hash": "297574553",
-        "path": "content/design/18-01-2024.md"
+        "path": "public/design/18-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2005,7 +2005,7 @@
       "__outstatic": {
         "commit": "17520c30c342c78f997cf5ee0ec5c79409ee7c54",
         "hash": "1310870204",
-        "path": "content/design/17-12-2023.md"
+        "path": "public/design/17-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2023,7 +2023,7 @@
       "__outstatic": {
         "commit": "47070f5a92e9301e4ffba0d0692d6931f3235ab6",
         "hash": "4264086187",
-        "path": "content/design/18-02-2024.md"
+        "path": "public/design/18-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2041,7 +2041,7 @@
       "__outstatic": {
         "commit": "d2b8e860bf984fa3ba2eda9512df74c8cb156966",
         "hash": "304505071",
-        "path": "content/design/17-02-2024.md"
+        "path": "public/design/17-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2059,7 +2059,7 @@
       "__outstatic": {
         "commit": "bb249ed3b620c8be926c08cea5adab2d5d617cb9",
         "hash": "2850526341",
-        "path": "content/design/18-03-2024.md"
+        "path": "public/design/18-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2077,7 +2077,7 @@
       "__outstatic": {
         "commit": "097615f627ba0f6318556edb336764c9c0717691",
         "hash": "1401811218",
-        "path": "content/design/19-03-2024.md"
+        "path": "public/design/19-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2095,7 +2095,7 @@
       "__outstatic": {
         "commit": "02be8469ad2a91c7bd4e1b9dada40cef5623d43e",
         "hash": "826212525",
-        "path": "content/design/18-12-2023.md"
+        "path": "public/design/18-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2113,7 +2113,7 @@
       "__outstatic": {
         "commit": "0b1af0c77baf5ac50f36ff402c0698881d67f4f8",
         "hash": "3855004073",
-        "path": "content/design/19-02-2024.md"
+        "path": "public/design/19-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2131,7 +2131,7 @@
       "__outstatic": {
         "commit": "4d8dc2a172df5e5988d244e826aeff63dfaedb09",
         "hash": "2257716715",
-        "path": "content/design/19-01-2024.md"
+        "path": "public/design/19-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2149,7 +2149,7 @@
       "__outstatic": {
         "commit": "d44c452952618c4911b7f91fba7b62321f0a55c1",
         "hash": "3337532073",
-        "path": "content/design/20-01-2024.md"
+        "path": "public/design/20-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2167,7 +2167,7 @@
       "__outstatic": {
         "commit": "156820701533104ebf6dee80d11c2e0c2bbb89db",
         "hash": "1958416317",
-        "path": "content/design/20-02-2024.md"
+        "path": "public/design/20-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2185,7 +2185,7 @@
       "__outstatic": {
         "commit": "e6638b6c2b092a658d90f90ec11c3a7772b8367d",
         "hash": "2587976335",
-        "path": "content/design/19-12-2023.md"
+        "path": "public/design/19-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2203,7 +2203,7 @@
       "__outstatic": {
         "commit": "b5eec551dd2e6f6cfe1ddcf4b9a570de8bd9ba22",
         "hash": "1633199894",
-        "path": "content/design/2.md"
+        "path": "public/design/2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2219,7 +2219,7 @@
       "__outstatic": {
         "commit": "27cd89212dac15681f1396456536f57e2aed094e",
         "hash": "3112465792",
-        "path": "content/design/2-11-2024.md"
+        "path": "public/design/2-11-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2235,7 +2235,7 @@
       "__outstatic": {
         "commit": "9924343f0b31477cb0ac6d2cf32a5293765cd662",
         "hash": "3351367233",
-        "path": "content/design/20-03-2024.md"
+        "path": "public/design/20-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2253,7 +2253,7 @@
       "__outstatic": {
         "commit": "46b2fe55fc0a41ccf5123dbdf5f6ff30cce1579e",
         "hash": "3574809277",
-        "path": "content/design/21-03-2024.md"
+        "path": "public/design/21-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2271,7 +2271,7 @@
       "__outstatic": {
         "commit": "9444910104655ae1680cc53036bf2e7d6e1b8134",
         "hash": "1975706337",
-        "path": "content/design/21-02-2024.md"
+        "path": "public/design/21-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2289,7 +2289,7 @@
       "__outstatic": {
         "commit": "a1f7ca146ace286befd990ad0c2a775c89ddd1d2",
         "hash": "3678743152",
-        "path": "content/design/21-01-2024.md"
+        "path": "public/design/21-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2307,7 +2307,7 @@
       "__outstatic": {
         "commit": "f622408569bcf7da03d4bbda2c6cae1005484b61",
         "hash": "1321349152",
-        "path": "content/design/20-12-2023.md"
+        "path": "public/design/20-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2325,7 +2325,7 @@
       "__outstatic": {
         "commit": "6ea9d620edb8b8ed8b8c1cc07f624ae0bd08711f",
         "hash": "3315653169",
-        "path": "content/design/22-02-2024.md"
+        "path": "public/design/22-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2343,7 +2343,7 @@
       "__outstatic": {
         "commit": "afb002ab18060971a35874a9be372bb2e0f8b5a9",
         "hash": "154841619",
-        "path": "content/design/22-03-2024.md"
+        "path": "public/design/22-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2361,7 +2361,7 @@
       "__outstatic": {
         "commit": "563203b1b1f55339911c7c00ffb63c61bdd8d980",
         "hash": "1576989501",
-        "path": "content/design/22-01-2024.md"
+        "path": "public/design/22-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2379,7 +2379,7 @@
       "__outstatic": {
         "commit": "0139cf86bd701ce56516efa7cb4ee477dae6f9a8",
         "hash": "1162722347",
-        "path": "content/design/21-12-2023.md"
+        "path": "public/design/21-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2397,7 +2397,7 @@
       "__outstatic": {
         "commit": "29be60daf787e7fcef0e451aff1909548d8ef1d0",
         "hash": "1592989815",
-        "path": "content/design/22-12-2023.md"
+        "path": "public/design/22-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2415,7 +2415,7 @@
       "__outstatic": {
         "commit": "c4be83cc178e95d3e60ece1248c4f2d77767ac04",
         "hash": "2099660284",
-        "path": "content/design/23-01-2024.md"
+        "path": "public/design/23-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2433,7 +2433,7 @@
       "__outstatic": {
         "commit": "d3f8a8ff34404106f2a6acba01c2aef7ce58f027",
         "hash": "2197815377",
-        "path": "content/design/23-02-2024.md"
+        "path": "public/design/23-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2451,7 +2451,7 @@
       "__outstatic": {
         "commit": "b28bf7417f680f88eae22b2bb1dfbd48f46de813",
         "hash": "1608797763",
-        "path": "content/design/24-02-2024.md"
+        "path": "public/design/24-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2469,7 +2469,7 @@
       "__outstatic": {
         "commit": "05217b3a768c9e970e620b9590e94ced9b541e9b",
         "hash": "1100455106",
-        "path": "content/design/24-01-2024.md"
+        "path": "public/design/24-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2487,7 +2487,7 @@
       "__outstatic": {
         "commit": "76009772e278cfa29c68ddbe9666bdf4329b3a25",
         "hash": "2403101284",
-        "path": "content/design/23-03-2024.md"
+        "path": "public/design/23-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2505,7 +2505,7 @@
       "__outstatic": {
         "commit": "b3d3218599f314b6e00979e5c434840cc65314da",
         "hash": "1252118355",
-        "path": "content/design/25-02-2024.md"
+        "path": "public/design/25-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2523,7 +2523,7 @@
       "__outstatic": {
         "commit": "1b5cb6e49c7cfb3359dfe9aedafe915268fff90c",
         "hash": "4033902339",
-        "path": "content/design/25-01-2024.md"
+        "path": "public/design/25-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2541,7 +2541,7 @@
       "__outstatic": {
         "commit": "411e58553c5b72346e45a23dd60f8f386747591a",
         "hash": "3455376811",
-        "path": "content/design/24-12-2023.md"
+        "path": "public/design/24-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2559,7 +2559,7 @@
       "__outstatic": {
         "commit": "04c57538c455bdad4071012f9622d317a97fc1b8",
         "hash": "940321846",
-        "path": "content/design/25-03-2024.md"
+        "path": "public/design/25-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2577,7 +2577,7 @@
       "__outstatic": {
         "commit": "827623e3b4fba97c3349912fff0797a0d1a18e4b",
         "hash": "1662622453",
-        "path": "content/design/24-03-2024.md"
+        "path": "public/design/24-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2595,7 +2595,7 @@
       "__outstatic": {
         "commit": "fdc9acda449a251d457b7f77b03d84d2a54f2b58",
         "hash": "618001547",
-        "path": "content/design/26-03-2024.md"
+        "path": "public/design/26-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2613,7 +2613,7 @@
       "__outstatic": {
         "commit": "70ab5a4c89f19c8585d7873fd31db6d2ecb356d2",
         "hash": "3995282661",
-        "path": "content/design/26-02-2024.md"
+        "path": "public/design/26-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2631,7 +2631,7 @@
       "__outstatic": {
         "commit": "07fbacc6e02ee98a3e6a5931a50692026134fd72",
         "hash": "353526177",
-        "path": "content/design/25-12-2023-1.md"
+        "path": "public/design/25-12-2023-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2649,7 +2649,7 @@
       "__outstatic": {
         "commit": "4da70af06e3fa302cc2acb35ff76a18f51cb7676",
         "hash": "712183522",
-        "path": "content/design/25-12-2023.md"
+        "path": "public/design/25-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2667,7 +2667,7 @@
       "__outstatic": {
         "commit": "0cefb163cda2273fb488f1edc97324c405b51381",
         "hash": "1361828623",
-        "path": "content/design/26-01-2024.md"
+        "path": "public/design/26-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2685,7 +2685,7 @@
       "__outstatic": {
         "commit": "b5d6b70c5a26972de5bde562e2dd50d18bac71f3",
         "hash": "4055783894",
-        "path": "content/design/27-01-2024.md"
+        "path": "public/design/27-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2703,7 +2703,7 @@
       "__outstatic": {
         "commit": "d7ecda7acba11e0495213b34ebba0f8521badee4",
         "hash": "1177909468",
-        "path": "content/design/26-11-2023.md"
+        "path": "public/design/26-11-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2721,7 +2721,7 @@
       "__outstatic": {
         "commit": "5789ab12e26aae6984fade2ebd3e48292093f5e2",
         "hash": "4097603351",
-        "path": "content/design/27-03-2024.md"
+        "path": "public/design/27-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2739,7 +2739,7 @@
       "__outstatic": {
         "commit": "e1aeb7412d42574efe5e89627e1187668db8a768",
         "hash": "2844512344",
-        "path": "content/design/26-12-2023.md"
+        "path": "public/design/26-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2757,7 +2757,7 @@
       "__outstatic": {
         "commit": "b0530fe46a595936ef55e5a0e86b2b300ef91b0e",
         "hash": "806777068",
-        "path": "content/design/27-02-2024.md"
+        "path": "public/design/27-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2775,7 +2775,7 @@
       "__outstatic": {
         "commit": "9219da7a9721943027202ae146afe04a511467f4",
         "hash": "4292756603",
-        "path": "content/design/28-03-2024.md"
+        "path": "public/design/28-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2793,7 +2793,7 @@
       "__outstatic": {
         "commit": "c772d3f1ba87f6558f381391ab9fcb808dfee85f",
         "hash": "92769248",
-        "path": "content/design/28-02-2024.md"
+        "path": "public/design/28-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2811,7 +2811,7 @@
       "__outstatic": {
         "commit": "09bf5f1b71bcdf97044596ccf5f8bff452cfaf66",
         "hash": "936083168",
-        "path": "content/design/27-12-2023.md"
+        "path": "public/design/27-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2829,7 +2829,7 @@
       "__outstatic": {
         "commit": "cc11b04cb893669b6d7d0021d3b9d0d50401a5c8",
         "hash": "2915603741",
-        "path": "content/design/27-11-2023.md"
+        "path": "public/design/27-11-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2847,7 +2847,7 @@
       "__outstatic": {
         "commit": "a8f01f21e073a288f97933d4a44456272fa61cec",
         "hash": "3818176680",
-        "path": "content/design/28-01-2024.md"
+        "path": "public/design/28-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2865,7 +2865,7 @@
       "__outstatic": {
         "commit": "e3d87db7f758ba3162d61f3394e9aa1bcecaead6",
         "hash": "3764408935",
-        "path": "content/design/28-12-2023.md"
+        "path": "public/design/28-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2883,7 +2883,7 @@
       "__outstatic": {
         "commit": "420c011b406f042559cd18b95c296a2753847f18",
         "hash": "1534330716",
-        "path": "content/design/28-11-2023.md"
+        "path": "public/design/28-11-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2901,7 +2901,7 @@
       "__outstatic": {
         "commit": "311d2063b9eb3610bed67ef4b8067c1aa9d3d679",
         "hash": "2091125381",
-        "path": "content/design/29-01-2024.md"
+        "path": "public/design/29-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2919,7 +2919,7 @@
       "__outstatic": {
         "commit": "4734f1cfa175e3345e79e813ee6ec83f981a8e7e",
         "hash": "2662501723",
-        "path": "content/design/29-02-2024.md"
+        "path": "public/design/29-02-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2937,7 +2937,7 @@
       "__outstatic": {
         "commit": "e9cee1feeeb5ba89a90437d92137dbeaed6b94d1",
         "hash": "1626708349",
-        "path": "content/design/29-03-2024.md"
+        "path": "public/design/29-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2955,7 +2955,7 @@
       "__outstatic": {
         "commit": "e478b534e21c617b79517f8e0090d8078c08c10d",
         "hash": "2535450121",
-        "path": "content/design/3-11-2023.md"
+        "path": "public/design/3-11-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2971,7 +2971,7 @@
       "__outstatic": {
         "commit": "e9bccfc30f2b1de6f43bb3be291ba390aee752ed",
         "hash": "1728195969",
-        "path": "content/design/3-12-2023.md"
+        "path": "public/design/3-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -2989,7 +2989,7 @@
       "__outstatic": {
         "commit": "c7ce116e81db6d24ba440810bb271473102db586",
         "hash": "2713618910",
-        "path": "content/design/29-12-2023.md"
+        "path": "public/design/29-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3007,7 +3007,7 @@
       "__outstatic": {
         "commit": "01a7788ea8638f544302ac01fae7864d2e06868b",
         "hash": "2181094312",
-        "path": "content/design/3.md"
+        "path": "public/design/3.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3023,7 +3023,7 @@
       "__outstatic": {
         "commit": "56a7e7ca942ef13d9eb7280a8a2a32f0d5b0d852",
         "hash": "2119161977",
-        "path": "content/design/30-03-2024.md"
+        "path": "public/design/30-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3041,7 +3041,7 @@
       "__outstatic": {
         "commit": "84225610a1ec77f47df50d1928d2c51f19f5e5fa",
         "hash": "3395952689",
-        "path": "content/design/30-12-2023.md"
+        "path": "public/design/30-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3059,7 +3059,7 @@
       "__outstatic": {
         "commit": "768b54a0dbb41fb81e6a48a7811394deac0c912c",
         "hash": "1614032137",
-        "path": "content/design/31-01-2024.md"
+        "path": "public/design/31-01-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3077,7 +3077,7 @@
       "__outstatic": {
         "commit": "8d695e949fb6781bd007010393778924f716e140",
         "hash": "3967022214",
-        "path": "content/design/31-03-2024.md"
+        "path": "public/design/31-03-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3095,7 +3095,7 @@
       "__outstatic": {
         "commit": "e0e0096f4e95e61cc2890a7556ed37e7dd52579a",
         "hash": "335237646",
-        "path": "content/design/30-1-2024.md"
+        "path": "public/design/30-1-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3113,7 +3113,7 @@
       "__outstatic": {
         "commit": "e1ed9992959261e08f4a4bea2ef3585355aa42fd",
         "hash": "1207043301",
-        "path": "content/design/31-12-2023.md"
+        "path": "public/design/31-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3131,7 +3131,7 @@
       "__outstatic": {
         "commit": "4b64b76bb5c9c075fa8fa56cf0999a05fefc53ad",
         "hash": "4049546795",
-        "path": "content/design/31-oct-5.md"
+        "path": "public/design/31-oct-5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3147,7 +3147,7 @@
       "__outstatic": {
         "commit": "b1b5343c5171250d77b3383cb03f0b28d571ab45",
         "hash": "1631302086",
-        "path": "content/design/31-oct-1.md"
+        "path": "public/design/31-oct-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3163,7 +3163,7 @@
       "__outstatic": {
         "commit": "526d68aa6d2cd60a6ea0eb31951cabce8a3bce2c",
         "hash": "3861270398",
-        "path": "content/design/31-oct-4.md"
+        "path": "public/design/31-oct-4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3179,7 +3179,7 @@
       "__outstatic": {
         "commit": "fc5f6d97f45470b654eb1ddb727c37e74a8425fc",
         "hash": "1400979614",
-        "path": "content/design/31-oct-2.md"
+        "path": "public/design/31-oct-2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3195,7 +3195,7 @@
       "__outstatic": {
         "commit": "f2747020d06700cd76621986a7371b23c7426951",
         "hash": "2059019501",
-        "path": "content/design/31-oct-3.md"
+        "path": "public/design/31-oct-3.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3211,7 +3211,7 @@
       "__outstatic": {
         "commit": "bf713cc28dee4400371775d1a5ecfba2b5e48c24",
         "hash": "88328975",
-        "path": "content/design/5-11-2023.md"
+        "path": "public/design/5-11-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3227,7 +3227,7 @@
       "__outstatic": {
         "commit": "11d8155c1d68449b678c0dc4a358ec28cbc607bc",
         "hash": "1744144590",
-        "path": "content/design/4-11-2023.md"
+        "path": "public/design/4-11-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3243,7 +3243,7 @@
       "__outstatic": {
         "commit": "9f8b08c9f0dcb278991a54becc2f5f4c0bb358d2",
         "hash": "1068325100",
-        "path": "content/design/4.md"
+        "path": "public/design/4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3259,7 +3259,7 @@
       "__outstatic": {
         "commit": "a6391807daf64db53c8e60dfbf8d16f9f6612998",
         "hash": "3681800213",
-        "path": "content/design/31-oct.md"
+        "path": "public/design/31-oct.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3275,7 +3275,7 @@
       "__outstatic": {
         "commit": "e83238b3eec4419186a0330b7c4f9ea7f0560105",
         "hash": "3182796897",
-        "path": "content/design/4-12-2023.md"
+        "path": "public/design/4-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3293,7 +3293,7 @@
       "__outstatic": {
         "commit": "869cff19c0f2961e186008d3659a926f62ed3eb8",
         "hash": "335576410",
-        "path": "content/design/6.md"
+        "path": "public/design/6.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3309,7 +3309,7 @@
       "__outstatic": {
         "commit": "2f319cf44e36988a21d163fac364c0d4bc0d9024",
         "hash": "2923743159",
-        "path": "content/design/7-12-2023.md"
+        "path": "public/design/7-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3327,7 +3327,7 @@
       "__outstatic": {
         "commit": "e655e5a60f21ecfc6626108e96754865e3cb66fd",
         "hash": "2071788626",
-        "path": "content/design/5-12-2023.md"
+        "path": "public/design/5-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3345,7 +3345,7 @@
       "__outstatic": {
         "commit": "e3539f56d3941a781b97e207022db09c00ebe70b",
         "hash": "1028868543",
-        "path": "content/design/5.md"
+        "path": "public/design/5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3361,7 +3361,7 @@
       "__outstatic": {
         "commit": "9101a9644e57518e11e520a5cafcbd08b0f61899",
         "hash": "301593809",
-        "path": "content/design/6-12-2023.md"
+        "path": "public/design/6-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3379,7 +3379,7 @@
       "__outstatic": {
         "commit": "e62deb2709d9ceb08842b8cd408d41676f8e14e0",
         "hash": "3952666812",
-        "path": "content/design/command-menu-s-are-so-fun-to-design.md"
+        "path": "public/design/command-menu-s-are-so-fun-to-design.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3397,7 +3397,7 @@
       "__outstatic": {
         "commit": "f7779545bb6f312930bb95764643459b376c0cc0",
         "hash": "2574399502",
-        "path": "content/design/7.md"
+        "path": "public/design/7.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3413,7 +3413,7 @@
       "__outstatic": {
         "commit": "4096a9a23201db0f09d54a6572b87ea92d12b4a5",
         "hash": "3029177290",
-        "path": "content/design/8.md"
+        "path": "public/design/8.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3429,7 +3429,7 @@
       "__outstatic": {
         "commit": "9c6788fc9a77d6b078b2868df908eb78977df239",
         "hash": "2687246287",
-        "path": "content/design/8-12-2023.md"
+        "path": "public/design/8-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3447,7 +3447,7 @@
       "__outstatic": {
         "commit": "047ec2650ef24cd2f7418babc103973fce6023cb",
         "hash": "3874509076",
-        "path": "content/design/9-12-2023.md"
+        "path": "public/design/9-12-2023.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3465,7 +3465,7 @@
       "__outstatic": {
         "commit": "2d1844c078689f82344614faf48b48c3415dd0a2",
         "hash": "268584054",
-        "path": "content/design/images-2-2x-jpg.md"
+        "path": "public/design/images-2-2x-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3481,7 +3481,7 @@
       "__outstatic": {
         "commit": "7e5887afa28cc00ac26b987d43ecb3fd52745e81",
         "hash": "3399015486",
-        "path": "content/design/images-1622481234566983681_3-jpg.md"
+        "path": "public/design/images-1622481234566983681_3-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3497,7 +3497,7 @@
       "__outstatic": {
         "commit": "51562dd0debaca2bc4bd0603a53b94a2f641f527",
         "hash": "3641613599",
-        "path": "content/design/images-1622481234566983681_2-jpg.md"
+        "path": "public/design/images-1622481234566983681_2-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3513,7 +3513,7 @@
       "__outstatic": {
         "commit": "169a187ab6615439007ecb34ec8c8f1a3a2e0df0",
         "hash": "599486990",
-        "path": "content/design/images-1622481234566983681_1-jpg.md"
+        "path": "public/design/images-1622481234566983681_1-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3529,7 +3529,7 @@
       "__outstatic": {
         "commit": "780a6aa7c7455f56392e9240bdf1537796987b53",
         "hash": "1385967833",
-        "path": "content/design/images-11-png.md"
+        "path": "public/design/images-11-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3545,7 +3545,7 @@
       "__outstatic": {
         "commit": "4bb4b3f2d5115b6344875d0b53df97a2d9c682e6",
         "hash": "2279909354",
-        "path": "content/design/images-beach-bytes-png.md"
+        "path": "public/design/images-beach-bytes-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3561,7 +3561,7 @@
       "__outstatic": {
         "commit": "621a9903abb51d6528ecb2fd080c85e856bad156",
         "hash": "1040138515",
-        "path": "content/design/images-blog-3-closeup-png.md"
+        "path": "public/design/images-blog-3-closeup-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3577,7 +3577,7 @@
       "__outstatic": {
         "commit": "61363551a916a781ae063d3ed83d643f7d2bb1f8",
         "hash": "3109812665",
-        "path": "content/design/images-alert-3-png.md"
+        "path": "public/design/images-alert-3-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3593,7 +3593,7 @@
       "__outstatic": {
         "commit": "78ba4d454e46fd416c1c2680088e19732d4bd657",
         "hash": "436676116",
-        "path": "content/design/images-alert-1-png.md"
+        "path": "public/design/images-alert-1-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3609,7 +3609,7 @@
       "__outstatic": {
         "commit": "eb2c0095e1d5212863ed9cf7ccae6716bb6161ba",
         "hash": "2076692801",
-        "path": "content/design/images-alert-2-png.md"
+        "path": "public/design/images-alert-2-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3625,7 +3625,7 @@
       "__outstatic": {
         "commit": "5a09355c98065cf8ba28da262655ad39083a1bbd",
         "hash": "536467937",
-        "path": "content/design/images-blog-3-dribbble-png.md"
+        "path": "public/design/images-blog-3-dribbble-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3641,7 +3641,7 @@
       "__outstatic": {
         "commit": "85647f640d1b9f5a66d503fcd6c43f6f193f953b",
         "hash": "1495156774",
-        "path": "content/design/images-blog-closeup-png.md"
+        "path": "public/design/images-blog-closeup-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3657,7 +3657,7 @@
       "__outstatic": {
         "commit": "775d55230bf0da142529d1f8276648b9da48c206",
         "hash": "1993591209",
-        "path": "content/design/images-blog-dribbble-2-png.md"
+        "path": "public/design/images-blog-dribbble-2-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3673,7 +3673,7 @@
       "__outstatic": {
         "commit": "ea53bd38e55e802977ed06d94f9eea3a60fea271",
         "hash": "2216538087",
-        "path": "content/design/images-blog-closeup-2-png.md"
+        "path": "public/design/images-blog-closeup-2-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3689,7 +3689,7 @@
       "__outstatic": {
         "commit": "125a75c91aefd261869ad0d30b2104f6325da093",
         "hash": "319586278",
-        "path": "content/design/images-blog-dribbble-png.md"
+        "path": "public/design/images-blog-dribbble-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3705,7 +3705,7 @@
       "__outstatic": {
         "commit": "15a5e5990fcada81f0f9c672e7d689998880268b",
         "hash": "3393671004",
-        "path": "content/design/images-center-two-cards-2x-jpg.md"
+        "path": "public/design/images-center-two-cards-2x-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3721,7 +3721,7 @@
       "__outstatic": {
         "commit": "172d90ba2251b09ab9f5bb365d86864315519e6c",
         "hash": "2549121429",
-        "path": "content/design/images-changelog-dribbble-1-png.md"
+        "path": "public/design/images-changelog-dribbble-1-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3737,7 +3737,7 @@
       "__outstatic": {
         "commit": "517a1b287fa7dc54591fd5751f0df3f9ecd87fe3",
         "hash": "3743780879",
-        "path": "content/design/images-dark-icons-png.md"
+        "path": "public/design/images-dark-icons-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3753,7 +3753,7 @@
       "__outstatic": {
         "commit": "7674a65b4d32a67f7f6d555ba575ecea725a49cc",
         "hash": "2095971160",
-        "path": "content/design/images-changelog-closeup-1-png.md"
+        "path": "public/design/images-changelog-closeup-1-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3769,7 +3769,7 @@
       "__outstatic": {
         "commit": "02b9f04b05d906cd6f0fa56c6fd12ae0eb70cfa0",
         "hash": "3523668699",
-        "path": "content/design/images-illustration-png.md"
+        "path": "public/design/images-illustration-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3785,7 +3785,7 @@
       "__outstatic": {
         "commit": "3a38737b3482cef821254db452c49cb55b2a8e48",
         "hash": "4144472590",
-        "path": "content/design/images-lightning-analytics-1-jpg.md"
+        "path": "public/design/images-lightning-analytics-1-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3801,7 +3801,7 @@
       "__outstatic": {
         "commit": "5063b562f399a3efb6d1f2f5e491150a64796d60",
         "hash": "3459736315",
-        "path": "content/design/images-landing-1-dribbble-png.md"
+        "path": "public/design/images-landing-1-dribbble-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3817,7 +3817,7 @@
       "__outstatic": {
         "commit": "e37a830a2a2055592b0b0cf2d1931e34cf200d0a",
         "hash": "2577593755",
-        "path": "content/design/images-lightning-analytics-2-jpg.md"
+        "path": "public/design/images-lightning-analytics-2-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3833,7 +3833,7 @@
       "__outstatic": {
         "commit": "760d0d9094654a2348e0c7c13b1f24e6592ad0c8",
         "hash": "1111368021",
-        "path": "content/design/images-landing-1-closeup-png.md"
+        "path": "public/design/images-landing-1-closeup-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3849,7 +3849,7 @@
       "__outstatic": {
         "commit": "e014fb354e337e43cc2340c0782b379ae3ea64e4",
         "hash": "2058615779",
-        "path": "content/design/images-lightning-analytics-3-jpg.md"
+        "path": "public/design/images-lightning-analytics-3-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3865,7 +3865,7 @@
       "__outstatic": {
         "commit": "6351f73553a28c3f08c4d073abbe47816b71bdfe",
         "hash": "957376356",
-        "path": "content/design/images-personal-website-png.md"
+        "path": "public/design/images-personal-website-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3881,7 +3881,7 @@
       "__outstatic": {
         "commit": "40d8e10ee62ff35faeb572da6563d6079d1b0d9c",
         "hash": "715227258",
-        "path": "content/design/images-myna-feeds-1-jpg.md"
+        "path": "public/design/images-myna-feeds-1-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3897,7 +3897,7 @@
       "__outstatic": {
         "commit": "e2a869bae0cf5f00dca478666d9b3fe33b5eab43",
         "hash": "3706023880",
-        "path": "content/design/images-myna-feeds-2-jpg.md"
+        "path": "public/design/images-myna-feeds-2-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3913,7 +3913,7 @@
       "__outstatic": {
         "commit": "a989d938beb3f10164d746552fa7c30b1f956761",
         "hash": "968208779",
-        "path": "content/design/images-main-cards-2x-jpg.md"
+        "path": "public/design/images-main-cards-2x-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3929,7 +3929,7 @@
       "__outstatic": {
         "commit": "8d4ae45ee3b1f2b0388aac3a8e6a46d453e09af1",
         "hash": "2327861237",
-        "path": "content/design/images-logo2x-png.md"
+        "path": "public/design/images-logo2x-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3945,7 +3945,7 @@
       "__outstatic": {
         "commit": "005790b540185081eeec34e7d00e49f7a8eccbce",
         "hash": "35409788",
-        "path": "content/design/images-resume-1-2x-jpg.md"
+        "path": "public/design/images-resume-1-2x-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3961,7 +3961,7 @@
       "__outstatic": {
         "commit": "19f8272d974cbb67eb6c5c8849ece878ed6943a7",
         "hash": "3328250233",
-        "path": "content/design/images-resume-2-2x-jpg.md"
+        "path": "public/design/images-resume-2-2x-jpg.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3977,7 +3977,7 @@
       "__outstatic": {
         "commit": "6ad1beff79ce30a0a0d14ac1da1e7dbbe863c928",
         "hash": "3271956650",
-        "path": "content/design/images-reports-closeup-png.md"
+        "path": "public/design/images-reports-closeup-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -3993,7 +3993,7 @@
       "__outstatic": {
         "commit": "0abc52cc0e486b97421cded69fa0632835dcdedd",
         "hash": "2709502745",
-        "path": "content/design/images-profile-dropdown-png.md"
+        "path": "public/design/images-profile-dropdown-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4009,7 +4009,7 @@
       "__outstatic": {
         "commit": "d415f4fab0e4855338b47a77dba2e89f164e8d0e",
         "hash": "3595561173",
-        "path": "content/design/images-reports-dribbble-png.md"
+        "path": "public/design/images-reports-dribbble-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4025,7 +4025,7 @@
       "__outstatic": {
         "commit": "6301a3390e4a7a554bbdb45d7535560ea6848ed5",
         "hash": "3439408498",
-        "path": "content/design/images-testimonial-closeup-3-png.md"
+        "path": "public/design/images-testimonial-closeup-3-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4041,7 +4041,7 @@
       "__outstatic": {
         "commit": "1143fca27e141acfe92de88a40a7bd69aac8e3e8",
         "hash": "3494496350",
-        "path": "content/design/images-sidebar-3x-png.md"
+        "path": "public/design/images-sidebar-3x-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4057,7 +4057,7 @@
       "__outstatic": {
         "commit": "cb3eff12662501933b32167517ec5cd2ee0ef764",
         "hash": "2204144154",
-        "path": "content/design/images-testimonial-dribbble-2-png.md"
+        "path": "public/design/images-testimonial-dribbble-2-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4073,7 +4073,7 @@
       "__outstatic": {
         "commit": "d1f3be19d469973e15eaddda4cb9ebf2103b9f4e",
         "hash": "873351630",
-        "path": "content/design/images-testimonial-closeup-1-png.md"
+        "path": "public/design/images-testimonial-closeup-1-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4089,7 +4089,7 @@
       "__outstatic": {
         "commit": "772d89405e639d5b5f2d2208007a52e59ec78bd4",
         "hash": "872114147",
-        "path": "content/design/images-share-modal-png.md"
+        "path": "public/design/images-share-modal-png.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4105,7 +4105,7 @@
       "__outstatic": {
         "commit": "6748753ae9f81d7c005bdd6bb38d10f8075eae1b",
         "hash": "3991018548",
-        "path": "content/design/17-04-2024.md"
+        "path": "public/design/17-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4123,7 +4123,7 @@
       "__outstatic": {
         "commit": "396f31a826c7cb0860727b636bc8ce4da10e795e",
         "hash": "1063795594",
-        "path": "content/design/18-04-2024.md"
+        "path": "public/design/18-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4141,7 +4141,7 @@
       "__outstatic": {
         "commit": "c09aa3d0caa759636cb8561290f1fa536301886a",
         "hash": "2316856599",
-        "path": "content/design/19-04-2024.md"
+        "path": "public/design/19-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4159,7 +4159,7 @@
       "__outstatic": {
         "commit": "f0a31bb224a3db1f8df44b13edf3df530d14250e",
         "hash": "4087128142",
-        "path": "content/design/20-04-2024.md"
+        "path": "public/design/20-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4177,7 +4177,7 @@
       "__outstatic": {
         "commit": "d836c8fdcafab83190ae8795b065668c64b4b493",
         "hash": "1855633625",
-        "path": "content/design/21-04-2024.md"
+        "path": "public/design/21-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4195,7 +4195,7 @@
       "__outstatic": {
         "commit": "3e964d0675e31a63fe5ea1da0e16c92e9aa01f79",
         "hash": "1946158641",
-        "path": "content/design/22-04-2024.md"
+        "path": "public/design/22-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4213,7 +4213,7 @@
       "__outstatic": {
         "commit": "f67d2ec1a16b9a84ecbc8e8c5ca6d12e251da5f1",
         "hash": "607937037",
-        "path": "content/design/23-04-2024.md"
+        "path": "public/design/23-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4231,7 +4231,7 @@
       "__outstatic": {
         "commit": "4d68e1d0be5787f068fc728b59a520e9b4cbcb12",
         "hash": "4131307513",
-        "path": "content/design/24-04-2024.md"
+        "path": "public/design/24-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4249,7 +4249,7 @@
       "__outstatic": {
         "commit": "642798bd7226bb1d3898a78264f71a986f08a6dd",
         "hash": "1263762500",
-        "path": "content/design/25-04-2024.md"
+        "path": "public/design/25-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4267,7 +4267,7 @@
       "__outstatic": {
         "commit": "259ea202c0306a2aed52103b59c5a1ca5c69a09f",
         "hash": "830162198",
-        "path": "content/design/26-04-2024.md"
+        "path": "public/design/26-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4285,7 +4285,7 @@
       "__outstatic": {
         "commit": "518f327d20d48eecb54ac72ea3d85722db408caf",
         "hash": "1892275226",
-        "path": "content/design/27-04-2024.md"
+        "path": "public/design/27-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4303,7 +4303,7 @@
       "__outstatic": {
         "commit": "02d4c1ac09d8254b55d383100936f95c0121f532",
         "hash": "1762140239",
-        "path": "content/design/28-04-2024.md"
+        "path": "public/design/28-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4321,7 +4321,7 @@
       "__outstatic": {
         "commit": "35dc3c4d376b1c2f63475901c6752f0bae5ae526",
         "hash": "927725368",
-        "path": "content/design/29-04-2024.md"
+        "path": "public/design/29-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4339,7 +4339,7 @@
       "__outstatic": {
         "commit": "77a1b77038163482bd778d6571a60ab747fe06ef",
         "hash": "3545751432",
-        "path": "content/design/30-04-2024.md"
+        "path": "public/design/30-04-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4357,7 +4357,7 @@
       "__outstatic": {
         "commit": "5e3de1c1a49e2deb1d7772b871786175a86186ad",
         "hash": "434500957",
-        "path": "content/design/01-05-2024.md"
+        "path": "public/design/01-05-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4375,7 +4375,7 @@
       "__outstatic": {
         "commit": "87185af5b6480cc80d99388d8bf4549c590c28e8",
         "hash": "2229022069",
-        "path": "content/design/02-05-2024.md"
+        "path": "public/design/02-05-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4393,7 +4393,7 @@
       "__outstatic": {
         "commit": "72490ee58e189dfd0b665bf29fceeea6d5fa97dd",
         "hash": "4269772634",
-        "path": "content/design/03-05-2024.md"
+        "path": "public/design/03-05-2024.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4411,7 +4411,7 @@
       "__outstatic": {
         "commit": "5abc0f504683944e28aeaf4e0fdbd0a4cc7a9833",
         "hash": "866078001",
-        "path": "content/design/2024-may-4.md"
+        "path": "public/design/2024-may-4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4429,7 +4429,7 @@
       "__outstatic": {
         "commit": "749fc4b2ce8164a28cfe4b043a9bfd190e618ad1",
         "hash": "1914375511",
-        "path": "content/design/2024-may-5.md"
+        "path": "public/design/2024-may-5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4447,7 +4447,7 @@
       "__outstatic": {
         "commit": "0404ccd13254dd42d06645907ff9eaff1dfae329",
         "hash": "3443649059",
-        "path": "content/blog/excited-for-css-masonry-layout.md"
+        "path": "public/blog/excited-for-css-masonry-layout.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4465,7 +4465,7 @@
       "__outstatic": {
         "commit": "8949641bfe61aeaafc56a992b6b9d04a90814e61",
         "hash": "3312237486",
-        "path": "content/design/2024-may-6.md"
+        "path": "public/design/2024-may-6.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4483,7 +4483,7 @@
       "__outstatic": {
         "commit": "18f056dca2704e2205774fd7a7a535aada538c9c",
         "hash": "3866340642",
-        "path": "content/design/2024-may-7.md"
+        "path": "public/design/2024-may-7.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4501,7 +4501,7 @@
       "__outstatic": {
         "commit": "b6adc7c5c23d8cb72c36d32de9bd258de14ffe2f",
         "hash": "893176963",
-        "path": "content/design/2024-may-8.md"
+        "path": "public/design/2024-may-8.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4519,7 +4519,7 @@
       "__outstatic": {
         "commit": "a18d6dd36c2a95ef0affe77d11e911e78c914ef9",
         "hash": "4159848363",
-        "path": "content/design/2024-may-9.md"
+        "path": "public/design/2024-may-9.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4537,7 +4537,7 @@
       "__outstatic": {
         "commit": "b50c2234edbf614f9376bc7329de61e19834f483",
         "hash": "1496335007",
-        "path": "content/design/2024-may-10.md"
+        "path": "public/design/2024-may-10.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4555,7 +4555,7 @@
       "__outstatic": {
         "commit": "873a0df2af444fcbe034b28e2bf108f899e328a7",
         "hash": "3265368586",
-        "path": "content/design/2024-may-11.md"
+        "path": "public/design/2024-may-11.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4573,7 +4573,7 @@
       "__outstatic": {
         "commit": "8aeb18fe3169dd3e6936713e266f0cc2872e73f1",
         "hash": "3311762452",
-        "path": "content/design/2024-may-12.md"
+        "path": "public/design/2024-may-12.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4591,7 +4591,7 @@
       "__outstatic": {
         "commit": "cb8584e91b7eb175febb1504aa96c7194bc7d950",
         "hash": "2603766254",
-        "path": "content/design/2024-may-13.md"
+        "path": "public/design/2024-may-13.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4609,7 +4609,7 @@
       "__outstatic": {
         "commit": "142b0946e612a1446c132855b9b1897de4759a5d",
         "hash": "1020681715",
-        "path": "content/design/2024-may-14.md"
+        "path": "public/design/2024-may-14.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4627,7 +4627,7 @@
       "__outstatic": {
         "commit": "45ce93f8e43bccaeae5c486c6327d89970d3f5d4",
         "hash": "358282184",
-        "path": "content/design/2024-may-15.md"
+        "path": "public/design/2024-may-15.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4645,7 +4645,7 @@
       "__outstatic": {
         "commit": "44ec1b32679c3b63d6e25c941bc16f0dd8f6f5e0",
         "hash": "1774445204",
-        "path": "content/design/2024-may-16.md"
+        "path": "public/design/2024-may-16.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4663,7 +4663,7 @@
       "__outstatic": {
         "commit": "e81d70fc1f77bc00986a150ffd47ed05a670809b",
         "hash": "2515828185",
-        "path": "content/design/2024-may-17.md"
+        "path": "public/design/2024-may-17.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4681,7 +4681,7 @@
       "__outstatic": {
         "commit": "96830ffcb925c67f1294f6ae193311f41da3585e",
         "hash": "1770835382",
-        "path": "content/design/2024-may-18.md"
+        "path": "public/design/2024-may-18.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4699,7 +4699,7 @@
       "__outstatic": {
         "commit": "554fd042375b45a75d0efb41a691b5c1c9d1ad7e",
         "hash": "1264568773",
-        "path": "content/design/2024-may-19.md"
+        "path": "public/design/2024-may-19.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4717,7 +4717,7 @@
       "__outstatic": {
         "commit": "d4d6de1bdcfe49a192915cf8776c313d8decd60d",
         "hash": "3129539487",
-        "path": "content/design/2024-may-20.md"
+        "path": "public/design/2024-may-20.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4735,7 +4735,7 @@
       "__outstatic": {
         "commit": "01977c979833e7847b486992cfd917cf352efe8a",
         "hash": "3718124743",
-        "path": "content/design/2024-may-21.md"
+        "path": "public/design/2024-may-21.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4753,7 +4753,7 @@
       "__outstatic": {
         "commit": "0a81ec6f73d1e8994bc9768ca1d866cc3ee42053",
         "hash": "3228443165",
-        "path": "content/design/2024-may-22.md"
+        "path": "public/design/2024-may-22.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4771,7 +4771,7 @@
       "__outstatic": {
         "commit": "b1296bd38ddb75ee66931c8b5c81db8eb9fe5169",
         "hash": "3105707896",
-        "path": "content/design/2024-may-23.md"
+        "path": "public/design/2024-may-23.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4789,7 +4789,7 @@
       "__outstatic": {
         "commit": "a4fa380aa261adde468b79fb363ad019a1f15d96",
         "hash": "514036915",
-        "path": "content/design/2024-may-24.md"
+        "path": "public/design/2024-may-24.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4807,7 +4807,7 @@
       "__outstatic": {
         "commit": "292b38973654b43bcd53d24fc145f23d12e291e5",
         "hash": "1115414011",
-        "path": "content/design/2024-may-25.md"
+        "path": "public/design/2024-may-25.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4825,7 +4825,7 @@
       "__outstatic": {
         "commit": "535d5ae271889a0f7ed37ab662abe3ded4ab6b13",
         "hash": "1623357571",
-        "path": "content/design/2024-may-26.md"
+        "path": "public/design/2024-may-26.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4843,7 +4843,7 @@
       "__outstatic": {
         "commit": "c08fd87e0119a5a8313f692a8af73e34047474e4",
         "hash": "1021483317",
-        "path": "content/design/2024-may-27.md"
+        "path": "public/design/2024-may-27.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4861,7 +4861,7 @@
       "__outstatic": {
         "commit": "de537c5cc9edc34e35db382ae0737b788cda0cf7",
         "hash": "2170461139",
-        "path": "content/design/2024-may-28.md"
+        "path": "public/design/2024-may-28.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4879,7 +4879,7 @@
       "__outstatic": {
         "commit": "b26ba5f24d557d638d2ab31a950d4c794aac45cd",
         "hash": "1039750757",
-        "path": "content/design/2024-may-29.md"
+        "path": "public/design/2024-may-29.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4897,7 +4897,7 @@
       "__outstatic": {
         "commit": "b168f5c146c9dfbda86ee18ae1799142dedcc549",
         "hash": "1685294775",
-        "path": "content/design/2024-may-30.md"
+        "path": "public/design/2024-may-30.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4915,7 +4915,7 @@
       "__outstatic": {
         "commit": "a2296c651af4ea6d65cee83be7f4842bd2a1f33f",
         "hash": "1905594519",
-        "path": "content/design/2024-may-31.md"
+        "path": "public/design/2024-may-31.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4933,7 +4933,7 @@
       "__outstatic": {
         "commit": "a90a4160aaf1165179d5f683a6d81f02453a2e05",
         "hash": "2393057924",
-        "path": "content/design/2024-june-1.md"
+        "path": "public/design/2024-june-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4951,7 +4951,7 @@
       "__outstatic": {
         "commit": "ae4a34c57106146f28338fbc426f8133c754817e",
         "hash": "461621906",
-        "path": "content/design/2024-june-2.md"
+        "path": "public/design/2024-june-2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4969,7 +4969,7 @@
       "__outstatic": {
         "commit": "9df9bb6c7cd64c7989130ae761018d4d221f780e",
         "hash": "2935643540",
-        "path": "content/design/2024-june-3.md"
+        "path": "public/design/2024-june-3.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -4987,7 +4987,7 @@
       "__outstatic": {
         "commit": "9b589e11d12a0fc20afe0caaca271e3c49014674",
         "hash": "465055847",
-        "path": "content/design/2024-june-4.md"
+        "path": "public/design/2024-june-4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5005,7 +5005,7 @@
       "__outstatic": {
         "commit": "6d1888cc05ef208e1a78b8096fd316df086a44ce",
         "hash": "1649250616",
-        "path": "content/design/2024-june-5.md"
+        "path": "public/design/2024-june-5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5023,7 +5023,7 @@
       "__outstatic": {
         "commit": "9eb4546c7fbc53ccc0fdff31ffc5cf002380b4d0",
         "hash": "1600739382",
-        "path": "content/design/2024-june-6.md"
+        "path": "public/design/2024-june-6.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5041,7 +5041,7 @@
       "__outstatic": {
         "commit": "0414d2ece4af511f1bf040cc647b9e6ecf973b11",
         "hash": "514973249",
-        "path": "content/design/2024-june-7.md"
+        "path": "public/design/2024-june-7.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5059,7 +5059,7 @@
       "__outstatic": {
         "commit": "0bd6720d4d5a22fd575ba53e9cace52adcd5f1c3",
         "hash": "2891163281",
-        "path": "content/design/2024-june-8.md"
+        "path": "public/design/2024-june-8.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5077,7 +5077,7 @@
       "__outstatic": {
         "commit": "f8635f303f5265e598bc18a4e9c588116c06f02b",
         "hash": "3003011670",
-        "path": "content/design/2024-june-9.md"
+        "path": "public/design/2024-june-9.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5095,7 +5095,7 @@
       "__outstatic": {
         "commit": "d7f382afd136424acf2ad6b7ec1d5ca7af75210f",
         "hash": "2742096076",
-        "path": "content/design/2024-june-10.md"
+        "path": "public/design/2024-june-10.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5113,7 +5113,7 @@
       "__outstatic": {
         "commit": "c73a49c880066c0de7cdaeddbc10bb6d62f4d924",
         "hash": "3853773746",
-        "path": "content/design/2024-june-11.md"
+        "path": "public/design/2024-june-11.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5131,7 +5131,7 @@
       "__outstatic": {
         "commit": "71d49ec556a18bc48d90ace358e0ddda400b5761",
         "hash": "2677345118",
-        "path": "content/design/2024-june-12.md"
+        "path": "public/design/2024-june-12.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5149,7 +5149,7 @@
       "__outstatic": {
         "commit": "5401a5d075d3951260c3cde7bc41d184827a54ec",
         "hash": "3634428444",
-        "path": "content/design/2024-june-13.md"
+        "path": "public/design/2024-june-13.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5167,7 +5167,7 @@
       "__outstatic": {
         "commit": "bdde5ca35f841c7d292443fdc0189575ad013cd6",
         "hash": "2792016154",
-        "path": "content/design/2024-june-14.md"
+        "path": "public/design/2024-june-14.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5185,7 +5185,7 @@
       "__outstatic": {
         "commit": "99474b03036bf696f03cd79bca96efa14060215a",
         "hash": "3527926624",
-        "path": "content/design/2024-june-15.md"
+        "path": "public/design/2024-june-15.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5203,7 +5203,7 @@
       "__outstatic": {
         "commit": "18089e7d07c0d59550785cc1fe25c46ebc839f2a",
         "hash": "2431132940",
-        "path": "content/design/2024-june-16.md"
+        "path": "public/design/2024-june-16.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5221,7 +5221,7 @@
       "__outstatic": {
         "commit": "4bb1c28995ea263ab4b4a007335e1b21e27094e7",
         "hash": "1546796065",
-        "path": "content/design/2024-june-17.md"
+        "path": "public/design/2024-june-17.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5239,7 +5239,7 @@
       "__outstatic": {
         "commit": "a9d627e79a2f688605a52a47ff449a7b213e8625",
         "hash": "2373778635",
-        "path": "content/blog/thoughts-on-wwdc24.md"
+        "path": "public/blog/thoughts-on-wwdc24.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5257,7 +5257,7 @@
       "__outstatic": {
         "commit": "aa32cdb93ac5240f8c45a30cbeacb818e5233918",
         "hash": "2776502351",
-        "path": "content/design/2024-june-18.md"
+        "path": "public/design/2024-june-18.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5275,7 +5275,7 @@
       "__outstatic": {
         "commit": "d1d986b1860df5e12163946bd201ea9f231ee47e",
         "hash": "1813643158",
-        "path": "content/blog/how-i-start-a-new-figma-project-nowadays.md"
+        "path": "public/blog/how-i-start-a-new-figma-project-nowadays.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5293,7 +5293,7 @@
       "__outstatic": {
         "commit": "d003b64b27bbff5f83856e361ded80b4c2ea461a",
         "hash": "2411943634",
-        "path": "content/design/2024-june-19.md"
+        "path": "public/design/2024-june-19.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5311,7 +5311,7 @@
       "__outstatic": {
         "commit": "e125965fbe297ad2a53216754064f2a713403fe2",
         "hash": "4025829321",
-        "path": "content/design/2024-june-20.md"
+        "path": "public/design/2024-june-20.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5329,7 +5329,7 @@
       "__outstatic": {
         "commit": "62cf99f0fa232d8ea534d448a18ad9958ca7220b",
         "hash": "90429744",
-        "path": "content/design/2024-june-21.md"
+        "path": "public/design/2024-june-21.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5347,7 +5347,7 @@
       "__outstatic": {
         "commit": "873d09c3decf5d01339f6dadaac18145470d2067",
         "hash": "1246882294",
-        "path": "content/design/2024-june-22.md"
+        "path": "public/design/2024-june-22.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5365,7 +5365,7 @@
       "__outstatic": {
         "commit": "85048f10f392ad954485efd20bb32bb3b6328ac6",
         "hash": "3640718307",
-        "path": "content/blog/review-of-assassin-s-creed-odyssey-and-valhalla.md"
+        "path": "public/blog/review-of-assassin-s-creed-odyssey-and-valhalla.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5383,7 +5383,7 @@
       "__outstatic": {
         "commit": "c94a0a0413f67ca582e778be18fae9c0cc836a2f",
         "hash": "3725099601",
-        "path": "content/design/2024-june-23.md"
+        "path": "public/design/2024-june-23.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5401,7 +5401,7 @@
       "__outstatic": {
         "commit": "1567e2a1a0f487f39d702c9d68dc83e2460ceeb6",
         "hash": "3778985722",
-        "path": "content/blog/exploring-freshrss-and-fly-io-a-designer-s-perspective.md"
+        "path": "public/blog/exploring-freshrss-and-fly-io-a-designer-s-perspective.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5419,7 +5419,7 @@
       "__outstatic": {
         "commit": "f12a6c6c923293c1322962c93c6f9fb31178a88e",
         "hash": "4072664257",
-        "path": "content/design/2024-june-24.md"
+        "path": "public/design/2024-june-24.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5437,7 +5437,7 @@
       "__outstatic": {
         "commit": "d93789f02ac8ad262bc3ca3b9895128128d527ea",
         "hash": "4044514839",
-        "path": "content/design/2024-june-25.md"
+        "path": "public/design/2024-june-25.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5455,7 +5455,7 @@
       "__outstatic": {
         "commit": "e7096498132910757f031fcd4acff7f6b2b25bfb",
         "hash": "322867806",
-        "path": "content/design/2024-june-26.md"
+        "path": "public/design/2024-june-26.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5473,7 +5473,7 @@
       "__outstatic": {
         "commit": "d24702d53381d5bcd81e0374d8a315dba51af4b5",
         "hash": "1616295214",
-        "path": "content/design/2024-june-27.md"
+        "path": "public/design/2024-june-27.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5491,7 +5491,7 @@
       "__outstatic": {
         "commit": "7ed433bfc1df3078f9819abec67727e54ded1d2d",
         "hash": "47306302",
-        "path": "content/design/2024-june-28.md"
+        "path": "public/design/2024-june-28.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5509,7 +5509,7 @@
       "__outstatic": {
         "commit": "8ab68f789fb3922e9ff3d5c6111c16bbcedf241f",
         "hash": "669179000",
-        "path": "content/design/2024-june-29.md"
+        "path": "public/design/2024-june-29.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5527,7 +5527,7 @@
       "__outstatic": {
         "commit": "c81dd3868d172682145ba834069d158f36ebe047",
         "hash": "393081347",
-        "path": "content/design/2024-june-30.md"
+        "path": "public/design/2024-june-30.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5545,7 +5545,7 @@
       "__outstatic": {
         "commit": "ca66d8db8b49cb52b51fc3f78744c38cff9490d1",
         "hash": "944012512",
-        "path": "content/design/2024-july-1.md"
+        "path": "public/design/2024-july-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5563,7 +5563,7 @@
       "__outstatic": {
         "commit": "262ef222f3afd02a754d1d6a8cb91aa4d4c5ae30",
         "hash": "3952951159",
-        "path": "content/design/2024-july-2.md"
+        "path": "public/design/2024-july-2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5581,7 +5581,7 @@
       "__outstatic": {
         "commit": "9ec8abf6f2b35969caf62844dba123e955d61448",
         "hash": "3514111027",
-        "path": "content/design/2024-july-3.md"
+        "path": "public/design/2024-july-3.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5599,7 +5599,7 @@
       "__outstatic": {
         "commit": "0d365e6f1ce0b0f7e2dd44192c3186ee62da6555",
         "hash": "780108313",
-        "path": "content/design/2024-july-4.md"
+        "path": "public/design/2024-july-4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5617,7 +5617,7 @@
       "__outstatic": {
         "commit": "27391bafd6558506bf8e5ea8ee3b8972308f9685",
         "hash": "397933912",
-        "path": "content/design/2024-july-5.md"
+        "path": "public/design/2024-july-5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5635,7 +5635,7 @@
       "__outstatic": {
         "commit": "cb68f98f29763ddb02068651aee38761a9c43345",
         "hash": "1257044806",
-        "path": "content/design/2024-july-6.md"
+        "path": "public/design/2024-july-6.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5653,7 +5653,7 @@
       "__outstatic": {
         "commit": "b115dab36a7d6ab909d06d13156494ba4306bd9f",
         "hash": "2385007622",
-        "path": "content/design/2024-july-7.md"
+        "path": "public/design/2024-july-7.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5671,7 +5671,7 @@
       "__outstatic": {
         "commit": "98499d2c67d88aec6e051e5e29740cdd76b1fe40",
         "hash": "90886290",
-        "path": "content/design/2024-july-8.md"
+        "path": "public/design/2024-july-8.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5689,7 +5689,7 @@
       "__outstatic": {
         "commit": "bbacbf7ad86169cb12171b9faa3c3c5b2c3b968a",
         "hash": "4028193146",
-        "path": "content/design/2024-july-9.md"
+        "path": "public/design/2024-july-9.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5707,7 +5707,7 @@
       "__outstatic": {
         "commit": "3c9f08678034a2239e2535fab28b4d620cd9d805",
         "hash": "1866919251",
-        "path": "content/design/2024-july-10.md"
+        "path": "public/design/2024-july-10.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5725,7 +5725,7 @@
       "__outstatic": {
         "commit": "618d5b6bafc3907e6b85a262491a311dc3cba2f9",
         "hash": "4227691101",
-        "path": "content/design/2024-july-11.md"
+        "path": "public/design/2024-july-11.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5743,7 +5743,7 @@
       "__outstatic": {
         "commit": "1c58d6809e215c2f5b148399fa3b0f2c11ae1f16",
         "hash": "4179899022",
-        "path": "content/design/2024-july-12.md"
+        "path": "public/design/2024-july-12.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5761,7 +5761,7 @@
       "__outstatic": {
         "commit": "8d65c2fef4fa7026ff5572af3415c13be843b35f",
         "hash": "1220218198",
-        "path": "content/design/2024-july-13.md"
+        "path": "public/design/2024-july-13.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5779,7 +5779,7 @@
       "__outstatic": {
         "commit": "3c594a1a2eacdfcbb09ddb2354f1aade5b6b980a",
         "hash": "3216007705",
-        "path": "content/design/2024-july-14.md"
+        "path": "public/design/2024-july-14.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5797,7 +5797,7 @@
       "__outstatic": {
         "commit": "fa281d215bcb053bd222e112c97d84e9e9caea29",
         "hash": "979537193",
-        "path": "content/design/2024-july-15.md"
+        "path": "public/design/2024-july-15.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5815,7 +5815,7 @@
       "__outstatic": {
         "commit": "cfd8335e8b1d46971dc334cb2d4f50dba5e7ca3b",
         "hash": "2801356126",
-        "path": "content/design/2024-july-16.md"
+        "path": "public/design/2024-july-16.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5833,7 +5833,7 @@
       "__outstatic": {
         "commit": "868bef5013dfe6b12d1100bffc55af764b557117",
         "hash": "412194341",
-        "path": "content/design/2024-july-17.md"
+        "path": "public/design/2024-july-17.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5851,7 +5851,7 @@
       "__outstatic": {
         "commit": "e89317762607b976731d3593dd8e0c81bebbb9dc",
         "hash": "1847243235",
-        "path": "content/design/2024-july-18.md"
+        "path": "public/design/2024-july-18.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5869,7 +5869,7 @@
       "__outstatic": {
         "commit": "6d7d7dd81e2ac05f1f54add1385dd5d0d3fd1d13",
         "hash": "1911265882",
-        "path": "content/design/2024-july-19.md"
+        "path": "public/design/2024-july-19.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5887,7 +5887,7 @@
       "__outstatic": {
         "commit": "87c5d656b19942eff69735bce3e64189499dbde9",
         "hash": "278414364",
-        "path": "content/design/2024-july-20.md"
+        "path": "public/design/2024-july-20.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5905,7 +5905,7 @@
       "__outstatic": {
         "commit": "dfc0091f10ea81b887a57c75e88b1b0ef04f6819",
         "hash": "4047900094",
-        "path": "content/design/2024-july-21.md"
+        "path": "public/design/2024-july-21.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5923,7 +5923,7 @@
       "__outstatic": {
         "commit": "053c5f61e96ff9322b801c1190f107aa9616f8e3",
         "hash": "1692113449",
-        "path": "content/design/2024-july-22.md"
+        "path": "public/design/2024-july-22.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5941,7 +5941,7 @@
       "__outstatic": {
         "commit": "6109df78ac246ed38767baf6517a274f9783c01e",
         "hash": "841904088",
-        "path": "content/design/2024-july-23.md"
+        "path": "public/design/2024-july-23.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5959,7 +5959,7 @@
       "__outstatic": {
         "commit": "6f43fe87d90f9e2e1395a9d771bd2968fd488232",
         "hash": "3632176360",
-        "path": "content/design/2024-july-24.md"
+        "path": "public/design/2024-july-24.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5977,7 +5977,7 @@
       "__outstatic": {
         "commit": "86a7faac9dd2ad30e4de9333939a8b00baa97e26",
         "hash": "216575756",
-        "path": "content/design/2024-july-25.md"
+        "path": "public/design/2024-july-25.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -5995,7 +5995,7 @@
       "__outstatic": {
         "commit": "8fef3c288fde8025dd62381fcc9f1e640df43d7d",
         "hash": "4003346651",
-        "path": "content/design/2024-july-26.md"
+        "path": "public/design/2024-july-26.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6013,7 +6013,7 @@
       "__outstatic": {
         "commit": "d40c5eabaacf2f9682255812dccc5d13e098b981",
         "hash": "3966469053",
-        "path": "content/design/2024-july-27.md"
+        "path": "public/design/2024-july-27.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6031,7 +6031,7 @@
       "__outstatic": {
         "commit": "ad3a867b59376da11e720360960960e57c958543",
         "hash": "1094956200",
-        "path": "content/design/2024-july-28.md"
+        "path": "public/design/2024-july-28.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6049,7 +6049,7 @@
       "__outstatic": {
         "commit": "c8153a806e64f7a6f584dee79d9a4e8de6c10b91",
         "hash": "990832087",
-        "path": "content/design/2024-july-29.md"
+        "path": "public/design/2024-july-29.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6067,7 +6067,7 @@
       "__outstatic": {
         "commit": "17d0a58b3f0739292ba3204d51d31c2d1dbeeaa7",
         "hash": "1618445803",
-        "path": "content/design/2024-july-30.md"
+        "path": "public/design/2024-july-30.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6085,7 +6085,7 @@
       "__outstatic": {
         "commit": "05407c2113636549fb8de1c13e52efc171c0613d",
         "hash": "4222540486",
-        "path": "content/design/2024-july-31.md"
+        "path": "public/design/2024-july-31.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6103,7 +6103,7 @@
       "__outstatic": {
         "commit": "d0664fff455b7c572ef2eb7a879e0b7c6ff2c5b0",
         "hash": "1485834598",
-        "path": "content/design/2024-aug-1.md"
+        "path": "public/design/2024-aug-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6121,7 +6121,7 @@
       "__outstatic": {
         "commit": "a00f180f6d26924626a3f90761a37d3e13b69de3",
         "hash": "880818065",
-        "path": "content/design/2024-aug-2.md"
+        "path": "public/design/2024-aug-2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6139,7 +6139,7 @@
       "__outstatic": {
         "commit": "21e877f218ce1ec4a5c7e605f7924995c4d8f146",
         "hash": "3633924511",
-        "path": "content/design/2024-aug-3.md"
+        "path": "public/design/2024-aug-3.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6157,7 +6157,7 @@
       "__outstatic": {
         "commit": "daf38cf8d81811de00a9257932cde0244a82c8c4",
         "hash": "914450138",
-        "path": "content/design/2024-aug-4.md"
+        "path": "public/design/2024-aug-4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6175,7 +6175,7 @@
       "__outstatic": {
         "commit": "4cb3e2aee39d2630c5afc84c9e8607de6e051204",
         "hash": "3491539351",
-        "path": "content/design/2024-aug-5.md"
+        "path": "public/design/2024-aug-5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6193,7 +6193,7 @@
       "__outstatic": {
         "commit": "e2af9c5b1603cc00843bf6b2432daed61fc68b73",
         "hash": "3772976453",
-        "path": "content/design/2024-aug-6.md"
+        "path": "public/design/2024-aug-6.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6211,7 +6211,7 @@
       "__outstatic": {
         "commit": "b3eb36b0b783734e7a1c5b16d8be40110a8d7e89",
         "hash": "309700888",
-        "path": "content/design/2024-aug-7.md"
+        "path": "public/design/2024-aug-7.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6229,7 +6229,7 @@
       "__outstatic": {
         "commit": "f15f2a5ccbc3a0f828c2f3f0881c6538fd194bf3",
         "hash": "1363560809",
-        "path": "content/design/2024-aug-8.md"
+        "path": "public/design/2024-aug-8.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6247,7 +6247,7 @@
       "__outstatic": {
         "commit": "125f896577432f55e5806d1117da695a5163dfd7",
         "hash": "116603707",
-        "path": "content/design/2024-aug-9.md"
+        "path": "public/design/2024-aug-9.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6265,7 +6265,7 @@
       "__outstatic": {
         "commit": "c2792e359f8f34f1b61f0321e98cde180c008672",
         "hash": "3206428414",
-        "path": "content/design/2024-aug-10.md"
+        "path": "public/design/2024-aug-10.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6283,7 +6283,7 @@
       "__outstatic": {
         "commit": "ede49ce15efff8e984bcd9d0d2631ab1e97a1dd6",
         "hash": "3512696212",
-        "path": "content/design/2024-aug-11.md"
+        "path": "public/design/2024-aug-11.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6301,7 +6301,7 @@
       "__outstatic": {
         "commit": "dc3fd722caa65a12ddbd02a51da1dcabc782a72f",
         "hash": "3864767237",
-        "path": "content/design/2024-aug-12.md"
+        "path": "public/design/2024-aug-12.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6319,7 +6319,7 @@
       "__outstatic": {
         "commit": "5b763182f088312865d57521438f8b880aa22241",
         "hash": "2833356904",
-        "path": "content/design/2024-aug-13.md"
+        "path": "public/design/2024-aug-13.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6337,7 +6337,7 @@
       "__outstatic": {
         "commit": "e9a129ba046f13c9ba9b6da275932ee998e73567",
         "hash": "3280558741",
-        "path": "content/design/2024-aug-14.md"
+        "path": "public/design/2024-aug-14.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6355,7 +6355,7 @@
       "__outstatic": {
         "commit": "8dc6c2db5fa797a9b87aa864b4dd72a806c9cbf3",
         "hash": "1509565500",
-        "path": "content/blog/my-top-raycast-extensions.md"
+        "path": "public/blog/my-top-raycast-extensions.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6373,7 +6373,7 @@
       "__outstatic": {
         "commit": "3b1df8821796fc47d8b22eb003adba37d4800f23",
         "hash": "1942847955",
-        "path": "content/design/2024-aug-15.md"
+        "path": "public/design/2024-aug-15.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6391,7 +6391,7 @@
       "__outstatic": {
         "commit": "cd07f4550d1f14a5400d292950aac153a965882f",
         "hash": "1658026807",
-        "path": "content/design/2024-aug-16.md"
+        "path": "public/design/2024-aug-16.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6409,7 +6409,7 @@
       "__outstatic": {
         "commit": "bfeea895bfca5da6a61f1b4dd2ed46d471f50cd2",
         "hash": "3115045853",
-        "path": "content/design/2024-aug-17.md"
+        "path": "public/design/2024-aug-17.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6427,7 +6427,7 @@
       "__outstatic": {
         "commit": "6e2f783c8c11e8f8f9f333e8fd4779f9aa70b2aa",
         "hash": "2690414030",
-        "path": "content/design/2024-aug-18.md"
+        "path": "public/design/2024-aug-18.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6445,7 +6445,7 @@
       "__outstatic": {
         "commit": "2a1dd5ffa9244e7884f52bbcfda1d5cc6bf6601f",
         "hash": "3318431969",
-        "path": "content/design/2024-aug-19.md"
+        "path": "public/design/2024-aug-19.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6463,7 +6463,7 @@
       "__outstatic": {
         "commit": "f4c37250f159584175a0cd046bd5a7e0433187ec",
         "hash": "506295483",
-        "path": "content/design/2024-aug-20.md"
+        "path": "public/design/2024-aug-20.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6481,7 +6481,7 @@
       "__outstatic": {
         "commit": "3bd5e8a7ca1558853170987e73cc612635b31d4d",
         "hash": "2469919632",
-        "path": "content/design/2024-aug-21.md"
+        "path": "public/design/2024-aug-21.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6499,7 +6499,7 @@
       "__outstatic": {
         "commit": "a5251fad8e653cec065e15ed91504b6f812dd469",
         "hash": "2118500934",
-        "path": "content/design/2024-aug-22.md"
+        "path": "public/design/2024-aug-22.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6517,7 +6517,7 @@
       "__outstatic": {
         "commit": "5c1fc22b5d33b6c827a071994850e744954595e2",
         "hash": "212711638",
-        "path": "content/design/2024-aug-23.md"
+        "path": "public/design/2024-aug-23.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6535,7 +6535,7 @@
       "__outstatic": {
         "commit": "0a8ccd16ae3309ab86ed786165e4ffad25804d05",
         "hash": "1975577114",
-        "path": "content/design/2024-aug-24.md"
+        "path": "public/design/2024-aug-24.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6553,7 +6553,7 @@
       "__outstatic": {
         "commit": "1b5d5adda46969f5bd3fc81a0ad70788ab02a634",
         "hash": "1730958370",
-        "path": "content/design/2024-aug-25.md"
+        "path": "public/design/2024-aug-25.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6571,7 +6571,7 @@
       "__outstatic": {
         "commit": "417fa86847f11f70381fd70640f50d9634cae00b",
         "hash": "1729003594",
-        "path": "content/design/2024-aug-26.md"
+        "path": "public/design/2024-aug-26.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6589,7 +6589,7 @@
       "__outstatic": {
         "commit": "0e9367fdb1457af1569bc51d36b531cc10ffa17e",
         "hash": "1793176270",
-        "path": "content/design/2024-aug-27.md"
+        "path": "public/design/2024-aug-27.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6607,7 +6607,7 @@
       "__outstatic": {
         "commit": "c4ca306637ae6809eb51bcd2527332393ab26424",
         "hash": "3029326792",
-        "path": "content/design/2024-aug-28.md"
+        "path": "public/design/2024-aug-28.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6625,7 +6625,7 @@
       "__outstatic": {
         "commit": "4ad402e2b2773b9d6186380f331cb44629bf0a99",
         "hash": "144717296",
-        "path": "content/design/2024-aug-29.md"
+        "path": "public/design/2024-aug-29.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6643,7 +6643,7 @@
       "__outstatic": {
         "commit": "ba387a01c8946b0b94c5b6b09188cd7be0774f73",
         "hash": "1430471326",
-        "path": "content/design/2024-aug-30.md"
+        "path": "public/design/2024-aug-30.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6661,7 +6661,7 @@
       "__outstatic": {
         "commit": "ad940156fb2f80c209311ecd1d4af6ed358b0cb0",
         "hash": "3554448213",
-        "path": "content/design/2024-aug-31.md"
+        "path": "public/design/2024-aug-31.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6679,7 +6679,7 @@
       "__outstatic": {
         "commit": "1ff35de0fb92e35c9a316e08b8cf164c1089f350",
         "hash": "533749984",
-        "path": "content/design/2024-sep-1.md"
+        "path": "public/design/2024-sep-1.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6697,7 +6697,7 @@
       "__outstatic": {
         "commit": "2943043a0f37d3552f5582a3d83b308321f99544",
         "hash": "2158840473",
-        "path": "content/design/2024-sep-2.md"
+        "path": "public/design/2024-sep-2.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6715,7 +6715,7 @@
       "__outstatic": {
         "commit": "32a6272b2ec383d63f46b7b98c10b3bf55172e44",
         "hash": "4174169117",
-        "path": "content/design/2024-sep-3.md"
+        "path": "public/design/2024-sep-3.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6733,7 +6733,7 @@
       "__outstatic": {
         "commit": "3adc07fb12f1ba572a5b85fee08500618c2c333d",
         "hash": "382971762",
-        "path": "content/design/2024-sep-4.md"
+        "path": "public/design/2024-sep-4.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6751,7 +6751,7 @@
       "__outstatic": {
         "commit": "1170bd650e9212c278cb52e57169d208e8eed2a6",
         "hash": "382251523",
-        "path": "content/design/2024-sep-5.md"
+        "path": "public/design/2024-sep-5.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6769,7 +6769,7 @@
       "__outstatic": {
         "commit": "71a45704dcfa7b5935a7643ae1afda0df53d7ff0",
         "hash": "160558500",
-        "path": "content/design/2024-sep-6.md"
+        "path": "public/design/2024-sep-6.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6787,7 +6787,7 @@
       "__outstatic": {
         "commit": "e798c7e8642c2f22894b35a3542304e8e3fd7f0c",
         "hash": "3808343728",
-        "path": "content/design/2024-sep-7.md"
+        "path": "public/design/2024-sep-7.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6805,7 +6805,7 @@
       "__outstatic": {
         "commit": "6e61326ed36bc1cd6eee408f45aae9f86057f6ec",
         "hash": "2600605104",
-        "path": "content/design/2024-sep-8.md"
+        "path": "public/design/2024-sep-8.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6823,7 +6823,7 @@
       "__outstatic": {
         "commit": "09d8f2339531fddb7cca1c7976136c00205c1a24",
         "hash": "3708561365",
-        "path": "content/design/2024-sep-9.md"
+        "path": "public/design/2024-sep-9.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6841,7 +6841,7 @@
       "__outstatic": {
         "commit": "8943b3013adcac6e9c446702542660f5c1ccf6a9",
         "hash": "3777278714",
-        "path": "content/design/2024-sep-10.md"
+        "path": "public/design/2024-sep-10.md"
       },
       "author": {
         "name": "Praveen Juge",
@@ -6859,7 +6859,7 @@
       "__outstatic": {
         "commit": "aeae2ee7d1091f79c68fd2dfbbb3889e066a53fb",
         "hash": "1842686608",
-        "path": "content/design/2024-sep-11.md"
+        "path": "public/design/2024-sep-11.md"
       },
       "author": {
         "name": "Praveen Juge",
