@@ -1,13 +1,8 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
-import type { BlogPosting, BreadcrumbList, WithContext } from "schema-dts";
 import markdownToHtml from "../utils";
 
-export const dynamic = "force-static";
-export const revalidate = false;
-
-function getData(slug: string) {
+function getData(slug) {
 	const blog = getDocumentBySlug("blog", slug, [
 		"title",
 		"publishedAt",
@@ -21,9 +16,7 @@ function getData(slug: string) {
 	return { ...blog, content: markdownToHtml(blog.content) };
 }
 
-export async function generateMetadata({
-	params,
-}: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({params}) {
 	const blog = getData(params.slug);
 
 	return {
@@ -42,7 +35,7 @@ export async function generateMetadata({
 	};
 }
 
-export default function Blog({ params }: { params: { slug: string } }) {
+export default function Blog({ params }) {
 	const blog = getData(params.slug);
 	const formattedDate = new Date(blog.publishedAt).toLocaleDateString("en-US", {
 		year: "numeric",
@@ -50,7 +43,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
 		day: "numeric",
 	});
 
-	const jsonLd: WithContext<BlogPosting> = {
+	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "BlogPosting",
 		headline: blog.title,
@@ -70,7 +63,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
 		},
 	};
 
-	const breadJsonLd: WithContext<BreadcrumbList> = {
+	const breadJsonLd = {
 		"@context": "https://schema.org",
 		"@type": "BreadcrumbList",
 		name: blog.title,

@@ -1,9 +1,7 @@
-import profilePic from "@/public/praveenjuge.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { load } from "outstatic/server";
-
-export const dynamic = "force-static";
+import profilePic from "../public/praveenjuge.webp";
 
 const allDesigns = await (await load())
 	.find({ collection: "design" }, ["coverImage"])

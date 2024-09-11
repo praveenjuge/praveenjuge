@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { load } from "outstatic/server";
 
-export const dynamic = "force-static";
-export const revalidate = false;
-
-export const metadata: Metadata = {
+export const metadata = {
 	title: "Blog | Praveen Juge",
 };
 
