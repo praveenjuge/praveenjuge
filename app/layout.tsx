@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Person, WithContext } from "schema-dts";
 import "./globals.css";
 
-export const viewport: Viewport = { themeColor: "#ffedd5" };
+export const viewport: Viewport = { themeColor: "#f3f4f6" };
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://praveenjuge.com"),
@@ -96,11 +96,11 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={`${GeistSans.variable} text-orange-950 antialiased [font-family:var(--font-geist-sans)] [font-feature-settings:"ss02","ss03","ss09"] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation]`}
+			className={`${GeistSans.variable} text-gray-950 antialiased [font-family:var(--font-geist-sans)] [font-feature-settings:"ss02","ss03","ss09"] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation] [&_img]:bg-gray-50`}
 		>
 			<body>
 				<div
-					className="-z-10 pointer-events-none absolute inset-0 h-56 w-full select-none bg-gradient-to-b from-orange-100 to-white"
+					className="-z-10 pointer-events-none absolute inset-0 h-56 w-full select-none bg-gradient-to-b from-gray-100 to-white"
 					aria-hidden="true"
 				/>
 				<header className="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 font-medium text-sm sm:items-center md:flex-row md:justify-between md:space-y-0">
