@@ -119,16 +119,13 @@ export default function Blog({ params }) {
 				</a>
 			</span>
 			<p itemProp="description">{blog.description}</p>
-			{/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
 			<section dangerouslySetInnerHTML={{ __html: blog.content }} />
 			<script
 				type="application/ld+json"
-				// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
 			<script
 				type="application/ld+json"
-				// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadJsonLd) }}
 			/>
 		</article>
