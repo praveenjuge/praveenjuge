@@ -2,7 +2,7 @@ import { getDocumentSlugs } from "outstatic/server";
 
 const domain = "https://praveenjuge.com";
 
-export default async function sitemap() {
+export default function sitemap() {
 	// Blog List
 	const blogList = [];
 	const blogSlugs = getDocumentSlugs("blog");

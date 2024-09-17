@@ -115,7 +115,7 @@ export default function Page() {
 						href="https://mosaicimg.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
+						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-current/10 p-5"
 					>
 						<div>
 							<h3 className="font-semibold">Mosaic</h3>
@@ -123,14 +123,14 @@ export default function Page() {
 							Showcase your beautiful website in your OG images
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
 						href="https://mynaui.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
+						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-current/10 p-5"
 					>
 						<div>
 							<h3 className="font-semibold">MynaUI</h3>
@@ -138,14 +138,14 @@ export default function Page() {
 								TailwindCSS and shadcn/ui UI Kit for Figma and React.
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
 						href="https://mynaui.com/icons"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="relative flex items-start justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
+						className="relative flex items-start justify-between gap-8 overflow-hidden rounded border border-current/10 p-5"
 					>
 						<div className="-top-8 pointer-events-none absolute right-0 flex h-44 w-full select-none flex-wrap gap-2 opacity-30 sm:w-[65%] sm:rotate-[8deg] [&_svg]:size-6 [&_svg]:fill-none [&_svg]:stroke-[1.5] [&_svg]:stroke-current [&_svg]:[strokeLinecap:round] [&_svg]:[strokeLinejoin:round]">
 							<svg aria-hidden="true">
@@ -626,7 +626,7 @@ export default function Page() {
 						href="https://copybook.me/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
+						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-current/10 p-5"
 					>
 						<div>
 							<h3 className="font-semibold">Copy Book</h3>
@@ -634,14 +634,14 @@ export default function Page() {
 								Copy book is a collection of commonly used texts.
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 
 					<a
 						href="https://teak.praveenjuge.com/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-gray-200 p-5"
+						className="relative flex items-center justify-between gap-8 overflow-hidden rounded border border-current/10 p-5"
 					>
 						<div>
 							<h3 className="font-semibold">Teak</h3>
@@ -649,7 +649,7 @@ export default function Page() {
 								Mac app to curate your UI inspirations.
 							</p>
 						</div>
-						<svg role="presentation" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
+						<svg role="presentation" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg" className="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"/></svg>
 					</a>
 				</section>
 			</section>

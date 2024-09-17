@@ -24,7 +24,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@shikijs/markdown-it": "^1.17.0",
+    "@shikijs/markdown-it": "^1.17.7",
     "@tailwindcss/postcss": "next",
     "@tailwindcss/typography": "^0.5.15",
     "feed": "^4.2.2",
@@ -32,7 +32,7 @@
     "markdown-it": "^14.1.0",
     "next": "canary",
     "outstatic": "^1.4.9",
-    "postcss": "^8.4.45",
+    "postcss": "^8.4.47",
     "react": "rc",
     "react-dom": "rc",
     "tailwindcss": "next"
