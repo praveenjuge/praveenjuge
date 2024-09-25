@@ -1,6 +1,6 @@
 {
-  "commit": "153b93f355ee1579243ac566428ed74f939fa8ef",
-  "generated": "2024-09-25T15:50:22.828Z",
+  "commit": "d57dbcfbb2e811c009d256fae71f614a7dda95d1",
+  "generated": "2024-09-25T15:52:53.130Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7127,8 +7127,8 @@
     },
     {
       "__outstatic": {
-        "commit": "153b93f355ee1579243ac566428ed74f939fa8ef",
-        "hash": "2190559990",
+        "commit": "d57dbcfbb2e811c009d256fae71f614a7dda95d1",
+        "hash": "2727332744",
         "path": "public/blog/my-2024-tech-stack.md"
       },
       "author": {
@@ -7137,7 +7137,7 @@
       },
       "collection": "blog",
       "coverImage": "",
-      "description": "While building my SaaS app, Mosaic, I had to take a moment and document the tech stack I used. Here's a quick rundown of all the tools that made it happen.",
+      "description": "While building my SaaS app, mosaicimg.com, I had to take a moment and document the tech stack I used. Here's a quick rundown of all the tools that made it happen.",
       "publishedAt": "2024-09-25T15:58:55.910Z",
       "slug": "my-2024-tech-stack",
       "status": "published",
