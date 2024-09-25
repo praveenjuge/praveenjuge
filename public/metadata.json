@@ -1,6 +1,6 @@
 {
   "commit": "d57dbcfbb2e811c009d256fae71f614a7dda95d1",
-  "generated": "2024-09-25T15:52:53.130Z",
+  "generated": "2024-09-25T15:53:37.396Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7128,7 +7128,7 @@
     {
       "__outstatic": {
         "commit": "d57dbcfbb2e811c009d256fae71f614a7dda95d1",
-        "hash": "2727332744",
+        "hash": "575785700",
         "path": "public/blog/my-2024-tech-stack.md"
       },
       "author": {

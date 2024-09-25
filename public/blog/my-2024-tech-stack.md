@@ -26,4 +26,4 @@ publishedAt: '2024-09-25T15:58:55.910Z'
 - 🛠️ [**Sentry**](https://sentry.io/) – Error Monitoring
 - 📧 [**Loops**](https://loops.so/) – Marketing Emails
 
-This setup has been key to making Mosaic smooth and scalable!
+This setup has been key to making [Mosaic](https://mosaicimg.com) smooth and scalable!
