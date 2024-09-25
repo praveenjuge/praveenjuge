@@ -24,13 +24,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "@shikijs/markdown-it": "^1.17.7",
+    "@shikijs/markdown-it": "^1.18.0",
     "@tailwindcss/postcss": "next",
     "@tailwindcss/typography": "^0.5.15",
     "feed": "^4.2.2",
     "geist": "^1.3.1",
     "markdown-it": "^14.1.0",
-    "next": "canary",
+    "next": "15.0.0-canary.160",
     "outstatic": "^1.4.9",
     "postcss": "^8.4.47",
     "react": "rc",
