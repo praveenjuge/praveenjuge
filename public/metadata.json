@@ -1,6 +1,6 @@
 {
-  "commit": "8bf06ded3d6007ff2414399ae0f415bf71b8d175",
-  "generated": "2024-09-25T12:16:03.999Z",
+  "commit": "153b93f355ee1579243ac566428ed74f939fa8ef",
+  "generated": "2024-09-25T15:50:22.828Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7124,6 +7124,24 @@
       "slug": "2024-sep-25",
       "status": "published",
       "title": "2024 sep 25"
+    },
+    {
+      "__outstatic": {
+        "commit": "153b93f355ee1579243ac566428ed74f939fa8ef",
+        "hash": "2190559990",
+        "path": "public/blog/my-2024-tech-stack.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "While building my SaaS app, Mosaic, I had to take a moment and document the tech stack I used. Here's a quick rundown of all the tools that made it happen.",
+      "publishedAt": "2024-09-25T15:58:55.910Z",
+      "slug": "my-2024-tech-stack",
+      "status": "published",
+      "title": "My 2024 Tech Stack"
     }
   ]
 }
