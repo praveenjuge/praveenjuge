@@ -16,7 +16,7 @@ function getData(slug) {
 	return { ...blog, content: markdownToHtml(blog.content) };
 }
 
-export async function generateMetadata({params}) {
+export function generateMetadata({params}) {
 	const blog = getData(params.slug);
 
 	return {

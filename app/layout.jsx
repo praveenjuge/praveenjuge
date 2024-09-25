@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"
-			className={`${GeistSans.variable} text-gray-950 antialiased [font-family:var(--font-geist-sans)] [font-feature-settings:"ss02","ss03","ss09"] [font-synthesis:none] [text-rendering:optimizeLegibility] [touch-action:manipulation] [&_img]:bg-gray-50`}
+			className={`${GeistSans.variable} text-gray-950 antialiased [font-family:var(--font-geist-sans)] [font-feature-settings:"ss02","ss03","ss09"] [touch-action:manipulation] [&_img]:bg-gray-50`}
 		>
 			<body>
 				<span
