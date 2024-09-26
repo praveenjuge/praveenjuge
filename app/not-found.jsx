@@ -9,9 +9,9 @@ export default function NotFound() {
 			<p className="opacity-75">
 				If you think this is a mistake, please let me know at{" "}
 				<a
-					rel="noreferrer noopener"
 					target="_blank"
 					className="underline"
+					rel="noreferrer noopener"
 					href="https://x.com/praveenjuge"
 				>
 					Twitter
