@@ -18,17 +18,17 @@ export default function Page() {
 
 			{allDesigns.map((item, id) => (
 				<Link
-					key={item.coverImage}
 					target="_blank"
+					key={item.coverImage}
 					href={item.coverImage ?? ""}
 				>
 					<Image
 						width={612}
 						height={459}
 						priority={id === 0}
+						className="rounded"
 						alt={item.coverImage ?? ""}
 						src={item.coverImage ?? ""}
-						className="rounded"
 						loading={id > 10 ? "lazy" : "eager"}
 					/>
 				</Link>

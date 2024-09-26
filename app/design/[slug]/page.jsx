@@ -4,10 +4,7 @@ import { notFound } from "next/navigation";
 import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
 
 export default function Design({ params }) {
-	const design = getDocumentBySlug("design", params.slug, [
-		"slug",
-		"coverImage",
-	]);
+	const design = getDocumentBySlug("design", params.slug, ["slug", "coverImage"]);
 
 	if (!design) notFound();
 
