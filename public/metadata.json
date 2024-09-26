@@ -1,6 +1,6 @@
 {
-  "commit": "d57dbcfbb2e811c009d256fae71f614a7dda95d1",
-  "generated": "2024-09-25T15:53:37.396Z",
+  "commit": "85889ad1c8e88dc620d43b79c242b6fe60c63cc4",
+  "generated": "2024-09-26T10:39:27.497Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7142,6 +7142,24 @@
       "slug": "my-2024-tech-stack",
       "status": "published",
       "title": "My 2024 Tech Stack"
+    },
+    {
+      "__outstatic": {
+        "commit": "85889ad1c8e88dc620d43b79c242b6fe60c63cc4",
+        "hash": "4249388652",
+        "path": "public/design/2024-sep-26.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-sep-26-Y4Nz.jpg",
+      "description": "",
+      "publishedAt": "2024-09-26T11:12:18.059Z",
+      "slug": "2024-sep-26",
+      "status": "published",
+      "title": "2024 sep 26"
     }
   ]
 }
