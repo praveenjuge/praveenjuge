@@ -50,5 +50,6 @@ md.use(await Shiki({
 }))
 
 export default function markdownToHtml(markdown) {
-	return md.render(markdown);
+	return md.render(/* 'markdown' is passed as an argument. Any asynchronous properties of 'props' must be awaited when accessed. */
+    markdown);
 }

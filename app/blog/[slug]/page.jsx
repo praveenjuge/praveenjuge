@@ -16,10 +16,11 @@ function getData(slug) {
 	return { ...blog, content: markdownToHtml(blog.content) };
 }
 
-export function generateMetadata({params}) {
-	const blog = getData(params.slug);
+export async function generateMetadata(props) {
+    const params = await props.params;
+    const blog = getData(params.slug);
 
-	return {
+    return {
 		title: blog.title,
 		description: blog.description,
 		openGraph: {
@@ -35,15 +36,16 @@ export function generateMetadata({params}) {
 	};
 }
 
-export default function Blog({ params }) {
-	const blog = getData(params.slug);
-	const formattedDate = new Date(blog.publishedAt).toLocaleDateString("en-US", {
+export default async function Blog(props) {
+    const params = await props.params;
+    const blog = getData(params.slug);
+    const formattedDate = new Date(blog.publishedAt).toLocaleDateString("en-US", {
 		year: "numeric",
 		month: "long",
 		day: "numeric",
 	});
 
-	const jsonLd = {
+    const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "BlogPosting",
 		headline: blog.title,
@@ -63,7 +65,7 @@ export default function Blog({ params }) {
 		},
 	};
 
-	const breadJsonLd = {
+    const breadJsonLd = {
 		"@context": "https://schema.org",
 		"@type": "BreadcrumbList",
 		name: blog.title,
@@ -89,7 +91,7 @@ export default function Blog({ params }) {
 		],
 	};
 
-	return (
+    return (
 		<article
 			itemScope={true}
 			itemType="http://schema.org/BlogPosting"
