@@ -23,7 +23,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@shikijs/markdown-it": "^1.19.0",
+    "@shikijs/markdown-it": "^1.21.0",
     "@tailwindcss/postcss": "next",
     "feed": "^4.2.2",
     "geist": "^1.3.1",
