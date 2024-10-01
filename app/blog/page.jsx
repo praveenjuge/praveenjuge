@@ -2,7 +2,7 @@ import Link from "next/link";
 import { load } from "outstatic/server";
 
 export const metadata = {
-	title: "Blog | Praveen Juge",
+    title: "Blog | Praveen Juge"
 };
 
 const allBlogs = await (await load())
