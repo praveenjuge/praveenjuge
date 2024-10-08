@@ -1,11 +1,14 @@
-import { Feed } from "feed";
 import { load } from "outstatic/server";
+import { NextResponse } from 'next/server';
 import markdownToHtml from "../utils";
 
 export const dynamic = "force-static";
-const SITE_URL = "https://praveenjuge.com/";
-const SITE_AUTHOR_NAME = "Praveen Juge";
-const SITE_AUTHOR_EMAIL = "hi@praveenjuge.com";
+const SITE_URL = 'https://praveenjuge.com';
+const AUTHOR_NAME = 'Praveen Juge';
+const AUTHOR_EMAIL = 'hi@praveenjuge.com';
+const FEED_ICON = `${SITE_URL}/favicon.ico`;
+const FEED_SELF_LINK = `${SITE_URL}/blog/rss.xml`;
+const FEED_SUBTITLE = 'Praveen Juge is a designer and developer for everything on the web.';
 
 const allBlogs = await (await load())
 	.find({ collection: "blog" }, [
@@ -18,59 +21,57 @@ const allBlogs = await (await load())
 	.sort({ publishedAt: -1 })
 	.toArray();
 
-export function GET() {
-	const feed = new Feed({
-		title: SITE_AUTHOR_NAME,
-		description:
-			"Praveen Juge is a designer and developer for everything on the web.",
-		id: SITE_URL,
-		link: SITE_URL,
-		language: "en",
-		favicon: `${SITE_URL}favicon.ico`,
-		copyright: SITE_AUTHOR_NAME,
-		feedLinks: {
-			atom: `${SITE_URL}blog/rss.xml`,
-		},
-		author: {
-			name: SITE_AUTHOR_NAME,
-			email: SITE_AUTHOR_EMAIL,
-			link: SITE_URL,
-		},
-	});
+export async function GET() {
+	const feed = `<feed xmlns="http://www.w3.org/2005/Atom">
+			<id>${SITE_URL}/</id>
+			<title>${AUTHOR_NAME}</title>
+			<updated>${new Date().toISOString()}</updated>
+			<author>
+				<name>${AUTHOR_NAME}</name>
+				<email>${AUTHOR_EMAIL}</email>
+				<uri>${SITE_URL}/</uri>
+			</author>
+			<link rel="alternate" href="${SITE_URL}/"/>
+			<link rel="self" href="${FEED_SELF_LINK}"/>
+			<subtitle>${FEED_SUBTITLE}</subtitle>
+			<icon>${FEED_ICON}</icon>
+			<rights>${AUTHOR_NAME}</rights>
+			<category term="Design"/>
+			<category term="Technology"/>
+			<contributor>
+				<name>${AUTHOR_NAME}</name>
+				<email>${AUTHOR_EMAIL}</email>
+				<uri>${SITE_URL}/</uri>
+			</contributor>
+			${allBlogs
+				.map(
+					(entry) => `
+					<entry>
+						<title type="html">
+							<![CDATA[ ${entry.title} ]]>
+						</title>
+						<id>${SITE_URL}/blog/${entry.slug}</id>
+						<link href="${SITE_URL}/blog/${entry.slug}"/>
+						<updated>${new Date(entry.publishedAt).toISOString()}</updated>
+						<summary type="html">
+							<![CDATA[ ${entry.description} ]]>
+						</summary>
+						<content type="html">
+							<![CDATA[ ${entry.description + "<br />" + markdownToHtml(entry.content)} ]]>
+						</content>
+						<author>
+							<name>${AUTHOR_NAME}</name>
+							<email>${AUTHOR_EMAIL}</email>
+							<uri>${SITE_URL}/</uri>
+						</author>
+					</entry>`
+				)
+				.join('')}
+		</feed>`;
 
-	for (const post of allBlogs) {
-		const url = `${SITE_URL}blog/${post.slug}`;
-		const content = markdownToHtml(post.content);
-		feed.addItem({
-			title: post.title || "",
-			id: url,
-			link: url,
-			content: `${post.description}<br />${content}`,
-			description: post.description || "",
-			date: new Date(post.publishedAt || ""),
-			image: `https://praveenjuge.com/og/blog/${post.slug}.jpg`,
-			author: [
-				{
-					name: SITE_AUTHOR_NAME,
-					email: SITE_AUTHOR_EMAIL,
-					link: SITE_URL,
-				},
-			],
-		});
-	}
-
-	feed.addCategory("Design");
-	feed.addCategory("Technology");
-
-	feed.addContributor({
-		name: SITE_AUTHOR_NAME,
-		email: SITE_AUTHOR_EMAIL,
-		link: SITE_URL,
-	});
-
-	return new Response(feed.atom1(), {
+	return new NextResponse(feed, {
 		headers: {
-			"Content-Type": "application/xml",
+			'Content-Type': 'application/xml',
 		},
 	});
 }

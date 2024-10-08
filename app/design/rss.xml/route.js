@@ -40,7 +40,7 @@ export async function GET() {
 				.map(
 					(entry) => `
 					<entry>
-						<title type="html"><![CDATA[ ${entry.title} ]]></title>
+						<title type="html"><![CDATA[ ${entry.title || "Empty Title"} ]]></title>
 						<id>${SITE_URL}/design/${entry.slug}</id>
 						<link href="${SITE_URL}/design/${entry.slug}"/>
 						<updated>${new Date(entry.publishedAt).toISOString()}</updated>
@@ -56,7 +56,7 @@ export async function GET() {
 
 	return new NextResponse(feed, {
 		headers: {
-			'Content-Type': 'application/atom+xml',
+			'Content-Type': 'application/xml',
 		},
 	});
 }
