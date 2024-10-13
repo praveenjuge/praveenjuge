@@ -1,6 +1,6 @@
 {
-  "commit": "04e37a1743c6a41352fefc8e09797899bc7348d5",
-  "generated": "2024-10-13T07:29:15.754Z",
+  "commit": "5e447bb95999a3f667d4cb70ea562f1d19295278",
+  "generated": "2024-10-13T19:12:40.095Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7466,6 +7466,24 @@
       "slug": "2024-oct-13",
       "status": "published",
       "title": "2024 oct 13"
+    },
+    {
+      "__outstatic": {
+        "commit": "5e447bb95999a3f667d4cb70ea562f1d19295278",
+        "hash": "2663062023",
+        "path": "public/blog/setup-a-rss-feed-with-nextjs.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-10-13T19:34:36.321Z",
+      "slug": "setup-a-rss-feed-with-nextjs",
+      "status": "published",
+      "title": "Setup a RSS Feed with NextJS"
     }
   ]
 }
