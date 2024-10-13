@@ -16,7 +16,7 @@ I recently moved my RSS feed from using a custom package to a custom route file.
 
 First, create a new file at `blog/rss.xml/route.js` and add the following code:
 
-```
+```js
 import { load } from "outstatic/server";
 import { NextResponse } from 'next/server';
 import markdownToHtml from "../utils";
