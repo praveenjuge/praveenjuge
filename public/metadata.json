@@ -1,6 +1,6 @@
 {
-  "commit": "2b7e3de9898e6999e733e4d1d0da662fa9d72d10",
-  "generated": "2024-10-14T06:09:54.752Z",
+  "commit": "300ef11cfb2264e35fd71cea720a69579ac6287b",
+  "generated": "2024-10-14T11:12:29.028Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7484,6 +7484,24 @@
       "slug": "setup-a-rss-feed-with-nextjs",
       "status": "published",
       "title": "Setup a RSS Feed with NextJS"
+    },
+    {
+      "__outstatic": {
+        "commit": "300ef11cfb2264e35fd71cea720a69579ac6287b",
+        "hash": "265479569",
+        "path": "public/design/2024-oct-14.md"
+      },
+      "author": {
+        "name": "Praveen Juge",
+        "picture": "https://avatars.githubusercontent.com/u/13696888?v=4"
+      },
+      "collection": "design",
+      "coverImage": "/images/2024-oct-14-M2OT.jpg",
+      "description": "",
+      "publishedAt": "2024-10-14T11:45:14.667Z",
+      "slug": "2024-oct-14",
+      "status": "published",
+      "title": "2024 oct 14"
     }
   ]
 }
