@@ -1,6 +1,6 @@
 {
-  "commit": "5e447bb95999a3f667d4cb70ea562f1d19295278",
-  "generated": "2024-10-13T19:12:40.095Z",
+  "commit": "2b7e3de9898e6999e733e4d1d0da662fa9d72d10",
+  "generated": "2024-10-14T06:09:54.752Z",
   "metadata": [
     {
       "__outstatic": {
@@ -7469,8 +7469,8 @@
     },
     {
       "__outstatic": {
-        "commit": "5e447bb95999a3f667d4cb70ea562f1d19295278",
-        "hash": "2663062023",
+        "commit": "2b7e3de9898e6999e733e4d1d0da662fa9d72d10",
+        "hash": "20033653",
         "path": "public/blog/setup-a-rss-feed-with-nextjs.md"
       },
       "author": {
@@ -7479,7 +7479,7 @@
       },
       "collection": "blog",
       "coverImage": "",
-      "description": "",
+      "description": "I recently moved my RSS feed from using a custom package to a custom route file. Here's a simple guide to help you set up your own RSS feed.",
       "publishedAt": "2024-10-13T19:34:36.321Z",
       "slug": "setup-a-rss-feed-with-nextjs",
       "status": "published",
