@@ -62,17 +62,15 @@ export async function GET() {
 		</contributor>
 		${allBlogs.map((entry) => `
 			<entry>
-				<title type="html">
-					<![CDATA[ ${entry.title} ]]>
-				</title>
+				<title type="html">${entry.title}</title>
 				<id>${SITE_URL}/blog/${entry.slug}</id>
 				<link href="${SITE_URL}/blog/${entry.slug}"/>
 				<updated>${new Date(entry.publishedAt).toISOString()}</updated>
 				<summary type="html">
-					<![CDATA[ ${entry.description} ]]>
+					${entry.description}
 				</summary>
 				<content type="html">
-					<![CDATA[ ${entry.description + "<br />" + markdownToHtml(entry.content)} ]]>
+					${markdownToHtml(entry.content)}
 				</content>
 				<author>
 					<name>${AUTHOR_NAME}</name>
