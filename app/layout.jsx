@@ -7,20 +7,24 @@ export const viewport = { themeColor: "#e5e7eb" };
 export const metadata = {
     metadataBase: new URL("https://praveenjuge.com"),
     title: "Personal Website | Praveen Juge",
+
     description:
 		"Praveen Juge is a designer and developer for everything on the web.",
+
     applicationName: "Personal Website | Praveen Juge",
     publisher: "Praveen Juge",
     creator: "Praveen Juge",
     keywords: ["praveen", "praveenjuge", "juge"],
     category: "UI Designer",
     referrer: "same-origin",
+
     authors: [
 			{
 				name: "Praveen Juge",
 				url: "https://praveenjuge.com",
 			},
 		],
+
     robots: {
 			index: true,
 			follow: true,
@@ -29,9 +33,11 @@ export const metadata = {
 				follow: true,
 			},
 		},
+
     alternates: {
 			canonical: "./",
 		},
+
     verification: {
 			other: {
 				me: [
@@ -46,12 +52,14 @@ export const metadata = {
 				],
 			},
 		},
+
     openGraph: {
 			siteName: "Personal Website | Praveen Juge",
 			url: "./",
 			locale: "en_US",
 			type: "website",
 		},
+
     twitter: {
 			card: "summary_large_image",
 			site: "@praveenjuge",
