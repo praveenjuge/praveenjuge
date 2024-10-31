@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://praveenjuge.com',
+    site: 'https://astro.praveenjuge.com',
     integrations: [sitemap()],
     vite: {
         plugins: [tailwindcss()],
