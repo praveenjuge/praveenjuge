@@ -2,7 +2,6 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
-/.next/
 /out/
 /build
 .DS_Store
@@ -13,3 +12,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .vercel
+dist/
+.astro/

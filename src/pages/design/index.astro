@@ -1,0 +1,30 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../Layout.astro";
+import { Image } from "astro:assets";
+
+const posts: CollectionEntry<"design">[] = (await getCollection("design")).sort(
+	(a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
+		b.data.publishedAt?.valueOf() - a.data.publishedAt?.valueOf(),
+);
+---
+
+<Layout title="Designs | Praveen Juge">
+	<section class="mx-auto flex max-w-xl flex-col gap-6 p-4">
+		<h2 class="font-bold">Designs</h2>
+		{
+			posts.map((post, id) => (
+				<a href={post.data.coverImage} target="_blank">
+					<Image
+						width={612}
+						height={459}
+						class="rounded"
+						alt={post.data.coverImage ?? ""}
+						src={post.data.coverImage ?? ""}
+						loading={id > 10 ? "lazy" : "eager"}
+					/>
+				</a>
+			))
+		}
+	</section>
+</Layout>

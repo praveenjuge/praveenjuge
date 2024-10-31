@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 
 Host: https://praveenjuge.com
-Sitemap: https://praveenjuge.com/sitemap.xml
+Sitemap: https://praveenjuge.com/sitemap-index.xml
