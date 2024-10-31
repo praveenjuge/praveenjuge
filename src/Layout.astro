@@ -21,12 +21,10 @@ import {
 } from "./consts";
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
-const {
-  title = SITE_TITLE,
-  description = SITE_DESCRIPTION,
-  coverImage,
-} = Astro.props;
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+const coverImage = Astro.url.pathname.match(/^\/blog\/[^/]+$/)
+  ? `https://mosaicimg.com/use?url=${canonicalURL}`
+  : new URL("/opengraph-image.jpg", Astro.url);
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -119,10 +117,7 @@ const jsonLd = {
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="2400" />
     <meta property="og:image:height" content="1350" />
-    <meta
-      property="og:image"
-      content={coverImage || new URL("/opengraph-image.jpg", Astro.url)}
-    />
+    <meta property="og:image" content={coverImage} />
     <meta property="og:type" content="website" />
 
     <!-- Twitter -->
@@ -134,10 +129,7 @@ const jsonLd = {
     <meta property="twitter:image:type" content="image/jpeg" />
     <meta property="twitter:image:width" content="2400" />
     <meta property="twitter:image:height" content="1350" />
-    <meta
-      property="twitter:image"
-      content={coverImage || new URL("/opengraph-image.jpg", Astro.url)}
-    />
+    <meta property="twitter:image" content={coverImage} />
     <meta property="twitter:url" content={canonicalURL} />
 
     <!-- Fonts -->
