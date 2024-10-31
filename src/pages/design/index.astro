@@ -14,13 +14,13 @@ const posts: CollectionEntry<"design">[] = (await getCollection("design")).sort(
 		<h2 class="font-bold">Designs</h2>
 		{
 			posts.map((post, id) => (
-				<a href={post.data.coverImage} target="_blank">
+				<a href={post.data.coverImage.src} target="_blank">
 					<Image
-						width={612}
-						height={459}
 						class="rounded"
-						alt={post.data.coverImage ?? ""}
-						src={post.data.coverImage ?? ""}
+						width={612 * 2}
+						height={459 * 2}
+						src={post.data.coverImage}
+						alt={post.data.coverImage.src}
 						loading={id > 10 ? "lazy" : "eager"}
 					/>
 				</a>

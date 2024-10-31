@@ -45,19 +45,19 @@ After I set the main purpose for each device, I got into removing all the other 
 
 I ended up with a total of 8 essential apps on my phone. I have rooted my phone, so I could remove Play Store and other unneeded apps. I installed third-party apps with APK from trusted sources which I manually update once a month.
 
-![Screenshot of apps in my Phone](/images/digital-minimalism-phone.png)
+![Screenshot of apps in my Phone](../../images/digital-minimalism-phone.png)
 
 ### iPad
 
 iPad is my main entertainment device. Apart from some, I didn’t have the need to install apps that are already available in the browser.
 
-![Screenshot of apps in my iPad](/images/digital-minimalism-ipad.jpg)
+![Screenshot of apps in my iPad](../../images/digital-minimalism-ipad.jpg)
 
 ### MacBook
 
 As my work device, it has everything I need to get into a flow, attend meetings, and collaborate with my coworkers.
 
-![Screenshot of apps in my MacBook](/images/digital-minimalism-mac.png)
+![Screenshot of apps in my MacBook](../../images/digital-minimalism-mac.png)
 
 ## Reduce screen time
 
