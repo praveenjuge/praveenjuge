@@ -1,14 +1,14 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../Layout.astro";
-import { AUTHOR_NAME, AUTHOR_URL } from "../../consts";
+import { AUTHOR_IMAGE, AUTHOR_NAME, AUTHOR_URL } from "../../consts";
 
 export async function getStaticPaths() {
-	const posts: CollectionEntry<"blog">[] = await getCollection("blog");
-	return posts.map((post: CollectionEntry<"blog">) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+  const posts: CollectionEntry<"blog">[] = await getCollection("blog");
+  return posts.map((post: CollectionEntry<"blog">) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
 }
 type Props = CollectionEntry<"blog">;
 
@@ -16,13 +16,59 @@ const post = Astro.props;
 const { slug } = Astro.params;
 const { title, publishedAt, description } = post.data;
 const { Content } = await post.render();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  datePublished: publishedAt,
+  dateModified: publishedAt,
+  image: `https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${slug}`,
+  author: {
+    "@type": "Person",
+    name: AUTHOR_NAME,
+    url: AUTHOR_URL,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: AUTHOR_NAME,
+    url: AUTHOR_URL,
+    logo: AUTHOR_IMAGE,
+  },
+};
+
+const breadJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  name: title,
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: AUTHOR_URL,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+      item: `${AUTHOR_URL}/blog`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: title,
+      item: `${AUTHOR_URL}/blog/${slug}`,
+    },
+  ],
+};
 ---
 
 <Layout {...post.data}>
-	<article
-		itemscope={true}
-		itemtype="http://schema.org/BlogPosting"
-		class="p-4
+  <article
+    itemscope={true}
+    itemtype="http://schema.org/BlogPosting"
+    class="p-4
 			mx-auto
 			max-w-xl
 			leading-7
@@ -181,49 +227,52 @@ const { Content } = await post.render();
 			[&_tfoot_td:first-child]:pl-0
 			[&_tbody_td:last-child]:pr-0
 			[&_tfoot_td:last-child]:pr-0"
-	>
-		<p class="!mt-0">
-			Written on{" "}
-			<time itemprop="datePublished" datetime={publishedAt.toISOString()}>
-				{
-					publishedAt.toLocaleDateString("en-us", {
-						year: "numeric",
-						month: "long",
-						day: "numeric",
-					})
-				}
-			</time>
-		</p>
-		<h1
-			class="text-balance tracking-tighter text-gray-900 font-extrabold text-4xl mt-0 mb-[0.8888889em]"
-			itemprop="headline"
-		>
-			{title}
-		</h1>
-		<meta
-			itemprop="image"
-			content={`https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${slug}`}
-		/>
-		<span
-			itemscope={true}
-			itemprop="author"
-			class="sr-only"
-			itemtype="https://schema.org/Person"
-		>
-			<a itemprop="url" href={AUTHOR_URL}>
-				<span itemprop="name">{AUTHOR_NAME}</span>
-			</a>
-		</span>
-		<p itemprop="description">
-			{description}
-		</p>
-		<Content />
-		<!-- <script
-			type="application/ld+json"
-			dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
-		<script
-			type="application/ld+json"
-			dangerouslySetInnerHTML={{ __html: JSON.stringify(breadJsonLd) }}
-		></script> -->
-	</article>
+  >
+    <p class="!mt-0">
+      Written on{" "}
+      <time itemprop="datePublished" datetime={publishedAt.toISOString()}>
+        {
+          publishedAt.toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
+        }
+      </time>
+    </p>
+    <h1
+      class="text-balance tracking-tighter text-gray-900 font-extrabold text-4xl mt-0 mb-[0.8888889em]"
+      itemprop="headline"
+    >
+      {title}
+    </h1>
+    <meta
+      itemprop="image"
+      content={`https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${slug}`}
+    />
+    <span
+      itemscope={true}
+      itemprop="author"
+      class="sr-only"
+      itemtype="https://schema.org/Person"
+    >
+      <a itemprop="url" href={AUTHOR_URL}>
+        <span itemprop="name">{AUTHOR_NAME}</span>
+      </a>
+    </span>
+    <p itemprop="description">
+      {description}
+    </p>
+    <Content />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(jsonLd)}
+    />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(breadJsonLd)}
+    />
+  </article>
 </Layout>

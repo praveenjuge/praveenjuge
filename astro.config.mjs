@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-    site: 'https://astro.praveenjuge.com',
+    site: 'https://praveenjuge.com',
     prefetch: {
         prefetchAll: true,
         defaultStrategy: 'load'
