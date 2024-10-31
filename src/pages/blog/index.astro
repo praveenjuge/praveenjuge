@@ -1,0 +1,19 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../Layout.astro";
+
+const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
+	(a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+		b.data.publishedAt?.valueOf() - a.data.publishedAt?.valueOf(),
+);
+---
+
+<Layout title="Blog | Praveen Juge">
+	<section class="mx-auto flex max-w-xl flex-col gap-4 p-4 font-medium">
+		<h2 class="font-bold">
+			Blog <span> — </span>
+			<a href="/blog/rss.xml" class="underline"> RSS Feed </a>
+		</h2>
+		{posts.map((post) => <a href={`/blog/${post.slug}`}>{post.data.title}</a>)}
+	</section>
+</Layout>

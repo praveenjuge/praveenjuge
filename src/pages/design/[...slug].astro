@@ -1,0 +1,30 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../Layout.astro";
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+	const posts: CollectionEntry<"design">[] = await getCollection("design");
+	return posts.map((post: CollectionEntry<"design">) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<"design">;
+const post = Astro.props;
+---
+
+<Layout {...post.data}>
+	<article class="mx-auto flex max-w-xl flex-col gap-6 p-4 font-medium">
+		<a href="/design">← All Designs</a>
+		<a target="_blank" href={post.data.coverImage ?? ""}>
+			<Image
+				width={700}
+				height={1000}
+				alt={post.data.coverImage ?? ""}
+				src={post.data.coverImage ?? ""}
+			/>
+		</a>
+	</article>
+</Layout>
