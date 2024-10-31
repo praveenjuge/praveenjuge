@@ -21,8 +21,12 @@ import {
 } from "./consts";
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
-const coverImage = Astro.url.pathname.match(/^\/blog\/[^/]+$/)
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  mosaic,
+} = Astro.props;
+const coverImage = mosaic
   ? `https://mosaicimg.com/use?url=${canonicalURL}`
   : new URL("/opengraph-image.jpg", Astro.url);
 
