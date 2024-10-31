@@ -4,7 +4,7 @@ export const SITE_COLOR = '#e5e7eb';
 
 export const AUTHOR_NAME = 'Praveen Juge';
 export const AUTHOR_HANDLE = '@praveenjuge';
-export const AUTHOR_URL = 'https://praveenjuge.com';
+export const AUTHOR_URL = 'https://astro.praveenjuge.com';
 export const AUTHOR_EMAIL = 'hi@praveenjuge.com';
 export const AUTHOR_X = 'https://x.com/praveenjuge';
 export const AUTHOR_TWITTER = 'https://twitter.com/praveenjuge';
