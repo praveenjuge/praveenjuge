@@ -18,12 +18,13 @@ const post = Astro.props;
 <Layout {...post.data}>
 	<article class="mx-auto flex max-w-xl flex-col gap-6 p-4 font-medium">
 		<a href="/design">← All Designs</a>
-		<a target="_blank" href={post.data.coverImage ?? ""}>
+		<a target="_blank" href={post.data.coverImage.src}>
 			<Image
-				width={700}
-				height={1000}
-				alt={post.data.coverImage ?? ""}
-				src={post.data.coverImage ?? ""}
+				width={612 * 2}
+				height={459 * 2}
+				quality={100}
+				alt={post.data.coverImage.src}
+				src={post.data.coverImage}
 			/>
 		</a>
 	</article>

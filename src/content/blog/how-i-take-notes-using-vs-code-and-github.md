@@ -16,7 +16,7 @@ I got this whole idea when GitHub made private repo free for personal use. I sim
 
 Now, I just have to push to the repo whenever I make a change to my files. I know it would lead to many unnecessary commits but if I want I can squash commits anytime.
 
-![Screenshot of Github Page](/images/how-i-take-notes-using-vs-code-and-github-2.png)
+![Screenshot of Github Page](../../images/how-i-take-notes-using-vs-code-and-github-2.png)
 
 Be sure to clone it locally to take notes on.
 
@@ -26,7 +26,7 @@ Now to the editor, I like to write my notes on markdown format cause it's easily
 
 I already use VS Code for development and it has a sweet markdown viewer, so we will be using that for editing the notes.
 
-![Screenshot of VS Code Markdown Editor](/images/how-i-take-notes-using-vs-code-and-github-8.png)
+![Screenshot of VS Code Markdown Editor](../../images/how-i-take-notes-using-vs-code-and-github-8.png)
 
 And I also use these extensions:
 
@@ -72,30 +72,30 @@ After some days, I noticed that starting up VS Code and going to my notes folder
 
 So I made a automator script to open my notes in VS Code with a keyboard shortcut from any application.
 
-![Screenshot of Menu Bar with Shortcuts](/images/how-i-take-notes-using-vs-code-and-github-1.png)
+![Screenshot of Menu Bar with Shortcuts](../../images/how-i-take-notes-using-vs-code-and-github-1.png)
 
 You can reproduce it by:
 
 1. Open Automator App
 2. Create New Quick Action
 
-   ![Screenshot of New Quick Action](/images/how-i-take-notes-using-vs-code-and-github-3.png)
+   ![Screenshot of New Quick Action](../../images/how-i-take-notes-using-vs-code-and-github-3.png)
 
 3. Change `Workflow receives current` to no input in any application
 
-   ![Screenshot of Workflow receives current](/images/how-i-take-notes-using-vs-code-and-github-4.png)
+   ![Screenshot of Workflow receives current](../../images/how-i-take-notes-using-vs-code-and-github-4.png)
 
 4. Drag Run Shell Script from the sidebar to the workflow pane
 
-   ![Screenshot of Run Shell Script](/images/how-i-take-notes-using-vs-code-and-github-5.png)
+   ![Screenshot of Run Shell Script](../../images/how-i-take-notes-using-vs-code-and-github-5.png)
 
 5. Add `opennotes` to the text box
 
-   ![Screenshot of text box](/images/how-i-take-notes-using-vs-code-and-github-6.png)
+   ![Screenshot of text box](../../images/how-i-take-notes-using-vs-code-and-github-6.png)
 
 6. Now go to System Preferences > Keyboard > Shortcuts and Services in the left pane. Find the service you just created, it should be under General.
 
-   ![Screenshot of System Preferences](/images/how-i-take-notes-using-vs-code-and-github-7.png)
+   ![Screenshot of System Preferences](../../images/how-i-take-notes-using-vs-code-and-github-7.png)
 
 7. You should see add shortcut when you hover over it, I have used `CMD + SHIFT + '` as my shortcut.
 

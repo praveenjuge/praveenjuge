@@ -107,6 +107,6 @@ Next, add the following to `assets/css/main.css` to get the sweet tailwind css o
 
 Now, if you run `hugo server` in your terminal, you should see this:
 
-![Screenshot of hugo site with tailwind styles](/images/install-tailwind-on-hugo-1.png)
+![Screenshot of hugo site with tailwind styles](../../images/install-tailwind-on-hugo-1.png)
 
 That's all, tailwind css is integrated into your hugo site!

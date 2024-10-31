@@ -16,7 +16,7 @@ publishedAt: '2024-06-22T12:58:14.522Z'
 
 Assassin's Creed Odyssey is set in ancient Greece, a setting that is both rich and immersive. The game allows you to step into the shoes of Cassandra (or Alexios, but Cassandra is canonically correct). Cassandra's character is compelling, with her interactions with historical figures and philosophers adding depth to the storyline. The main plot revolves around her journey through Greece, reuniting with her family, and facing numerous challenges.
 
-**![](/images/vfxwpam-A2NT.jpeg)**
+**![](../../images/vfxwpam-A2NT.jpeg)**
 
 Despite its engaging storyline, some reviews note that the main plot can feel a bit disjointed due to the game's massive scope. The sheer size of the world sometimes detracts from the narrative coherence, whisking players from one end of Greece to the other without much time to develop characters and relationships deeply.
 
@@ -24,23 +24,23 @@ Despite its engaging storyline, some reviews note that the main plot can feel a 
 
 The gameplay in Odyssey is engaging, with a variety of activities to keep you occupied. The cultist hunting is a standout feature, providing a sense of mystery and challenge as you uncover and eliminate members of the Cult of Kosmos. The combat system is robust, with a range of abilities and a leveling system that allows for customization and growth. However, the stealth mechanics felt a bit lacking. While stealth is a core aspect of the Assassin's Creed franchise, Odyssey leans more towards direct combat, which might disappoint purists looking for a more traditional stealth experience.
 
-**![](/images/vg06olq-U0MD.jpeg)**
+**![](../../images/vg06olq-U0MD.jpeg)**
 
 Odyssey also introduces a new Mercenary system which adds an extra layer of challenge and excitement to the game. The naval combat, a beloved feature from Black Flag, allows players to engage in epic sea battles.
 
 **Graphics and Sound**
 
-**![](/images/ipcleoj-E0Nz.jpeg)**
+**![](../../images/ipcleoj-E0Nz.jpeg)**
 
 One of the most breathtaking aspects of Odyssey is its graphics. The depiction of ancient Greece is stunning, with beautiful landscapes, detailed architecture, and vibrant colors that make exploration a joy. The music complements the setting perfectly, enhancing the atmosphere and immersion.
 
-![](/images/xcjgfug-E4MD.jpeg)
+![](../../images/xcjgfug-E4MD.jpeg)
 
 **Verdict**
 
 As a story-driven gamer, I found Odyssey to be one of the better narratives in the series. Cassandra's arc, the family dynamics, and the rich historical context all come together to create a compelling experience. Despite some shortcomings in stealth, the overall package is impressive. I would rate Assassin's Creed Odyssey a 8 or 9 out of 10.
 
-![](/images/mr2vtyq-cxNj.jpeg)
+![](../../images/mr2vtyq-cxNj.jpeg)
 
 ## Assassin's Creed Valhalla
 
@@ -48,17 +48,17 @@ As a story-driven gamer, I found Odyssey to be one of the better narratives in t
 
 Valhalla takes a different approach, setting the stage in the Viking era. You play as Eivor, a Viking warrior who travels to England to establish a new settlement. The game blends historical and mythical elements, including trips to Asgard and Jotunheim, which, while interesting, sometimes felt out of place.
 
-![](/images/uprryf8-g4OT.jpeg)
+![](../../images/uprryf8-g4OT.jpeg)
 
 The story revolves around building alliances across England, with each region offering unique narratives and challenges. However, the mission structure can feel repetitive, with many tasks boiling down to raiding and pillaging, which can get monotonous over time.
 
-![](/images/s6u0qkl-c5Mz.jpeg)
+![](../../images/s6u0qkl-c5Mz.jpeg)
 
 **Gameplay**
 
 The gameplay in Valhalla is a mix of traditional Viking raids and Assassin's Creed's stealth mechanics. This combination can feel a bit jarring as the two styles clash. The game's structure revolves around building alliances across England, with each region offering unique stories and challenges. However, the repetition in missions and the overall pacing can be a bit of a drag.
 
-![](/images/lil1c7t-A0Mz.jpeg)
+![](../../images/lil1c7t-A0Mz.jpeg)
 
 Valhalla does introduce some improvements in stealth mechanics compared to Odyssey, but it still struggles to balance the Viking's brute force with the Assassin's finesse. The combat system is more refined, and the inclusion of settlement building adds a new strategic layer to the gameplay.
 
@@ -66,13 +66,13 @@ Valhalla does introduce some improvements in stealth mechanics compared to Odyss
 
 Valhalla shines in its environmental design. From the snowy landscapes of Norway to the lush fields of England, the game is visually stunning. The sound design is equally impressive, with a score that captures the Viking spirit and enhances the immersion.
 
-![](/images/lzkhfjm-IyMT.jpeg)
+![](../../images/lzkhfjm-IyMT.jpeg)
 
 **Verdict**
 
 While Valhalla has its moments, it doesn't quite reach the heights of Odyssey for me. The clash between Viking combat and stealth, the repetitive mission structure, and the less compelling story make it less enjoyable. I would rate Assassin's Creed Valhalla around 6 to 7 out of 10.
 
-![](/images/2yiszpn-Y5Mj.jpeg)
+![](../../images/2yiszpn-Y5Mj.jpeg)
 
 ### Final Thoughts
 

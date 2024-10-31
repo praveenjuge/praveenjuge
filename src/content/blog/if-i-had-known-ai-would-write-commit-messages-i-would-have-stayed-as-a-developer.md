@@ -10,16 +10,16 @@ description: Recently, I stumbled upon OpenCommit, a package that generates
   commit messages based on the files changed with GPT. Now, my skin is clearer,
   I walk with a brisk step, and I appreciate nature more. If this is what AI
   does for us, I'll welcome it with open hands.
-coverImage: /images/ai-commit.jpg
+coverImage: ../../images/ai-commit.jpg
 ---
 
 My commit messages last week:
 
-![Bunch of commits with the same title: Fixes](/images/cleanshot-2023-03-23-at-00.33.32-2x.png)
+![Bunch of commits with the same title: Fixes](../../images/cleanshot-2023-03-23-at-00.33.32-2x.png)
 
 My commit messages now:
 
-![Well detailed commit messages](/images/cleanshot-2023-03-23-at-00.22.48-2x.png)
+![Well detailed commit messages](../../images/cleanshot-2023-03-23-at-00.22.48-2x.png)
 
 I've always admired how other people in popular open source projects and some of my peers take the time to write detailed commit messages and PR requests. In the past, I would often be impatient and write something quickly just to get it out of the way.
 

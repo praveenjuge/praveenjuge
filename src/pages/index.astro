@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
+import myPhoto from "../images/praveenjuge.jpg";
 
 const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
 	.sort(
@@ -30,10 +31,10 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
         </a> */
 		}
 		<Image
-			width={100}
-			height={100}
+			width={1500}
+			height={1500}
+			src={myPhoto}
 			loading="eager"
-			src="/praveenjuge.webp"
 			alt="Photo of Praveen Juge"
 			class="h-20 w-20 rounded-full bg-center bg-cover object-cover brightness-105"
 		/>
@@ -75,11 +76,11 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
 			{
 				designs.map((item) => (
 					<Image
-						width={384}
-						height={288}
+						width={612 * 2}
+						height={459 * 2}
 						loading={"eager"}
-						alt={item.data.coverImage ?? ""}
-						src={item.data.coverImage ?? ""}
+						alt={item.data.coverImage.src}
+						src={item.data.coverImage}
 						class="even:-rotate-2 block min-h-72 w-96 min-w-96 rounded bg-cover object-cover ring-4 ring-white odd:rotate-2"
 					/>
 				))

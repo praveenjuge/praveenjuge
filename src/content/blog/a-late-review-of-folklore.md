@@ -10,7 +10,7 @@ coverImage: ''
 publishedAt: '2023-12-03T16:58:50.702Z'
 ---
 
-![](/images/taylor-evermore-resized.jpg-UxOT.webp)
+![](../../images/taylor-evermore-resized.jpg-UxOT.webp)
 
 ## The Unique Charm of Folklore
 

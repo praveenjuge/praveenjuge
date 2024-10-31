@@ -5,6 +5,10 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
     site: 'https://astro.praveenjuge.com',
+    prefetch: {
+        prefetchAll: true,
+        defaultStrategy: 'load'
+    },
     integrations: [sitemap()],
     vite: {
         plugins: [tailwindcss()],
