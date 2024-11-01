@@ -1,12 +1,6 @@
 ---
 title: 'Open Source Tips'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'open-source-tips'
 description: 'Imagine the open source community as a bustling city, alive with people sharing, learning, and creating together. It''s an exciting place for both experienced developers and newcomers. Like any new adventure, knowing a few essential tips can make your journey smoother and more rewarding.'
-coverImage: ''
 publishedAt: '2024-01-20T18:06:29.949Z'
 ---
 

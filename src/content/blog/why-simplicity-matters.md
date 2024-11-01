@@ -1,12 +1,6 @@
 ---
 title: 'Why Simplicity Matters'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'why-simplicity-matters'
 description: 'Simplicity in design makes technology accessible and products intuitive, focusing on user needs and usability. '
-coverImage: ''
 publishedAt: '2024-01-23T18:50:14.498Z'
 ---
 

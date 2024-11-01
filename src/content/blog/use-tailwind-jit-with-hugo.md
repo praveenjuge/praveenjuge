@@ -1,9 +1,5 @@
 ---
 title: 'Use Tailwind JIT with Hugo'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 publishedAt: 2021-06-06T09:27:04+05:30
 description: "Tailwind released a new CLI which made JIT watch mode possible. We can use it to integrate JIT into a Hugo site. Let's see how to do that."
 ---

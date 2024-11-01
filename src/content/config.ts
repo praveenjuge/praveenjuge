@@ -1,32 +1,21 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-	type: 'content',
-	schema: ({ image }) => z.object({
+	loader: glob({ pattern: '**\/[^_]*.md', base: "./src/content/blog" }),
+	schema: z.object({
 		title: z.string(),
-		description: z.string().optional(),
-		status: z.enum(['published', 'draft']).optional(),
-		publishedAt: z.coerce.date(),
-		coverImage: image().optional().or(z.string().optional()),
-		author: z.object({
-			name: z.string().optional(),
-			picture: z.string().optional(),
-		}).optional(),
+		description: z.string(),
+		publishedAt: z.coerce.date()
 	}),
 });
 
 const design = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**\/[^_]*.md', base: "./src/content/design" }),
 	schema: ({ image }) => z.object({
-		title: z.string().optional(),
-		description: z.string().optional(),
-		status: z.enum(['published', 'draft']).optional(),
-		publishedAt: z.coerce.date(),
+		title: z.string(),
 		coverImage: image(),
-		author: z.object({
-			name: z.string().optional(),
-			picture: z.string().optional(),
-		}).optional(),
+		publishedAt: z.coerce.date()
 	}),
 });
 

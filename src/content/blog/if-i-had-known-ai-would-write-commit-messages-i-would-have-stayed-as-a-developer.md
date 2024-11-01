@@ -1,16 +1,10 @@
 ---
-title: If I had known AI would write commit messages, I would have stayed as a
-  developer.
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
+title: If I had known AI would write commit messages, I would have stayed as a developer.
 publishedAt: 2023-03-22T19:04:12.370Z
 description: Recently, I stumbled upon OpenCommit, a package that generates
   commit messages based on the files changed with GPT. Now, my skin is clearer,
   I walk with a brisk step, and I appreciate nature more. If this is what AI
   does for us, I'll welcome it with open hands.
-coverImage: ../../images/ai-commit.jpg
 ---
 
 My commit messages last week:

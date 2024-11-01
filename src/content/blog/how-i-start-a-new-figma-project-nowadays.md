@@ -1,12 +1,6 @@
 ---
 title: 'How I Start a New Figma Project Nowadays'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'how-i-start-a-new-figma-project-nowadays'
 description: 'Today, I want to share with you how I start a new Figma project nowadays, whether it''s for work or a personal endeavor. Over time, I''ve honed a process that revolves around a few key tools and design systems that make my workflow efficient and enjoyable. Let’s dive in!'
-coverImage: ''
 publishedAt: '2024-06-18T19:16:52.660Z'
 ---
 

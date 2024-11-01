@@ -1,8 +1,5 @@
 ---
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
+title: 'cookies'
 publishedAt: 2023-10-31T11:05:09Z
 coverImage: ../../images/cookies.png
 ---

@@ -1,12 +1,6 @@
 ---
 title: 'Review of Assassin''s Creed Odyssey and Valhalla'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'review-of-assassin-s-creed-odyssey-and-valhalla'
 description: 'After spending over 100 hours on Assassin''s Creed Odyssey and Assassin''s Creed Valhalla, I have a lot to share. Historically, I''ve enjoyed most of the Assassin''s Creed games, but these two, in particular, have left a lasting impression on me.'
-coverImage: ''
 publishedAt: '2024-06-22T12:58:14.522Z'
 ---
 

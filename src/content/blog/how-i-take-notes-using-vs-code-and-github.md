@@ -1,9 +1,5 @@
 ---
 title: 'How I take Notes using VS Code and GitHub'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: 'I have used dozens of note-taking apps, read lots and lots of hacker news threads on how different people organize their notes and finally settled on VS Code as the editor and GitHub Repo as the storage.'
 publishedAt: 2020-05-26T16:07:25+00:00
 ---

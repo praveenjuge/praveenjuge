@@ -27,8 +27,8 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/sitemap": "^3.2.1",
     "@tailwindcss/vite": "next",
-    "astro": "^4.16.7",
+    "astro": "beta",
     "tailwindcss": "next",
-    "typescript": "^5.6.3"
+    "typescript": "next"
   }
 }

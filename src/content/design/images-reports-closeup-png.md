@@ -1,8 +1,5 @@
 ---
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
+title: 'reports-closeup'
 publishedAt: 2023-03-25T18:35:06.074Z
 coverImage: ../../images/reports-closeup.png
 ---

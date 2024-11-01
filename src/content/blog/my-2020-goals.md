@@ -1,9 +1,5 @@
 ---
 title: 'My 2020 Goals'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 publishedAt: 2020-01-07T04:01:53.420Z
 description: "Another year, another set of goals to keep this year interesting. Last year I failed almost 70% of my goals so let's set a new record this year."
 ---

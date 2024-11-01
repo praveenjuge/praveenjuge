@@ -1,12 +1,6 @@
 ---
 title: 'Exploring FreshRSS and Fly.io: A Designer''s Perspective'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'exploring-freshrss-and-fly-io-a-designer-s-perspective'
 description: 'Today, I want to share my experience with two fantastic tools: FreshRSS and Fly.io. As a designer and not a backend nerd, these platforms have impressed me with their ease of use and outstanding UI/UX. Let''s dive in!'
-coverImage: ''
 publishedAt: '2024-06-23T15:51:38.355Z'
 ---
 

@@ -60,14 +60,6 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
     </p>
   </section>
 
-  <style>
-    @keyframes slide {
-      to {
-        transform: translateX(-69%);
-      }
-    }
-  </style>
-
   <section class="overflow-hidden py-16">
     <a
       href="/design"
@@ -96,7 +88,7 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
     {
       posts.map((post) => (
         <a
-          href={`/blog/${post.slug}`}
+          href={`/blog/${post.id}`}
           class="my-4 flex items-center gap-2 font-medium"
         >
           {post.data.title}

@@ -1,11 +1,5 @@
 ---
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-coverImage: ''
 title: 'Setup a RSS Feed with NextJS'
-status: 'published'
-slug: 'setup-a-rss-feed-with-nextjs'
 description: 'I recently moved my RSS feed from using a custom package to a custom route file. Here''s a simple guide to help you set up your own RSS feed.'
 publishedAt: '2024-10-13T19:34:36.321Z'
 ---

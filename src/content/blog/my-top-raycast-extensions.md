@@ -1,12 +1,6 @@
 ---
 title: 'My Top Raycast Extensions'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'my-top-raycast-extensions'
 description: 'If you''re a Mac user like me, you probably know how valuable a good launcher can be. Enter Raycast—it''s more than just a Mac launcher; it''s a productivity powerhouse that makes managing your tasks and apps incredibly efficient. Today, I''m sharing some of my favorite Raycast extensions that help me streamline my workflow every day. This isn’t a ranked list—just a collection of tools I find indispensable.'
-coverImage: ''
 publishedAt: '2024-08-14T13:41:51.706Z'
 ---
 

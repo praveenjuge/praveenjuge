@@ -1,12 +1,6 @@
 ---
 title: 'Pushing to the Front - Book Review'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'pushing-to-the-front-book-review'
 description: 'As a designer, I''m always on the lookout for inspiration, not just in visuals but in words too. That''s how I stumbled upon "Pushing to the Front" by Orison Swett Marden. This book, although over a century old, surprisingly resonates with the creative struggles and triumphs we face today.'
-coverImage: ''
 publishedAt: '2024-01-21T18:23:51.761Z'
 ---
 

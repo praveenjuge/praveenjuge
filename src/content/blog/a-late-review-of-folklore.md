@@ -1,12 +1,6 @@
 ---
 title: 'A Late Review of Folklore'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'a-late-review-of-folklore'
 description: 'Yesterday, I watched Taylor Swift''s Eras Tour Movie (for the third time), reaffirming that ''Folklore'' is my favorite album. Here, I share why this album resonates so deeply with me.'
-coverImage: ''
 publishedAt: '2023-12-03T16:58:50.702Z'
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: 'Is Training Necessary for UI Design?'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'is-training-necessary-for-ui-design'
 description: 'I recently saw an ad for college students. It was about an expensive web design course that teaches UI design using Photoshop. This made me think: do you really need formal classes to be a designer?'
-coverImage: ''
 publishedAt: '2024-01-17T10:55:47.346Z'
 ---
 

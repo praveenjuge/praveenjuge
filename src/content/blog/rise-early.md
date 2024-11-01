@@ -1,9 +1,5 @@
 ---
 title: 'Tips to Wake up Early Everyday'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 publishedAt: 2020-07-23T10:06:54+00:00
 description: 'I used to struggle to wake up early, I’ll snooze, talk myself to sleep and just sleep through the alarm sometimes. But that was 5 years ago. Now I wake up at 5:30 am daily, most of the time even before the alarm.'
 ---
