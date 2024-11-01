@@ -4,7 +4,7 @@
       "id": "design",
       "name": "design",
       "route": "/src/content/design",
-      "template": ""
+      "template": "design"
     }
   ],
   "templates": [
