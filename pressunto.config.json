@@ -7,5 +7,6 @@
       "template": ""
     }
   ],
-  "templates": []
+  "templates": [],
+  "mediaFolder": "src/images"
 }
