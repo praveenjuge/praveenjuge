@@ -20,11 +20,11 @@ const post = Astro.props;
     <a href="/design">← All Designs</a>
     <a target="_blank" href={post.data.coverImage.src}>
       <Image
+        quality={100}
         width={612 * 2}
         height={459 * 2}
-        quality={100}
-        alt={post.data.coverImage.src}
         src={post.data.coverImage}
+        alt={post.data.coverImage.src}
       />
     </a>
   </article>
