@@ -1,5 +1,6 @@
 ---
 import "tailwindcss/index.css";
+import { ClientRouter } from "astro:transitions";
 import {
   AUTHOR_BSKY,
   AUTHOR_DRIBBBLE,
@@ -75,6 +76,8 @@ const jsonLd = {
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
+
+    <ClientRouter />
 
     <!-- Other Metadata -->
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -154,9 +157,11 @@ const jsonLd = {
   <body>
     <span
       class="-z-10 pointer-events-none absolute inset-0 h-56 w-full select-none bg-gradient-to-b from-gray-200"
-      aria-hidden="true"></span>
+      aria-hidden="true"
+      transition:persist></span>
     <header
       class="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 font-medium text-sm sm:items-center md:flex-row md:justify-between md:space-y-0"
+      transition:persist
     >
       <a href="/" title="Go to Home Page">
         <svg
@@ -264,7 +269,7 @@ const jsonLd = {
       </nav>
     </header>
     <main id="main"><slot /></main>
-    <footer class="grid place-items-center py-24">
+    <footer class="grid place-items-center py-24" transition:persist>
       <a href="/" title="Go to Home Page">
         <svg
           width="50"
