@@ -1,12 +1,7 @@
 ---
 title: 'Creating a Number Badge UI Component'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: 'We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems.'
 publishedAt: 2021-12-18T12:37:47Z
-coverImage: images/number-badge-og.png
 ---
 
 A number badge is just as it sounds, a number shown in a badge like UI. In our case, we are showing a badge next to the tab names that shows the number of posts in a particular view. Let’s go through the process of developing a UI for it.

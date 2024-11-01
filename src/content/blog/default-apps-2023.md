@@ -1,12 +1,6 @@
 ---
 title: 'Default Apps 2023 '
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'default-apps-2023'
 description: 'Some of the default apps I use based on the list by this podcast https://defaults.rknight.me'
-coverImage: ''
 publishedAt: '2023-11-27T08:05:42.526Z'
 ---
 

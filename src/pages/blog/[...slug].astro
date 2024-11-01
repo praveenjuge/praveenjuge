@@ -2,11 +2,12 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../Layout.astro";
 import { AUTHOR_IMAGE, AUTHOR_NAME, AUTHOR_URL } from "../../consts";
+import { render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts: CollectionEntry<"blog">[] = await getCollection("blog");
   return posts.map((post: CollectionEntry<"blog">) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: post,
   }));
 }
@@ -15,7 +16,7 @@ type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const { slug } = Astro.params;
 const { title, publishedAt, description } = post.data;
-const { Content } = await post.render();
+const { Content } = await render(post);
 
 const jsonLd = {
   "@context": "https://schema.org",

@@ -1,9 +1,5 @@
 ---
 title: 'Install Tailwind on Hugo [2021]'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: "Hugo has come a long way. It has postcss support built-in, so we can use all the goodness that comes from it. In this article, let's see how to install TailwindCSS on Hugo."
 publishedAt: 2021-01-19T08:40:34+00:00
 ---

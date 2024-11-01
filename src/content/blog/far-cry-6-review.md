@@ -1,12 +1,6 @@
 ---
 title: 'Far Cry 6 Review'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'far-cry-6-review'
 description: 'As a longtime fan of the series, particularly for its storytelling, I approached this game with high expectations. While it may not surpass the legendary status of Far Cry 3 in terms of its story, it certainly carves its own niche with compelling characters and a vivid, expansive world.'
-coverImage: ''
 publishedAt: '2024-01-12T05:32:40.903Z'
 ---
 

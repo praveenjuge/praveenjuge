@@ -1,12 +1,6 @@
 ---
 title: '50 Days of Daily Design'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: '50-days-of-daily-design'
 description: 'I embarked on an exciting challenge: to post a new design every day. Now, 50 days in, I''ve not only sharpened my skills but also doubled my Twitter following. This daily commitment, initially just an experiment, has turned into a goal to continue for at least a year.'
-coverImage: ''
 publishedAt: '2024-01-18T11:28:41.729Z'
 ---
 

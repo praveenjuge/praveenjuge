@@ -10,7 +10,5 @@ export default defineConfig({
         defaultStrategy: 'load'
     },
     integrations: [sitemap()],
-    vite: {
-        plugins: [tailwindcss()],
-    }
+    vite: { plugins: [tailwindcss()] }
 });

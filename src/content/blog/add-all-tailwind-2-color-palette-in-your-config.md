@@ -1,9 +1,5 @@
 ---
 title: Add all Tailwind 2 Color Palettes to your config
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
 description: Tailwind 2 has eight default color palette that you can use in your
   project, but internally it ships with 22 colour palettes. Here is how you can
   import them all. This increases your css size by a lot so make sure you purge

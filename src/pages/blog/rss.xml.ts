@@ -31,8 +31,8 @@ export async function GET() {
 		${posts.map((entry) => `
 			<entry>
 				<title type="html"><![CDATA[ ${entry.data.title || "Empty Title"} ]]></title>
-				<id>${AUTHOR_URL}/blog/${entry.slug}</id>
-				<link href="${AUTHOR_URL}/blog/${entry.slug}"/>
+				<id>${AUTHOR_URL}/blog/${entry.id}</id>
+				<link href="${AUTHOR_URL}/blog/${entry.id}"/>
 				<updated>${new Date(entry.data.publishedAt).toISOString()}</updated>
 				<summary type="html">
 					<![CDATA[ ${entry.data.description || "Empty Description"} ]]>

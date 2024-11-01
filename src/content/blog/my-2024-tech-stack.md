@@ -1,12 +1,6 @@
 ---
 title: 'My 2024 Tech Stack'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'my-2024-tech-stack'
 description: 'While building my SaaS app, mosaicimg.com, I had to take a moment and document the tech stack I used. Here''s a quick rundown of all the tools that made it happen.'
-coverImage: ''
 publishedAt: '2024-09-25T15:58:55.910Z'
 ---
 

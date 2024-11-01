@@ -1,12 +1,6 @@
 ---
 title: 'Designing for Everyone'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'designing-for-everyone'
 description: 'In today''s digital age, it''s important to design websites and apps that everyone can use. Inclusive design is about making sure that all sorts of people, including those with different abilities, can have a good experience when they use these digital platforms.'
-coverImage: ''
 publishedAt: '2024-01-19T08:08:00.633Z'
 ---
 

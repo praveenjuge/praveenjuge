@@ -1,12 +1,6 @@
 ---
 title: 'Thoughts on WWDC24'
-status: 'published'
-author:
-  name: 'Praveen Juge'
-  picture: 'https://avatars.githubusercontent.com/u/13696888?v=4'
-slug: 'thoughts-on-wwdc24'
 description: 'I just finished watching the WWDC24 sessions and wanted to share my thoughts on the announcements. Here’s a quick rundown of what stood out to me, especially the things I might actually use in my daily routine.'
-coverImage: ''
 publishedAt: '2024-06-17T18:38:47.393Z'
 ---
 

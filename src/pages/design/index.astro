@@ -4,27 +4,27 @@ import Layout from "../../Layout.astro";
 import { Image } from "astro:assets";
 
 const posts: CollectionEntry<"design">[] = (await getCollection("design")).sort(
-	(a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
-		b.data.publishedAt?.valueOf() - a.data.publishedAt?.valueOf(),
+  (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
+    b.data.publishedAt?.valueOf() - a.data.publishedAt?.valueOf()
 );
 ---
 
 <Layout title="Designs | Praveen Juge">
-	<section class="mx-auto flex max-w-xl flex-col gap-6 p-4">
-		<h2 class="font-bold">Designs</h2>
-		{
-			posts.map((post, id) => (
-				<a href={post.data.coverImage.src} target="_blank">
-					<Image
-						class="rounded"
-						width={612 * 2}
-						height={459 * 2}
-						src={post.data.coverImage}
-						alt={post.data.coverImage.src}
-						loading={id > 10 ? "lazy" : "eager"}
-					/>
-				</a>
-			))
-		}
-	</section>
+  <section class="mx-auto flex max-w-xl flex-col gap-6 p-4">
+    <h2 class="font-bold">Designs</h2>
+    {
+      posts.map((post, id) => (
+        <a href={post.data.coverImage.src} target="_blank">
+          <Image
+            class="rounded"
+            width={612 * 2}
+            height={459 * 2}
+            src={post.data.coverImage}
+            alt={post.data.coverImage.src}
+            loading={id > 10 ? "lazy" : "eager"}
+          />
+        </a>
+      ))
+    }
+  </section>
 </Layout>
