@@ -1,4 +1,11 @@
 {
-  "collections": [],
+  "collections": [
+    {
+      "id": "design",
+      "name": "design",
+      "route": "/src/content/design",
+      "template": ""
+    }
+  ],
   "templates": []
 }
