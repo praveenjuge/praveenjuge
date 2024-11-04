@@ -1,12 +1,12 @@
 ---
-title: 'Fewer, Better Features'
-description: 'People gravitate towards simplicity. '
-publishedAt: '2024-01-16T05:07:15.059Z'
+title: "Fewer, Better Features"
+description: "People gravitate towards simplicity. "
+pubDate: "2024-01-16T05:07:15.059Z"
 ---
 
-Initially, a product's simple and intuitive nature draws people in. However, as features are added, complexity creeps in, and the essence of simplicity can be lost. 
+Initially, a product's simple and intuitive nature draws people in. However, as features are added, complexity creeps in, and the essence of simplicity can be lost.
 
-This complexity often leads people back to seek simpler alternatives. 
+This complexity often leads people back to seek simpler alternatives.
 
 The lesson for designers is clear: maintain simplicity at the core of design.
 

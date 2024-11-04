@@ -1,7 +1,7 @@
 ---
-title: 'How I take Notes using VS Code and GitHub'
-description: 'I have used dozens of note-taking apps, read lots and lots of hacker news threads on how different people organize their notes and finally settled on VS Code as the editor and GitHub Repo as the storage.'
-publishedAt: 2020-05-26T16:07:25+00:00
+title: "How I take Notes using VS Code and GitHub"
+description: "I have used dozens of note-taking apps, read lots and lots of hacker news threads on how different people organize their notes and finally settled on VS Code as the editor and GitHub Repo as the storage."
+pubDate: 2020-05-26T16:07:25+00:00
 ---
 
 Here is how I did it and let's see what’s good and what's bad about this setup.

@@ -1,5 +1,5 @@
 ---
-title: 'main-cards-2x'
-publishedAt: 2023-02-19T12:54:36.956Z
+title: "main-cards-2x"
+pubDate: 2023-02-19T12:54:36.956Z
 coverImage: ../../images/main-cards-2x.jpg
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Designing for Everyone'
-description: 'In today''s digital age, it''s important to design websites and apps that everyone can use. Inclusive design is about making sure that all sorts of people, including those with different abilities, can have a good experience when they use these digital platforms.'
-publishedAt: '2024-01-19T08:08:00.633Z'
+title: "Designing for Everyone"
+description: "In today's digital age, it's important to design websites and apps that everyone can use. Inclusive design is about making sure that all sorts of people, including those with different abilities, can have a good experience when they use these digital platforms."
+pubDate: "2024-01-19T08:08:00.633Z"
 ---
 
 Here's what inclusive design is all about:

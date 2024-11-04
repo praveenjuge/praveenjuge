@@ -1,7 +1,7 @@
 ---
-title: 'Why Simplicity Matters'
-description: 'Simplicity in design makes technology accessible and products intuitive, focusing on user needs and usability. '
-publishedAt: '2024-01-23T18:50:14.498Z'
+title: "Why Simplicity Matters"
+description: "Simplicity in design makes technology accessible and products intuitive, focusing on user needs and usability. "
+pubDate: "2024-01-23T18:50:14.498Z"
 ---
 
 This approach is not about stripping away features or reducing functionality, but rather about prioritizing usability and user needs.\

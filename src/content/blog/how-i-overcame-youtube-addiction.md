@@ -1,7 +1,7 @@
 ---
-title: 'How I Overcame YouTube Addiction'
+title: "How I Overcame YouTube Addiction"
 description: "I don't use social media often, that's by design. I know if I start using it regularly, I will become addicted to it. So, imagine my surprise when on one Sunday afternoon I found out that I spent the entire day doing nothing but watching videos on YouTube."
-publishedAt: 2020-06-21T05:07:47+00:00
+pubDate: 2020-06-21T05:07:47+00:00
 ---
 
 The saddest thing is that I didn’t even remember what I was watching. It was just a clockwork for my brain at that point. Wake up, open YouTube, watch a video, continue watching videos.

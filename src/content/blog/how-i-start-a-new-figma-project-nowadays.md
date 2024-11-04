@@ -1,7 +1,7 @@
 ---
-title: 'How I Start a New Figma Project Nowadays'
-description: 'Today, I want to share with you how I start a new Figma project nowadays, whether it''s for work or a personal endeavor. Over time, I''ve honed a process that revolves around a few key tools and design systems that make my workflow efficient and enjoyable. Let’s dive in!'
-publishedAt: '2024-06-18T19:16:52.660Z'
+title: "How I Start a New Figma Project Nowadays"
+description: "Today, I want to share with you how I start a new Figma project nowadays, whether it's for work or a personal endeavor. Over time, I've honed a process that revolves around a few key tools and design systems that make my workflow efficient and enjoyable. Let’s dive in!"
+pubDate: "2024-06-18T19:16:52.660Z"
 ---
 
 ### TailwindCSS Design System: My Go-To Resource

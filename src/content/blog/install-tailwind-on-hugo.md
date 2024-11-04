@@ -1,7 +1,7 @@
 ---
-title: 'Install Tailwind on Hugo [2021]'
+title: "Install Tailwind on Hugo [2021]"
 description: "Hugo has come a long way. It has postcss support built-in, so we can use all the goodness that comes from it. In this article, let's see how to install TailwindCSS on Hugo."
-publishedAt: 2021-01-19T08:40:34+00:00
+pubDate: 2021-01-19T08:40:34+00:00
 ---
 
 [Just show me the repo](https://github.com/praveenjuge/hugo-tailwind)
@@ -30,7 +30,7 @@ touch layouts/index.html layouts/_default/baseof.html assets/css/main.css
 In `layouts/_default/baseof.html`, add:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>{{ .Title }}</title>

@@ -1,22 +1,15 @@
-import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
+import { rssSchema } from "@astrojs/rss";
 
 const blog = defineCollection({
-	loader: glob({ pattern: '**\/[^_]*.md', base: "./src/content/blog" }),
-	schema: z.object({
-		title: z.string(),
-		description: z.string(),
-		publishedAt: z.coerce.date()
-	}),
+  loader: glob({ pattern: "*.md", base: "./src/content/blog" }),
+  schema: rssSchema,
 });
 
 const design = defineCollection({
-	loader: glob({ pattern: '**\/[^_]*.md', base: "./src/content/design" }),
-	schema: ({ image }) => z.object({
-		title: z.string(),
-		coverImage: image(),
-		publishedAt: z.coerce.date()
-	}),
+  loader: glob({ pattern: "*.md", base: "./src/content/design" }),
+  schema: ({ image }) => rssSchema.extend({ coverImage: image() }),
 });
 
 export const collections = { blog, design };

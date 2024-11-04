@@ -1,7 +1,7 @@
 ---
-title: 'Setup a RSS Feed with NextJS'
-description: 'I recently moved my RSS feed from using a custom package to a custom route file. Here''s a simple guide to help you set up your own RSS feed.'
-publishedAt: '2024-10-13T19:34:36.321Z'
+title: "Setup a RSS Feed with NextJS"
+description: "I recently moved my RSS feed from using a custom package to a custom route file. Here's a simple guide to help you set up your own RSS feed."
+pubDate: "2024-10-13T19:34:36.321Z"
 ---
 
 #### Step 1: Create a Route File
@@ -10,30 +10,31 @@ First, create a new file at `blog/rss.xml/route.js` and add the following code:
 
 ```js
 import { load } from "outstatic/server";
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 import markdownToHtml from "../utils";
 
 export const dynamic = "force-static";
-const SITE_URL = 'https://praveenjuge.com';
-const AUTHOR_NAME = 'Praveen Juge';
-const AUTHOR_EMAIL = 'hi@praveenjuge.com';
+const SITE_URL = "https://praveenjuge.com";
+const AUTHOR_NAME = "Praveen Juge";
+const AUTHOR_EMAIL = "hi@praveenjuge.com";
 const FEED_ICON = `${SITE_URL}/favicon.ico`;
 const FEED_SELF_LINK = `${SITE_URL}/blog/rss.xml`;
-const FEED_SUBTITLE = 'Praveen Juge is a designer and developer for everything on the web.';
+const FEED_SUBTITLE =
+  "Praveen Juge is a designer and developer for everything on the web.";
 
 const allBlogs = await (await load())
-	.find({ collection: "blog" }, [
-		"title",
-		"publishedAt",
-		"description",
-		"content",
-		"slug",
-	])
-	.sort({ publishedAt: -1 })
-	.toArray();
+  .find({ collection: "blog" }, [
+    "title",
+    "pubDate",
+    "description",
+    "content",
+    "slug",
+  ])
+  .sort({ pubDate: -1 })
+  .toArray();
 
 export async function GET() {
-	const feed = `<feed xmlns="http://www.w3.org/2005/Atom">
+  const feed = `<feed xmlns="http://www.w3.org/2005/Atom">
 		<id>${SITE_URL}/</id>
 		<title>${AUTHOR_NAME}</title>
 		<updated>${new Date().toISOString()}</updated>
@@ -54,12 +55,14 @@ export async function GET() {
 			<email>${AUTHOR_EMAIL}</email>
 			<uri>${SITE_URL}/</uri>
 		</contributor>
-		${allBlogs.map((entry) => `
+		${allBlogs
+      .map(
+        (entry) => `
 			<entry>
 				<title type="html">${entry.title}</title>
 				<id>${SITE_URL}/blog/${entry.slug}</id>
 				<link href="${SITE_URL}/blog/${entry.slug}"/>
-				<updated>${new Date(entry.publishedAt).toISOString()}</updated>
+				<updated>${new Date(entry.pubDate).toISOString()}</updated>
 				<summary type="html">
 					${entry.description}
 				</summary>
@@ -72,14 +75,15 @@ export async function GET() {
 					<uri>${SITE_URL}/</uri>
 				</author>
 			</entry>`
-		).join('')}
+      )
+      .join("")}
 	</feed>`;
 
-	return new NextResponse(feed, {
-		headers: {
-			'Content-Type': 'application/xml',
-		},
-	});
+  return new NextResponse(feed, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
 }
 ```
 

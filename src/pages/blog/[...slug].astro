@@ -15,15 +15,15 @@ type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
 const { slug } = Astro.params;
-const { title, publishedAt, description } = post.data;
+const { title, pubDate, description } = post.data;
 const { Content } = await render(post);
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: title,
-  datePublished: publishedAt,
-  dateModified: publishedAt,
+  datePublished: pubDate,
+  dateModified: pubDate,
   image: `https://mosaicimg.com/use?url=https://praveenjuge.com/blog/${slug}`,
   author: {
     "@type": "Person",
@@ -231,9 +231,9 @@ const breadJsonLd = {
   >
     <p class="!mt-0">
       Written on{" "}
-      <time itemprop="datePublished" datetime={publishedAt.toISOString()}>
+      <time itemprop="datePublished" datetime={pubDate.toISOString()}>
         {
-          publishedAt.toLocaleDateString("en-us", {
+          pubDate.toLocaleDateString("en-us", {
             year: "numeric",
             month: "long",
             day: "numeric",

@@ -7,14 +7,14 @@ import myPhoto from "../images/praveenjuge.jpg";
 const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
   .sort(
     (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-      b.data.publishedAt?.valueOf() - a.data.publishedAt?.valueOf()
+      b.data.pubDate?.valueOf() - a.data.pubDate?.valueOf()
   )
   .slice(0, 18);
 
 const designs: CollectionEntry<"design">[] = (await getCollection("design"))
   .sort(
     (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
-      b.data.publishedAt?.valueOf() - a.data.publishedAt?.valueOf()
+      b.data.pubDate?.valueOf() - a.data.pubDate?.valueOf()
   )
   .slice(0, 11);
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Tips to Wake up Early Everyday'
-publishedAt: 2020-07-23T10:06:54+00:00
-description: 'I used to struggle to wake up early, I’ll snooze, talk myself to sleep and just sleep through the alarm sometimes. But that was 5 years ago. Now I wake up at 5:30 am daily, most of the time even before the alarm.'
+title: "Tips to Wake up Early Everyday"
+pubDate: 2020-07-23T10:06:54+00:00
+description: "I used to struggle to wake up early, I’ll snooze, talk myself to sleep and just sleep through the alarm sometimes. But that was 5 years ago. Now I wake up at 5:30 am daily, most of the time even before the alarm."
 ---
 
 Here are some of the tricks I used:

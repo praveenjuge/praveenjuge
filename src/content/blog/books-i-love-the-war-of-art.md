@@ -1,7 +1,7 @@
 ---
-title: 'Books I Love - The War of Art by Steven Pressfield'
+title: "Books I Love - The War of Art by Steven Pressfield"
 description: "The War of Art is one of my favorite non-fiction book, it helped me recognize why I put off doing my work and how to fix it easily. I recommend this book to anyone doing creative work where you often second guess yourself and don't ship things."
-publishedAt: 2020-06-09T06:57:23+00:00
+pubDate: 2020-06-09T06:57:23+00:00
 ---
 
 **Rating:** 10/10, would definitely read again.

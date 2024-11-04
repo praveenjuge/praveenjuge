@@ -1,7 +1,7 @@
 ---
-title: '50 Days of Daily Design'
-description: 'I embarked on an exciting challenge: to post a new design every day. Now, 50 days in, I''ve not only sharpened my skills but also doubled my Twitter following. This daily commitment, initially just an experiment, has turned into a goal to continue for at least a year.'
-publishedAt: '2024-01-18T11:28:41.729Z'
+title: "50 Days of Daily Design"
+description: "I embarked on an exciting challenge: to post a new design every day. Now, 50 days in, I've not only sharpened my skills but also doubled my Twitter following. This daily commitment, initially just an experiment, has turned into a goal to continue for at least a year."
+pubDate: "2024-01-18T11:28:41.729Z"
 ---
 
 My routine involves crafting several designs at the start of each week and then sharing them daily. These designs are a mix of work from client projects and my own ventures, like the mynaui icons and Teak. You can check these out at [icons.mynaui.com](https://icons.mynaui.com) and [teak.praveenjuge.com](https://teak.praveenjuge.com), respectively.

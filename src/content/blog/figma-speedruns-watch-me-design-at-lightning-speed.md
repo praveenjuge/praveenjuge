@@ -1,6 +1,6 @@
 ---
-title: 'Figma Speedruns: Watch Me Design at Lightning Speed!'
-publishedAt: 2023-03-31T19:26:29.237Z
+title: "Figma Speedruns: Watch Me Design at Lightning Speed!"
+pubDate: 2023-03-31T19:26:29.237Z
 description: Dive into Figma speedrun videos and see awesome designs pop up
   super fast! Come along as I show off my love for design and Figma, and hit me
   up with what you wanna see on the channel.

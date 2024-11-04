@@ -1,5 +1,5 @@
 ---
-title: 'myna-feeds-1'
-publishedAt: 2023-02-27T19:35:07.796Z
+title: "myna-feeds-1"
+pubDate: 2023-02-27T19:35:07.796Z
 coverImage: ../../images/myna-feeds-1.jpg
 ---

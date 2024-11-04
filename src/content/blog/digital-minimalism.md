@@ -1,7 +1,7 @@
 ---
-title: 'Down to 8 Apps on My Phone'
+title: "Down to 8 Apps on My Phone"
 description: "It's been a year since I read Cal Newport's Digital Minimalism where he talks about taking back control of your time and not feeling like you need your phone attached to you all the time. Here are some steps I took to implement Digital Minimalism in my life."
-publishedAt: 2020-07-08T02:22:50+00:00
+pubDate: 2020-07-08T02:22:50+00:00
 ---
 
 The major takeaway for me was Cal Newport’s call to join the attention resistance movement.

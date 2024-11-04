@@ -1,7 +1,7 @@
 ---
-title: 'Creating a Number Badge UI Component'
-description: 'We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems.'
-publishedAt: 2021-12-18T12:37:47Z
+title: "Creating a Number Badge UI Component"
+description: "We recently shipped a feature that shows the count of all the lists in Hellonext. While it seems like a simple feature it had a lot of challenges to figure out. Here is how we solved some of the frontend problems."
+pubDate: 2021-12-18T12:37:47Z
 ---
 
 A number badge is just as it sounds, a number shown in a badge like UI. In our case, we are showing a badge next to the tab names that shows the number of posts in a particular view. Let’s go through the process of developing a UI for it.
@@ -12,13 +12,13 @@ A number badge is just as it sounds, a number shown in a badge like UI. In our c
 
 There are lot of ways to denote this type of UI to the user, here are some of the early ideas I had.
 
-!["Idea 1"](../../images/creating-a-number-badge-ui-component/2.png 'Idea 1')
+!["Idea 1"](../../images/creating-a-number-badge-ui-component/2.png "Idea 1")
 
-!["Idea 2"](../../images/creating-a-number-badge-ui-component/3.png 'Idea 2')
+!["Idea 2"](../../images/creating-a-number-badge-ui-component/3.png "Idea 2")
 
-!["Idea 3"](../../images/creating-a-number-badge-ui-component/4.png 'Idea 3')
+!["Idea 3"](../../images/creating-a-number-badge-ui-component/4.png "Idea 3")
 
-!["Idea 4"](../../images/creating-a-number-badge-ui-component/5.png 'Idea 4')
+!["Idea 4"](../../images/creating-a-number-badge-ui-component/5.png "Idea 4")
 
 Displaying the number right next to the tab names seemed a little off as it’s easy to read it as a continuous text with the tab name.
 
@@ -30,11 +30,11 @@ As we decided on how the UI is going to look, let’s create the needed figma co
 
 We also have different themes that people can choose and a dark mode. As our solution is not that complicated, it will easily adapt to those scenarios too.
 
-!["Pink Theme"](../../images/creating-a-number-badge-ui-component/7.png 'Pink Theme')
+!["Pink Theme"](../../images/creating-a-number-badge-ui-component/7.png "Pink Theme")
 
-!["Blue Theme"](../../images/creating-a-number-badge-ui-component/8.png 'Blue Theme')
+!["Blue Theme"](../../images/creating-a-number-badge-ui-component/8.png "Blue Theme")
 
-!["Dark Green Theme"](../../images/creating-a-number-badge-ui-component/9.png 'Dark Green Theme')
+!["Dark Green Theme"](../../images/creating-a-number-badge-ui-component/9.png "Dark Green Theme")
 
 ## HTML and CSS Design
 
@@ -50,7 +50,7 @@ Now, it’s time to create the component in code, let’s take the green theme f
 
 The code above will create the following UI. It has text, background and padding on the same element which works for the following normal badge variant.
 
-!["On light theme and dark theme."](../../images/creating-a-number-badge-ui-component/10.png 'On light theme and dark theme.')
+!["On light theme and dark theme."](../../images/creating-a-number-badge-ui-component/10.png "On light theme and dark theme.")
 
 But a problem comes when we go to the active variant. Here is all the colors we have:
 
@@ -85,35 +85,35 @@ This way we can easily add opacity to the background alone and we don’t need a
 TailwindCSS needs to have the full class names present in our files to generate those css, so we need to have some decider functions that will help us set our variant colors.
 
 ```jsx
-import clsx from 'clsx';
+import clsx from "clsx";
 
-export default function NumberBadge({ number = '', variant = 'light' }) {
+export default function NumberBadge({ number = "", variant = "light" }) {
   const setTextColor = (color) => {
-    if (color === 'primary') return 'text-primary';
-    if (color === 'light') return 'text-gray-600';
-    if (color === 'white') return 'text-gray-600';
-    return 'text-gray-600';
+    if (color === "primary") return "text-primary";
+    if (color === "light") return "text-gray-600";
+    if (color === "white") return "text-gray-600";
+    return "text-gray-600";
   };
 
   const setBackgroundColor = (color) => {
-    if (color === 'primary') return 'bg-primary opacity-5';
-    if (color === 'light') return 'bg-gray-100';
-    if (color === 'white') return 'bg-white border border-gray-200';
-    return 'bg-gray-100';
+    if (color === "primary") return "bg-primary opacity-5";
+    if (color === "light") return "bg-gray-100";
+    if (color === "white") return "bg-white border border-gray-200";
+    return "bg-gray-100";
   };
 
   return (
     <span
       className={clsx(
         setTextColor(variant),
-        'relative ml-1 inline-flex rounded-full px-1.5 py-px font-mono text-xs font-medium transition'
+        "relative ml-1 inline-flex rounded-full px-1.5 py-px font-mono text-xs font-medium transition"
       )}
     >
       <span
         aria-hidden="true"
         className={clsx(
           setBackgroundColor(variant),
-          'absolute inset-0 select-none rounded-full transition'
+          "absolute inset-0 select-none rounded-full transition"
         )}
       />
       <span className="relative">{number}</span>
