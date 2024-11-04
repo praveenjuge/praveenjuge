@@ -1,7 +1,7 @@
 ---
 title: "I Hate Figma's Empty Canvas"
 description: "Figma's empty canvas is where dreams go to die for me. That white screen had stopped me from starting my work more than anything else."
-publishedAt: 2020-06-17T02:03:24+00:00
+pubDate: 2020-06-17T02:03:24+00:00
 ---
 
 Every project I start, starts with the problem of facing an empty canvas. That blank white screens that stare at me.

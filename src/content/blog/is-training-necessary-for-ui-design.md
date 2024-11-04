@@ -1,7 +1,7 @@
 ---
-title: 'Is Training Necessary for UI Design?'
-description: 'I recently saw an ad for college students. It was about an expensive web design course that teaches UI design using Photoshop. This made me think: do you really need formal classes to be a designer?'
-publishedAt: '2024-01-17T10:55:47.346Z'
+title: "Is Training Necessary for UI Design?"
+description: "I recently saw an ad for college students. It was about an expensive web design course that teaches UI design using Photoshop. This made me think: do you really need formal classes to be a designer?"
+pubDate: "2024-01-17T10:55:47.346Z"
 ---
 
 People often argue about whether designers need formal training. But really, design is more about solving problems than just working with visual stuff like colors and fonts. Think about how you set up your phone screen or arrange your living room – that's design thinking too! And many people do this kind of design in their everyday life without any formal training.

@@ -1,7 +1,7 @@
 ---
-title: 'My 2024 Tech Stack'
-description: 'While building my SaaS app, mosaicimg.com, I had to take a moment and document the tech stack I used. Here''s a quick rundown of all the tools that made it happen.'
-publishedAt: '2024-09-25T15:58:55.910Z'
+title: "My 2024 Tech Stack"
+description: "While building my SaaS app, mosaicimg.com, I had to take a moment and document the tech stack I used. Here's a quick rundown of all the tools that made it happen."
+pubDate: "2024-09-25T15:58:55.910Z"
 ---
 
 - ⚙️ [**Next.JS 15**](https://nextjs.org/) – Full Stack Framework

@@ -1,7 +1,7 @@
 ---
-title: 'To Use or Not to Use Auto Layout in Figma'
+title: "To Use or Not to Use Auto Layout in Figma"
 description: "The debate on whether or not to use Auto Layout in Figma is a hot topic that frequently surfaces on Twitter. Based on my experience with this feature, I've developed some insights and guidelines on when and how to leverage Auto Layout to its full potential."
-publishedAt: '2024-03-01T05:16:06.767Z'
+pubDate: "2024-03-01T05:16:06.767Z"
 ---
 
 Here's a breakdown, based on personal experience, of where Auto Layout shines and where it might not be the best fit:

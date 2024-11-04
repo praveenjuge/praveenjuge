@@ -1,7 +1,7 @@
 ---
-title: 'Open Source Tips'
-description: 'Imagine the open source community as a bustling city, alive with people sharing, learning, and creating together. It''s an exciting place for both experienced developers and newcomers. Like any new adventure, knowing a few essential tips can make your journey smoother and more rewarding.'
-publishedAt: '2024-01-20T18:06:29.949Z'
+title: "Open Source Tips"
+description: "Imagine the open source community as a bustling city, alive with people sharing, learning, and creating together. It's an exciting place for both experienced developers and newcomers. Like any new adventure, knowing a few essential tips can make your journey smoother and more rewarding."
+pubDate: "2024-01-20T18:06:29.949Z"
 ---
 
 Think of a README file as your project's welcoming brochure. It's essential. This file should give a clear tour of your project, highlighting its goals and what it's not about. Setting up a CONTRIBUTING file is like a guidebook for travelers wanting to join your journey. It ensures everyone knows the path and makes their contributions count, making the whole trip more organized and inclusive.

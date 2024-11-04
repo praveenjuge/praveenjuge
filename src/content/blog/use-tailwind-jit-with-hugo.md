@@ -1,6 +1,6 @@
 ---
-title: 'Use Tailwind JIT with Hugo'
-publishedAt: 2021-06-06T09:27:04+05:30
+title: "Use Tailwind JIT with Hugo"
+pubDate: 2021-06-06T09:27:04+05:30
 description: "Tailwind released a new CLI which made JIT watch mode possible. We can use it to integrate JIT into a Hugo site. Let's see how to do that."
 ---
 
@@ -26,7 +26,7 @@ We are going to transform `static/tailwind.css` into `static/main.css`, which we
 In `layouts/index.html` add the following code,
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -72,7 +72,7 @@ In `tailwind.config.js` add the following code,
 
 ```js
 module.exports = {
-  content: ['./content/**/*.md', './content/**/*.html', './layouts/**/*.html']
+  content: ["./content/**/*.md", "./content/**/*.html", "./layouts/**/*.html"],
 };
 ```
 

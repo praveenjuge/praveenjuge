@@ -1,7 +1,7 @@
 ---
-title: 'Exploring FreshRSS and Fly.io: A Designer''s Perspective'
-description: 'Today, I want to share my experience with two fantastic tools: FreshRSS and Fly.io. As a designer and not a backend nerd, these platforms have impressed me with their ease of use and outstanding UI/UX. Let''s dive in!'
-publishedAt: '2024-06-23T15:51:38.355Z'
+title: "Exploring FreshRSS and Fly.io: A Designer's Perspective"
+description: "Today, I want to share my experience with two fantastic tools: FreshRSS and Fly.io. As a designer and not a backend nerd, these platforms have impressed me with their ease of use and outstanding UI/UX. Let's dive in!"
+pubDate: "2024-06-23T15:51:38.355Z"
 ---
 
 ### FreshRSS: The Ultimate RSS Solution

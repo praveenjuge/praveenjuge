@@ -1,7 +1,7 @@
 ---
-title: 'One More Next.js Starter Kit'
-description: 'There are, quite literally, a thousand starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter.'
-publishedAt: '2024-03-02T04:35:22.805Z'
+title: "One More Next.js Starter Kit"
+description: "There are, quite literally, a thousand starter kits for Next.js, with next-create-app being the top choice for many. However, when I embark on a new project, I prefer to start with as few files as possible. This approach helps me kick off new projects quickly and without any unnecessary clutter."
+pubDate: "2024-03-02T04:35:22.805Z"
 ---
 
 So, I've created a Next.js starter kit tailored for myself, which you can check out [here](https://github.com/praveenjuge/nextjs-minimal-starter).

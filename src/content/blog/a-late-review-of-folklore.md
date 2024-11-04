@@ -1,7 +1,7 @@
 ---
-title: 'A Late Review of Folklore'
-description: 'Yesterday, I watched Taylor Swift''s Eras Tour Movie (for the third time), reaffirming that ''Folklore'' is my favorite album. Here, I share why this album resonates so deeply with me.'
-publishedAt: '2023-12-03T16:58:50.702Z'
+title: "A Late Review of Folklore"
+description: "Yesterday, I watched Taylor Swift's Eras Tour Movie (for the third time), reaffirming that 'Folklore' is my favorite album. Here, I share why this album resonates so deeply with me."
+pubDate: "2023-12-03T16:58:50.702Z"
 ---
 
 ![](../../images/taylor-evermore-resized.jpg-UxOT.webp)

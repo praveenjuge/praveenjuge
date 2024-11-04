@@ -1,7 +1,7 @@
 ---
-title: 'Default Apps 2023 '
-description: 'Some of the default apps I use based on the list by this podcast https://defaults.rknight.me'
-publishedAt: '2023-11-27T08:05:42.526Z'
+title: "Default Apps 2023 "
+description: "Some of the default apps I use based on the list by this podcast https://defaults.rknight.me"
+pubDate: "2023-11-27T08:05:42.526Z"
 ---
 
 📨 Mail Client: Apple Mail
@@ -52,7 +52,7 @@ publishedAt: '2023-11-27T08:05:42.526Z'
 
 🔐 Password Management: iCloud Keychain
 
-🧑‍💻 Code Editor: [VSCode](https://code.visualstudio.com) 
+🧑‍💻 Code Editor: [VSCode](https://code.visualstudio.com)
 
 ✈️ VPN: N/A
 
@@ -61,5 +61,3 @@ publishedAt: '2023-11-27T08:05:42.526Z'
 🔎 Search: [ChatGPT](https://chat.openai.com)
 
 🖼️ Screenshots: [CleanShot X](https://cleanshot.com/)
-
- 

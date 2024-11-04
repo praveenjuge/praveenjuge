@@ -1,7 +1,7 @@
 ---
-title: 'Far Cry 6 Review'
-description: 'As a longtime fan of the series, particularly for its storytelling, I approached this game with high expectations. While it may not surpass the legendary status of Far Cry 3 in terms of its story, it certainly carves its own niche with compelling characters and a vivid, expansive world.'
-publishedAt: '2024-01-12T05:32:40.903Z'
+title: "Far Cry 6 Review"
+description: "As a longtime fan of the series, particularly for its storytelling, I approached this game with high expectations. While it may not surpass the legendary status of Far Cry 3 in terms of its story, it certainly carves its own niche with compelling characters and a vivid, expansive world."
+pubDate: "2024-01-12T05:32:40.903Z"
 ---
 
 ![](../../images/tnmdga9-I5NT.jpeg)

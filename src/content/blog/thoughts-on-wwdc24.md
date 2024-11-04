@@ -1,7 +1,7 @@
 ---
-title: 'Thoughts on WWDC24'
-description: 'I just finished watching the WWDC24 sessions and wanted to share my thoughts on the announcements. Here’s a quick rundown of what stood out to me, especially the things I might actually use in my daily routine.'
-publishedAt: '2024-06-17T18:38:47.393Z'
+title: "Thoughts on WWDC24"
+description: "I just finished watching the WWDC24 sessions and wanted to share my thoughts on the announcements. Here’s a quick rundown of what stood out to me, especially the things I might actually use in my daily routine."
+pubDate: "2024-06-17T18:38:47.393Z"
 ---
 
 #### Apple Mail Inbox Categories

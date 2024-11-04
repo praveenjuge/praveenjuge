@@ -1,7 +1,7 @@
 ---
-title: 'Speed up Audiobooks using Audacity Macros'
-description: 'I came by an iPod Shuffle recently, it worked great but I used to listen to my audiobooks at 2x speed which the shuffle does not have. But audacity is there to help.'
-publishedAt: 2019-11-18T09:21:22.079Z
+title: "Speed up Audiobooks using Audacity Macros"
+description: "I came by an iPod Shuffle recently, it worked great but I used to listen to my audiobooks at 2x speed which the shuffle does not have. But audacity is there to help."
+pubDate: 2019-11-18T09:21:22.079Z
 ---
 
 ### Step 1: Download or Update Audacity
