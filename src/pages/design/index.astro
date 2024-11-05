@@ -14,7 +14,7 @@ const posts: CollectionEntry<"design">[] = (await getCollection("design")).sort(
     <h2 class="font-bold">Designs</h2>
     {
       posts.map((post, id) => (
-        <a href={post.data.coverImage.src} target="_blank">
+        <a href={Astro.url.origin + post.data.coverImage.src} target="_blank">
           <Image
             class="rounded"
             width={612 * 2}
