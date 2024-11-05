@@ -231,9 +231,9 @@ const breadJsonLd = {
   >
     <p class="!mt-0">
       Written on{" "}
-      <time itemprop="datePublished" datetime={pubDate.toISOString()}>
+      <time itemprop="datePublished" datetime={pubDate?.toISOString()}>
         {
-          pubDate.toLocaleDateString("en-us", {
+          pubDate?.toLocaleDateString("en-us", {
             year: "numeric",
             month: "long",
             day: "numeric",
