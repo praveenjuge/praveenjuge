@@ -12,8 +12,6 @@ export const GET: APIRoute = async () => {
     eager: true,
   });
   const posts = Object.values(postImportResult);
-
-  // Sort posts by date in descending order (newest first)
   const sortedPosts = [...posts].sort((a: any, b: any) => {
     return (
       new Date(b.frontmatter.pubDate).getTime() -

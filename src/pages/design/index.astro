@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 
 const posts: CollectionEntry<"design">[] = (await getCollection("design")).sort(
   (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
-    b.data.pubDate?.valueOf() - a.data.pubDate?.valueOf()
+    (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
 );
 ---
 

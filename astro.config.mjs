@@ -9,6 +9,7 @@ export default defineConfig({
         prefetchAll: true,
         defaultStrategy: 'load'
     },
+    trailingSlash: 'never',
     integrations: [sitemap()],
     vite: { plugins: [tailwindcss()] }
 });
