@@ -117,7 +117,14 @@ const breadJsonLd = {
 			[&_pre_code]:leading-inherit
 			[&_pre_code]:before:content-none
 			[&_pre_code]:after:content-none
-		[&_h2]:text-gray-900
+			[&_h1]:text-balance
+			[&_h1]:tracking-tighter
+			[&_h1]:text-gray-900
+			[&_h1]:font-extrabold
+			[&_h1]:text-4xl
+			[&_h1]:mt-0
+			[&_h1]:mb-[0.8888889em]
+			[&_h2]:text-gray-900
 			[&_h2]:font-bold
 			[&_h2]:text-2xl
 			[&_h2]:mt-12
@@ -125,7 +132,7 @@ const breadJsonLd = {
 			[&_h2]:leading-[1.3333333]
 			[&_h2_strong]:font-extrabold
 			[&_h2_strong]:text-inherit
-		[&_h3]:text-gray-900
+			[&_h3]:text-gray-900
 			[&_h3]:font-semibold
 			[&_h3]:text-xl
 			[&_h3]:mt-8
@@ -229,7 +236,7 @@ const breadJsonLd = {
 			[&_tbody_td:last-child]:pr-0
 			[&_tfoot_td:last-child]:pr-0"
   >
-    <p class="!mt-0">
+    <p>
       Written on{" "}
       <time itemprop="datePublished" datetime={pubDate?.toISOString()}>
         {
@@ -241,10 +248,7 @@ const breadJsonLd = {
         }
       </time>
     </p>
-    <h1
-      class="text-balance tracking-tighter text-gray-900 font-extrabold text-4xl mt-0 mb-[0.8888889em]"
-      itemprop="headline"
-    >
+    <h1 itemprop="headline">
       {title}
     </h1>
     <meta
