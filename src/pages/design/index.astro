@@ -14,7 +14,11 @@ const posts: CollectionEntry<"design">[] = (await getCollection("design")).sort(
     <h2>Designs</h2>
     {
       posts.map((post) => (
-        <a href={Astro.url.origin + post.data.coverImage.src} target="_blank">
+        <a
+          target="_blank"
+          data-astro-prefetch="false"
+          href={Astro.url.origin + post.data.coverImage.src}
+        >
           <Image
             width={1600}
             height={1200}
