@@ -6,34 +6,26 @@ import {
   AUTHOR_URL,
   AUTHOR_EMAIL,
 } from "../../consts";
+import { getCollection, type CollectionEntry } from "astro:content";
 
 export const GET: APIRoute = async () => {
-  const postImportResult = import.meta.glob("../../content/design/**/*.md", {
-    eager: true,
-  });
-  const posts = Object.values(postImportResult);
-  const sortedPosts = [...posts].sort((a: any, b: any) => {
-    return (
-      new Date(b.frontmatter.pubDate).getTime() -
-      new Date(a.frontmatter.pubDate).getTime()
-    );
-  });
-
+  const designs = (await getCollection("design")).sort(
+    (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
+      (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
+  );
   return rss({
     title: AUTHOR_NAME,
     description: SITE_DESCRIPTION,
     site: AUTHOR_URL,
     trailingSlash: false,
-    items: await Promise.all(
-      sortedPosts.map(async (post: any) => {
-        return {
-          title: post.frontmatter.title,
-          pubDate: post.frontmatter.pubDate,
-          author: AUTHOR_EMAIL,
-          link: `/design/${post.file.split("/").pop()?.split(".")[0]}`,
-        };
-      })
-    ),
+    items: designs.map((design) => {
+      return {
+        title: design.id,
+        pubDate: design.data.pubDate,
+        author: AUTHOR_EMAIL,
+        link: `/design/${design.id}`,
+      };
+    }),
     customData: [
       "<category>Design</category>",
       "<category>Technology</category>",

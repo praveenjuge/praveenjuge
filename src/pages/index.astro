@@ -67,12 +67,12 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
       class="-space-x-2 inline-flex animate-[slide_infinite_linear_60s]"
     >
       {
-        designs.map((item) => (
+        designs.map((design) => (
           <Image
             width={1600}
             height={1200}
-            src={item.data.coverImage}
-            alt={item.data.coverImage.src}
+            alt={design.id}
+            src={design.data.cover}
             class="even:-rotate-2 block min-h-72 w-96 min-w-96 rounded bg-cover object-cover ring-4 ring-white odd:rotate-2"
           />
         ))

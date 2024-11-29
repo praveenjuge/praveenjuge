@@ -9,7 +9,7 @@ const blog = defineCollection({
 
 const design = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content/design" }),
-  schema: ({ image }) => rssSchema.extend({ coverImage: image() }),
+  schema: ({ image }) => rssSchema.extend({ cover: image() }),
 });
 
 export const collections = { blog, design };
