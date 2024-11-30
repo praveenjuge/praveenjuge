@@ -21,7 +21,7 @@ export const GET: APIRoute = async () => {
       return {
         title: design.id,
         pubDate: design.data.pubDate,
-        author: AUTHOR_EMAIL,
+        author: `${AUTHOR_NAME} (${AUTHOR_EMAIL})`,
         link: `/design/${design.id}`,
       };
     }),

@@ -21,7 +21,7 @@
     "astro": "astro",
     "build": "astro check && astro build",
     "dev": "astro dev --port 3000",
-    "preview": "astro preview"
+    "preview": "astro preview --port 3000"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
