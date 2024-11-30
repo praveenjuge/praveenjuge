@@ -12,7 +12,6 @@ export default defineConfig({
   build: {
     inlineStylesheets: "always",
   },
-  trailingSlash: "never",
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
 });
