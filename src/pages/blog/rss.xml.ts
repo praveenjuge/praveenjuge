@@ -29,7 +29,7 @@ export const GET: APIRoute = async () => {
           title: post.frontmatter.title,
           description: post.frontmatter.description,
           pubDate: post.frontmatter.pubDate,
-          author: AUTHOR_EMAIL,
+          author: `${AUTHOR_NAME} (${AUTHOR_EMAIL})`,
           link: `/blog/${post.file.split("/").pop()?.split(".")[0]}`,
           content:
             post.frontmatter.description + (await post.compiledContent()),
