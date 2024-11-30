@@ -17,7 +17,6 @@ export const GET: APIRoute = async () => {
     title: AUTHOR_NAME,
     description: SITE_DESCRIPTION,
     site: AUTHOR_URL,
-    trailingSlash: false,
     items: designs.map((design) => {
       return {
         title: design.id,
