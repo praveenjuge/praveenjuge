@@ -12,6 +12,9 @@ export default defineConfig({
   build: {
     inlineStylesheets: "always",
   },
+  experimental: {
+    clientPrerender: true,
+  },
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
 });
