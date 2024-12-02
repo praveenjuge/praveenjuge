@@ -81,26 +81,23 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
   </section>
 
   <section class="mx-auto max-w-xl p-4">
-    <h2 class="mt-6 font-semibold tracking-tight">
+    <h2 class="mt-6 font-semibold">
       <a href="/blog/">Blog</a>
     </h2>
 
     {
       posts.map((post) => (
-        <a
-          href={`/blog/${post.id}`}
-          class="my-4 flex items-center gap-2 font-medium"
-        >
+        <a href={`/blog/${post.id}/`} class="my-4 flex font-medium">
           {post.data.title}
         </a>
       ))
     }
 
-    <a href="/blog/" class="flex items-center gap-2 font-medium">
+    <a href="/blog/" class="flex font-medium">
       <span>Read More {" "}{"-->"}</span>
     </a>
 
-    <h2 class="mt-20 font-semibold tracking-tight">Projects</h2>
+    <h2 class="mt-20 font-semibold">Projects</h2>
 
     <section id="projects" class="my-6 space-y-5">
       <a
