@@ -52,7 +52,7 @@ In `layouts/index.html`, add:
 
 ```html
 {{ define "main" }}
-<h1 class="container mx-auto mt-5 text-3xl">Hello from the other side!</h1>
+<h1 class="mx-auto mt-5 text-3xl">Hello from the other side!</h1>
 {{ end }}
 ```
 
