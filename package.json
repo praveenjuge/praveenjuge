@@ -28,8 +28,8 @@
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "@tailwindcss/vite": "next",
-    "astro": "beta",
+    "astro": "5.0.3",
     "tailwindcss": "next",
-    "typescript": "next"
+    "typescript": "5.7.2"
   }
 }
