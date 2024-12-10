@@ -8,9 +8,9 @@ pubDate: "2024 dec 10"
 
 ### Why Switch to Astro?
 
-Before Astro, my site was built on Next.js, using its static build option. It worked fine, but honestly, for a simple blog and design showcase like mine, Next.js was overkill. I didn’t need a full ReactJS to download every time someone visited my site—just plain HTML and CSS would do.
+Before Astro, my site was built on [Next.js](https://nextjs.org/), using its static build option. It worked fine, but honestly, for a simple blog and design showcase like mine, Next.js was overkill. I didn’t need a full ReactJS to download every time someone visited my site—just plain HTML and CSS would do.
 
-I’ve dabbled with other static site generators like Hugo, Jekyll, and Middleman, but Astro caught my eye. I had used it for some client projects and loved how straightforward it was. Plus, it has some standout features that made me take the plunge:
+I’ve dabbled with other static site generators like [Hugo](https://gohugo.io/), [Jekyll](https://jekyllrb.com/), and [Middleman](https://middlemanapp.com/), but Astro caught my eye. I had used it for some client projects and loved how straightforward it was. Plus, it has some standout features that made me take the plunge:
 
 - **Content Collections**: With Astro, I didn’t have to manually parse Markdown files or handle syntax highlighting—it’s all baked in.
 - **Zero JavaScript by Default**: This is a big deal. My site doesn’t need JavaScript to function, so having zero js by default is a massive win.
@@ -27,7 +27,7 @@ Switching from Next.js to Astro took me about 3-4 hours, thanks to Astro’s sim
 1. **Performance**: My website size shrunk by 50% just by removing all the React/Next.js-related JavaScript. Now, it’s super lightweight and fast.
 2. **Developer Experience**: The CLI wizard for creating a new project is fantastic. It’s easy to add integrations and feels very “web-native.”
 3. **Type Safety**: If you love TypeScript, Astro has you covered with full type safety.
-4. **CMS Simplicity**: I’ve been using Cursor as my CMS for Astro, and while it’s not a traditional CMS, it gets the job done with minimal hassle.
+4. **CMS Simplicity**: I’ve been using [Cursor](https://cursor.com/) as my CMS for Astro, and while it’s not a traditional CMS, it gets the job done with minimal hassle.
 
 ### Cons of Astro
 
