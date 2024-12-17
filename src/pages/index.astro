@@ -9,14 +9,14 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
     (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
       (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
   )
-  .slice(0, 18);
+  .slice(0, 20);
 
 const designs: CollectionEntry<"design">[] = (await getCollection("design"))
   .sort(
     (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
       (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
   )
-  .slice(0, 11);
+  .slice(0, 12);
 ---
 
 <Layout>

@@ -10,10 +10,10 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
 
 <Layout title="Blog">
   <section class="mx-auto flex max-w-xl flex-col gap-4 p-4 font-medium">
-    <h2 class="font-bold">
+    <h1 class="font-bold">
       Blog <span> — </span>
       <a href="/blog/rss.xml" class="underline">RSS Feed</a>
-    </h2>
+    </h1>
     {posts.map((post) => <a href={`/blog/${post.id}/`}>{post.data.title}</a>)}
   </section>
 </Layout>
