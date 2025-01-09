@@ -18,3 +18,4 @@ export const AUTHOR_MASTODON = "https://mastodon.social/@praveenjuge";
 export const AUTHOR_LAYERS = "https://layers.to/praveenjuge";
 export const AUTHOR_THREADS = "https://threads.net/praveenjuge";
 export const AUTHOR_BSKY = "https://bsky.app/profile/praveenjuge.com";
+export const AUTHOR_YOUTUBE = "https://www.youtube.com/@praveenjuge";
