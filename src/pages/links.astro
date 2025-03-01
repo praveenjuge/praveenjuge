@@ -1,0 +1,61 @@
+---
+import Layout from "../Layout.astro";
+import { 
+  AUTHOR_BSKY,
+  AUTHOR_DRIBBBLE,
+  AUTHOR_GITHUB,
+  AUTHOR_INSTAGRAM,
+  AUTHOR_LAYERS,
+  AUTHOR_LINKEDIN,
+  AUTHOR_MASTODON,
+  AUTHOR_THREADS,
+  AUTHOR_YOUTUBE,
+  AUTHOR_X,
+  AUTHOR_FIGMA,
+  AUTHOR_BEHANCE,
+ } from "../consts";
+---
+
+<Layout title="My Social Links">
+  <section class="mx-auto max-w-xl space-y-4 px-4">
+    <h2 class="font-semibold">Links</h2>
+    <ul class="flex flex-col gap-2 font-medium [&_a]:block [&_a]:p-4 [&_a]:rounded [&_a]:border [&_a]:border-gray-200">
+      <li>
+        <a href={AUTHOR_X}>X (Twitter)</a>
+      </li>
+      <li>
+        <a href={AUTHOR_FIGMA}>Figma</a>
+      </li>
+      <li>
+        <a href={AUTHOR_YOUTUBE}>YouTube</a>
+      </li>
+      <li>
+        <a href={AUTHOR_LINKEDIN}>LinkedIn</a>
+      </li>
+      <li>
+        <a href={AUTHOR_INSTAGRAM}>Instagram</a>
+      </li>
+      <li>
+        <a href={AUTHOR_BSKY}>Bluesky</a>
+      </li>
+      <li>
+        <a href={AUTHOR_THREADS}>Threads</a>
+      </li>
+      <li>
+        <a href={AUTHOR_LAYERS}>Layers</a>
+      </li>
+      <li>
+        <a href={AUTHOR_GITHUB}>GitHub</a>
+      </li>
+      <li>
+        <a href={AUTHOR_DRIBBBLE}>Dribbble</a>
+      </li>
+      <li>
+        <a href={AUTHOR_BEHANCE}>Behance</a>
+      </li>
+      <li>
+        <a href={AUTHOR_MASTODON}>Mastodon</a>
+      </li>
+    </ul>
+  </section>
+</Layout>
