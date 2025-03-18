@@ -1,6 +1,6 @@
 ---
 title: 'New Updates to MynaUI!'
-pubDate: '2025-03-01 20:54:05'
+pubDate: '2025-03-18 20:54:05'
 ---
 
 Today, I’m thrilled to share the latest updates to [MynaUI](https://mynaui.com).
