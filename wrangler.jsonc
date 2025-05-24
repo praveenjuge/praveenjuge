@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "praveenjuge",
+  "compatibility_date": "2025-03-25",
+  "assets": {
+    "directory": "./dist"
+  }
+}
