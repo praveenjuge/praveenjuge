@@ -1,6 +1,6 @@
 ---
 import Layout from "../Layout.astro";
-import { 
+import {
   AUTHOR_BSKY,
   AUTHOR_DRIBBBLE,
   AUTHOR_GITHUB,
@@ -13,48 +13,218 @@ import {
   AUTHOR_X,
   AUTHOR_FIGMA,
   AUTHOR_BEHANCE,
- } from "../consts";
+} from "../consts";
 ---
 
 <Layout title="My Social Links">
   <section class="mx-auto max-w-xl space-y-4 px-4">
     <h2 class="font-semibold">Links</h2>
-    <ul class="flex flex-col gap-2 font-medium [&_a]:block [&_a]:p-4 [&_a]:rounded [&_a]:border [&_a]:border-gray-200">
+    <ul
+      class="flex flex-col gap-2 font-medium [&_a]:p-4 [&_a]:rounded [&_a]:border [&_a]:border-gray-200"
+    >
       <li>
-        <a href={AUTHOR_X}>X (Twitter)</a>
+        <a class="flex justify-between items-center" href={AUTHOR_X}
+          >X (Twitter) <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_FIGMA}>Figma</a>
+        <a class="flex justify-between items-center" href={AUTHOR_FIGMA}
+          >Figma <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_YOUTUBE}>YouTube</a>
+        <a class="flex justify-between items-center" href={AUTHOR_YOUTUBE}
+          >YouTube <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_LINKEDIN}>LinkedIn</a>
+        <a class="flex justify-between items-center" href={AUTHOR_LINKEDIN}
+          >LinkedIn <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_INSTAGRAM}>Instagram</a>
+        <a class="flex justify-between items-center" href={AUTHOR_INSTAGRAM}
+          >Instagram <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_BSKY}>Bluesky</a>
+        <a class="flex justify-between items-center" href={AUTHOR_BSKY}
+          >Bluesky <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_THREADS}>Threads</a>
+        <a class="flex justify-between items-center" href={AUTHOR_THREADS}
+          >Threads <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_LAYERS}>Layers</a>
+        <a class="flex justify-between items-center" href={AUTHOR_LAYERS}
+          >Layers <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_GITHUB}>GitHub</a>
+        <a class="flex justify-between items-center" href={AUTHOR_GITHUB}
+          >GitHub <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_DRIBBBLE}>Dribbble</a>
+        <a class="flex justify-between items-center" href={AUTHOR_DRIBBBLE}
+          >Dribbble <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_BEHANCE}>Behance</a>
+        <a class="flex justify-between items-center" href={AUTHOR_BEHANCE}
+          >Behance <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
       <li>
-        <a href={AUTHOR_MASTODON}>Mastodon</a>
+        <a class="flex justify-between items-center" href={AUTHOR_MASTODON}
+          >Mastodon <svg
+            role="presentation"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            xmlns="http://www.w3.org/2000/svg"
+            class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
+          ></a
+        >
       </li>
     </ul>
   </section>

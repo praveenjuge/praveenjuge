@@ -14,3 +14,4 @@ yarn-error.log*
 .vercel
 dist/
 .astro/
+bun.lock
