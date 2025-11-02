@@ -33,12 +33,12 @@ Clear names help teammates scan and trust your change.
 
 ## Tell a short story (paste this)
 
-**Context** — What’s off? Who feels it?
-**Proposal** — The smallest change that fixes it (and what you didn’t touch).
-**Evidence** — Before/After (light & dark), a 10–15s GIF, Storybook link.
-**Verify** — Exact steps/URL/flags to reproduce.
-**Blast radius** — Files touched, tokens changed, components affected.
-**Rollout** — Behind a flag? Any fallback?
+- **Context** — What’s off? Who feels it?
+- **Proposal** — The smallest change that fixes it (and what you didn’t touch).
+- **Evidence** — Before/After (light & dark), a 10–15s GIF, Storybook link.
+- **Verify** — Exact steps/URL/flags to reproduce.
+- **Blast radius** — Files touched, tokens changed, components affected.
+- **Rollout** — Behind a flag? Any fallback?
 
 ---
 
@@ -72,7 +72,7 @@ Clear names help teammates scan and trust your change.
 
 * **Screenshot grid**: Before/After × light/dark in one image
 * **15s GIF**: keyboard nav → focus → error → loading
-* **Links**: Figma frame (versioned), Storybook story ID
+* **Links**: Figma frame URL
 
 ---
 
