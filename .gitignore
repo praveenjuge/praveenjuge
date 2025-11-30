@@ -15,3 +15,4 @@ yarn-error.log*
 dist/
 .astro/
 bun.lock
+package-lock.json
