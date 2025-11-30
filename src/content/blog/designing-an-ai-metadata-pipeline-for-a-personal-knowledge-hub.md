@@ -1,12 +1,12 @@
 ---
 title: "Designing an AI Metadata Pipeline for a Personal Knowledge Hub"
 description: "How Teak uses a simple, predictable AI pipeline to quietly make sense of all your saved links, screenshots, notes, and files."
-pubDate: "2024-11-30T14:18:58.447Z"
+pubDate: "2025-11-30T14:18:58.447Z"
 ---
 
 Teak is a personal knowledge hub.
 You save links, screenshots, notes, files.
-Teak's job is to quietly make sense of all that. ([Teak Vault](https://teak.so))
+Teak's job is to quietly make sense of all that. ([Teak Vault](https://teakvault.com))
 
 The way it does that is through **metadata**.
 
