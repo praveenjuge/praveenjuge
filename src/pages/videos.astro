@@ -1,0 +1,190 @@
+---
+import Layout from "../Layout.astro";
+
+interface YouTubeVideo {
+  id: string;
+  title: string;
+  thumbnail: string;
+  publishedAt: string;
+  url: string;
+}
+
+let videos: YouTubeVideo[] = [];
+let error = "";
+
+// Fetch ALL videos using YouTube's oembed API (no API key needed!)
+try {
+  const CHANNEL_HANDLE = "praveenjuge";
+  
+  // First, scrape the channel page to get all video IDs
+  const response = await fetch(
+    `https://www.youtube.com/@${CHANNEL_HANDLE}/videos`
+  );
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch YouTube channel: ${response.statusText}`);
+  }
+
+  const html = await response.text();
+  
+  // Extract all video IDs from the page using regex
+  // This gets both initially loaded videos and continuation tokens
+  const videoIdMatches = html.matchAll(/"videoId":"([^"]+)"/g);
+  const uniqueVideoIds = new Set<string>();
+  
+  for (const match of videoIdMatches) {
+    uniqueVideoIds.add(match[1]);
+  }
+  
+  // Extract video titles
+  const videoDataMatches = html.matchAll(/"videoId":"([^"]+)".*?"title":\{"runs":\[\{"text":"([^"]+)"\}\].*?"publishedTimeText":\{"simpleText":"([^"]+)"\}/gs);
+  const videoMap = new Map<string, { title: string; published: string }>();
+  
+  for (const match of videoDataMatches) {
+    videoMap.set(match[1], {
+      title: match[2].replace(/\\u0026/g, '&').replace(/\\\\/g, '\\').replace(/\\"/g, '"'),
+      published: match[3]
+    });
+  }
+  
+  // Fallback: extract from ytInitialData
+  const ytInitialDataMatch = html.match(/var ytInitialData = ({.*?});/s);
+  if (ytInitialDataMatch) {
+    const ytData = JSON.parse(ytInitialDataMatch[1]);
+    const tabs = ytData?.contents?.twoColumnBrowseResultsRenderer?.tabs || [];
+    const videosTab = tabs.find((tab: any) => tab.tabRenderer?.title === "Videos");
+    const videoItems = videosTab?.tabRenderer?.content?.richGridRenderer?.contents || [];
+    
+    for (const item of videoItems) {
+      const videoRenderer = item?.richItemRenderer?.content?.videoRenderer;
+      if (!videoRenderer) continue;
+      
+      const videoId = videoRenderer.videoId;
+      const title = videoRenderer.title?.runs?.[0]?.text || videoRenderer.title?.simpleText;
+      const publishedText = videoRenderer.publishedTimeText?.simpleText;
+      
+      if (videoId && title) {
+        videoMap.set(videoId, { title, published: publishedText || "" });
+      }
+    }
+  }
+  
+  // Create video objects from all found IDs
+  for (const [videoId, data] of videoMap) {
+    videos.push({
+      id: videoId,
+      title: data.title,
+      thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+      publishedAt: data.published,
+      url: `https://www.youtube.com/watch?v=${videoId}`,
+    });
+  }
+  
+  // If we didn't get many videos, also try RSS feed
+  if (videos.length < 20) {
+    const CHANNEL_ID = "UChe0mBjhvdwo1nAFta1XfYg";
+    const rssResponse = await fetch(
+      `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`
+    );
+    
+    if (rssResponse.ok) {
+      const xmlText = await rssResponse.text();
+      const videoMatches = xmlText.matchAll(/<entry>(.*?)<\/entry>/gs);
+      
+      for (const match of videoMatches) {
+        const entry = match[1];
+        const videoId = entry.match(/<yt:videoId>(.*?)<\/yt:videoId>/)?.[1];
+        const title = entry.match(/<title>(.*?)<\/title>/)?.[1];
+        const published = entry.match(/<published>(.*?)<\/published>/)?.[1];
+        
+        if (videoId && title && !videoMap.has(videoId)) {
+          const date = published ? new Date(published).toLocaleDateString("en-US", { 
+            year: "numeric", 
+            month: "short", 
+            day: "numeric" 
+          }) : "";
+          
+          videos.push({
+            id: videoId,
+            title: title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>'),
+            thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+            publishedAt: date,
+            url: `https://www.youtube.com/watch?v=${videoId}`,
+          });
+        }
+      }
+    }
+  }
+  
+} catch (e) {
+  error = e instanceof Error ? e.message : "Failed to fetch videos";
+  console.error("Error fetching YouTube videos:", error);
+}
+---
+
+<Layout title="Videos">
+  <section class="mx-auto max-w-xl space-y-4 px-4">
+    <h1 class="font-semibold text-2xl">Videos</h1>
+    <p class="opacity-60">
+      Watch how I design and build things on{" "}
+      <a
+        href="https://www.youtube.com/@praveenjuge"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline decoration-2 underline-offset-1"
+      >
+        YouTube
+      </a>
+    </p>
+
+    {
+      error ? (
+        <div class="rounded-lg border border-red-200 bg-red-50 p-4 text-red-600">
+          <p class="font-medium">Error loading videos</p>
+          <p class="text-sm opacity-80">{error}</p>
+        </div>
+      ) : videos.length === 0 ? (
+        <div class="rounded-lg border border-gray-200 bg-gray-50 p-4">
+          <p class="opacity-60">No videos found.</p>
+        </div>
+      ) : (
+        <div class="grid gap-6 py-6">
+          {videos.map((video) => (
+            <a
+              href={video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group overflow-hidden rounded-lg border border-gray-200"
+            >
+              <div class="relative aspect-video overflow-hidden bg-gray-100">
+                <img
+                  src={video.thumbnail}
+                  alt={video.title}
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity group-hover:opacity-100">
+                  <svg
+                    class="h-16 w-16 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h2 class="font-medium leading-snug line-clamp-2">
+                  {video.title}
+                </h2>
+                <p class="mt-2 text-sm opacity-60">
+                  {video.publishedAt}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </section>
+</Layout>
