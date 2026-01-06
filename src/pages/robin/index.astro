@@ -1,0 +1,64 @@
+---
+import Layout from "../../Layout.astro";
+
+const title = "Robin - Web to Figma";
+const description = "Capture web pages and import them into Figma with Auto Layout.";
+---
+
+<Layout title={title} description={description}>
+  <section class="mx-auto max-w-xl space-y-8 p-4">
+    <!-- Header with back link -->
+    <a href="/" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+      Back to Home
+    </a>
+
+    <!-- Main content -->
+    <div class="space-y-4">
+      <h1 class="text-3xl font-semibold tracking-tight">Robin</h1>
+      <p class="text-xl text-gray-600">
+        Capture web pages and import them into Figma with Auto Layout
+      </p>
+    </div>
+
+    <!-- Install buttons -->
+    <div class="flex flex-col gap-3 sm:flex-row">
+      <a
+        href="https://chromewebstore.google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex justify-center rounded-lg bg-gray-900 px-5 py-3 font-medium text-white hover:bg-gray-800 transition-colors"
+      >
+        Chrome Extension
+      </a>
+      <a
+        href="https://www.figma.com/community/plugin/1581173524877973596"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex justify-center rounded-lg border border-gray-200 px-5 py-3 font-medium hover:bg-gray-50 transition-colors"
+      >
+        Figma Plugin
+      </a>
+    </div>
+
+    <!-- Quick info -->
+    <div class="space-y-2 text-sm text-gray-600">
+      <p><strong>How it works:</strong></p>
+      <ol class="list-inside list-decimal space-y-1">
+        <li>Navigate to a web page in Chrome</li>
+        <li>Click the Robin extension icon to download a .zip file</li>
+        <li>In Figma, run the Robin plugin and drag the .zip file</li>
+      </ol>
+    </div>
+
+    <!-- Links -->
+    <div class="flex items-center gap-6 text-sm">
+      <a href="/robin/privacy" class="text-gray-500 hover:text-gray-900 transition-colors">
+        Privacy
+      </a>
+      <a href="/robin/payment" class="inline-flex items-center gap-1 rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 font-medium text-emerald-600 hover:bg-emerald-100 transition-colors">
+        <span class="size-1.5 rounded-full bg-emerald-600"></span>
+        Get License
+      </a>
+    </div>
+  </section>
+</Layout>
