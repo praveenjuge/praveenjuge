@@ -14,7 +14,16 @@ I've already added 4 videos to my channel, and I promise there are more to come!
 
 Here's the link to my YouTube channel: <https://www.youtube.com/@praveenjuge>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wVrV4m7ofRA?si=SIHNADaxZOjZ-KLC" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+  <iframe
+    src="https://www.youtube.com/embed/wVrV4m7ofRA"
+    title="Figma Speedrun by Praveen Juge"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
 
 LIKE AND SUBSCRIBE, or I will be slightly disappointed.
 

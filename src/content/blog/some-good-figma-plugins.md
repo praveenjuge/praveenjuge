@@ -30,6 +30,6 @@ If you're into icon work, you'll love this one. It's my go-to for fixing those a
 
 ## [Noise & Texture](https://www.figma.com/community/plugin/1138854718618193875/noise-texture)
 
-[![Noise & Texture plugin interface](../../images/some-good-figma-plugins/5.png)](https://www.figma.com/community/plugin/1138854718618193875/noise-texture)
+[![Noise & Texture plugin interface](../../images/some-good-figma-plugins/5.webp)](https://www.figma.com/community/plugin/1138854718618193875/noise-texture)
 
 Last but not least - this plugin is fantastic for adding some subtle texture to your designs. No more jumping between Photoshop and Figma! The real-time preview is super helpful, and it's perfect for those times when you need to add a bit of depth to your work. I use it all the time for background textures and grain effects.

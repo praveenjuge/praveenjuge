@@ -42,7 +42,7 @@ As a story-driven gamer, I found Odyssey to be one of the better narratives in t
 
 Valhalla takes a different approach, setting the stage in the Viking era. You play as Eivor, a Viking warrior who travels to England to establish a new settlement. The game blends historical and mythical elements, including trips to Asgard and Jotunheim, which, while interesting, sometimes felt out of place.
 
-![](../../images/uprryf8-g4OT.jpeg)
+![](../../images/uprryf8-g4OT.webp)
 
 The story revolves around building alliances across England, with each region offering unique narratives and challenges. However, the mission structure can feel repetitive, with many tasks boiling down to raiding and pillaging, which can get monotonous over time.
 
