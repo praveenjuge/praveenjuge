@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
+import cloudflare from "@astrojs/cloudflare";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 
@@ -24,6 +25,8 @@ export default defineConfig({
       weights: ["100 900"],
     },
   ],
-  // @ts-expect-error Tailwind's Vite plugin is typed against the workspace Vite version.
   vite: { plugins: [tailwindcss()] },
+  adapter: cloudflare({
+    imageService: "compile",
+  }),
 });
