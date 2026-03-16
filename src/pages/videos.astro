@@ -9,6 +9,13 @@ interface YouTubeVideo {
   url: string;
 }
 
+function decodeVideoText(value: string) {
+  return value
+    .replace(/\\u0026/g, "&")
+    .replace(/\\\\/g, "\\")
+    .replace(/\\"/g, '"');
+}
+
 let videos: YouTubeVideo[] = [];
 let error = "";
 
@@ -33,7 +40,9 @@ try {
   const uniqueVideoIds = new Set<string>();
   
   for (const match of videoIdMatches) {
-    uniqueVideoIds.add(match[1]);
+    const [, videoId] = match;
+    if (!videoId) continue;
+    uniqueVideoIds.add(videoId);
   }
   
   // Extract video titles
@@ -41,16 +50,21 @@ try {
   const videoMap = new Map<string, { title: string; published: string }>();
   
   for (const match of videoDataMatches) {
-    videoMap.set(match[1], {
-      title: match[2].replace(/\\u0026/g, '&').replace(/\\\\/g, '\\').replace(/\\"/g, '"'),
-      published: match[3]
+    const [, videoId, title, published] = match;
+    if (!videoId || !title || !published) continue;
+
+    videoMap.set(videoId, {
+      title: decodeVideoText(title),
+      published,
     });
   }
   
   // Fallback: extract from ytInitialData
   const ytInitialDataMatch = html.match(/var ytInitialData = ({.*?});/s);
-  if (ytInitialDataMatch) {
-    const ytData = JSON.parse(ytInitialDataMatch[1]);
+  const ytInitialData = ytInitialDataMatch?.[1];
+
+  if (ytInitialData) {
+    const ytData = JSON.parse(ytInitialData);
     const tabs = ytData?.contents?.twoColumnBrowseResultsRenderer?.tabs || [];
     const videosTab = tabs.find((tab: any) => tab.tabRenderer?.title === "Videos");
     const videoItems = videosTab?.tabRenderer?.content?.richGridRenderer?.contents || [];
@@ -92,7 +106,9 @@ try {
       const videoMatches = xmlText.matchAll(/<entry>(.*?)<\/entry>/gs);
       
       for (const match of videoMatches) {
-        const entry = match[1];
+        const [, entry] = match;
+        if (!entry) continue;
+
         const videoId = entry.match(/<yt:videoId>(.*?)<\/yt:videoId>/)?.[1];
         const title = entry.match(/<title>(.*?)<\/title>/)?.[1];
         const published = entry.match(/<published>(.*?)<\/published>/)?.[1];
@@ -106,7 +122,10 @@ try {
           
           videos.push({
             id: videoId,
-            title: title.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>'),
+            title: title
+              .replace(/&amp;/g, "&")
+              .replace(/&lt;/g, "<")
+              .replace(/&gt;/g, ">"),
             thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
             publishedAt: date,
             url: `https://www.youtube.com/watch?v=${videoId}`,

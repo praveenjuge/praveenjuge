@@ -16,5 +16,6 @@ export default defineConfig({
     clientPrerender: true,
   },
   integrations: [sitemap()],
+  // @ts-expect-error Tailwind's Vite plugin is typed against the workspace Vite version.
   vite: { plugins: [tailwindcss()] },
 });
