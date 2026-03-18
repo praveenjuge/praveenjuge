@@ -19,8 +19,9 @@ const designs: CollectionEntry<"design">[] = (
     {
       designs.map((design) => (
         <a
+          target="_blank"
           data-astro-prefetch="false"
-          href={`/design/${design.id}`}
+          href={design.data.cover.src}
         >
           <Image
             width={1600}
