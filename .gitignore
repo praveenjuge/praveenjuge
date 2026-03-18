@@ -16,3 +16,4 @@ dist/
 .astro/
 bun.lock
 package-lock.json
+.wrangler
