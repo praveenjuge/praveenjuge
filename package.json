@@ -19,18 +19,16 @@
   "author": "praveenjuge",
   "scripts": {
     "astro": "astro",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "dev": "astro dev --port 3000",
     "preview": "astro preview --port 3000"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.8",
     "@astrojs/cloudflare": "^13.1.2",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "6.0.5",
-    "tailwindcss": "^4.2.1",
-    "typescript": "^5.8.3"
+    "tailwindcss": "^4.2.1"
   }
 }

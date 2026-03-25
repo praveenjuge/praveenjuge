@@ -2,7 +2,7 @@ import { defineCollection } from "astro:content";
 import { readdir } from "node:fs/promises";
 import { basename, extname, join, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-import { glob, type Loader } from "astro/loaders";
+import { glob } from "astro/loaders";
 import { rssSchema } from "@astrojs/rss";
 
 const blog = defineCollection({
@@ -30,15 +30,15 @@ const MONTH_INDEX_BY_TOKEN = new Map([
   ["dec", 11],
 ]);
 
-function toSiteRelativePath(rootPath: string, filePath: string) {
+function toSiteRelativePath(rootPath, filePath) {
   return relative(rootPath, filePath).split(sep).join("/");
 }
 
-function isDesignImageFile(fileName: string) {
+function isDesignImageFile(fileName) {
   return DESIGN_IMAGE_PATTERN.test(fileName);
 }
 
-function isDesignImagePath(rootPath: string, filePath: string) {
+function isDesignImagePath(rootPath, filePath) {
   const relativePath = toSiteRelativePath(rootPath, filePath);
   return (
     relativePath.startsWith(`${DESIGN_DIRECTORY}/`) &&
@@ -46,7 +46,7 @@ function isDesignImagePath(rootPath: string, filePath: string) {
   );
 }
 
-function parseDesignPubDate(id: string) {
+function parseDesignPubDate(id) {
   const match = /^(?<year>\d{4})-(?<month>[a-z]+)-(?<day>\d{1,2})$/i.exec(id);
 
   if (!match?.groups) {
@@ -86,10 +86,10 @@ function parseDesignPubDate(id: string) {
   return pubDate;
 }
 
-async function listDesignImageEntries(rootPath: string) {
+async function listDesignImageEntries(rootPath) {
   const designDirectory = join(rootPath, DESIGN_DIRECTORY);
   const dirents = await readdir(designDirectory, { withFileTypes: true });
-  const ids = new Set<string>();
+  const ids = new Set();
 
   return dirents
     .filter((dirent) => dirent.isFile() && isDesignImageFile(dirent.name))
@@ -117,7 +117,7 @@ async function listDesignImageEntries(rootPath: string) {
     .sort((left, right) => left.id.localeCompare(right.id));
 }
 
-const designLoader: Loader = {
+const designLoader = {
   name: "local-design-image-loader",
   load: async ({ config, generateDigest, logger, meta, parseData, store, watcher }) => {
     const rootPath = fileURLToPath(config.root);
@@ -158,7 +158,7 @@ const designLoader: Loader = {
     meta.set("watching", "true");
     watcher.add(fileURLToPath(new URL(DESIGN_DIRECTORY, config.root)));
 
-    const reloadDesignEntries = async (filePath: string) => {
+    const reloadDesignEntries = async (filePath) => {
       if (!isDesignImagePath(rootPath, filePath)) {
         return;
       }

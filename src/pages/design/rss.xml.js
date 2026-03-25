@@ -1,16 +1,15 @@
 import rss from "@astrojs/rss";
-import type { APIRoute } from "astro";
 import {
   SITE_DESCRIPTION,
   AUTHOR_NAME,
   AUTHOR_URL,
   AUTHOR_EMAIL,
 } from "../../consts";
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
-export const GET: APIRoute = async () => {
+export const GET = async () => {
   const designs = (await getCollection("design")).sort(
-    (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
+    (a, b) =>
       (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
   );
   return rss({

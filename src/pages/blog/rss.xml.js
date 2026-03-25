@@ -1,5 +1,4 @@
 import rss from "@astrojs/rss";
-import type { APIRoute } from "astro";
 import {
   SITE_DESCRIPTION,
   AUTHOR_NAME,
@@ -7,12 +6,12 @@ import {
   AUTHOR_EMAIL,
 } from "../../consts";
 
-export const GET: APIRoute = async () => {
+export const GET = async () => {
   const postImportResult = import.meta.glob("../../content/blog/**/*.md", {
     eager: true,
   });
   const posts = Object.values(postImportResult);
-  const sortedPosts = [...posts].sort((a: any, b: any) => {
+  const sortedPosts = [...posts].sort((a, b) => {
     return (
       new Date(b.frontmatter.pubDate).getTime() -
       new Date(a.frontmatter.pubDate).getTime()
@@ -24,7 +23,7 @@ export const GET: APIRoute = async () => {
     description: SITE_DESCRIPTION,
     site: AUTHOR_URL,
     items: await Promise.all(
-      sortedPosts.map(async (post: any) => {
+      sortedPosts.map(async (post) => {
         return {
           title: post.frontmatter.title,
           description: post.frontmatter.description,
