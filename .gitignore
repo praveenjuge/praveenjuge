@@ -17,3 +17,7 @@ dist/
 bun.lock
 package-lock.json
 .wrangler
+
+.dev.vars*
+!.dev.vars.example
+!.env.example

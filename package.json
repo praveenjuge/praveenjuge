@@ -21,13 +21,19 @@
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev --port 3000",
-    "preview": "astro preview --port 3000"
+    "preview": "bun run build && wrangler dev",
+    "generate-types": "wrangler types",
+    "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.2.0",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "6.0.5",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.84.1"
   }
 }
