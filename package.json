@@ -24,7 +24,6 @@
     "preview": "astro preview --port 3000"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.1.2",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
     "@tailwindcss/vite": "^4.2.1",
