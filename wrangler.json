@@ -1,0 +1,8 @@
+{
+  "name": "praveenjuge",
+  "compatibility_date": "2025-04-22",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
