@@ -21,6 +21,7 @@ const designCards = await Promise.all(
         src: design.data.cover,
         width: DESIGN_PREVIEW_WIDTH,
         height: DESIGN_PREVIEW_HEIGHT,
+        quality: "high",
       })
     ).src,
   }))
@@ -42,6 +43,7 @@ const designCards = await Promise.all(
           <Image
             width={DESIGN_PREVIEW_WIDTH}
             height={DESIGN_PREVIEW_HEIGHT}
+            quality="high"
             alt={design.id}
             src={design.data.cover}
           />
