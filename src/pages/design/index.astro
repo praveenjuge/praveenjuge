@@ -19,9 +19,8 @@ const designCards = await Promise.all(
     imageHref: (
       await getImage({
         src: design.data.cover,
-        width: DESIGN_PREVIEW_WIDTH,
-        height: DESIGN_PREVIEW_HEIGHT,
-        quality: "high",
+        quality: "max",
+        format: design.data.cover.format,
       })
     ).src,
   }))
