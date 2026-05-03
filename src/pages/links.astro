@@ -1,19 +1,6 @@
 ---
 import Layout from "../Layout.astro";
-import {
-  AUTHOR_BSKY,
-  AUTHOR_DRIBBBLE,
-  AUTHOR_GITHUB,
-  AUTHOR_INSTAGRAM,
-  AUTHOR_LAYERS,
-  AUTHOR_LINKEDIN,
-  AUTHOR_MASTODON,
-  AUTHOR_THREADS,
-  AUTHOR_YOUTUBE,
-  AUTHOR_X,
-  AUTHOR_FIGMA,
-  AUTHOR_BEHANCE,
-} from "../consts";
+import { AUTHOR } from "../consts";
 ---
 
 <Layout title="My Social Links">
@@ -23,7 +10,7 @@ import {
       class="flex flex-col gap-2 font-medium [&_a]:p-4 [&_a]:rounded [&_a]:border [&_a]:border-gray-200"
     >
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_X}
+        <a class="flex justify-between items-center" href={AUTHOR.social.x}
           >X (Twitter) <svg
             role="presentation"
             width="18"
@@ -40,7 +27,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_FIGMA}
+        <a class="flex justify-between items-center" href={AUTHOR.social.figma}
           >Figma <svg
             role="presentation"
             width="18"
@@ -57,7 +44,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_YOUTUBE}
+        <a class="flex justify-between items-center" href={AUTHOR.social.youtube}
           >YouTube <svg
             role="presentation"
             width="18"
@@ -74,7 +61,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_LINKEDIN}
+        <a class="flex justify-between items-center" href={AUTHOR.social.linkedin}
           >LinkedIn <svg
             role="presentation"
             width="18"
@@ -91,7 +78,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_INSTAGRAM}
+        <a class="flex justify-between items-center" href={AUTHOR.social.instagram}
           >Instagram <svg
             role="presentation"
             width="18"
@@ -108,7 +95,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_BSKY}
+        <a class="flex justify-between items-center" href={AUTHOR.social.bsky}
           >Bluesky <svg
             role="presentation"
             width="18"
@@ -125,7 +112,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_THREADS}
+        <a class="flex justify-between items-center" href={AUTHOR.social.threads}
           >Threads <svg
             role="presentation"
             width="18"
@@ -142,7 +129,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_LAYERS}
+        <a class="flex justify-between items-center" href={AUTHOR.social.layers}
           >Layers <svg
             role="presentation"
             width="18"
@@ -159,7 +146,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_GITHUB}
+        <a class="flex justify-between items-center" href={AUTHOR.social.github}
           >GitHub <svg
             role="presentation"
             width="18"
@@ -176,7 +163,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_DRIBBBLE}
+        <a class="flex justify-between items-center" href={AUTHOR.social.dribbble}
           >Dribbble <svg
             role="presentation"
             width="18"
@@ -193,7 +180,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_BEHANCE}
+        <a class="flex justify-between items-center" href={AUTHOR.social.behance}
           >Behance <svg
             role="presentation"
             width="18"
@@ -210,7 +197,7 @@ import {
         >
       </li>
       <li>
-        <a class="flex justify-between items-center" href={AUTHOR_MASTODON}
+        <a class="flex justify-between items-center" href={AUTHOR.social.mastodon}
           >Mastodon <svg
             role="presentation"
             width="18"

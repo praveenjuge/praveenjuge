@@ -14,6 +14,10 @@ export default defineConfig({
   },
   experimental: {
     clientPrerender: true,
+    rustCompiler: true,
+    queuedRendering: {
+      enabled: true,
+    },
   },
   integrations: [sitemap()],
   fonts: [

@@ -1,23 +1,29 @@
-export const SITE_TITLE = "Personal Website";
-export const SITE_DESCRIPTION =
-  "Praveen Juge is a designer and developer for everything on the web.";
-export const SITE_COLOR = "#e5e7eb";
+export const SITE = {
+  title: "Personal Website",
+  description:
+    "Praveen Juge is a designer and developer for everything on the web.",
+  color: "#e5e7eb",
+};
 
-export const AUTHOR_NAME = "Praveen Juge";
-export const AUTHOR_IMAGE = "https://praveenjuge.com/praveenjuge.jpg";
-export const AUTHOR_HANDLE = "@praveenjuge";
-export const AUTHOR_URL = "https://praveenjuge.com";
-export const AUTHOR_EMAIL = "hi@praveenjuge.com";
-export const AUTHOR_X = "https://x.com/praveenjuge";
-export const AUTHOR_TWITTER = "https://twitter.com/praveenjuge";
-export const AUTHOR_LINKEDIN = "https://www.linkedin.com/in/praveenjuge";
-export const AUTHOR_GITHUB = "https://github.com/praveenjuge";
-export const AUTHOR_INSTAGRAM = "https://instagram.com/praveenjuge";
-export const AUTHOR_DRIBBBLE = "https://dribbble.com/praveenjuge";
-export const AUTHOR_MASTODON = "https://mastodon.social/@praveenjuge";
-export const AUTHOR_LAYERS = "https://layers.to/praveenjuge";
-export const AUTHOR_THREADS = "https://threads.net/praveenjuge";
-export const AUTHOR_BSKY = "https://bsky.app/profile/praveenjuge.com";
-export const AUTHOR_YOUTUBE = "https://www.youtube.com/@praveenjuge";
-export const AUTHOR_FIGMA = "https://figma.com/@praveenjuge";
-export const AUTHOR_BEHANCE = "https://www.behance.net/praveenjuge";
+export const AUTHOR = {
+  name: "Praveen Juge",
+  image: "https://praveenjuge.com/praveenjuge.jpg",
+  handle: "@praveenjuge",
+  url: "https://praveenjuge.com",
+  email: "hi@praveenjuge.com",
+  social: {
+    x: "https://x.com/praveenjuge",
+    twitter: "https://twitter.com/praveenjuge",
+    linkedin: "https://www.linkedin.com/in/praveenjuge",
+    github: "https://github.com/praveenjuge",
+    instagram: "https://instagram.com/praveenjuge",
+    dribbble: "https://dribbble.com/praveenjuge",
+    mastodon: "https://mastodon.social/@praveenjuge",
+    layers: "https://layers.to/praveenjuge",
+    threads: "https://threads.net/praveenjuge",
+    bsky: "https://bsky.app/profile/praveenjuge.com",
+    youtube: "https://www.youtube.com/@praveenjuge",
+    figma: "https://figma.com/@praveenjuge",
+    behance: "https://www.behance.net/praveenjuge",
+  },
+};

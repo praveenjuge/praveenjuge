@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 import myPhoto from "../images/praveenjuge.jpg";
-import { AUTHOR_FIGMA, AUTHOR_YOUTUBE } from "../consts";
+import { AUTHOR } from "../consts";
 
 const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
   .sort(
@@ -920,7 +920,7 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
       </a>
 
       <a
-        href={AUTHOR_FIGMA}
+        href={AUTHOR.social.figma}
         target="_blank"
         rel="noopener noreferrer"
         class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
@@ -947,7 +947,7 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
       </a>
 
       <a
-        href={AUTHOR_YOUTUBE}
+        href={AUTHOR.social.youtube}
         target="_blank"
         rel="noopener noreferrer"
         class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
