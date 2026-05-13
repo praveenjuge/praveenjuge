@@ -28,16 +28,15 @@ const designCards = await Promise.all(
 ---
 
 <Layout title="Designs">
-  <section
-    class="mx-auto flex max-w-xl flex-col gap-6 p-4 font-bold **:[img]:rounded"
-  >
-    <h1>Designs</h1>
+  <h1 class="mx-auto mb-6 max-w-xl px-4 font-bold">Designs</h1>
+  <section class="grid w-full grid-cols-1 gap-2 p-2 sm:grid-cols-2 md:grid-cols-4">
     {
       designCards.map((design) => (
         <a
           target="_blank"
           data-astro-prefetch="false"
           href={design.imageHref}
+          class="block"
         >
           <Image
             width={DESIGN_PREVIEW_WIDTH}
@@ -45,6 +44,7 @@ const designCards = await Promise.all(
             quality="high"
             alt={design.id}
             src={design.data.cover}
+            class="block h-full w-full object-cover"
           />
         </a>
       ))
