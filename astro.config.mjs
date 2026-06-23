@@ -14,9 +14,6 @@ export default defineConfig({
   },
   experimental: {
     clientPrerender: true,
-    queuedRendering: {
-      enabled: true,
-    },
   },
   integrations: [sitemap()],
   fonts: [
