@@ -1,6 +1,6 @@
 ---
 title: "My 2024 Tech Stack"
-description: "While building my SaaS app, mosaicimg.com, I had to take a moment and document the tech stack I used. Here's a quick rundown of all the tools that made it happen."
+description: "While building my SaaS app, mosaic.praveenjuge.com, I had to take a moment and document the tech stack I used. Here's a quick rundown of all the tools that made it happen."
 pubDate: "2024-09-25T15:58:55.910Z"
 ---
 
@@ -20,4 +20,4 @@ pubDate: "2024-09-25T15:58:55.910Z"
 - 🛠️ [**Sentry**](https://sentry.io/) – Error Monitoring
 - 📧 [**Loops**](https://loops.so/) – Marketing Emails
 
-This setup has been key to making [Mosaic](https://mosaicimg.com) smooth and scalable!
+This setup has been key to making [Mosaic](https://mosaic.praveenjuge.com) smooth and scalable!
