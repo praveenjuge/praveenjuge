@@ -10,7 +10,7 @@ const {
   mosaic,
 } = Astro.props;
 const coverImage = mosaic
-  ? `https://mosaicimg.com/use?url=${canonicalURL}`
+  ? `https://mosaic.praveenjuge.com/use?url=${canonicalURL}`
   : new URL("/opengraph-image.jpg", Astro.url);
 
 const jsonLd = {
