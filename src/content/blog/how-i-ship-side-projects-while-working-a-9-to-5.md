@@ -16,7 +16,7 @@ No heroic weekend required. I enjoy sleep.
 
 **Consistency beats intensity.**
 
-I posted one design every day for over a hundred days and doubled my Twitter following. The useful part wasn't Twitter. It was learning to ask a smaller question: what can I finish today?
+I posted one design every day for over a hundred days and doubled my Twitter following. I do the same with YouTube, uploading videos and making content out of the side projects I'm building. The useful part wasn't the reach. It was learning to ask a smaller question: what can I finish today?
 
 If the answer takes more than a day, I slice it again.
 
