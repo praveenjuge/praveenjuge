@@ -24,6 +24,8 @@ Not “build an icon library.” One icon. Not “launch an app.” One working 
 
 That one-day rule is how Teak, Vadivam, MynaUI, and One Hour moved from ideas to things people can use. It is how I shipped three iOS apps instead of keeping three polished Figma files safe from reality.
 
+Practice went from idea to the App Store in three days. Not three months. Three days.
+
 Shipping changes the conversation. A real user finds the confusing copy. App Review finds the problem. The product tells you what matters next.
 
 Polish cannot do that while it is hiding on your laptop.
