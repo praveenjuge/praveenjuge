@@ -1,0 +1,17 @@
+{
+  "name": "praveenjuge",
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "dev",
+      "command": "npm run dev -- --host 0.0.0.0 --port 4321",
+      "description": "Astro development server with hot reload"
+    }
+  ],
+  "ports": [
+    {
+      "name": "Astro dev server",
+      "port": 4321
+    }
+  ]
+}
