@@ -5,12 +5,31 @@ import Layout from "../Layout.astro";
 
 <Layout title="Page not found (404)">
   <section
-    class="mx-auto max-w-sm px-4 py-48 text-center space-y-2 **:[a]:underline **:[h1]:font-bold **:[p]:opacity-75"
+    class="mx-auto max-w-sm px-4 py-24 text-center space-y-2 **:[a]:underline **:[h1]:font-bold **:[p]:opacity-75"
   >
     <h1>Page not found (404)</h1>
+    <p>
+      The path <code id="missing-path"></code> was not found.
+    </p>
+    <script is:inline>
+      const missingPath = document.getElementById("missing-path");
+      if (missingPath) missingPath.textContent = window.location.pathname;
+    </script>
     <p>
       If you think this is a mistake, please let me know at{" "}
       <a href={AUTHOR.social.x} target="_blank" rel="noreferrer noopener">Twitter</a>.
     </p>
+  </section>
+
+  <section class="mx-auto max-w-xl px-4 pb-24 space-y-4 text-sm leading-relaxed">
+    <h2 class="font-semibold">Where to go next</h2>
+    <ul class="list-disc pl-5 space-y-1 **:[a]:underline">
+      <li><a href="/">Home</a> — overview and projects</li>
+      <li><a href="/blog/">Blog</a> — writing</li>
+      <li><a href="/design/">Designs</a> — design archive</li>
+      <li><a href="/videos/">Videos</a> — YouTube</li>
+      <li><a href="/sitemap-index.xml">Sitemap</a> — all pages</li>
+      <li><a href="/robots.txt">Robots</a> — crawl rules</li>
+    </ul>
   </section>
 </Layout>
