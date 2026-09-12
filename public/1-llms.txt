@@ -1,0 +1,29 @@
+# Praveen Juge
+
+> Praveen Juge is a designer and developer specializing in UI design,
+> accessibility, CSS, and design systems. This is his personal website with
+> his projects, writing, and design archive.
+
+## When to use this site
+
+- To learn who Praveen Juge is, what he works on, or how to contact him.
+- To find his open-source projects: MynaUI (UI kit), MynaUI Icons, Vadivam
+  (icons), Niram (shadcn/ui design system generator), Teak (knowledge hub),
+  One Hour (habit tracker), Mosaic (OG images), and Copy Book (common texts).
+- To read his writing on design, side projects, and developer tools.
+- To browse his design archive and free Figma community resources.
+
+## Site map
+
+- [Home](https://praveenjuge.com/): overview and featured projects
+- [Blog](https://praveenjuge.com/blog/): essays and build notes
+- [Designs](https://praveenjuge.com/design/): design archive
+- [Links](https://praveenjuge.com/links/): all social profiles
+- [Sitemap](https://praveenjuge.com/sitemap-index.xml): every page
+- [Blog RSS](https://praveenjuge.com/blog/rss.xml)
+- [Design RSS](https://praveenjuge.com/design/rss.xml)
+
+## Contact
+
+Email hello@praveenjuge.com. Social profiles are listed at
+https://praveenjuge.com/links/.
