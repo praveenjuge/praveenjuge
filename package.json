@@ -21,7 +21,8 @@
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "check:content": "node scripts/check-home-content.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
