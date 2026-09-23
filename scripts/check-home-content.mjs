@@ -17,11 +17,11 @@ if (inlineSvgBytes > 1024) {
   );
 }
 
-const SRC = /\ssrc="([^"]*)"/;
-const ALT = /\salt="([^"]*)"/;
-const CLASS = /\sclass="([^"]*)"/;
-const attr = (tag, pattern) => tag.match(pattern)?.[1];
-const labeled = ["/wordmark.svg", "/icons/github.svg", "/icons/dribbble.svg", "/icons/x.svg", "/icons/mark.svg"];
+const SRC = /\ssrc=(["'])(.*?)\1/;
+const ALT = /\salt=(["'])(.*?)\1/;
+const CLASS = /\sclass=(["'])(.*?)\1/;
+const attr = (tag, pattern) => tag.match(pattern)?.[2];
+const decorative = ["/icons/arrow-up-right.svg"];
 
 for (const [tag] of source.matchAll(/<img\b[\s\S]*?>/g)) {
   const src = attr(tag, SRC);
@@ -30,7 +30,7 @@ for (const [tag] of source.matchAll(/<img\b[\s\S]*?>/g)) {
   if (!(attr(tag, CLASS) ?? "").split(/\s+/).includes("bg-transparent!")) {
     errors.push(`${src} needs bg-transparent! so the global [&_img]:bg-gray-100 placeholder doesn't paint behind it.`);
   }
-  if (labeled.includes(src) && !attr(tag, ALT)?.trim()) {
+  if (!decorative.includes(src) && !attr(tag, ALT)?.trim()) {
     errors.push(`${src} needs non-empty alt text; it is the only label for its link.`);
   }
 }
