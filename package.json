@@ -19,7 +19,7 @@
   "author": "praveenjuge",
   "scripts": {
     "astro": "astro",
-    "build": "astro build",
+    "build": "node scripts/check-home-content.mjs && astro build",
     "dev": "astro dev",
     "preview": "astro preview",
     "check:content": "node scripts/check-home-content.mjs"
