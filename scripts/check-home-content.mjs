@@ -1,7 +1,9 @@
 import { readFileSync } from "node:fs";
 
-const files = ["src/Layout.astro", "src/pages/index.astro"];
-const source = files.map((file) => readFileSync(file, "utf8")).join("\n");
+const source = [
+  readFileSync("src/Layout.astro", "utf8"),
+  readFileSync("src/pages/index.astro", "utf8"),
+].join("\n");
 const errors = [];
 
 const inlineSvgBytes = [...source.matchAll(/<svg[\s\S]*?<\/svg\s*>/g)].reduce(
@@ -15,8 +17,12 @@ if (inlineSvgBytes > 1024) {
   );
 }
 
-const attr = (tag, name) =>
-  tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1];
+const attrPatterns = {
+  src: /\ssrc="([^"]*)"/,
+  alt: /\salt="([^"]*)"/,
+  class: /\sclass="([^"]*)"/,
+};
+const attr = (tag, name) => tag.match(attrPatterns[name])?.[1];
 const labeled = ["/wordmark.svg", "/icons/github.svg", "/icons/dribbble.svg", "/icons/x.svg", "/icons/mark.svg"];
 
 for (const [tag] of source.matchAll(/<img\b[\s\S]*?>/g)) {
