@@ -21,7 +21,8 @@
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
