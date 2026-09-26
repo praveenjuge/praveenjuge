@@ -72,6 +72,8 @@ describe("worker fetch", () => {
       "Content-Type": "text/plain; charset=utf-8",
       ETag: '"abc123"',
       "Cache-Control": "public, max-age=300",
+      "Content-Length": "16",
+      "Last-Modified": "Sat, 26 Sep 2026 00:00:00 GMT",
     },
   });
 
@@ -118,6 +120,11 @@ describe("worker fetch", () => {
 
     assert.equal(response.headers.get("ETag"), '"abc123"');
     assert.equal(response.headers.get("Cache-Control"), "public, max-age=300");
+    assert.equal(response.headers.get("Content-Length"), "16");
+    assert.equal(
+      response.headers.get("Last-Modified"),
+      "Sat, 26 Sep 2026 00:00:00 GMT",
+    );
     assert.equal(response.headers.get("Vary"), "Accept");
   });
 
@@ -125,7 +132,25 @@ describe("worker fetch", () => {
     const response = await worker.fetch(request("text/markdown", "HEAD"), env);
 
     assert.equal(response.status, 200);
+    assert.equal(
+      response.headers.get("Content-Type"),
+      "text/markdown; charset=utf-8",
+    );
+    assert.equal(response.headers.get("Vary"), "Accept");
     assert.equal(await response.text(), "");
+  });
+
+  test("serves Markdown for the /index.html homepage alias", async () => {
+    const response = await worker.fetch(
+      request("text/markdown", "GET", "/index.html"),
+      env,
+    );
+
+    assert.equal(
+      response.headers.get("Content-Type"),
+      "text/markdown; charset=utf-8",
+    );
+    assert.equal(await response.text(), "# Praveen Juge\n");
   });
 
   test("does not intercept non-GET methods", async () => {
