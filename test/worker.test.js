@@ -68,7 +68,11 @@ describe("worker fetch", () => {
     headers: { "Content-Type": "text/html; charset=utf-8" },
   });
   const llmsResponse = new Response("# Praveen Juge\n", {
-    headers: { "Content-Type": "text/plain; charset=utf-8" },
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      ETag: '"abc123"',
+      "Cache-Control": "public, max-age=300",
+    },
   });
 
   const env = {
@@ -109,6 +113,14 @@ describe("worker fetch", () => {
     assert.equal(await response.text(), "<html>home</html>");
   });
 
+  test("preserves the source asset's caching metadata", async () => {
+    const response = await worker.fetch(request("text/markdown"), env);
+
+    assert.equal(response.headers.get("ETag"), '"abc123"');
+    assert.equal(response.headers.get("Cache-Control"), "public, max-age=300");
+    assert.equal(response.headers.get("Vary"), "Accept");
+  });
+
   test("answers HEAD requests with headers only", async () => {
     const response = await worker.fetch(request("text/markdown", "HEAD"), env);
 
@@ -129,5 +141,24 @@ describe("worker fetch", () => {
     );
 
     assert.match(response.headers.get("Content-Type"), /^text\/html/);
+  });
+
+  test("merges Accept into an existing Vary header on HTML", async () => {
+    const varyEnv = {
+      ASSETS: {
+        async fetch() {
+          return new Response("<html>vary</html>", {
+            headers: {
+              "Content-Type": "TEXT/HTML; charset=utf-8",
+              Vary: "Origin",
+            },
+          });
+        },
+      },
+    };
+
+    const response = await worker.fetch(request(browserAccept), varyEnv);
+
+    assert.equal(response.headers.get("Vary"), "Origin, Accept");
   });
 });
