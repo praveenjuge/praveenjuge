@@ -22,7 +22,7 @@
     "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
-    "test": "node --test"
+    "test": "node --test test/worker.test.js"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
