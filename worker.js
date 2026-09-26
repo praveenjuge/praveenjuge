@@ -77,52 +77,82 @@ export function addAcceptToVary(vary) {
   return values.join(", ");
 }
 
-function isHomePage(pathname) {
-  return pathname === "/" || pathname === "/index.html";
+const passthroughAssetHeaders = [
+  "Cache-Control",
+  "Content-Length",
+  "ETag",
+  "Last-Modified",
+];
+
+/**
+ * Answers a Markdown request for the homepage with the llms.txt site map,
+ * keeping the source asset's caching metadata so HEAD requests and
+ * revalidation behave like any other asset.
+ */
+async function markdownHomepageResponse(request, env) {
+  const source = await env.ASSETS.fetch(
+    new Request(new URL("/llms.txt", request.url), {
+      method: request.method,
+    }),
+  );
+
+  if (!source.ok) {
+    return null;
+  }
+
+  const headers = new Headers();
+
+  for (const name of passthroughAssetHeaders) {
+    const value = source.headers.get(name);
+
+    if (value) {
+      headers.set(name, value);
+    }
+  }
+
+  headers.set("Content-Type", markdownContentType);
+  headers.set("Vary", "Accept");
+
+  return new Response(request.method === "HEAD" ? null : source.body, {
+    status: 200,
+    headers,
+  });
+}
+
+/** Returns the response with Accept merged into its Vary header. */
+function withVaryAccept(response) {
+  const headers = new Headers(response.headers);
+  headers.set("Vary", addAcceptToVary(headers.get("Vary")));
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
 }
 
 export default {
   async fetch(request, env) {
-    if (
+    const acceptsMarkdown =
       (request.method === "GET" || request.method === "HEAD") &&
-      prefersMarkdown(request.headers.get("Accept"))
-    ) {
-      const url = new URL(request.url);
+      prefersMarkdown(request.headers.get("Accept"));
 
-      if (isHomePage(url.pathname)) {
-        // The homepage is a designed landing page without a Markdown body,
-        // so agents get the llms.txt site map as its Markdown mirror.
-        const llms = await env.ASSETS.fetch(
-          new Request(new URL("/llms.txt", request.url), { method: "GET" }),
-        );
+    if (acceptsMarkdown && new URL(request.url).pathname === "/") {
+      // The homepage is a designed landing page without a Markdown body, so
+      // agents get the llms.txt site map as its Markdown mirror.
+      const markdown = await markdownHomepageResponse(request, env);
 
-        if (llms.ok) {
-          return new Response(request.method === "HEAD" ? null : llms.body, {
-            status: 200,
-            headers: {
-              "Content-Type": markdownContentType,
-              "Cache-Control": "public, max-age=0, must-revalidate",
-              Vary: "Accept",
-            },
-          });
-        }
+      if (markdown) {
+        return markdown;
       }
     }
 
     const response = await env.ASSETS.fetch(request);
-    const contentType = response.headers.get("Content-Type") ?? "";
+    const contentType = (response.headers.get("Content-Type") ?? "")
+      .toLowerCase();
 
-    if (!contentType.startsWith("text/html")) {
-      return response;
-    }
-
-    const headers = new Headers(response.headers);
-    headers.set("Vary", addAcceptToVary(headers.get("Vary")));
-
-    return new Response(response.body, {
-      status: response.status,
-      statusText: response.statusText,
-      headers,
-    });
+    return contentType.startsWith("text/html")
+      ? withVaryAccept(response)
+      : response;
   },
 };
