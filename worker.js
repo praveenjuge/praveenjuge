@@ -137,7 +137,12 @@ export default {
       (request.method === "GET" || request.method === "HEAD") &&
       prefersMarkdown(request.headers.get("Accept"));
 
-    if (acceptsMarkdown && new URL(request.url).pathname === "/") {
+    const pathname = new URL(request.url).pathname;
+
+    if (
+      acceptsMarkdown &&
+      (pathname === "/" || pathname === "/index.html")
+    ) {
       // The homepage is a designed landing page without a Markdown body, so
       // agents get the llms.txt site map as its Markdown mirror.
       const markdown = await markdownHomepageResponse(request, env);
