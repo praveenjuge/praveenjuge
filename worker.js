@@ -53,13 +53,17 @@ export function prefersMarkdown(acceptHeader) {
     return false;
   }
 
-  const htmlQ =
+  return markdownQ >= htmlQuality(entries);
+}
+
+/** Best-match quality value for HTML across the usual media ranges. */
+function htmlQuality(entries) {
+  return (
     qualityFor(entries, "text/html") ??
     qualityFor(entries, "text/*") ??
     qualityFor(entries, "*/*") ??
-    0;
-
-  return markdownQ >= htmlQ;
+    0
+  );
 }
 
 /** Adds Accept to a Vary header value without duplicating entries. */
