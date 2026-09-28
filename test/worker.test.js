@@ -128,6 +128,34 @@ describe("worker fetch", () => {
     assert.equal(response.headers.get("Vary"), "Accept");
   });
 
+  test("forwards validators and returns a Markdown 304", async () => {
+    const conditionalEnv = {
+      ASSETS: {
+        async fetch(request) {
+          assert.equal(new URL(request.url).pathname, "/llms.txt");
+          assert.equal(request.headers.get("If-None-Match"), '"abc123"');
+          return new Response(null, {
+            status: 304,
+            headers: { ETag: '"abc123"' },
+          });
+        },
+      },
+    };
+    const conditionalRequest = new Request("https://praveenjuge.com/", {
+      headers: {
+        Accept: "text/markdown",
+        "If-None-Match": '"abc123"',
+      },
+    });
+
+    const response = await worker.fetch(conditionalRequest, conditionalEnv);
+
+    assert.equal(response.status, 304);
+    assert.equal(response.headers.get("ETag"), '"abc123"');
+    assert.equal(response.headers.get("Vary"), "Accept");
+    assert.equal(await response.text(), "");
+  });
+
   test("answers HEAD requests with headers only", async () => {
     const response = await worker.fetch(request("text/markdown", "HEAD"), env);
 

@@ -95,12 +95,10 @@ const passthroughAssetHeaders = [
  */
 async function markdownHomepageResponse(request, env) {
   const source = await env.ASSETS.fetch(
-    new Request(new URL("/llms.txt", request.url), {
-      method: request.method,
-    }),
+    new Request(new URL("/llms.txt", request.url), request),
   );
 
-  if (!source.ok) {
+  if (!source.ok && source.status !== 304) {
     return null;
   }
 
@@ -117,10 +115,13 @@ async function markdownHomepageResponse(request, env) {
   headers.set("Content-Type", markdownContentType);
   headers.set("Vary", "Accept");
 
-  return new Response(request.method === "HEAD" ? null : source.body, {
-    status: 200,
-    headers,
-  });
+  return new Response(
+    request.method === "HEAD" || source.status === 304 ? null : source.body,
+    {
+      status: source.status,
+      headers,
+    },
+  );
 }
 
 /** Returns the response with Accept merged into its Vary header. */
