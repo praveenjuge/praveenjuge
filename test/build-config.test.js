@@ -11,12 +11,14 @@ const lock = JSON.parse(lockText.replace(/,(\s*[}\]])/g, '$1'));
 
 function assertDirectDependencies(manifest, snapshot) {
   assert.deepEqual(snapshot.workspaces[''].dependencies, manifest.dependencies);
-  for (const name of Object.keys(manifest.dependencies)) {
+  assert.deepEqual(snapshot.workspaces[''].devDependencies || {}, manifest.devDependencies || {});
+  const dependencies = { ...manifest.dependencies, ...manifest.devDependencies };
+  for (const name of Object.keys(dependencies)) {
     const entry = snapshot.packages[name];
     assert.ok(Array.isArray(entry), `Missing resolved package: ${name}`);
     assert.ok(entry[0].startsWith(`${name}@`), `Wrong resolved package: ${name}`);
     const resolvedVersion = entry[0].slice(name.length + 1);
-    assert.ok(semver.satisfies(resolvedVersion, manifest.dependencies[name]), `Out-of-range resolved version: ${name}`);
+    assert.ok(semver.satisfies(resolvedVersion, dependencies[name]), `Out-of-range resolved version: ${name}`);
     assert.ok(entry.some(value => typeof value === 'string' && value.startsWith('sha512-')), `Missing integrity: ${name}`);
   }
 }
@@ -47,6 +49,16 @@ describe('reproducible Workers Builds installs', () => {
     const name = Object.keys(pkg.dependencies)[0];
     damaged.packages[name][0] = `${name}@0.0.1`;
     assert.throws(() => assertDirectDependencies(pkg, damaged), /Out-of-range resolved version/);
+  });
+
+  it('rejects dev dependency range and resolved-entry drift', () => {
+    const name = Object.keys(pkg.devDependencies)[0];
+    const missing = structuredClone(lock);
+    delete missing.packages[name];
+    assert.throws(() => assertDirectDependencies(pkg, missing), /Missing resolved package/);
+    const stale = structuredClone(lock);
+    stale.workspaces[''].devDependencies[name] = '^0.0.1';
+    assert.throws(() => assertDirectDependencies(pkg, stale), assert.AssertionError);
   });
 
   it('keeps the text lockfile trackable for Cloudflare build caching', () => {
