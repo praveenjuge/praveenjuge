@@ -2,12 +2,13 @@ const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const semver = require('semver');
+const { pathToFileURL } = require('node:url');
+const testFile = pathToFileURL(__filename);
 
-// npm test and bun test execute this suite from the repository root.
-// These are fixed repository files, never paths supplied by a request.
-const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+// Resolve fixed repository fixtures relative to this file, not the working directory.
+const pkg = JSON.parse(fs.readFileSync(new URL('../package.json', testFile), 'utf8'));
 // Bun 1.2.15 writes JSON with trailing commas, not a Yarn-format lockfile.
-const lockText = fs.readFileSync('bun.lock', 'utf8');
+const lockText = fs.readFileSync(new URL('../bun.lock', testFile), 'utf8');
 const lock = JSON.parse(lockText.replace(/,(\s*[}\]])/g, '$1'));
 
 function assertDirectDependencies(manifest, snapshot) {
@@ -63,7 +64,7 @@ describe('reproducible Workers Builds installs', () => {
   });
 
   it('keeps the text lockfile trackable for Cloudflare build caching', () => {
-    const ignore = fs.readFileSync('.gitignore', 'utf8');
+    const ignore = fs.readFileSync(new URL('../.gitignore', testFile), 'utf8');
     const rules = ignore.split(/\r?\n/).map(line => line.trim());
     assert.ok(!rules.some(line => ['bun.lock', '/bun.lock', '*.lock'].includes(line)));
     assert.ok(rules.includes('bun.lockb'), 'Keep obsolete binary lockfiles ignored');
