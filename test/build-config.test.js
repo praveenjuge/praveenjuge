@@ -2,6 +2,7 @@ const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const semver = require('semver');
 
 const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'package.json'), 'utf8'));
 // Bun 1.2.15 writes JSON with trailing commas, not a Yarn-format lockfile.
@@ -14,7 +15,8 @@ function assertDirectDependencies(manifest, snapshot) {
     const entry = snapshot.packages[name];
     assert.ok(Array.isArray(entry), `Missing resolved package: ${name}`);
     assert.ok(entry[0].startsWith(`${name}@`), `Wrong resolved package: ${name}`);
-    assert.match(entry[0].slice(name.length + 1), /^\d+\.\d+\.\d+/, `Missing resolved version: ${name}`);
+    const resolvedVersion = entry[0].slice(name.length + 1);
+    assert.ok(semver.satisfies(resolvedVersion, manifest.dependencies[name]), `Out-of-range resolved version: ${name}`);
     assert.ok(entry.some(value => typeof value === 'string' && value.startsWith('sha512-')), `Missing integrity: ${name}`);
   }
 }
@@ -38,6 +40,13 @@ describe('reproducible Workers Builds installs', () => {
     const damaged = structuredClone(lock);
     delete damaged.packages[Object.keys(pkg.dependencies)[0]];
     assert.throws(() => assertDirectDependencies(pkg, damaged), /Missing resolved package/);
+  });
+
+  it('rejects resolved versions outside the declared dependency range', () => {
+    const damaged = structuredClone(lock);
+    const name = Object.keys(pkg.dependencies)[0];
+    damaged.packages[name][0] = `${name}@0.0.1`;
+    assert.throws(() => assertDirectDependencies(pkg, damaged), /Out-of-range resolved version/);
   });
 
   it('keeps the text lockfile trackable for Cloudflare build caching', () => {
