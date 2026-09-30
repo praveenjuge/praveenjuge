@@ -3,22 +3,47 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
-const root = path.resolve(__dirname, '..');
-const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
+const pkg = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'package.json'), 'utf8'));
+// Bun 1.2.15 writes JSON with trailing commas, not a Yarn-format lockfile.
+const lockText = fs.readFileSync(path.resolve(__dirname, '..', 'bun.lock'), 'utf8');
+const lock = JSON.parse(lockText.replace(/,(\s*[}\]])/g, '$1'));
+
+function assertDirectDependencies(manifest, snapshot) {
+  assert.deepEqual(snapshot.workspaces[''].dependencies, manifest.dependencies);
+  for (const name of Object.keys(manifest.dependencies)) {
+    const entry = snapshot.packages[name];
+    assert.ok(Array.isArray(entry), `Missing resolved package: ${name}`);
+    assert.ok(entry[0].startsWith(`${name}@`), `Wrong resolved package: ${name}`);
+    assert.match(entry[0].slice(name.length + 1), /^\d+\.\d+\.\d+/, `Missing resolved version: ${name}`);
+    assert.ok(entry.some(value => typeof value === 'string' && value.startsWith('sha512-')), `Missing integrity: ${name}`);
+  }
+}
 
 describe('reproducible Workers Builds installs', () => {
-  it('pins the Bun version that generated the committed lockfile', () => {
+  it('pins Bun and validates the root workspace and resolved direct packages', () => {
     assert.equal(pkg.packageManager, 'bun@1.2.15');
-    const lock = fs.readFileSync(path.join(root, 'bun.lock'), 'utf8');
-    assert.match(lock, /"lockfileVersion":\s*1/);
-    for (const [name, range] of Object.entries(pkg.dependencies)) {
-      assert.ok(lock.includes(`"${name}": "${range}"`), `Missing lockfile dependency: ${name}`);
-    }
+    assert.equal(lock.lockfileVersion, 1);
+    assertDirectDependencies(pkg, lock);
+  });
+
+  it('rejects missing workspace dependencies even if transitive metadata contains them', () => {
+    const damaged = structuredClone(lock);
+    const name = Object.keys(pkg.dependencies)[0];
+    delete damaged.workspaces[''].dependencies[name];
+    damaged.packages.fake = ['fake@1.0.0', '', { dependencies: { [name]: pkg.dependencies[name] } }];
+    assert.throws(() => assertDirectDependencies(pkg, damaged), assert.AssertionError);
+  });
+
+  it('rejects missing resolved direct packages', () => {
+    const damaged = structuredClone(lock);
+    delete damaged.packages[Object.keys(pkg.dependencies)[0]];
+    assert.throws(() => assertDirectDependencies(pkg, damaged), /Missing resolved package/);
   });
 
   it('keeps the text lockfile trackable for Cloudflare build caching', () => {
-    const ignore = fs.readFileSync(path.join(root, '.gitignore'), 'utf8');
-    assert.ok(!ignore.split(/\r?\n/).some(line => ['bun.lock', '/bun.lock', '*.lock'].includes(line.trim())));
-    assert.ok(ignore.split(/\r?\n/).includes('bun.lockb'), 'Keep obsolete binary lockfiles ignored');
+    const ignore = fs.readFileSync(path.resolve(__dirname, '..', '.gitignore'), 'utf8');
+    const rules = ignore.split(/\r?\n/).map(line => line.trim());
+    assert.ok(!rules.some(line => ['bun.lock', '/bun.lock', '*.lock'].includes(line)));
+    assert.ok(rules.includes('bun.lockb'), 'Keep obsolete binary lockfiles ignored');
   });
 });
