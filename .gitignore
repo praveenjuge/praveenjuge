@@ -14,6 +14,5 @@ yarn-error.log*
 .vercel
 dist/
 .astro/
-bun.lock
 package-lock.json
 .wrangler
