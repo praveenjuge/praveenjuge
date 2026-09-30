@@ -135,6 +135,8 @@ or the address may be incorrect. Use these links to find an existing page:
 - [Sitemap](https://praveenjuge.com/sitemap-index.xml)
 `;
 
+const markdownNotFoundLength = String(new TextEncoder().encode(markdownNotFound).length);
+
 /** Replaces an HTML 404 without carrying over the HTML representation's metadata. */
 function markdownNotFoundResponse(request, response) {
   const headers = new Headers(response.headers);
@@ -142,12 +144,13 @@ function markdownNotFoundResponse(request, response) {
   for (const name of [
     "Content-Length", "Content-Encoding", "ETag", "Last-Modified",
     "Content-Range", "Accept-Ranges", "Content-MD5", "Digest",
+    "Content-Digest", "Repr-Digest",
   ]) {
     headers.delete(name);
   }
 
   headers.set("Content-Type", markdownContentType);
-  headers.set("Content-Length", String(new TextEncoder().encode(markdownNotFound).length));
+  headers.set("Content-Length", markdownNotFoundLength);
   headers.set("Vary", addAcceptToVary(headers.get("Vary")));
 
   return new Response(request.method === "HEAD" ? null : markdownNotFound, {
@@ -191,13 +194,13 @@ export default {
 
     const response = await env.ASSETS.fetch(request);
     const contentType = (response.headers.get("Content-Type") ?? "")
-      .toLowerCase();
+      .split(";")[0].trim().toLowerCase();
 
-    if (acceptsMarkdown && response.status === 404 && contentType.startsWith("text/html")) {
+    if (acceptsMarkdown && response.status === 404 && contentType === "text/html") {
       return markdownNotFoundResponse(request, response);
     }
 
-    return contentType.startsWith("text/html")
+    return contentType === "text/html"
       ? withVaryAccept(response)
       : response;
   },
