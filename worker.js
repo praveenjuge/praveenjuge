@@ -1,6 +1,6 @@
 /**
  * Worker entry: serves the Astro static assets, with Markdown content
- * negotiation (acceptmarkdown.com) on the homepage.
+ * negotiation (acceptmarkdown.com) on the homepage and missing pages.
  *
  * The site deploys to Cloudflare as static assets. Without a Worker, a
  * request with `Accept: text/markdown` receives HTML with no `Vary: Accept`,
@@ -124,6 +124,41 @@ async function markdownHomepageResponse(request, env) {
   );
 }
 
+const markdownNotFound = `# Page not found (404)
+
+The requested page does not exist on Praveen Juge's website. It may have moved,
+or the address may be incorrect. Use these links to find an existing page:
+
+- [Home](https://praveenjuge.com/)
+- [Blog](https://praveenjuge.com/blog/)
+- [Site guide](https://praveenjuge.com/llms.txt)
+- [Sitemap](https://praveenjuge.com/sitemap-index.xml)
+`;
+
+const markdownNotFoundLength = String(new TextEncoder().encode(markdownNotFound).length);
+
+/** Replaces an HTML 404 without carrying over the HTML representation's metadata. */
+function markdownNotFoundResponse(request, response) {
+  const headers = new Headers(response.headers);
+
+  for (const name of [
+    "Content-Length", "Content-Encoding", "ETag", "Last-Modified",
+    "Content-Range", "Accept-Ranges", "Content-MD5", "Digest",
+    "Content-Digest", "Repr-Digest",
+  ]) {
+    headers.delete(name);
+  }
+
+  headers.set("Content-Type", markdownContentType);
+  headers.set("Content-Length", markdownNotFoundLength);
+  headers.set("Vary", addAcceptToVary(headers.get("Vary")));
+
+  return new Response(request.method === "HEAD" ? null : markdownNotFound, {
+    status: 404,
+    headers,
+  });
+}
+
 /** Returns the response with Accept merged into its Vary header. */
 function withVaryAccept(response) {
   const headers = new Headers(response.headers);
@@ -159,9 +194,13 @@ export default {
 
     const response = await env.ASSETS.fetch(request);
     const contentType = (response.headers.get("Content-Type") ?? "")
-      .toLowerCase();
+      .split(";")[0].trim().toLowerCase();
 
-    return contentType.startsWith("text/html")
+    if (acceptsMarkdown && response.status === 404 && contentType === "text/html") {
+      return markdownNotFoundResponse(request, response);
+    }
+
+    return contentType === "text/html"
       ? withVaryAccept(response)
       : response;
   },

@@ -215,3 +215,123 @@ describe("worker fetch", () => {
     assert.equal(response.headers.get("Vary"), "Origin, Accept");
   });
 });
+
+
+describe("Markdown 404 negotiation", () => {
+  /** Returns an asset binding with a configurable upstream error response. */
+  function missingEnv(status = 404, contentType = "text/html; charset=utf-8", vary = "Origin") {
+    return {
+      ASSETS: {
+        async fetch() {
+          return new Response("<html>missing</html>", {
+            status,
+            headers: {
+              "Content-Type": contentType,
+              "Content-Length": "20",
+              "Content-Encoding": "gzip",
+              ETag: '"html-404"',
+              "Last-Modified": "Sat, 26 Sep 2026 00:00:00 GMT",
+              "Content-Range": "bytes 0-19/20",
+              "Accept-Ranges": "bytes",
+              "Content-MD5": "html-digest",
+              Digest: "sha-256=html-digest",
+              "Content-Digest": "sha-256=:html-digest:",
+              "Repr-Digest": "sha-256=:html-digest:",
+              "Cache-Control": "public, max-age=0, must-revalidate",
+              "X-Content-Type-Options": "nosniff",
+              Vary: vary,
+            },
+          });
+        },
+      },
+    };
+  }
+
+  /** Makes a request for a missing page on a preview origin. */
+  function request(accept, method = "GET") {
+    return new Request("https://preview.example/__missing?query=ignored", {
+      method,
+      headers: { Accept: accept },
+    });
+  }
+
+  test("returns a useful Markdown body with a real 404 and canonical recovery links", async () => {
+    const response = await worker.fetch(request("text/markdown"), missingEnv());
+    assert.equal(response.status, 404);
+    assert.equal(response.headers.get("Content-Type"), "text/markdown; charset=utf-8");
+    assert.equal(response.headers.get("Vary"), "Origin, Accept");
+    const body = await response.text();
+    assert.match(body, /^# Page not found \(404\)/);
+    assert.match(body, /https:\/\/praveenjuge.com\/llms.txt/);
+    assert.match(body, /https:\/\/praveenjuge.com\/sitemap-index.xml/);
+    assert.ok(!body.includes("preview.example"));
+    assert.equal(Number(response.headers.get("Content-Length")), new TextEncoder().encode(body).length);
+  });
+
+  test("drops stale HTML validators, encoding, and ranges while preserving cache and security headers", async () => {
+    const response = await worker.fetch(request("text/markdown"), missingEnv());
+    for (const name of ["ETag", "Last-Modified", "Content-Encoding", "Content-Range", "Accept-Ranges", "Content-MD5", "Digest", "Content-Digest", "Repr-Digest"]) {
+      assert.equal(response.headers.get(name), null, name);
+    }
+    assert.equal(response.headers.get("Cache-Control"), "public, max-age=0, must-revalidate");
+    assert.equal(response.headers.get("X-Content-Type-Options"), "nosniff");
+  });
+
+  test("HEAD has the same status and representation headers without a body", async () => {
+    const get = await worker.fetch(request("text/markdown"), missingEnv());
+    const head = await worker.fetch(request("text/markdown", "HEAD"), missingEnv());
+    assert.equal(head.status, 404);
+    assert.deepEqual([...head.headers], [...get.headers]);
+    assert.equal(await head.text(), "");
+  });
+
+  test("preserves wildcard Vary", async () => {
+    const response = await worker.fetch(request("text/markdown"), missingEnv(404, "text/html", "*"));
+    assert.equal(response.headers.get("Vary"), "*");
+  });
+
+  for (const accept of [browserAccept, "*/*", "text/markdown;q=0", "text/markdown;q=0.5, text/html;q=1"]) {
+    test(`keeps the HTML 404 for ${accept}`, async () => {
+      const response = await worker.fetch(request(accept), missingEnv());
+      assert.equal(response.status, 404);
+      assert.match(response.headers.get("Content-Type"), /^text\/html/);
+      assert.equal(await response.text(), "<html>missing</html>");
+    });
+  }
+
+  test("does not replace non-GET requests", async () => {
+    const response = await worker.fetch(request("text/markdown", "POST"), missingEnv());
+    assert.equal(response.status, 404);
+    assert.match(response.headers.get("Content-Type"), /^text\/html/);
+  });
+
+  for (const status of [200, 403, 500]) {
+    test(`does not replace an HTML ${status}`, async () => {
+      const response = await worker.fetch(request("text/markdown"), missingEnv(status));
+      assert.equal(response.status, status);
+      assert.equal(await response.text(), "<html>missing</html>");
+    });
+  }
+
+  test("preserves non-HTML 404 responses", async () => {
+    const response = await worker.fetch(request("text/markdown"), missingEnv(404, "application/json"));
+    assert.equal(response.status, 404);
+    assert.equal(response.headers.get("Content-Type"), "application/json");
+    assert.equal(response.headers.get("Vary"), "Origin");
+    assert.equal(await response.text(), "<html>missing</html>");
+  });
+  for (const type of ["text/htmlish", "text/html+custom", "text/plain"]) {
+    test(`does not confuse ${type} with HTML`, async () => {
+      const response = await worker.fetch(request("text/markdown"), missingEnv(404, type));
+      assert.equal(response.headers.get("Content-Type"), type);
+      assert.equal(response.headers.get("Vary"), "Origin");
+      assert.equal(await response.text(), "<html>missing</html>");
+    });
+  }
+
+  test("accepts HTML media types with mixed case, whitespace, and parameters", async () => {
+    const response = await worker.fetch(request("text/markdown"), missingEnv(404, "Text/HTML ; charset=UTF-8"));
+    assert.equal(response.headers.get("Content-Type"), "text/markdown; charset=utf-8");
+  });
+
+});
