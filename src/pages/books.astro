@@ -75,6 +75,19 @@ const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
       )
     }
   </section>
+  <script is:inline>
+    // Shuffle the shelf on every load, before first paint, so each visit shows a new order.
+    (() => {
+      const list = document.querySelector(".books");
+      if (!list) return;
+      const items = [...list.children];
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
+      list.append(...items);
+    })();
+  </script>
 </Layout>
 
 <style>
