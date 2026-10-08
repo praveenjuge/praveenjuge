@@ -25,5 +25,9 @@ export const AUTHOR = {
     youtube: "https://www.youtube.com/@praveenjuge",
     figma: "https://figma.com/@praveenjuge",
     behance: "https://www.behance.net/praveenjuge",
+    peerlist: "https://peerlist.io/praveenjuge",
+    npm: "https://www.npmjs.com/~praveenjuge",
+    appStore: "https://apps.apple.com/in/developer/juge-praveen/id1859809495",
+    raycast: "https://www.raycast.com/praveenjuge",
   },
 };
