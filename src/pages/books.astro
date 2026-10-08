@@ -2,7 +2,6 @@
 import Layout from "../Layout.astro";
 
 // Both Goodreads accounts are mine; the first is the one goodreads.com/praveenjuge points to.
-const GOODREADS_PROFILE = "https://www.goodreads.com/praveenjuge";
 const GOODREADS_USER_IDS = ["19254729", "79426699"];
 
 interface Book {
@@ -87,20 +86,10 @@ const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
 }));
 ---
 
-<Layout title="Books" description="Books Praveen Juge has read, straight from Goodreads.">
+<Layout title="Books" description="Some of Praveen Juge's favorite books.">
   <section class="mx-auto max-w-xl space-y-4 px-4">
     <h1 class="font-semibold text-2xl">Books</h1>
-    <p class="opacity-60">
-      Everything I&rsquo;ve read, pulled from{" "}
-      <a
-        href={GOODREADS_PROFILE}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="underline decoration-2 underline-offset-1"
-      >
-        Goodreads
-      </a>
-    </p>
+    <p class="opacity-60">Some of my favorite books.</p>
   </section>
 
   <section class="mx-auto mt-12 max-w-3xl px-4">
