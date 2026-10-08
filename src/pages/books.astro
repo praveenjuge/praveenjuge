@@ -1,0 +1,342 @@
+---
+import Layout from "../Layout.astro";
+
+// Both Goodreads accounts are mine; the first is the one goodreads.com/praveenjuge points to.
+const GOODREADS_PROFILE = "https://www.goodreads.com/praveenjuge";
+const GOODREADS_USER_IDS = ["19254729", "79426699"];
+
+interface Book {
+  id: string;
+  title: string;
+  shortTitle: string;
+  author: string;
+  cover: string;
+  url: string;
+  readAt: number;
+}
+
+const FALLBACK_COLORS = ["#c2410c", "#1d4ed8", "#15803d", "#a21caf", "#b45309", "#0f766e", "#be123c"];
+
+function tag(item: string, name: string) {
+  const value = item.match(new RegExp(`<${name}>([\\s\\S]*?)</${name}>`))?.[1] ?? "";
+  return value
+    .replace(/^<!\[CDATA\[|\]\]>$/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .trim();
+}
+
+function hash(value: string) {
+  let h = 2166136261;
+  for (const char of value) h = Math.imul(h ^ char.charCodeAt(0), 16777619);
+  return h >>> 0;
+}
+
+async function fetchShelf(userId: string) {
+  const books: Book[] = [];
+  for (let page = 1; page <= 20; page++) {
+    const response = await fetch(
+      `https://www.goodreads.com/review/list_rss/${userId}?shelf=read&per_page=100&page=${page}`
+    );
+    if (!response.ok) throw new Error(`Goodreads returned ${response.status}`);
+
+    const items = [...(await response.text()).matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1] ?? "");
+    for (const item of items) {
+      const id = tag(item, "book_id");
+      const title = tag(item, "title");
+      if (!id || !title) continue;
+      const cover = tag(item, "book_large_image_url");
+      books.push({
+        id,
+        title,
+        // Series and subtitles are dropped for the printed fallback cover.
+        shortTitle: title.replace(/\s*\([^)]*#[^)]*\)\s*$/, "").replace(/:.*$/, "").trim(),
+        author: tag(item, "author_name").replace(/\s+/g, " "),
+        cover: cover.includes("nophoto") ? "" : cover,
+        url: `https://www.goodreads.com/book/show/${id}`,
+        readAt: Date.parse(tag(item, "user_read_at") || tag(item, "user_date_added")) || 0,
+      });
+    }
+    if (items.length < 100) break;
+  }
+  return books;
+}
+
+let books: Book[] = [];
+let error = "";
+
+try {
+  const seen = new Set<string>();
+  books = (await Promise.all(GOODREADS_USER_IDS.map(fetchShelf)))
+    .flat()
+    .sort((a, b) => b.readAt - a.readAt)
+    .filter((book) => !seen.has(book.id) && seen.add(book.id));
+} catch (e) {
+  error = e instanceof Error ? e.message : "Failed to fetch books";
+  console.error("Error fetching Goodreads books:", error);
+}
+
+// Books sit 3, 5 or 7 to a shelf depending on screen width, so render enough
+// shelves for the narrowest layout and hide the spare ones on wider screens.
+const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
+  hideMd: i >= Math.ceil(books.length / 5),
+  hideLg: i >= Math.ceil(books.length / 7),
+}));
+---
+
+<Layout title="Books" description="Books Praveen Juge has read, straight from Goodreads.">
+  <section class="mx-auto max-w-xl space-y-4 px-4">
+    <h1 class="font-semibold text-2xl">Books</h1>
+    <p class="opacity-60">
+      Everything I&rsquo;ve read, pulled from{" "}
+      <a
+        href={GOODREADS_PROFILE}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline decoration-2 underline-offset-1"
+      >
+        Goodreads
+      </a>
+    </p>
+  </section>
+
+  <section class="mx-auto mt-12 max-w-3xl px-4">
+    {
+      error ? (
+        <div class="mx-auto max-w-xl rounded-lg border border-red-200 bg-red-50 p-4 text-red-600">
+          <p class="font-medium">Error loading books</p>
+          <p class="text-sm opacity-80">{error}</p>
+        </div>
+      ) : books.length === 0 ? (
+        <div class="mx-auto max-w-xl rounded-lg border border-gray-200 bg-gray-50 p-4">
+          <p class="opacity-60">No books found.</p>
+        </div>
+      ) : (
+        <div class="bookcase">
+          <div class="shelves" aria-hidden="true">
+            {shelves.map((shelf) => (
+              <div class:list={["shelf", { "hide-md": shelf.hideMd, "hide-lg": shelf.hideLg }]}>
+                <span class="plank" />
+              </div>
+            ))}
+          </div>
+          <ul class="books">
+            {books.map((book) => {
+              const h = hash(book.id);
+              // Editions differ in size, so each book gets a slightly different height.
+              const scale = 0.86 + (h % 15) / 100;
+              const color = FALLBACK_COLORS[h % FALLBACK_COLORS.length];
+              return (
+                <li>
+                  <a
+                    href={book.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="book"
+                    style={`--scale:${scale};--color:${color}`}
+                    aria-label={`${book.title} by ${book.author}`}
+                    title={`${book.title} by ${book.author}`}
+                  >
+                    {book.cover ? (
+                      <img src={book.cover} alt="" loading="lazy" decoding="async" />
+                    ) : (
+                      <span class="printed">
+                        <span class="font-semibold">{book.shortTitle}</span>
+                        <span class="opacity-75">{book.author}</span>
+                      </span>
+                    )}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )
+    }
+  </section>
+</Layout>
+
+<style>
+  .bookcase {
+    --cols: 7;
+    --pad: 22px;
+    --surface: 10px;
+    --edge: 15px;
+    --below: 26px;
+    position: relative;
+    container-type: inline-size;
+  }
+
+  /* Each shelf is only as tall as its largest book plus room to lift on hover */
+  .shelves,
+  .books {
+    --book: min((100cqi - var(--pad) * 2) / var(--cols) - 18px, 124px);
+    --row: calc(var(--book) * 1.5 + 18px + var(--surface) * 0.4 + var(--edge) + var(--below));
+    --top: calc(var(--row) - var(--below) - var(--edge) - var(--surface));
+    display: grid;
+    grid-auto-rows: var(--row);
+  }
+
+  .shelves {
+    position: absolute;
+    inset: 0;
+  }
+
+  .books {
+    position: relative;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    padding: 0 var(--pad);
+  }
+
+  .books li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* Books stand a little back from the front edge */
+    padding-bottom: calc(var(--below) + var(--edge) + var(--surface) * 0.4);
+  }
+
+  .shelf {
+    position: relative;
+  }
+
+  /* Front edge: a white slab, softly rounded and shaded toward each end */
+  .plank {
+    position: absolute;
+    top: calc(var(--top) + var(--surface));
+    left: 0;
+    right: 0;
+    height: var(--edge);
+    border-radius: 2px 2px 5px 5px;
+    background:
+      linear-gradient(90deg, rgb(0 0 0 / 0.06), transparent 10px, transparent calc(100% - 10px), rgb(0 0 0 / 0.06)),
+      linear-gradient(#ffffff, #fbfbfc 45%, #eeeff2 calc(100% - 1px), #d8d9de);
+    box-shadow:
+      0 1px 1px rgb(0 0 0 / 0.06),
+      0 10px 14px -10px rgb(0 0 0 / 0.3);
+  }
+
+  /* Top surface, narrower at the back so the ends read in perspective */
+  .plank::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: var(--surface);
+    clip-path: polygon(7px 0, calc(100% - 7px) 0, 100% 100%, 0 100%);
+    background: linear-gradient(#d5d6db, #e6e7ea 35%, #f5f5f7);
+  }
+
+  /* Shadow on the wall, fading out before the ends like real light */
+  .plank::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    right: 2%;
+    height: 34px;
+    background: radial-gradient(50% 100% at 50% 0, rgb(0 0 0 / 0.13), rgb(0 0 0 / 0.04) 55%, transparent);
+  }
+
+  @media (max-width: 719px) {
+    .bookcase {
+      --cols: 5;
+    }
+    .shelf.hide-md {
+      display: none;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .shelf.hide-lg {
+      display: none;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .bookcase {
+      --cols: 3;
+      --pad: 12px;
+      --below: 22px;
+    }
+    .shelf.hide-md {
+      display: block;
+    }
+  }
+
+  .book {
+    position: relative;
+    display: block;
+    width: calc(var(--book) * var(--scale));
+    aspect-ratio: 2 / 3;
+    border-radius: 1px 3px 3px 1px;
+    background: var(--color);
+    box-shadow:
+      0 1px 1px rgb(0 0 0 / 0.12),
+      0 2px 3px -1px rgb(0 0 0 / 0.18),
+      8px 8px 18px -10px rgb(0 0 0 / 0.35);
+    transition:
+      transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+      box-shadow 0.35s;
+  }
+
+  .book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  /* Hinge crease near the spine and a soft sheen across the cover */
+  .book::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background:
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 0.18),
+        rgb(255 255 255 / 0.28) 2.5%,
+        rgb(0 0 0 / 0.12) 5%,
+        transparent 9%
+      ),
+      linear-gradient(120deg, rgb(255 255 255 / 0.16), transparent 45%);
+  }
+
+  .book:hover,
+  .book:focus-visible {
+    transform: translateY(-8px);
+    box-shadow:
+      0 1px 1px rgb(0 0 0 / 0.08),
+      0 10px 14px -8px rgb(0 0 0 / 0.25),
+      10px 18px 28px -12px rgb(0 0 0 / 0.35);
+  }
+
+  .book:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  .printed {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 10px 10px 14px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .book {
+      transition: none;
+    }
+  }
+</style>
