@@ -1,81 +1,15 @@
 ---
 import Layout from "../Layout.astro";
 
-// Both Goodreads accounts are mine; the first is the one goodreads.com/praveenjuge points to.
-const GOODREADS_USER_IDS = ["19254729", "79426699"];
-
-interface Book {
-  id: string;
-  title: string;
-  shortTitle: string;
-  author: string;
-  cover: string;
-  url: string;
-  readAt: number;
-}
+// Saved from Goodreads with `npm run books`; Goodreads blocks Cloudflare's build servers.
+import books from "../data/books.json";
 
 const FALLBACK_COLORS = ["#c2410c", "#1d4ed8", "#15803d", "#a21caf", "#b45309", "#0f766e", "#be123c"];
-
-function tag(item: string, name: string) {
-  const value = item.match(new RegExp(`<${name}>([\\s\\S]*?)</${name}>`))?.[1] ?? "";
-  return value
-    .replace(/^<!\[CDATA\[|\]\]>$/g, "")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .trim();
-}
 
 function hash(value: string) {
   let h = 2166136261;
   for (const char of value) h = Math.imul(h ^ char.charCodeAt(0), 16777619);
   return h >>> 0;
-}
-
-async function fetchShelf(userId: string) {
-  const books: Book[] = [];
-  for (let page = 1; page <= 20; page++) {
-    const response = await fetch(
-      `https://www.goodreads.com/review/list_rss/${userId}?shelf=read&per_page=100&page=${page}`
-    );
-    if (!response.ok) throw new Error(`Goodreads returned ${response.status}`);
-
-    const items = [...(await response.text()).matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1] ?? "");
-    for (const item of items) {
-      const id = tag(item, "book_id");
-      const title = tag(item, "title");
-      if (!id || !title) continue;
-      const cover = tag(item, "book_large_image_url");
-      books.push({
-        id,
-        title,
-        // Series and subtitles are dropped for the printed fallback cover.
-        shortTitle: title.replace(/\s*\([^)]*#[^)]*\)\s*$/, "").replace(/:.*$/, "").trim(),
-        author: tag(item, "author_name").replace(/\s+/g, " "),
-        cover: cover.includes("nophoto") ? "" : cover,
-        url: `https://www.goodreads.com/book/show/${id}`,
-        readAt: Date.parse(tag(item, "user_read_at") || tag(item, "user_date_added")) || 0,
-      });
-    }
-    if (items.length < 100) break;
-  }
-  return books;
-}
-
-let books: Book[] = [];
-let error = "";
-
-try {
-  const seen = new Set<string>();
-  books = (await Promise.all(GOODREADS_USER_IDS.map(fetchShelf)))
-    .flat()
-    .sort((a, b) => b.readAt - a.readAt)
-    .filter((book) => !seen.has(book.id) && seen.add(book.id));
-} catch (e) {
-  error = e instanceof Error ? e.message : "Failed to fetch books";
-  console.error("Error fetching Goodreads books:", error);
 }
 
 // Books sit 3, 5 or 7 to a shelf depending on screen width, so render enough
@@ -94,12 +28,7 @@ const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
 
   <section class="mx-auto mt-12 max-w-3xl px-4">
     {
-      error ? (
-        <div class="mx-auto max-w-xl rounded-lg border border-red-200 bg-red-50 p-4 text-red-600">
-          <p class="font-medium">Error loading books</p>
-          <p class="text-sm opacity-80">{error}</p>
-        </div>
-      ) : books.length === 0 ? (
+      books.length === 0 ? (
         <div class="mx-auto max-w-xl rounded-lg border border-gray-200 bg-gray-50 p-4">
           <p class="opacity-60">No books found.</p>
         </div>
