@@ -120,16 +120,20 @@ const headerSocials = [
     <!-- Fonts -->
     <Font cssVariable="--font-geist" preload />
     <style is:global>
+      /* Crossfade between pages with the browser's native view transitions. */
+      @media (prefers-reduced-motion: no-preference) {
+        @view-transition {
+          navigation: auto;
+        }
+      }
       @keyframes slide {
         to {
           transform: translateX(-69%);
         }
       }
-      /* A short ease on transform smooths out stepped mouse-wheel scrolling. */
+      /* The scroll spin eases in script, so only the hover turn transitions. */
       .footer-logo {
-        transition:
-          rotate 1s,
-          transform 0.2s ease-out;
+        transition: rotate 1s cubic-bezier(0.2, 0.7, 0.2, 1);
       }
     </style>
   </head>
@@ -230,23 +234,41 @@ const headerSocials = [
       </div>
     </footer>
     <script>
-      // Turn the footer logomark with the page scroll, in both directions.
+      // Turn the footer logomark with the page scroll, in both directions. The
+      // angle eases toward its target, so the mark glides to rest after the
+      // scroll stops instead of halting with it.
       const footerLogo = document.querySelector<SVGElement>(".footer-logo");
       const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
       if (footerLogo && !reduceMotion.matches) {
+        const degreesPerPixel = 0.12;
+        const settleTime = 450; // ms; larger glides longer
+        let angle = scrollY * degreesPerPixel;
         let frame = 0;
-        const spin = () => {
-          frame = 0;
-          footerLogo.style.transform = `rotate(${scrollY * 0.3}deg)`;
+        let last = 0;
+        const render = () => {
+          footerLogo.style.transform = `rotate(${angle}deg)`;
+        };
+        const tick = (now: number) => {
+          const target = scrollY * degreesPerPixel;
+          const step = 1 - Math.exp(-(now - (last || now)) / settleTime);
+          angle += (target - angle) * step;
+          last = now;
+          if (Math.abs(target - angle) < 0.05) {
+            angle = target;
+            frame = last = 0;
+          } else {
+            frame = requestAnimationFrame(tick);
+          }
+          render();
         };
         addEventListener(
           "scroll",
           () => {
-            frame ||= requestAnimationFrame(spin);
+            frame ||= requestAnimationFrame(tick);
           },
           { passive: true }
         );
-        spin();
+        render();
       }
     </script>
     <script

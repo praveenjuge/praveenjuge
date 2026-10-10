@@ -18,10 +18,104 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
       (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
   )
   .slice(0, 12);
+
+const projectGroups = [
+  {
+    title: "Products",
+    items: [
+      {
+        name: "Teak",
+        href: "https://teakvault.com",
+        logo: "/logos/teak.svg",
+        description: "Your UI Inspirations. Finally Organized.",
+      },
+      {
+        name: "Niram",
+        href: "https://www.figma.com/community/plugin/1642487887236877076/niram-shadcn-design-system-generator",
+        logo: "/logos/niram.png",
+        description:
+          "Generate shadcn/ui design systems as Figma variables and components.",
+      },
+      {
+        name: "Nuni",
+        href: "https://nuni.praveenjuge.com",
+        logo: "/logos/nuni.svg",
+        description: "Figma-style comments on your live website.",
+      },
+      {
+        name: "One Hour",
+        href: "https://apps.apple.com/in/app/one-hour-fcb6e1/id6756283371",
+        logo: "/logos/onehour.jpg",
+        description: "Hourly habit tracker to help you build better habits.",
+      },
+      {
+        name: "Mosaic",
+        href: "https://mosaic.praveenjuge.com",
+        logo: "/logos/mosaic.png",
+        description: "Showcase your beautiful website in your OG images",
+      },
+    ],
+  },
+  {
+    title: "Open source",
+    items: [
+      {
+        name: "MynaUI",
+        href: "https://mynaui.com",
+        logo: "/logos/mynaui.png",
+        description: "TailwindCSS and shadcn/ui UI Kit for Figma and React.",
+      },
+      {
+        name: "MynaUI Icons",
+        href: "https://mynaui.com/icons",
+        logo: "/logos/mynaui.png",
+        description: "Beautiful open-source icons for your next project.",
+      },
+      {
+        name: "Vadivam",
+        href: "https://vadivam.praveenjuge.com",
+        logo: "/logos/vadivam.svg",
+        description:
+          "Pixel-perfect open-source icons as SVGs and React components.",
+      },
+      {
+        name: "Copy Book",
+        href: "https://mynaui.com/copy",
+        logo: "/logos/mynaui.png",
+        description: "Copy book is a collection of commonly used texts.",
+      },
+    ],
+  },
+  {
+    title: "Elsewhere",
+    items: [
+      {
+        name: "Figma Community",
+        href: AUTHOR.social.figma,
+        logo: "/logos/figma.svg",
+        description: "Where I share some free UI resources regularly.",
+      },
+      {
+        name: "YouTube",
+        href: AUTHOR.social.youtube,
+        logo: "/logos/youtube.png",
+        description: "Watch how I design and build things.",
+      },
+    ],
+  },
+];
+
+const postDate = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  year: "numeric",
+});
+
+const linkClass =
+  "underline decoration-current/30 underline-offset-4 transition-colors hover:decoration-current";
 ---
 
 <Layout>
-  <section class="mx-auto max-w-xl space-y-4 p-4 leading-relaxed">
+  <section class="hero mx-auto max-w-xl space-y-4 p-4 leading-relaxed">
     {
       /* <a
           href="mailto:hello@praveenjuge.com"
@@ -41,28 +135,25 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
       class="size-20 rounded-full bg-center bg-cover object-cover brightness-105"
     />
 
-    <h1 class="font-semibold">
+    <h1 class="font-semibold text-balance">
       What&rsquo;s up nerds? I&rsquo;m Praveen Juge, a designer and developer.
     </h1>
 
-    <p>
+    <p class="text-pretty">
       I design and build for the web, with a focus on UI, accessibility, CSS and
       design systems. I care about the little details. Yes, even that one pixel.
     </p>
 
-    <p>
+    <p class="text-pretty">
       I make small tools for designers and developers, contribute to open source,
       and write about what I learn along the way. Browse my projects below, read
-      the <a class="underline" href="/blog/">blog</a> or explore my{" "}
-      <a class="underline" href="/design/">design archive</a>.
+      the <a class={linkClass} href="/blog/">blog</a> or explore my{" "}
+      <a class={linkClass} href="/design/">design archive</a>.
     </p>
 
-    <p>
+    <p class="text-pretty">
       Have something in mind? Say hello at{" "}
-      <a
-        href="mailto:hello@praveenjuge.com"
-        class="underline decoration-2 underline-offset-1"
-      >
+      <a href="mailto:hello@praveenjuge.com" class={linkClass}>
         hello@praveenjuge.com
       </a>
     </p>
@@ -71,7 +162,7 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
   <section class="overflow-hidden py-16">
     <a
       href="/design/"
-      class="-space-x-2 inline-flex animate-[slide_infinite_linear_60s]"
+      class="-space-x-2 inline-flex animate-[slide_infinite_linear_60s] hover:[animation-play-state:paused] motion-reduce:animate-none"
     >
       {
         designs.map((design) => (
@@ -87,428 +178,116 @@ const designs: CollectionEntry<"design">[] = (await getCollection("design"))
     </a>
   </section>
 
-  <section class="mx-auto max-w-xl p-4">
-    <h2 class="mt-6 font-semibold">Projects</h2>
-
-    <section id="projects" class="my-6 space-y-5">
-      <a
-        href="https://teakvault.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/teak.svg"
-            alt="Teak logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Teak</h3>
-            <p class="opacity-60">Your UI Inspirations. Finally Organized.</p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://mynaui.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/mynaui.png"
-            alt="MynaUI logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">MynaUI</h3>
-            <p class="opacity-60">
-              TailwindCSS and shadcn/ui UI Kit for Figma and React.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://www.figma.com/community/plugin/1642487887236877076/niram-shadcn-design-system-generator"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/niram.png"
-            alt="Niram logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Niram</h3>
-            <p class="opacity-60">
-              Generate shadcn/ui design systems as Figma variables and components.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://nuni.praveenjuge.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/nuni.svg"
-            alt="Nuni logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Nuni</h3>
-            <p class="opacity-60">
-              Figma-style comments on your live website.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://mynaui.com/icons"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/mynaui.png"
-            alt="MynaUI Icons logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">MynaUI Icons</h3>
-            <p class="opacity-60">
-              Beautiful open-source icons for your next project.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://vadivam.praveenjuge.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/vadivam.svg"
-            alt="Vadivam logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Vadivam</h3>
-            <p class="opacity-60">
-              Pixel-perfect open-source icons as SVGs and React components.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://apps.apple.com/in/app/one-hour-fcb6e1/id6756283371"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/onehour.jpg"
-            alt="One Hour logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">One Hour</h3>
-            <p class="opacity-60">
-              Hourly habit tracker to help you build better habits.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://mosaic.praveenjuge.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/mosaic.png"
-            alt="Mosaic logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Mosaic</h3>
-            <p class="opacity-60">
-              Showcase your beautiful website in your OG images
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href={AUTHOR.social.figma}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/figma.svg"
-            alt="Figma Community logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Figma Community</h3>
-            <p class="opacity-60">
-              Where I share some free UI resources regularly.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href={AUTHOR.social.youtube}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/youtube.png"
-            alt="YouTube logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">YouTube</h3>
-            <p class="opacity-60">Watch how I design and build things.</p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-
-      <a
-        href="https://mynaui.com/copy"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="relative flex items-center justify-between gap-8 overflow-hidden rounded-lg border border-current/10 p-5"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/logos/mynaui.png"
-            alt="Copy Book logo"
-            width="28"
-            height="28"
-            loading="lazy"
-            class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-          />
-          <div>
-            <h3 class="font-semibold">Copy Book</h3>
-            <p class="opacity-60">
-              Copy book is a collection of commonly used texts.
-            </p>
-          </div>
-        </div>
-        <svg
-          role="presentation"
-          width="18"
-          height="18"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          xmlns="http://www.w3.org/2000/svg"
-          class="shrink-0"><path d="m6.5 17.5 11-11m0 0h-9m9 0v9"></path></svg
-        >
-      </a>
-    </section>
-
-    <h2 class="mt-20 font-semibold">
-      <a href="/blog/">Blog</a>
-    </h2>
-
+  <section id="projects" class="mx-auto max-w-xl space-y-16 p-4">
     {
-      posts.map((post) => (
-        <a href={`/blog/${post.id}/`} class="my-4 flex font-medium">
-          {post.data.title}
-        </a>
+      projectGroups.map((group) => (
+        <div>
+          <h2 class="font-semibold">{group.title}</h2>
+          <ul class="mt-4 divide-y divide-current/10 border-t border-current/10">
+            {group.items.map((project) => (
+              <li>
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group flex items-center gap-4 py-4"
+                >
+                  <img
+                    src={project.logo}
+                    alt=""
+                    width="28"
+                    height="28"
+                    loading="lazy"
+                    class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
+                  />
+                  <div class="min-w-0 flex-1">
+                    <h3 class="font-semibold">{project.name}</h3>
+                    <p class="text-pretty opacity-60">{project.description}</p>
+                  </div>
+                  <svg
+                    role="presentation"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="shrink-0 opacity-40 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100 group-focus-visible:opacity-100"
+                  >
+                    <path d="m6.5 17.5 11-11m0 0h-9m9 0v9" />
+                  </svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       ))
     }
 
-    <a href="/blog/" class="flex font-medium">
-      <span>Read More {" "}{"-->"}</span>
-    </a>
+    <div>
+      <h2 class="font-semibold">
+        <a href="/blog/">Blog</a>
+      </h2>
+
+      <ul class="my-4 space-y-4">
+        {
+          posts.map((post) => (
+            <li>
+              <a
+                href={`/blog/${post.id}/`}
+                class="group flex items-baseline justify-between gap-6"
+              >
+                <span class="font-medium text-pretty decoration-current/30 underline-offset-4 group-hover:underline">
+                  {post.data.title}
+                </span>
+                {post.data.pubDate && (
+                  <time
+                    datetime={post.data.pubDate.toISOString()}
+                    class="shrink-0 text-sm tabular-nums opacity-50"
+                  >
+                    {postDate.format(post.data.pubDate)}
+                  </time>
+                )}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <a href="/blog/" class="flex font-medium">
+        <span>Read More {" "}{"-->"}</span>
+      </a>
+    </div>
   </section>
 </Layout>
+
+<style>
+  /* Fade the intro in once, one line after another. */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero > :global(*) {
+      animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+    .hero > :global(:nth-child(2)) {
+      animation-delay: 50ms;
+    }
+    .hero > :global(:nth-child(3)) {
+      animation-delay: 100ms;
+    }
+    .hero > :global(:nth-child(4)) {
+      animation-delay: 150ms;
+    }
+    .hero > :global(:nth-child(5)) {
+      animation-delay: 200ms;
+    }
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      translate: 0 8px;
+    }
+  }
+</style>
