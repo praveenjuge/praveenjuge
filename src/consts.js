@@ -1,5 +1,6 @@
 export const SITE = {
-  title: "Personal Website",
+  // The homepage title; other pages use "Page | Praveen Juge".
+  title: "Praveen Juge — Designer and Developer",
   description:
     "Praveen Juge is a designer and developer for everything on the web.",
   color: "#e5e7eb",
@@ -10,7 +11,7 @@ export const AUTHOR = {
   image: "https://praveenjuge.com/praveenjuge.jpg",
   handle: "@praveenjuge",
   url: "https://praveenjuge.com",
-  email: "hi@praveenjuge.com",
+  email: "hello@praveenjuge.com",
   social: {
     x: "https://x.com/praveenjuge",
     twitter: "https://twitter.com/praveenjuge",

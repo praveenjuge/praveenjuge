@@ -1,74 +1,99 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../Layout.astro";
 import { AUTHOR } from "../../consts";
 import { render } from "astro:content";
+import myPhoto from "../../images/praveenjuge.jpg";
 
 export async function getStaticPaths() {
-  const posts: CollectionEntry<"blog">[] = await getCollection("blog");
-  return posts.map((post: CollectionEntry<"blog">) => ({
+  const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
+    (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+      (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
+  );
+  return posts.map((post, index) => ({
     params: { slug: post.id },
-    props: post,
+    props: { post, newer: posts[index - 1], older: posts[index + 1] },
   }));
 }
-type Props = CollectionEntry<"blog">;
+type Props = {
+  post: CollectionEntry<"blog">;
+  newer?: CollectionEntry<"blog">;
+  older?: CollectionEntry<"blog">;
+};
 
-const post = Astro.props;
-const { slug } = Astro.params;
-const { title, pubDate, description } = post.data;
+const { post, newer, older } = Astro.props;
+const { title, pubDate, updatedDate, description } = post.data;
 const { Content } = await render(post);
+
+const url = new URL(`/blog/${post.id}/`, Astro.site).href;
+const wordCount = post.body?.split(/\s+/).filter(Boolean).length ?? 0;
+const readingMinutes = Math.max(1, Math.round(wordCount / 225));
+const longDate = (date: Date) =>
+  date.toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+const author = {
+  "@type": "Person",
+  "@id": `${AUTHOR.url}/#person`,
+  name: AUTHOR.name,
+  url: AUTHOR.url,
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": `${url}#article`,
   headline: title,
+  description,
+  url,
+  mainEntityOfPage: url,
   datePublished: pubDate,
-  dateModified: pubDate,
-  image: `https://mosaic.praveenjuge.com/use?url=https://praveenjuge.com/blog/${slug}`,
-  author: {
-    "@type": "Person",
-    name: AUTHOR.name,
-    url: AUTHOR.url,
-  },
-  publisher: {
-    "@type": "Organization",
-    name: AUTHOR.name,
-    url: AUTHOR.url,
-    logo: AUTHOR.image,
-  },
+  dateModified: updatedDate ?? pubDate,
+  image: `https://mosaic.praveenjuge.com/use?url=${url}`,
+  wordCount,
+  inLanguage: "en",
+  author,
+  publisher: author,
+  isPartOf: { "@id": `${AUTHOR.url}/#website` },
 };
 
 const breadJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  name: title,
   itemListElement: [
     {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: AUTHOR.url,
+      item: `${AUTHOR.url}/`,
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: `${AUTHOR.url}/blog`,
+      item: `${AUTHOR.url}/blog/`,
     },
     {
       "@type": "ListItem",
       position: 3,
       name: title,
-      item: `${AUTHOR.url}/blog/${slug}`,
+      item: url,
     },
   ],
 };
 ---
 
-<Layout {...post.data} mosaic={true}>
+<Layout
+  title={title}
+  description={description}
+  mosaic={true}
+  article={pubDate && { publishedTime: pubDate, modifiedTime: updatedDate }}
+>
   <article
-    itemscope={true}
-    itemtype="http://schema.org/BlogPosting"
     class="p-4
 			mx-auto
 			max-w-xl
@@ -104,6 +129,8 @@ const breadJsonLd = {
 			**:[pre]:my-7
 			**:[pre]:rounded-lg
 			**:[pre]:p-4
+			**:[pre]:border
+			**:[pre]:border-gray-200
 			**:[pre_code]:bg-transparent
 			**:[pre_code]:border-0
 			**:[pre_code]:rounded-none
@@ -191,38 +218,26 @@ const breadJsonLd = {
 			**:[figcaption]:leading-[1.4285714]
 			**:[figcaption]:mt-[0.8571429em]"
   >
-    <p>
-      Written on{" "}
-      <time itemprop="datePublished" datetime={pubDate?.toISOString()}>
-        {
-          pubDate?.toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })
-        }
-      </time>
-    </p>
-    <h1 itemprop="headline">
-      {title}
-    </h1>
-    <meta
-      itemprop="image"
-      content={`https://mosaic.praveenjuge.com/use?url=https://praveenjuge.com/blog/${slug}`}
-    />
-    <span
-      itemscope={true}
-      itemprop="author"
-      itemtype="https://schema.org/Person"
-      hidden
-    >
-      <a itemprop="url" href={AUTHOR.url}>
-        <span itemprop="name">{AUTHOR.name}</span>
-      </a>
-    </span>
-    <p itemprop="description" class="text-xl">
-      {description}
-    </p>
+    {
+      pubDate && (
+        <p>
+          Written on{" "}
+          <time datetime={pubDate.toISOString()}>{longDate(pubDate)}</time>
+          {" · "}
+          {readingMinutes} min read
+          {updatedDate && (
+            <>
+              {" · "}Updated{" "}
+              <time datetime={updatedDate.toISOString()}>
+                {longDate(updatedDate)}
+              </time>
+            </>
+          )}
+        </p>
+      )
+    }
+    <h1>{title}</h1>
+    {description && <p class="text-xl">{description}</p>}
     <Content />
     <script
       is:inline
@@ -235,4 +250,109 @@ const breadJsonLd = {
       set:html={JSON.stringify(breadJsonLd)}
     />
   </article>
+
+  <footer class="mx-auto mt-16 max-w-xl space-y-12 px-4">
+    <div class="flex items-center gap-3 text-sm">
+      <Image
+        width={72}
+        height={72}
+        src={myPhoto}
+        alt=""
+        class="size-9 shrink-0 rounded-full object-cover"
+      />
+      <p class="leading-snug">
+        <span class="block font-medium">{AUTHOR.name}</span>
+        <span class="opacity-50">
+          Designer and developer ·{" "}
+          <a
+            href={`mailto:${AUTHOR.email}`}
+            class="underline-offset-4 hover:underline"
+          >
+            {AUTHOR.email}
+          </a>
+        </span>
+      </p>
+    </div>
+
+    {
+      (older || newer) && (
+        <nav aria-label="More posts" class="grid gap-6 sm:grid-cols-2">
+          {older && (
+            <a href={`/blog/${older.id}/`} class="group space-y-1">
+              <span class="block text-sm opacity-50">Previous post</span>
+              <span class="block font-medium text-pretty decoration-current/30 underline-offset-4 group-hover:underline">
+                {older.data.title}
+              </span>
+            </a>
+          )}
+          {newer && (
+            <a
+              href={`/blog/${newer.id}/`}
+              class="group space-y-1 sm:col-start-2 sm:text-right"
+            >
+              <span class="block text-sm opacity-50">Next post</span>
+              <span class="block font-medium text-pretty decoration-current/30 underline-offset-4 group-hover:underline">
+                {newer.data.title}
+              </span>
+            </a>
+          )}
+        </nav>
+      )
+    }
+  </footer>
+
+  <dialog
+    id="image-zoom"
+    aria-label="Enlarged image"
+    class="m-auto max-h-none max-w-none cursor-zoom-out bg-transparent p-0 outline-none backdrop:bg-white/90"
+  >
+    <img alt="" class="max-h-[92dvh] max-w-[92vw] rounded object-contain" />
+  </dialog>
 </Layout>
+
+<script>
+  // Click an article image to see it larger; click anywhere or press Escape
+  // to close. Linked images keep their link.
+  const zoom = document.querySelector<HTMLDialogElement>("#image-zoom");
+  const zoomImage = zoom?.querySelector("img");
+  if (zoom && zoomImage) {
+    for (const image of document.querySelectorAll<HTMLImageElement>(
+      "article img"
+    )) {
+      if (image.closest("a")) continue;
+      image.classList.add("cursor-zoom-in");
+      image.addEventListener("click", () => {
+        zoomImage.src = image.currentSrc || image.src;
+        zoomImage.alt = image.alt;
+        zoom.showModal();
+      });
+    }
+    zoom.addEventListener("click", () => zoom.close());
+  }
+</script>
+
+<style>
+  article :global(:is(h2, h3)[id]) {
+    scroll-margin-top: 2rem;
+  }
+  article :global(.heading-anchor) {
+    margin-left: 0.35em;
+    font-weight: 400;
+    color: var(--color-gray-300);
+    text-decoration: none;
+    opacity: 0;
+    transition:
+      opacity 0.15s,
+      color 0.15s;
+  }
+  article :global(.heading-anchor)::before {
+    content: "#";
+  }
+  article :global(:is(h2, h3):hover .heading-anchor),
+  article :global(.heading-anchor:focus-visible) {
+    opacity: 1;
+  }
+  article :global(.heading-anchor:hover) {
+    color: var(--color-gray-500);
+  }
+</style>

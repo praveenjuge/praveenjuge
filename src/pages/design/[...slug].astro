@@ -2,6 +2,8 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import { getImage, Image } from "astro:assets";
 import Layout from "../../Layout.astro";
+import { AUTHOR } from "../../consts";
+import { designLabel } from "../../design.js";
 
 export async function getStaticPaths() {
   const posts: CollectionEntry<"design">[] = await getCollection("design");
@@ -21,11 +23,15 @@ const fullImage = await getImage({
 });
 ---
 
-<Layout {...post.data}>
+<Layout
+  title={designLabel(post)}
+  description={`A daily UI design by ${AUTHOR.name}. More in the design archive.`}
+  noindex
+>
   <article class="mx-auto flex max-w-xl flex-col gap-6 p-4 font-medium">
     <a href="/design">← All Designs</a>
     <a target="_blank" href={fullImage.src}>
-      <Image width={1600} height={1200} alt={post.id} src={post.data.cover} />
+      <Image width={1600} height={1200} alt={designLabel(post)} src={post.data.cover} />
     </a>
   </article>
 </Layout>

@@ -1,35 +1,56 @@
 ---
+import { getCollection, type CollectionEntry } from "astro:content";
 import { AUTHOR } from "../consts";
 import Layout from "../Layout.astro";
+
+const latestPosts: CollectionEntry<"blog">[] = (await getCollection("blog"))
+  .sort(
+    (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+      (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
+  )
+  .slice(0, 5);
+
+const linkClass =
+  "underline decoration-current/30 underline-offset-4 transition-colors hover:decoration-current";
 ---
 
-<Layout title="Page not found (404)">
-  <section
-    class="mx-auto max-w-sm px-4 py-24 text-center space-y-2 **:[a]:underline **:[h1]:font-bold **:[p]:opacity-75"
-  >
-    <h1>Page not found (404)</h1>
-    <p>
-      The path <code id="missing-path"></code> was not found.
-    </p>
-    <script is:inline>
-      const missingPath = document.getElementById("missing-path");
-      if (missingPath) missingPath.textContent = window.location.pathname;
-    </script>
-    <p>
-      If you think this is a mistake, please let me know at{" "}
-      <a href={AUTHOR.social.x} target="_blank" rel="noreferrer noopener">Twitter</a>.
-    </p>
-  </section>
+<Layout title="Page not found (404)" noindex>
+  <section class="mx-auto max-w-xl space-y-12 p-4 leading-relaxed">
+    <div class="space-y-2">
+      <h1 class="font-semibold">Page not found</h1>
+      <p class="text-pretty opacity-60">
+        Nothing lives at <code id="missing-path"></code>. Head back{" "}
+        <a href="/" class={linkClass}>home</a>, or if a link brought you here,
+        let me know at{" "}
+        <a href={`mailto:${AUTHOR.email}`} class={linkClass}>{AUTHOR.email}</a>.
+      </p>
+      <script is:inline>
+        const missingPath = document.getElementById("missing-path");
+        if (missingPath) missingPath.textContent = window.location.pathname;
+      </script>
+    </div>
 
-  <section class="mx-auto max-w-xl px-4 pb-24 space-y-4 text-sm leading-relaxed">
-    <h2 class="font-semibold">Where to go next</h2>
-    <ul class="list-disc pl-5 space-y-1 **:[a]:underline">
-      <li><a href="/">Home</a> — overview and projects</li>
-      <li><a href="/blog/">Blog</a> — writing</li>
-      <li><a href="/design/">Designs</a> — design archive</li>
-      <li><a href="/videos/">Videos</a> — YouTube</li>
-      <li><a href="/sitemap-index.xml">Sitemap</a> — all pages</li>
-      <li><a href="/robots.txt">Robots</a> — crawl rules</li>
-    </ul>
+    <div>
+      <h2 class="font-semibold">Latest writing</h2>
+      <ul class="mt-4 space-y-3">
+        {
+          latestPosts.map((post) => (
+            <li>
+              <a
+                href={`/blog/${post.id}/`}
+                class="font-medium text-pretty decoration-current/30 underline-offset-4 hover:underline"
+              >
+                {post.data.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-6 font-medium">
+        <a href="/blog/">All posts {"-->"}</a>
+        <span class="mx-2 opacity-30">/</span>
+        <a href="/design/">Designs {"-->"}</a>
+      </p>
+    </div>
   </section>
 </Layout>

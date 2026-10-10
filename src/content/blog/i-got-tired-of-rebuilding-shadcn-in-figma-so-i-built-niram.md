@@ -12,7 +12,7 @@ So I built [Niram](https://www.figma.com/community/plugin/1642487887236877076/ni
 
 ## The boring problem
 
-I have used Tailwind since the beta days. I made a Tailwind v3.4.4 system for Figma and [Myna UI](https://www.figma.com/community/file/1340017605248937608/myna-ui-tailwindcss-shadcn-ui-radix-premium-ui-kit) with shadcn and Radix. I like building design systems. Maybe too much.
+I have used Tailwind since the beta days. I made a Tailwind v3.4.4 system for Figma and [Myna UI](https://www.figma.com/community/file/1340017605248937608/myna-ui-tailwindcss-shadcn-ui-radix-premium-ui-kit) with shadcn and Radix ([here's what changed in MynaUI](/blog/new-updates-to-mynaui/)). I like building design systems. Maybe too much.
 
 But every new shadcn preset still meant manual work. Copy colors. Map them to variables. Wire light and dark. Set the radius. Load fonts. Change one thing in code and Figma drifts.
 

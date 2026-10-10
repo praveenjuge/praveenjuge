@@ -4,6 +4,7 @@ import Layout from "../Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 import myPhoto from "../images/praveenjuge.jpg";
 import { AUTHOR } from "../consts";
+import { designLabel } from "../design.js";
 
 const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
   .sort(
@@ -153,8 +154,8 @@ const linkClass =
 
     <p class="text-pretty">
       Have something in mind? Say hello at{" "}
-      <a href="mailto:hello@praveenjuge.com" class={linkClass}>
-        hello@praveenjuge.com
+      <a href={`mailto:${AUTHOR.email}`} class={linkClass}>
+        {AUTHOR.email}
       </a>
     </p>
   </section>
@@ -169,7 +170,7 @@ const linkClass =
           <Image
             width={1600}
             height={1200}
-            alt={design.id}
+            alt={designLabel(design)}
             src={design.data.cover}
             class="even:-rotate-2 block min-h-72 w-96 min-w-96 rounded bg-cover object-cover ring-4 ring-white odd:rotate-2"
           />

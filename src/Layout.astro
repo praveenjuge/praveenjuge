@@ -6,31 +6,67 @@ import { SOCIAL_LOGOS } from "./social-logos";
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
-  title = SITE.title,
+  title,
   description = SITE.description,
   mosaic,
+  article,
+  noindex = false,
 } = Astro.props;
-const coverImage = mosaic
-  ? `https://mosaic.praveenjuge.com/use?url=${canonicalURL}`
-  : new URL("/opengraph-image.jpg", Astro.url);
+const fullTitle = title ? `${title} | ${AUTHOR.name}` : SITE.title;
+// Mosaic renders 1560×819 JPEGs; the static fallback is 2400×1350.
+const cover = mosaic
+  ? {
+      url: `https://mosaic.praveenjuge.com/use?url=${canonicalURL}`,
+      width: 1560,
+      height: 819,
+    }
+  : {
+      url: new URL("/opengraph-image.jpg", Astro.site).href,
+      width: 2400,
+      height: 1350,
+    };
 
+const personId = `${AUTHOR.url}/#person`;
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: AUTHOR.name,
-  description: SITE.description,
-  url: AUTHOR.url,
-  image: AUTHOR.image,
-  jobTitle: "UI Designer & Developer",
-  contactPoint: [
+  "@graph": [
     {
-      "@type": "ContactPoint",
-      email: AUTHOR.email,
-      contactType: "New Projects",
+      "@type": "WebSite",
+      "@id": `${AUTHOR.url}/#website`,
+      name: AUTHOR.name,
+      url: `${AUTHOR.url}/`,
+      inLanguage: "en",
+      publisher: { "@id": personId },
+    },
+    {
+      "@type": "Person",
+      "@id": personId,
+      name: AUTHOR.name,
+      description: SITE.description,
+      url: AUTHOR.url,
+      image: AUTHOR.image,
+      jobTitle: "UI Designer & Developer",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          email: AUTHOR.email,
+          contactType: "New Projects",
+        },
+      ],
+      sameAs: Object.values(AUTHOR.social),
     },
   ],
-  sameAs: [AUTHOR.url, ...Object.values(AUTHOR.social)],
 };
+
+// Profiles that link back here, for rel="me" verification (Mastodon etc.).
+const relMeProfiles = [
+  AUTHOR.social.mastodon,
+  AUTHOR.social.x,
+  AUTHOR.social.github,
+  AUTHOR.social.instagram,
+  AUTHOR.social.dribbble,
+  AUTHOR.social.bsky,
+];
 
 // Sizes are optical: X fills its whole square, so it reads larger than the
 // round GitHub and Dribbble marks at the same size.
@@ -53,9 +89,9 @@ const headerSocials = [
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
 
     <!-- Primary Meta Tags -->
-    <title>{title} | {AUTHOR.name}</title>
-    <meta name="title" content={title + " | " + AUTHOR.name} />
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
 
     <!-- Other Metadata -->
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -73,49 +109,49 @@ const headerSocials = [
     />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalURL} />
-    <meta name="application-name" content={SITE.title} />
+    <meta name="application-name" content={AUTHOR.name} />
     <link rel="author" href={AUTHOR.url} />
     <meta name="author" content={AUTHOR.name} />
-    <meta name="keywords" content="praveen,praveenjuge,juge" />
     <meta name="referrer" content="same-origin" />
     <meta name="theme-color" content="#e5e7eb" />
-    <meta name="creator" content={AUTHOR.name} />
-    <meta name="publisher" content={AUTHOR.name} />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="category" content="UI Designer" />
-    <meta name="me" content={AUTHOR.social.mastodon} />
-    <meta name="me" content={AUTHOR.social.twitter} />
-    <meta name="me" content={AUTHOR.social.x} />
-    <meta name="me" content={AUTHOR.social.github} />
-    <meta name="me" content={AUTHOR.social.instagram} />
-    <meta name="me" content={AUTHOR.social.dribbble} />
-    <meta name="me" content={AUTHOR.email} />
-    <meta name="me" content={AUTHOR.url} />
+    {relMeProfiles.map((href) => <link rel="me" href={href} />)}
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content={title + " | " + AUTHOR.name} />
+    <!-- Open Graph -->
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:site_name" content={AUTHOR.name} />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={cover.url} />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="2400" />
-    <meta property="og:image:height" content="1350" />
-    <meta property="og:image" content={coverImage} />
-    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content={cover.width} />
+    <meta property="og:image:height" content={cover.height} />
+    <meta property="og:type" content={article ? "article" : "website"} />
+    {
+      article && (
+        <>
+          <meta
+            property="article:published_time"
+            content={article.publishedTime.toISOString()}
+          />
+          {article.modifiedTime && (
+            <meta
+              property="article:modified_time"
+              content={article.modifiedTime.toISOString()}
+            />
+          )}
+          <meta property="article:author" content={AUTHOR.url} />
+        </>
+      )
+    }
 
     <!-- Twitter -->
-    <meta property="twitter:title" content={title + " | " + AUTHOR.name} />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content={AUTHOR.handle} />
     <meta name="twitter:creator" content={AUTHOR.handle} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image:type" content="image/jpeg" />
-    <meta property="twitter:image:width" content="2400" />
-    <meta property="twitter:image:height" content="1350" />
-    <meta property="twitter:image" content={coverImage} />
-    <meta property="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={cover.url} />
 
     <!-- Fonts -->
     <Font cssVariable="--font-geist" preload />

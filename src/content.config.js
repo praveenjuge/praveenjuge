@@ -1,4 +1,5 @@
 import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import { readdir } from "node:fs/promises";
 import { basename, extname, join, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -7,7 +8,7 @@ import { rssSchema } from "@astrojs/rss";
 
 const blog = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content/blog" }),
-  schema: rssSchema,
+  schema: rssSchema.extend({ updatedDate: z.coerce.date().optional() }),
 });
 
 const DESIGN_DIRECTORY = "src/content/design";

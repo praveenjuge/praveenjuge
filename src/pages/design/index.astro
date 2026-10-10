@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../Layout.astro";
 import { getImage, Image } from "astro:assets";
+import { designLabel } from "../../design.js";
 
 const DESIGN_PREVIEW_WIDTH = 1600;
 const DESIGN_PREVIEW_HEIGHT = 1200;
@@ -30,7 +31,10 @@ const designCards = await Promise.all(
 );
 ---
 
-<Layout title="Designs">
+<Layout
+  title="Designs"
+  description="Praveen Juge's daily UI design archive."
+>
   <h1 class="mx-auto mb-6 max-w-xl px-4 font-bold">Designs</h1>
   <section
     id="design-grid"
@@ -49,7 +53,7 @@ const designCards = await Promise.all(
             width={DESIGN_PREVIEW_WIDTH}
             height={DESIGN_PREVIEW_HEIGHT}
             quality="high"
-            alt={design.id}
+            alt={designLabel(design)}
             src={design.data.cover}
             class="block h-full w-full object-cover"
           />

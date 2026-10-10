@@ -1,5 +1,6 @@
 ---
 title: 'New Updates to MynaUI!'
+description: 'MynaUI is out of early access, with a new component sidebar, Tailwind 4, the Shad New York theme, OKLCH colors and new components.'
 pubDate: '2025-03-18 20:54:05'
 ---
 

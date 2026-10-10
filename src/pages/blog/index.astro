@@ -6,14 +6,65 @@ const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
     (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
 );
+
+// Posts are sorted newest first, so years come out in descending order.
+const postsByYear = Map.groupBy(
+  posts,
+  (post) => post.data.pubDate?.getUTCFullYear() ?? "Undated"
+);
+
+const postDate = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  timeZone: "UTC",
+});
 ---
 
-<Layout title="Blog">
-  <section class="mx-auto flex max-w-xl flex-col gap-4 p-4 font-medium">
-    <h1 class="font-bold">
-      Blog <span> — </span>
-      <a href="/blog/rss.xml" class="underline">RSS Feed</a>
-    </h1>
-    {posts.map((post) => <a href={`/blog/${post.id}/`}>{post.data.title}</a>)}
+<Layout
+  title="Blog"
+  description="Writing by Praveen Juge on UI design, CSS, design systems, side projects and developer tools."
+>
+  <section class="mx-auto max-w-xl space-y-12 p-4">
+    <div class="space-y-2">
+      <h1 class="font-semibold">Blog</h1>
+      <p class="text-pretty leading-relaxed opacity-60">
+        Notes on design, code and the small tools I build. Follow along with
+        the <a
+          href="/blog/rss.xml"
+          class="underline decoration-current/30 underline-offset-4 transition-colors hover:decoration-current"
+          >RSS feed</a
+        >.
+      </p>
+    </div>
+
+    {
+      [...postsByYear].map(([year, yearPosts]) => (
+        <div>
+          <h2 class="font-semibold">{year}</h2>
+          <ul class="mt-4 space-y-4">
+            {yearPosts.map((post) => (
+              <li>
+                <a
+                  href={`/blog/${post.id}/`}
+                  class="group flex items-baseline justify-between gap-6"
+                >
+                  <span class="font-medium text-pretty decoration-current/30 underline-offset-4 group-hover:underline">
+                    {post.data.title}
+                  </span>
+                  {post.data.pubDate && (
+                    <time
+                      datetime={post.data.pubDate.toISOString()}
+                      class="shrink-0 text-sm tabular-nums opacity-50"
+                    >
+                      {postDate.format(post.data.pubDate)}
+                    </time>
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
   </section>
 </Layout>

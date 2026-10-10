@@ -60,6 +60,6 @@ npx @nuniapp/cli@latest init
 
 It detects your framework and prints the snippet to add. Or copy the prompt from [nuni.praveenjuge.com](https://nuni.praveenjuge.com) and let your agent do it. Then open the panel, choose **Claim Nuni** and sign in with GitHub to own the comments.
 
-It's [open source on GitHub](https://github.com/praveenjuge/nuni).
+It's [open source on GitHub](https://github.com/praveenjuge/nuni). If you also live in Figma, [Niram](/blog/i-got-tired-of-rebuilding-shadcn-in-figma-so-i-built-niram/) turns a shadcn preset into Figma variables and components.
 
 Add it to something you're building and tell me where the pins break.
