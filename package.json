@@ -22,7 +22,6 @@
     "build": "astro build",
     "dev": "astro dev",
     "preview": "astro preview",
-    "books": "node scripts/sync-books.mjs",
     "test": "node --test test/*.test.js"
   },
   "dependencies": {
