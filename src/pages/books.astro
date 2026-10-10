@@ -1,8 +1,69 @@
 ---
 import Layout from "../Layout.astro";
 
-// Saved from Goodreads with `npm run books`; Goodreads blocks Cloudflare's build servers.
-import books from "../data/books.json";
+// Saved copy of the Hardcover "Read" shelf, used when the build can't reach Hardcover.
+import saved from "../data/books.json";
+
+type Book = (typeof saved)[number];
+
+const READ = 3;
+const SHELF_QUERY = `{
+  me {
+    user_books(
+      where: { status_id: { _eq: ${READ} } }
+      order_by: [{ last_read_date: desc_nulls_last }, { date_added: desc }, { id: desc }]
+    ) {
+      book {
+        id
+        slug
+        title
+        image { url }
+        contributions(limit: 5) { contribution author { name } }
+      }
+    }
+  }
+}`;
+
+// Reads the shelf from Hardcover at build time. Returns null on any failure so
+// a missing or expired token never breaks a deploy.
+async function fetchShelf(): Promise<Book[] | null> {
+  const token = import.meta.env.HARDCOVER_TOKEN;
+  if (!token) return null;
+  try {
+    const res = await fetch("https://api.hardcover.app/v1/graphql", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization: `Bearer ${token.replace(/^Bearer\s+/i, "")}`,
+        "user-agent": "praveenjuge.com books page",
+      },
+      body: JSON.stringify({ query: SHELF_QUERY }),
+      signal: AbortSignal.timeout(15_000),
+    });
+    const json = await res.json();
+    const rows = json.data?.me?.[0]?.user_books;
+    if (!res.ok || !Array.isArray(rows)) throw new Error(`HTTP ${res.status} ${JSON.stringify(json.errors ?? json.error ?? "")}`);
+    if (rows.length === 0) throw new Error("the Read shelf is empty");
+    return rows.map(({ book }) => {
+      const author = book.contributions.find((c) => c.contribution === "Author") ?? book.contributions[0];
+      return {
+        id: String(book.id),
+        title: book.title,
+        shortTitle: book.title.replace(/:.*$/, "").trim(),
+        author: author?.author.name ?? "",
+        cover: book.image?.url ?? "",
+        url: `https://hardcover.app/books/${book.slug}`,
+      };
+    });
+  } catch (error) {
+    console.warn(`[books] Couldn't load the Hardcover shelf, using books.json: ${error}`);
+    return null;
+  }
+}
+
+const live = await fetchShelf();
+const books = live ?? saved;
+console.info(`[books] ${books.length} books from ${live ? "Hardcover" : "books.json"}`);
 
 const FALLBACK_COLORS = ["#c2410c", "#1d4ed8", "#15803d", "#a21caf", "#b45309", "#0f766e", "#be123c"];
 

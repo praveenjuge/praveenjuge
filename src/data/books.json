@@ -1,642 +1,658 @@
 [
   {
-    "id": "28188680",
-    "title": "The Importance Of Being Earnest: By Oscar Wilde (Illustrated And Unabridged)",
-    "shortTitle": "The Importance Of Being Earnest",
-    "author": "Oscar Wilde",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1450040049l/28188680._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/28188680"
-  },
-  {
-    "id": "38746485",
-    "title": "Becoming",
-    "shortTitle": "Becoming",
-    "author": "Michelle Obama",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528206996l/38746485.jpg",
-    "url": "https://www.goodreads.com/book/show/38746485"
-  },
-  {
-    "id": "13496",
-    "title": "A Game of Thrones (A Song of Ice and Fire, #1)",
-    "shortTitle": "A Game of Thrones",
-    "author": "George R.R. Martin",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg",
-    "url": "https://www.goodreads.com/book/show/13496"
-  },
-  {
-    "id": "61215384",
-    "title": "The Return of the King (The Lord of the Rings, #3)",
-    "shortTitle": "The Return of the King",
-    "author": "J.R.R. Tolkien",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1654216226l/61215384._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/61215384"
-  },
-  {
-    "id": "61215372",
-    "title": "The Two Towers (The Lord of the Rings, #2)",
-    "shortTitle": "The Two Towers",
-    "author": "J.R.R. Tolkien",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1654216149l/61215372._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/61215372"
-  },
-  {
-    "id": "58613224",
-    "title": "Harry Potter and the Deathly Hallows (Harry Potter, #7)",
-    "shortTitle": "Harry Potter and the Deathly Hallows",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627042661l/58613224.jpg",
-    "url": "https://www.goodreads.com/book/show/58613224"
-  },
-  {
-    "id": "58613345",
-    "title": "Harry Potter and the Half-Blood Prince (Harry Potter, #6)",
-    "shortTitle": "Harry Potter and the Half-Blood Prince",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627043894l/58613345.jpg",
-    "url": "https://www.goodreads.com/book/show/58613345"
-  },
-  {
-    "id": "58613451",
-    "title": "Harry Potter and the Order of the Phoenix (Harry Potter, #5)",
-    "shortTitle": "Harry Potter and the Order of the Phoenix",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627045351l/58613451.jpg",
-    "url": "https://www.goodreads.com/book/show/58613451"
-  },
-  {
-    "id": "58613424",
-    "title": "Harry Potter and the Goblet of Fire (Harry Potter, #4)",
-    "shortTitle": "Harry Potter and the Goblet of Fire",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627044952l/58613424.jpg",
-    "url": "https://www.goodreads.com/book/show/58613424"
-  },
-  {
-    "id": "5",
-    "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
-    "shortTitle": "Harry Potter and the Prisoner of Azkaban",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630547330l/5._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/5"
-  },
-  {
-    "id": "15881",
-    "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
-    "shortTitle": "Harry Potter and the Chamber of Secrets",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474169725l/15881._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/15881"
-  },
-  {
-    "id": "7260188",
-    "title": "Mockingjay (The Hunger Games, #3)",
-    "shortTitle": "Mockingjay",
-    "author": "Suzanne Collins",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722918l/7260188._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/7260188"
-  },
-  {
-    "id": "6148028",
-    "title": "Catching Fire (The Hunger Games, #2)",
-    "shortTitle": "Catching Fire",
-    "author": "Suzanne Collins",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722941l/6148028.jpg",
-    "url": "https://www.goodreads.com/book/show/6148028"
-  },
-  {
-    "id": "29579",
-    "title": "Foundation (Foundation, #1)",
-    "shortTitle": "Foundation",
-    "author": "Isaac Asimov",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg",
-    "url": "https://www.goodreads.com/book/show/29579"
-  },
-  {
-    "id": "44767458",
-    "title": "Dune (Dune, #1)",
-    "shortTitle": "Dune",
-    "author": "Frank Herbert",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458.jpg",
-    "url": "https://www.goodreads.com/book/show/44767458"
-  },
-  {
-    "id": "18007564",
-    "title": "The Martian",
-    "shortTitle": "The Martian",
-    "author": "Andy Weir",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413706054l/18007564.jpg",
-    "url": "https://www.goodreads.com/book/show/18007564"
-  },
-  {
-    "id": "60556912",
-    "title": "The Housemaid (The Housemaid, #1)",
-    "shortTitle": "The Housemaid",
-    "author": "Freida McFadden",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1646534743l/60556912._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/60556912"
-  },
-  {
-    "id": "11125",
-    "title": "Digital Fortress",
-    "shortTitle": "Digital Fortress",
-    "author": "Dan Brown",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360095966l/11125.jpg",
-    "url": "https://www.goodreads.com/book/show/11125"
-  },
-  {
-    "id": "6411961",
-    "title": "The Lost Symbol (Robert Langdon, #3)",
-    "shortTitle": "The Lost Symbol",
-    "author": "Dan Brown",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1534070883l/6411961.jpg",
-    "url": "https://www.goodreads.com/book/show/6411961"
-  },
-  {
-    "id": "17212231",
-    "title": "Inferno (Robert Langdon, #4)",
-    "shortTitle": "Inferno",
-    "author": "Dan Brown",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1534070896l/17212231.jpg",
-    "url": "https://www.goodreads.com/book/show/17212231"
-  },
-  {
-    "id": "853510",
-    "title": "Murder on the Orient Express (Hercule Poirot, #10)",
-    "shortTitle": "Murder on the Orient Express",
-    "author": "Agatha Christie",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733926500l/853510._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/853510"
-  },
-  {
-    "id": "102868",
-    "title": "A Study in Scarlet (Sherlock Holmes, #1)",
-    "shortTitle": "A Study in Scarlet",
-    "author": "Arthur Conan Doyle",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519031842l/102868._SX318_.jpg",
-    "url": "https://www.goodreads.com/book/show/102868"
-  },
-  {
-    "id": "485894",
-    "title": "The Metamorphosis",
-    "shortTitle": "The Metamorphosis",
-    "author": "Franz Kafka",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1646444605l/485894._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/485894"
-  },
-  {
-    "id": "5129",
-    "title": "Brave New World",
-    "shortTitle": "Brave New World",
-    "author": "Aldous Huxley",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1575509280l/5129._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/5129"
-  },
-  {
-    "id": "170448",
-    "title": "Animal Farm",
-    "shortTitle": "Animal Farm",
-    "author": "George Orwell",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1325861570l/170448.jpg",
-    "url": "https://www.goodreads.com/book/show/170448"
-  },
-  {
-    "id": "32620332",
-    "title": "The Seven Husbands of Evelyn Hugo",
-    "shortTitle": "The Seven Husbands of Evelyn Hugo",
-    "author": "Taylor Jenkins Reid",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1664458703l/32620332._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/32620332"
-  },
-  {
-    "id": "58784475",
-    "title": "Tomorrow, and Tomorrow, and Tomorrow",
-    "shortTitle": "Tomorrow, and Tomorrow, and Tomorrow",
-    "author": "Gabrielle Zevin",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636978687l/58784475._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/58784475"
-  },
-  {
-    "id": "4214",
-    "title": "Life of Pi",
-    "shortTitle": "Life of Pi",
-    "author": "Yann Martel",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631251689l/4214._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/4214"
-  },
-  {
-    "id": "33224454",
-    "title": "பொன்னியின் செல்வன், பாகம் 1: புது வெள்ளம் (Ponniyin Selvan, Part 1)",
-    "shortTitle": "பொன்னியின் செல்வன், பாகம் 1",
-    "author": "Kalki Krishnamurthy",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480652341l/33224454._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/33224454"
-  },
-  {
-    "id": "634583",
-    "title": "Wings of Fire: An Autobiography",
-    "shortTitle": "Wings of Fire",
-    "author": "A.P.J. Abdul Kalam",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588286863l/634583._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/634583"
-  },
-  {
-    "id": "27036528",
-    "title": "Ego Is the Enemy",
-    "shortTitle": "Ego Is the Enemy",
-    "author": "Ryan Holiday",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1459114043l/27036528.jpg",
-    "url": "https://www.goodreads.com/book/show/27036528"
-  },
-  {
-    "id": "233411514",
-    "title": "Meditations",
-    "shortTitle": "Meditations",
-    "author": "Marcus Aurelius",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1750554861l/233411514._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/233411514"
-  },
-  {
-    "id": "23692271",
-    "title": "Sapiens: A Brief History of Humankind",
-    "shortTitle": "Sapiens",
-    "author": "Yuval Noah Harari",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1703329310l/23692271._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/23692271"
-  },
-  {
-    "id": "54898389",
-    "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
-    "shortTitle": "The Almanack of Naval Ravikant",
-    "author": "Eric Jorgenson",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598011736l/54898389._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/54898389"
-  },
-  {
-    "id": "41881472",
-    "title": "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness",
-    "shortTitle": "The Psychology of Money",
-    "author": "Morgan Housel",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1581527774l/41881472._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/41881472"
-  },
-  {
-    "id": "39995046",
-    "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
-    "shortTitle": "Ikigai",
-    "author": "Héctor García",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525042485l/39995046._SX318_.jpg",
-    "url": "https://www.goodreads.com/book/show/39995046"
-  },
-  {
-    "id": "18050143",
-    "title": "Zero to One: Notes on Startups, or How to Build the Future",
-    "shortTitle": "Zero to One",
-    "author": "Peter Thiel",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630663027l/18050143.jpg",
-    "url": "https://www.goodreads.com/book/show/18050143"
-  },
-  {
-    "id": "38900866",
-    "title": "It Doesn't Have to Be Crazy at Work: A Practical Guide to Sustainable Productivity Through Calm Company Culture and Effective Leadership",
-    "shortTitle": "It Doesn't Have to Be Crazy at Work",
-    "author": "Jason Fried",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526057292l/38900866.jpg",
-    "url": "https://www.goodreads.com/book/show/38900866"
-  },
-  {
-    "id": "6732019",
-    "title": "Rework",
-    "shortTitle": "Rework",
-    "author": "Jason Fried",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1391275636l/6732019.jpg",
-    "url": "https://www.goodreads.com/book/show/6732019"
-  },
-  {
-    "id": "37880811",
-    "title": "Make Time: How to Focus on What Matters Every Day",
-    "shortTitle": "Make Time",
-    "author": "Jake Knapp",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524067121l/37880811.jpg",
-    "url": "https://www.goodreads.com/book/show/37880811"
-  },
-  {
-    "id": "25814544",
-    "title": "Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days",
-    "shortTitle": "Sprint",
-    "author": "Jake Knapp",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457284924l/25814544._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/25814544"
-  },
-  {
-    "id": "44595007",
-    "title": "Indistractable: How to Control Your Attention and Choose Your Life",
-    "shortTitle": "Indistractable",
-    "author": "Nir Eyal",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559847987l/44595007.jpg",
-    "url": "https://www.goodreads.com/book/show/44595007"
-  },
-  {
-    "id": "22668729",
-    "title": "Hooked: How to Build Habit-Forming Products",
-    "shortTitle": "Hooked",
-    "author": "Nir Eyal",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407112405l/22668729.jpg",
-    "url": "https://www.goodreads.com/book/show/22668729"
-  },
-  {
-    "id": "43190966",
-    "title": "Refactoring UI",
-    "shortTitle": "Refactoring UI",
-    "author": "Adam Wathan",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544555766l/43190966._SX318_.jpg",
-    "url": "https://www.goodreads.com/book/show/43190966"
-  },
-  {
-    "id": "18197267",
-    "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (Voices That Matter)",
-    "shortTitle": "Don't Make Me Think, Revisited",
-    "author": "Steve Krug",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1711564661l/18197267._SX318_.jpg",
-    "url": "https://www.goodreads.com/book/show/18197267"
-  },
-  {
-    "id": "840",
-    "title": "The Design of Everyday Things",
-    "shortTitle": "The Design of Everyday Things",
-    "author": "Donald A. Norman",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442460745l/840._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/840"
-  },
-  {
-    "id": "10645233",
-    "title": "Do the Work",
-    "shortTitle": "Do the Work",
-    "author": "Steven Pressfield",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347456016l/10645233.jpg",
-    "url": "https://www.goodreads.com/book/show/10645233"
-  },
-  {
-    "id": "40591677",
-    "title": "Keep Going: 10 Ways to Stay Creative in Good Times and Bad (Austin Kleon)",
-    "shortTitle": "Keep Going",
-    "author": "Austin Kleon",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535883531l/40591677._SX318_.jpg",
-    "url": "https://www.goodreads.com/book/show/40591677"
-  },
-  {
-    "id": "18290401",
-    "title": "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered",
-    "shortTitle": "Show Your Work!",
-    "author": "Austin Kleon",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404580714l/18290401.jpg",
-    "url": "https://www.goodreads.com/book/show/18290401"
-  },
-  {
-    "id": "13099738",
-    "title": "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
-    "shortTitle": "Steal Like an Artist",
-    "author": "Austin Kleon",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404576602l/13099738.jpg",
-    "url": "https://www.goodreads.com/book/show/13099738"
-  },
-  {
-    "id": "13525945",
-    "title": "So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love",
-    "shortTitle": "So Good They Can't Ignore You",
-    "author": "Cal Newport",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360564614l/13525945.jpg",
-    "url": "https://www.goodreads.com/book/show/13525945"
-  },
-  {
-    "id": "25744928",
-    "title": "Deep Work: Rules for Focused Success in a Distracted World",
-    "shortTitle": "Deep Work",
-    "author": "Cal Newport",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447957962l/25744928._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/25744928"
-  },
-  {
-    "id": "40121378",
-    "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
-    "shortTitle": "Atomic Habits",
-    "author": "James Clear",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655988385l/40121378.jpg",
-    "url": "https://www.goodreads.com/book/show/40121378"
-  },
-  {
-    "id": "10127019",
-    "title": "The Lean Startup",
-    "shortTitle": "The Lean Startup",
-    "author": "Eric Ries",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1629999184l/10127019._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/10127019"
-  },
-  {
-    "id": "2612",
-    "title": "The Tipping Point: How Little Things Can Make a Big Difference",
-    "shortTitle": "The Tipping Point",
-    "author": "Malcolm Gladwell",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1473396980l/2612._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/2612"
-  },
-  {
-    "id": "4865",
-    "title": "How to Win Friends & Influence People",
-    "shortTitle": "How to Win Friends & Influence People",
-    "author": "Dale Carnegie",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442726934l/4865._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/4865"
-  },
-  {
-    "id": "22318578",
-    "title": "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing",
-    "shortTitle": "The Life-Changing Magic of Tidying Up",
-    "author": "Marie Kondō",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1418767178l/22318578.jpg",
-    "url": "https://www.goodreads.com/book/show/22318578"
-  },
-  {
-    "id": "49682914",
-    "title": "The Subtle Art of Not Giving a Fuck",
-    "shortTitle": "The Subtle Art of Not Giving a Fuck",
-    "author": "Mark Manson",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1685834422l/49682914._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/49682914"
-  },
-  {
-    "id": "30257963",
-    "title": "12 Rules for Life: An Antidote to Chaos",
-    "shortTitle": "12 Rules for Life",
-    "author": "Jordan B. Peterson",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1512705866l/30257963.jpg",
-    "url": "https://www.goodreads.com/book/show/30257963"
-  },
-  {
-    "id": "61439040",
-    "title": "1984",
-    "shortTitle": "1984",
-    "author": "George Orwell",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657781256l/61439040._SX318_.jpg",
-    "url": "https://www.goodreads.com/book/show/61439040"
-  },
-  {
-    "id": "41733839",
-    "title": "The Great Gatsby",
-    "shortTitle": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1650033243l/41733839._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/41733839"
-  },
-  {
-    "id": "3",
-    "title": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
-    "shortTitle": "Harry Potter and the Sorcerer's Stone",
-    "author": "J.K. Rowling",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/3"
-  },
-  {
-    "id": "61215351",
-    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
-    "shortTitle": "The Fellowship of the Ring",
-    "author": "J.R.R. Tolkien",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1654215925l/61215351._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/61215351"
-  },
-  {
-    "id": "11",
-    "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
-    "shortTitle": "The Hitchhiker's Guide to the Galaxy",
-    "author": "Douglas Adams",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1531891848l/11._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/11"
-  },
-  {
-    "id": "3869",
-    "title": "A Brief History of Time",
-    "shortTitle": "A Brief History of Time",
-    "author": "Stephen W. Hawking",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333578746l/3869.jpg",
-    "url": "https://www.goodreads.com/book/show/3869"
-  },
-  {
-    "id": "11709037",
-    "title": "You Are Not So Smart",
-    "shortTitle": "You Are Not So Smart",
-    "author": "David McRaney",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1391879112l/11709037.jpg",
-    "url": "https://www.goodreads.com/book/show/11709037"
-  },
-  {
-    "id": "6346975",
-    "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
-    "shortTitle": "Moonwalking with Einstein",
-    "author": "Joshua Foer",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630575238l/6346975._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/6346975"
-  },
-  {
-    "id": "69571",
-    "title": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money—That the Poor and Middle Class Do Not!",
-    "shortTitle": "Rich Dad Poor Dad",
-    "author": "Robert T. Kiyosaki",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757619021l/69571._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/69571"
-  },
-  {
-    "id": "5326",
-    "title": "A Christmas Carol",
-    "shortTitle": "A Christmas Carol",
-    "author": "Charles Dickens",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1406512317l/5326.jpg",
-    "url": "https://www.goodreads.com/book/show/5326"
-  },
-  {
-    "id": "960",
-    "title": "Angels & Demons (Robert Langdon, #1)",
-    "shortTitle": "Angels & Demons",
-    "author": "Dan Brown",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1696691404l/960._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/960"
-  },
-  {
-    "id": "55019161",
-    "title": "The Da Vinci Code (Robert Langdon, #2)",
-    "shortTitle": "The Da Vinci Code",
-    "author": "Dan Brown",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597798677l/55019161._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/55019161"
-  },
-  {
-    "id": "5907",
-    "title": "The Hobbit, or There and Back Again",
-    "shortTitle": "The Hobbit, or There and Back Again",
-    "author": "J.R.R. Tolkien",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907.jpg",
-    "url": "https://www.goodreads.com/book/show/5907"
-  },
-  {
-    "id": "18144590",
-    "title": "The Alchemist",
-    "shortTitle": "The Alchemist",
-    "author": "Paulo Coelho",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1654371463l/18144590._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/18144590"
-  },
-  {
-    "id": "40672036",
-    "title": "Digital Minimalism: Choosing a Focused Life in a Noisy World",
-    "shortTitle": "Digital Minimalism",
-    "author": "Cal Newport",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549433350l/40672036._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/40672036"
-  },
-  {
-    "id": "977605",
-    "title": "Pushing to the Front or Success Under Difficulties",
-    "shortTitle": "Pushing to the Front or Success Under Difficulties",
-    "author": "Orison Swett Marden",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348236378l/977605.jpg",
-    "url": "https://www.goodreads.com/book/show/977605"
-  },
-  {
-    "id": "14912777",
-    "title": "Turning Pro",
-    "shortTitle": "Turning Pro",
-    "author": "Steven Pressfield",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1339000038l/14912777.jpg",
-    "url": "https://www.goodreads.com/book/show/14912777"
-  },
-  {
-    "id": "1319",
-    "title": "The War of Art",
-    "shortTitle": "The War of Art",
-    "author": "Steven Pressfield",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1574272133l/1319._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/1319"
-  },
-  {
-    "id": "15839976",
-    "title": "Red Rising (Red Rising Saga, #1)",
+    "id": "427473",
+    "title": "Red Rising",
     "shortTitle": "Red Rising",
     "author": "Pierce Brown",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461354651l/15839976._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/15839976"
+    "cover": "https://assets.hardcover.app/editions/26096001/3897005112280259.jpg",
+    "url": "https://hardcover.app/books/red-rising"
   },
   {
-    "id": "2767052",
-    "title": "The Hunger Games (The Hunger Games, #1)",
-    "shortTitle": "The Hunger Games",
+    "id": "175780",
+    "title": "Catching Fire",
+    "shortTitle": "Catching Fire",
     "author": "Suzanne Collins",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/2767052"
+    "cover": "https://assets.hardcover.app/edition/7988314/dbef0f7db3fc4a6157550d5f7cc01563af40315c.jpeg",
+    "url": "https://hardcover.app/books/catching-fire"
   },
   {
-    "id": "54493401",
+    "id": "427578",
     "title": "Project Hail Mary",
     "shortTitle": "Project Hail Mary",
     "author": "Andy Weir",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1764703833l/54493401._SY475_.jpg",
-    "url": "https://www.goodreads.com/book/show/54493401"
+    "cover": "https://assets.hardcover.app/editions/3274049/8741341047797682-91mYu67RfUL._SL1500_.jpg",
+    "url": "https://hardcover.app/books/project-hail-mary"
+  },
+  {
+    "id": "88639",
+    "title": "The Hunger Games",
+    "shortTitle": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "cover": "https://assets.hardcover.app/editions/1589497/2979196565308831-lf%202.jpeg",
+    "url": "https://hardcover.app/books/the-hunger-games"
+  },
+  {
+    "id": "432089",
+    "title": "Turning Pro",
+    "shortTitle": "Turning Pro",
+    "author": "Steven Pressfield",
+    "cover": "https://assets.hardcover.app/external_data/36306447/4a4683c3a55a284623b20bf033dd6dcab44d68e3.jpeg",
+    "url": "https://hardcover.app/books/turning-pro"
+  },
+  {
+    "id": "1651785",
+    "title": "Pushing to the Front or Success Under Difficulties",
+    "shortTitle": "Pushing to the Front or Success Under Difficulties",
+    "author": "Orison Swett Marden",
+    "cover": "https://assets.hardcover.app/edition/31735865/f380ae0e2bd14eb35d7b62c725023656fa0c1ae6.jpeg",
+    "url": "https://hardcover.app/books/pushing-to-the-front-or-success-under-difficulties"
+  },
+  {
+    "id": "337236",
+    "title": "The Alchemist",
+    "shortTitle": "The Alchemist",
+    "author": "Paulo Coelho",
+    "cover": "https://assets.hardcover.app/editions/30399646/6724991536065856.jpg",
+    "url": "https://hardcover.app/books/the-alchemist"
+  },
+  {
+    "id": "373163",
+    "title": "The Da Vinci Code",
+    "shortTitle": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "cover": "https://assets.hardcover.app/editions/30400169/2520023766251547.jpeg",
+    "url": "https://hardcover.app/books/the-da-vinci-code"
+  },
+  {
+    "id": "123621",
+    "title": "Angels & Demons",
+    "shortTitle": "Angels & Demons",
+    "author": "Dan Brown",
+    "cover": "https://assets.hardcover.app/edition/30823528/6d30efec-9484-4083-b551-090db3aac89b.jpg",
+    "url": "https://hardcover.app/books/angels-and-demons"
+  },
+  {
+    "id": "999596",
+    "title": "A Christmas Carol",
+    "shortTitle": "A Christmas Carol",
+    "author": "Philip Gooden",
+    "cover": "https://assets.hardcover.app/external_data/2235152/c0cf0fa06eafeaaa59ba78d192f828cb23ed2fe6.jpeg",
+    "url": "https://hardcover.app/books/a-christmas-carol"
+  },
+  {
+    "id": "185229",
+    "title": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
+    "shortTitle": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "cover": "https://assets.hardcover.app/edition/11421562/00e6675d98d4ac6a9a10c9623088aa0625752cde.jpeg",
+    "url": "https://hardcover.app/books/rich-dad-poor-dad"
+  },
+  {
+    "id": "427791",
+    "title": "Moonwalking with Einstein: The Art and Science of Remembering Everything",
+    "shortTitle": "Moonwalking with Einstein",
+    "author": "Joshua Foer",
+    "cover": "https://assets.hardcover.app/edition/8221487/e3685893f8a17ade9443649e60429c1358e18871.jpeg",
+    "url": "https://hardcover.app/books/moonwalking-with-einstein"
+  },
+  {
+    "id": "266212",
+    "title": "You Are Not So Smart: Why You Have Too Many Friends on Facebook, Why Your Memory Is Mostly Fiction, and 46 Other Ways You're Deluding Yourself",
+    "shortTitle": "You Are Not So Smart",
+    "author": "David McRaney",
+    "cover": "https://assets.hardcover.app/edition/30399476/113f5f63-8de0-4f4c-9193-1e0a02787b2c.jpg",
+    "url": "https://hardcover.app/books/you-are-not-so-smart"
+  },
+  {
+    "id": "465017",
+    "title": "A Brief History of Time",
+    "shortTitle": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "cover": "https://assets.hardcover.app/edition/30382691/ce1d645e2a36167971d635cced44e54aaf34725d.jpeg",
+    "url": "https://hardcover.app/books/a-brief-history-of-time"
+  },
+  {
+    "id": "427798",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "shortTitle": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "cover": "https://assets.hardcover.app/edition/21490281/d9b48333ac7a69ebe0aa5573fe0ff032e6f97508.jpeg",
+    "url": "https://hardcover.app/books/the-hitchhikers-guide-to-the-galaxy"
+  },
+  {
+    "id": "139773",
+    "title": "The Fellowship of the Ring",
+    "shortTitle": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://assets.hardcover.app/edition/29029601/6d64b05efec0ccb215640b38d8c6bc4c712da0f5.jpeg",
+    "url": "https://hardcover.app/books/the-fellowship-of-the-ring"
+  },
+  {
+    "id": "377193",
+    "title": "The Great Gatsby",
+    "shortTitle": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "cover": "https://assets.hardcover.app/edition/20216419/2a81c52c-7cf2-4477-9bfc-726d0c69f43e.jpg",
+    "url": "https://hardcover.app/books/the-great-gatsby"
+  },
+  {
+    "id": "379760",
+    "title": "1984",
+    "shortTitle": "1984",
+    "author": "George Orwell",
+    "cover": "https://assets.hardcover.app/edition/29258002/fb69559e-7c34-40cb-8518-3ef4898b830c.jpg",
+    "url": "https://hardcover.app/books/1984"
+  },
+  {
+    "id": "272075",
+    "title": "12 Rules for Life: An Antidote to Chaos",
+    "shortTitle": "12 Rules for Life",
+    "author": "Jordan B. Peterson",
+    "cover": "https://assets.hardcover.app/editions/3852991/32c5a08d-4c2d-4ec3-9ddc-4f05cdfbb902.jpg",
+    "url": "https://hardcover.app/books/12-rules-for-life-an-antidote-to-chaos"
+  },
+  {
+    "id": "242987",
+    "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+    "shortTitle": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "cover": "https://assets.hardcover.app/external_data/39792230/703e1ead0915ce19bc07da55049957ed22605b5d.jpeg",
+    "url": "https://hardcover.app/books/the-subtle-art-of-not-giving-a-f-ck"
+  },
+  {
+    "id": "897288",
+    "title": "The Life Changing Magic of Tidying Up",
+    "shortTitle": "The Life Changing Magic of Tidying Up",
+    "author": "Marie Kondo",
+    "cover": "https://assets.hardcover.app/edition/30918878/a7291e42040f038dbe60cd5cc46a91992d2f9e4c.jpeg",
+    "url": "https://hardcover.app/books/the-life-changing-magic-of-tidying-up-2010"
+  },
+  {
+    "id": "427812",
+    "title": "How to Win Friends and Influence People",
+    "shortTitle": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "cover": "https://assets.hardcover.app/editions/15837939/8381314190683367.jpg",
+    "url": "https://hardcover.app/books/how-to-win-friends-and-influence-people"
+  },
+  {
+    "id": "427391",
+    "title": "The Tipping Point: How Little Things Can Make a Big Difference",
+    "shortTitle": "The Tipping Point",
+    "author": "Malcolm Gladwell",
+    "cover": "https://assets.hardcover.app/book_mappings/7332504/7e0f25fc2c55296cf031c4b433124ba3d2c5af31.jpeg",
+    "url": "https://hardcover.app/books/the-tipping-point"
+  },
+  {
+    "id": "427367",
+    "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+    "shortTitle": "The Lean Startup",
+    "author": "Eric Ries",
+    "cover": "https://assets.hardcover.app/external_data/38942126/dfabf841bafb1e891bcfdd16d457240806e02f85.jpeg",
+    "url": "https://hardcover.app/books/the-lean-startup"
+  },
+  {
+    "id": "306986",
+    "title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "shortTitle": "Deep Work",
+    "author": "Cal Newport",
+    "cover": "https://assets.hardcover.app/external_data/43295845/f4a8749dd530cd3f34b4cb00d225aca590487218.jpeg",
+    "url": "https://hardcover.app/books/deep-work"
+  },
+  {
+    "id": "337577",
+    "title": "So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love",
+    "shortTitle": "So Good They Can't Ignore You",
+    "author": "Cal Newport",
+    "cover": "https://assets.hardcover.app/external_data/28471514/05ddb8834c0cefa6cd65fa8a8b3ea72bab9a4c09.jpeg",
+    "url": "https://hardcover.app/books/so-good-they-cant-ignore-you"
+  },
+  {
+    "id": "438708",
+    "title": "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered",
+    "shortTitle": "Show Your Work!",
+    "author": "Austin Kleon",
+    "cover": "https://assets.hardcover.app/edition/17570769/5eb4e149177f3c022f5ab0e2bc1025a65d662020.jpeg",
+    "url": "https://hardcover.app/books/show-your-work"
+  },
+  {
+    "id": "500116",
+    "title": "Keep Going: 10 Ways to Stay Creative in Good Times and Bad",
+    "shortTitle": "Keep Going",
+    "author": "Austin Kleon",
+    "cover": "https://assets.hardcover.app/external_data/3249211/1fac71da7e5be7e49e733acaabdba6bd12c45724.jpeg",
+    "url": "https://hardcover.app/books/keep-going"
+  },
+  {
+    "id": "430043",
+    "title": "Do the Work",
+    "shortTitle": "Do the Work",
+    "author": "Steven Pressfield",
+    "cover": "https://assets.hardcover.app/editions/30404782/6795456989195883.png",
+    "url": "https://hardcover.app/books/do-the-work"
+  },
+  {
+    "id": "482651",
+    "title": "The Design of Everyday Things",
+    "shortTitle": "The Design of Everyday Things",
+    "author": "Donald A. Norman",
+    "cover": "https://assets.hardcover.app/edition/30422850/93b17c0b08996fa715916de185a6a47643298e7c.jpeg",
+    "url": "https://hardcover.app/books/the-design-of-everyday-things"
+  },
+  {
+    "id": "341606",
+    "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability",
+    "shortTitle": "Don't Make Me Think, Revisited",
+    "author": "Steve Krug",
+    "cover": "https://assets.hardcover.app/editions/30400139/2960466975258181-18197267.jpg",
+    "url": "https://hardcover.app/books/dont-make-me-think-revisited"
+  },
+  {
+    "id": "427997",
+    "title": "Refactoring UI",
+    "shortTitle": "Refactoring UI",
+    "author": "Adam Wathan",
+    "cover": "https://assets.hardcover.app/external_data/28441964/d82a244276bb97845de0396bedb25a716463e7a4.jpeg",
+    "url": "https://hardcover.app/books/refactoring-ui"
+  },
+  {
+    "id": "427590",
+    "title": "Hooked: How to Build Habit-Forming Products",
+    "shortTitle": "Hooked",
+    "author": "Nir Eyal",
+    "cover": "https://assets.hardcover.app/edition/13907755/979848d889581936fc123f9ac8d34431d943d6f2.jpeg",
+    "url": "https://hardcover.app/books/hooked"
+  },
+  {
+    "id": "427787",
+    "title": "Indistractable How to Control Your Attention and Choose Your Life",
+    "shortTitle": "Indistractable How to Control Your Attention and Choose Your Life",
+    "author": "Nir Eyal",
+    "cover": "https://assets.hardcover.app/edition/19590416/c2ab89e78e0db2a9bb6b1ae52ab7ac76ed5d8a44.jpeg",
+    "url": "https://hardcover.app/books/indistractable-how-to-control-your-attention-and-choose-your-life-how-to-control-your-attention-and-choose-your-life-2019"
+  },
+  {
+    "id": "127004",
+    "title": "Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days",
+    "shortTitle": "Sprint",
+    "author": "Jake Knapp",
+    "cover": "https://assets.hardcover.app/edition/30399539/7431269-L.jpg",
+    "url": "https://hardcover.app/books/sprint-how-to-solve-big-problems-and-test-new-ideas-in-just-five-days"
+  },
+  {
+    "id": "429200",
+    "title": "Make Time: How to focus on what matters every day",
+    "shortTitle": "Make Time",
+    "author": "Jake Knapp",
+    "cover": "https://assets.hardcover.app/edition/16747394/ae9a87a188556432139f631ef38f9531cb3adebf.jpeg",
+    "url": "https://hardcover.app/books/make-time"
+  },
+  {
+    "id": "381056",
+    "title": "ReWork: Change the Way You Work Forever",
+    "shortTitle": "ReWork",
+    "author": "David Heinemeier Hansson",
+    "cover": "https://assets.hardcover.app/book_mappings/7332994/0e611199f4df02f6e0553bc336f34e68d3d17e70.jpeg",
+    "url": "https://hardcover.app/books/rework"
+  },
+  {
+    "id": "13418",
+    "title": "It Doesn't Have to Be Crazy at Work",
+    "shortTitle": "It Doesn't Have to Be Crazy at Work",
+    "author": "Jason Fried",
+    "cover": "https://assets.hardcover.app/edition/30400337/c87c39d0c1c6a4e57612e9dcfe48bc91e2d07633.jpeg",
+    "url": "https://hardcover.app/books/it-doesnt-have-to-be-crazy-at-work"
+  },
+  {
+    "id": "386192",
+    "title": "Zero to One: Notes on Startups, or How to Build the Future",
+    "shortTitle": "Zero to One",
+    "author": "Peter Thiel",
+    "cover": "https://assets.hardcover.app/book_mappings/7332745/5ba08e61c8dcdf704668cd0da4dc4af860d904dd.jpeg",
+    "url": "https://hardcover.app/books/zero-to-one"
+  },
+  {
+    "id": "428193",
+    "title": "Ikigai: The Japanese secret to a long and happy life",
+    "shortTitle": "Ikigai",
+    "author": "Francesc Miralles",
+    "cover": "https://assets.hardcover.app/edition/5036483/453dc9650324fc55e51cd236c60371c565dc3fcd.jpeg",
+    "url": "https://hardcover.app/books/ikigai"
+  },
+  {
+    "id": "431486",
+    "title": "The Psychology of Money",
+    "shortTitle": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "cover": "https://assets.hardcover.app/editions/30402080/2750873312297770.jpg",
+    "url": "https://hardcover.app/books/the-psychology-of-money"
+  },
+  {
+    "id": "447143",
+    "title": "The Almanack Of Naval Ravikant",
+    "shortTitle": "The Almanack Of Naval Ravikant",
+    "author": "Eric Jorgenson",
+    "cover": "https://assets.hardcover.app/external_data/390443/4bbc2821a2f95446964a8797b236240bbb1ee9af.jpeg",
+    "url": "https://hardcover.app/books/the-almanack-of-naval-ravikant"
+  },
+  {
+    "id": "375634",
+    "title": "Sapiens: A Brief History of Humankind",
+    "shortTitle": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "cover": "https://assets.hardcover.app/edition/1014761/175a425a-fb6c-4cb6-afdc-6e1818246f9d.jpg",
+    "url": "https://hardcover.app/books/sapiens"
+  },
+  {
+    "id": "157096",
+    "title": "Meditations",
+    "shortTitle": "Meditations",
+    "author": "Marcus Aurelius",
+    "cover": "https://assets.hardcover.app/external_data/47659608/cee064c51e9acb6a09bb7158794ef45e231dde6e.jpeg",
+    "url": "https://hardcover.app/books/meditations"
+  },
+  {
+    "id": "427605",
+    "title": "Ego Is the Enemy",
+    "shortTitle": "Ego Is the Enemy",
+    "author": "Ryan Holiday",
+    "cover": "https://assets.hardcover.app/edition/6693242/cb1682b62b207e49d4475236d402038bdda1324a.jpeg",
+    "url": "https://hardcover.app/books/ego-is-the-enemy"
+  },
+  {
+    "id": "12959",
+    "title": "Wings of Fire: An Autobiography",
+    "shortTitle": "Wings of Fire",
+    "author": "A.P.J. Abdul Kalam",
+    "cover": "https://assets.hardcover.app/external_data/3374631/db00b57653e9791b2221b4da1b1b5b83920c8b0b.jpeg",
+    "url": "https://hardcover.app/books/wings-of-fire-an-autobiography-1999"
+  },
+  {
+    "id": "1662189",
+    "title": "பொன்னியின் செல்வன், பாகம் 1: புது வெள்ளம்",
+    "shortTitle": "பொன்னியின் செல்வன், பாகம் 1",
+    "author": "Kalki",
+    "cover": "",
+    "url": "https://hardcover.app/books/1-3107982f-b6e2-4a84-b0f7-c72cefdc0c41"
+  },
+  {
+    "id": "259662",
+    "title": "Life of Pi",
+    "shortTitle": "Life of Pi",
+    "author": "Yann Martel",
+    "cover": "https://assets.hardcover.app/edition/2710952/ab0c82bcd276351dc588e52bd6da50482b8103f1.jpeg",
+    "url": "https://hardcover.app/books/life-of-pi"
+  },
+  {
+    "id": "374328",
+    "title": "Brave New World",
+    "shortTitle": "Brave New World",
+    "author": "Aldous Huxley",
+    "cover": "https://assets.hardcover.app/edition/3299811/3e542fb1d6aed92c0f4e9cd0ac9b2f6892ca97a3.jpeg",
+    "url": "https://hardcover.app/books/brave-new-world"
+  },
+  {
+    "id": "431713",
+    "title": "The Metamorphosis",
+    "shortTitle": "The Metamorphosis",
+    "author": "Franz Kafka",
+    "cover": "https://assets.hardcover.app/edition/6343685/704cd849182f0351406e03434d2968ade757fde0.jpeg",
+    "url": "https://hardcover.app/books/the-metamorphosis"
+  },
+  {
+    "id": "383924",
+    "title": "A Study in Scarlet",
+    "shortTitle": "A Study in Scarlet",
+    "author": "Arthur Conan Doyle",
+    "cover": "https://assets.hardcover.app/external_data/4141218/f09c7dad2a42d0416f9c76a34417375bcd4d0a88.jpeg",
+    "url": "https://hardcover.app/books/a-study-in-scarlet"
+  },
+  {
+    "id": "375534",
+    "title": "Murder on the Orient Express",
+    "shortTitle": "Murder on the Orient Express",
+    "author": "Agatha Christie",
+    "cover": "https://assets.hardcover.app/editions/30399401/9393001616356172-853510.jpg",
+    "url": "https://hardcover.app/books/murder-on-the-orient-express"
+  },
+  {
+    "id": "99335",
+    "title": "Inferno",
+    "shortTitle": "Inferno",
+    "author": "Dan Brown",
+    "cover": "https://assets.hardcover.app/edition/21477318/4d7cf319-eaab-4986-9915-e616f2afbc02.jpg",
+    "url": "https://hardcover.app/books/inferno"
+  },
+  {
+    "id": "555",
+    "title": "The Lost Symbol",
+    "shortTitle": "The Lost Symbol",
+    "author": "Dan Brown",
+    "cover": "https://assets.hardcover.app/editions/12712925/3110651410659800.jpg",
+    "url": "https://hardcover.app/books/the-lost-symbol"
+  },
+  {
+    "id": "379753",
+    "title": "Digital Fortress",
+    "shortTitle": "Digital Fortress",
+    "author": "Dan Brown",
+    "cover": "https://assets.hardcover.app/edition/22081967/89d70876-40e2-4826-9095-d5568746f4b5.jpg",
+    "url": "https://hardcover.app/books/digital-fortress"
+  },
+  {
+    "id": "511526",
+    "title": "The Housemaid",
+    "shortTitle": "The Housemaid",
+    "author": "Freida McFadden",
+    "cover": "https://assets.hardcover.app/edition/30793259/4ce04b693c8025f739ba67460aaff16f1e417b8a.jpeg",
+    "url": "https://hardcover.app/books/the-housemaid"
+  },
+  {
+    "id": "312460",
+    "title": "Dune",
+    "shortTitle": "Dune",
+    "author": "Frank Herbert",
+    "cover": "https://assets.hardcover.app/edition/6216483/16b2e7f2-d173-46d4-932c-8c5158ea5eff.jpg",
+    "url": "https://hardcover.app/books/dune"
+  },
+  {
+    "id": "188628",
+    "title": "Foundation",
+    "shortTitle": "Foundation",
+    "author": "Isaac Asimov",
+    "cover": "https://assets.hardcover.app/edition/16870525/d73ddcc9-ecca-4b1c-8db5-133076d2725b.jpg",
+    "url": "https://hardcover.app/books/foundation"
+  },
+  {
+    "id": "463683",
+    "title": "Mockingjay",
+    "shortTitle": "Mockingjay",
+    "author": "Suzanne Collins",
+    "cover": "https://assets.hardcover.app/edition/27387551/650371798eb4689c5c9157c488fa7036eb9ad672.jpeg",
+    "url": "https://hardcover.app/books/mockingjay"
+  },
+  {
+    "id": "379631",
+    "title": "The Two Towers",
+    "shortTitle": "The Two Towers",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://assets.hardcover.app/edition/25616931/cd5d5770785ed7174f4649b06ff4feb6cbdb800e.jpeg",
+    "url": "https://hardcover.app/books/the-two-towers"
+  },
+  {
+    "id": "374541",
+    "title": "The Return of the King",
+    "shortTitle": "The Return of the King",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://assets.hardcover.app/edition/10474552/44475d80-8c89-492e-bf73-6d1a17254249.jpg",
+    "url": "https://hardcover.app/books/the-return-of-the-king"
+  },
+  {
+    "id": "644",
+    "title": "A Game of Thrones",
+    "shortTitle": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "cover": "https://assets.hardcover.app/edition/12841472/a63e7ea1-9064-4eb8-afb4-5372db40aed2.jpg",
+    "url": "https://hardcover.app/books/a-game-of-thrones"
+  },
+  {
+    "id": "337",
+    "title": "Becoming",
+    "shortTitle": "Becoming",
+    "author": "Michelle Obama",
+    "cover": "https://assets.hardcover.app/external_data/23200978/fd767670cf0a77ece2fa7069cb3859f48aa71439.jpeg",
+    "url": "https://hardcover.app/books/becoming"
+  },
+  {
+    "id": "431404",
+    "title": "The Importance of Being Earnest",
+    "shortTitle": "The Importance of Being Earnest",
+    "author": "Oscar Wilde",
+    "cover": "https://assets.hardcover.app/external_data/50292026/e049aff795a5d763e92c90ad53af9febc04cfae5.jpeg",
+    "url": "https://hardcover.app/books/the-importance-of-being-earnest"
+  },
+  {
+    "id": "192351",
+    "title": "Digital Minimalism: Choosing a Focused Life in a Noisy World",
+    "shortTitle": "Digital Minimalism",
+    "author": "Cal Newport",
+    "cover": "https://assets.hardcover.app/external_data/59340601/d5cda8f52cd8e844683d4a762edebd859a32c853.jpeg",
+    "url": "https://hardcover.app/books/digital-minimalism"
+  },
+  {
+    "id": "428023",
+    "title": "Atomic habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+    "shortTitle": "Atomic habits",
+    "author": "James Clear",
+    "cover": "https://assets.hardcover.app/edition/12605395/629717fe-df46-40b8-8529-dca0323bf699.jpg",
+    "url": "https://hardcover.app/books/atomic-habits"
+  },
+  {
+    "id": "427543",
+    "title": "Company of One",
+    "shortTitle": "Company of One",
+    "author": "Paul Jarvis",
+    "cover": "https://assets.hardcover.app/edition/29268036/8796506-L.jpg",
+    "url": "https://hardcover.app/books/company-of-one"
+  },
+  {
+    "id": "431744",
+    "title": "The War of Art: Break Through the Blocks and Win Your Inner Creative Battles",
+    "shortTitle": "The War of Art",
+    "author": "Steven Pressfield",
+    "cover": "https://assets.hardcover.app/edition/11122496/896a32c47ec2a79f8b9bb6e0fffefddb1f7359ec.jpeg",
+    "url": "https://hardcover.app/books/the-war-of-art"
+  },
+  {
+    "id": "340654",
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "shortTitle": "The Seven Husbands of Evelyn Hugo",
+    "author": "Taylor Jenkins Reid",
+    "cover": "https://assets.hardcover.app/edition/1849541/60b7835bda66d83c00f9e3e34c8eceebaee1f381.jpeg",
+    "url": "https://hardcover.app/books/the-seven-husbands-of-evelyn-hugo"
+  },
+  {
+    "id": "356467",
+    "title": "Animal Farm",
+    "shortTitle": "Animal Farm",
+    "author": "George Orwell",
+    "cover": "https://assets.hardcover.app/edition/22658835/7019472-L.jpg",
+    "url": "https://hardcover.app/books/animal-farm"
+  },
+  {
+    "id": "292354",
+    "title": "The Martian",
+    "shortTitle": "The Martian",
+    "author": "Andy Weir",
+    "cover": "https://assets.hardcover.app/editions/21716111/5323176149970177.jpg",
+    "url": "https://hardcover.app/books/the-martian"
+  },
+  {
+    "id": "479910",
+    "title": "Tomorrow, and Tomorrow, and Tomorrow",
+    "shortTitle": "Tomorrow, and Tomorrow, and Tomorrow",
+    "author": "Gabrielle Zevin",
+    "cover": "https://assets.hardcover.app/edition/30535150/2efdfd508a803c89913fd6e987f69048a17c89c6.jpeg",
+    "url": "https://hardcover.app/books/tomorrow-and-tomorrow-and-tomorrow"
+  },
+  {
+    "id": "428506",
+    "title": "Harry Potter and the Half-Blood Prince",
+    "shortTitle": "Harry Potter and the Half-Blood Prince",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/editions/19724535/8038369521613846-58613345.jpg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-half-blood-prince"
+  },
+  {
+    "id": "382143",
+    "title": "Harry Potter and the Deathly Hallows",
+    "shortTitle": "Harry Potter and the Deathly Hallows",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/editions/14019917/7017379795452299-58613224.jpg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-deathly-hallows"
+  },
+  {
+    "id": "428465",
+    "title": "Harry Potter and the Order of the Phoenix",
+    "shortTitle": "Harry Potter and the Order of the Phoenix",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/editions/29262698/2170450621507933-58613451.jpg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-order-of-the-phoenix"
+  },
+  {
+    "id": "383236",
+    "title": "Harry Potter and the Goblet of Fire",
+    "shortTitle": "Harry Potter and the Goblet of Fire",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/editions/28458058/1771665257940243-49130.jpg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-goblet-of-fire"
+  },
+  {
+    "id": "376219",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "shortTitle": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/edition/28780168/0012cc5a-9e3a-48d4-95b6-d91f484de17a.jpg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-prisoner-of-azkaban"
+  },
+  {
+    "id": "429306",
+    "title": "Harry Potter and the Chamber of Secrets",
+    "shortTitle": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/edition/30400030/31fb94b3-92d3-46b1-a9b7-d9df20e0b216.jpg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-chamber-of-secrets"
+  },
+  {
+    "id": "377938",
+    "title": "The Lord of the Rings",
+    "shortTitle": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://assets.hardcover.app/external_data/41547254/141872f0e71efe38f937b72879a5dea52e502db5.jpeg",
+    "url": "https://hardcover.app/books/the-lord-of-the-rings"
+  },
+  {
+    "id": "328491",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "shortTitle": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "cover": "https://assets.hardcover.app/external_data/4257970/a3a1bbb3dae498a7a8316be0cc9bc5e91f6c34c9.jpeg",
+    "url": "https://hardcover.app/books/harry-potter-and-the-philosophers-stone"
+  },
+  {
+    "id": "318669",
+    "title": "Steal Like an Artist",
+    "shortTitle": "Steal Like an Artist",
+    "author": "Austin Kleon",
+    "cover": "https://assets.hardcover.app/edition/30406906/f9795a41fc6e688ff97f5bffab3c82472ccead76.jpeg",
+    "url": "https://hardcover.app/books/steal-like-an-artist"
+  },
+  {
+    "id": "2459845",
+    "title": "The Hobbit, or There and Back Again",
+    "shortTitle": "The Hobbit, or There and Back Again",
+    "author": "J.R.R. Tolkien",
+    "cover": "https://assets.hardcover.app/edition/17456445/d34448a9-bf3f-441d-93f2-1cd32dd3867c.jpg",
+    "url": "https://hardcover.app/books/the-hobbit"
   }
 ]
