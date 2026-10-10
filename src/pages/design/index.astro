@@ -1,8 +1,8 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../Layout.astro";
 import { getImage, Image } from "astro:assets";
 import { designLabel } from "../../design.js";
+import { getNewest } from "../../collections.js";
 
 const DESIGN_PREVIEW_WIDTH = 1600;
 const DESIGN_PREVIEW_HEIGHT = 1200;
@@ -10,12 +10,7 @@ const DESIGN_PREVIEW_HEIGHT = 1200;
 const INITIAL_DESIGN_COUNT = 36;
 const DESIGN_BATCH_SIZE = 96;
 
-const designs: CollectionEntry<"design">[] = (
-  await getCollection("design")
-).sort(
-  (a: CollectionEntry<"design">, b: CollectionEntry<"design">) =>
-    (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
-);
+const designs = await getNewest("design");
 
 const designCards = await Promise.all(
   designs.map(async (design) => ({

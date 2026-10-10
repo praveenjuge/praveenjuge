@@ -8,7 +8,10 @@ import { rssSchema } from "@astrojs/rss";
 
 const blog = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/content/blog" }),
-  schema: rssSchema.extend({ updatedDate: z.coerce.date().optional() }),
+  schema: rssSchema.extend({
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+  }),
 });
 
 const DESIGN_DIRECTORY = "src/content/design";

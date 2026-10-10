@@ -1,16 +1,13 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, render } from "astro:content";
 import { Image } from "astro:assets";
 import Layout from "../../Layout.astro";
 import { AUTHOR } from "../../consts";
-import { render } from "astro:content";
+import { getNewest } from "../../collections.js";
 import myPhoto from "../../images/praveenjuge.jpg";
 
 export async function getStaticPaths() {
-  const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
-    (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-      (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
-  );
+  const posts = await getNewest("blog");
   return posts.map((post, index) => ({
     params: { slug: post.id },
     props: { post, newer: posts[index - 1], older: posts[index + 1] },
@@ -91,7 +88,7 @@ const breadJsonLd = {
   title={title}
   description={description}
   mosaic={true}
-  article={pubDate && { publishedTime: pubDate, modifiedTime: updatedDate }}
+  article={{ publishedTime: pubDate, modifiedTime: updatedDate }}
 >
   <article
     class="p-4
@@ -218,24 +215,22 @@ const breadJsonLd = {
 			**:[figcaption]:leading-[1.4285714]
 			**:[figcaption]:mt-[0.8571429em]"
   >
-    {
-      pubDate && (
-        <p>
-          Written on{" "}
-          <time datetime={pubDate.toISOString()}>{longDate(pubDate)}</time>
-          {" · "}
-          {readingMinutes} min read
-          {updatedDate && (
-            <>
-              {" · "}Updated{" "}
-              <time datetime={updatedDate.toISOString()}>
-                {longDate(updatedDate)}
-              </time>
-            </>
-          )}
-        </p>
-      )
-    }
+    <p>
+      Written on{" "}
+      <time datetime={pubDate.toISOString()}>{longDate(pubDate)}</time>
+      {" · "}
+      {readingMinutes} min read
+      {
+        updatedDate && (
+          <>
+            {" · "}Updated{" "}
+            <time datetime={updatedDate.toISOString()}>
+              {longDate(updatedDate)}
+            </time>
+          </>
+        )
+      }
+    </p>
     <h1>{title}</h1>
     {description && <p class="text-xl">{description}</p>}
     <Content />
