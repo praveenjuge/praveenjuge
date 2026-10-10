@@ -218,11 +218,28 @@ describe("worker fetch", () => {
 
 
 describe("Markdown 404 negotiation", () => {
+  const markdownNotFound = "# Page not found (404)\n\n- [Site guide](https://praveenjuge.com/llms.txt)\n";
+
   /** Returns an asset binding with a configurable upstream error response. */
-  function missingEnv(status = 404, contentType = "text/html; charset=utf-8", vary = "Origin") {
+  function missingEnv(status = 404, contentType = "text/html; charset=utf-8", vary = "Origin", hasMarkdown = true) {
     return {
       ASSETS: {
-        async fetch() {
+        async fetch(request) {
+          if (new URL(request.url).pathname === "/404.md") {
+            // A plain GET, never the original request's method or validators.
+            assert.equal(request.method, "GET");
+            assert.equal(request.headers.get("If-None-Match"), null);
+            return hasMarkdown
+              ? new Response(markdownNotFound, {
+                  headers: {
+                    "Content-Type": "text/markdown",
+                    "Content-Length": String(new TextEncoder().encode(markdownNotFound).length),
+                    ETag: '"md-404"',
+                  },
+                })
+              : new Response("<html>missing</html>", { status: 404, headers: { "Content-Type": "text/html" } });
+          }
+
           return new Response("<html>missing</html>", {
             status,
             headers: {
@@ -248,24 +265,29 @@ describe("Markdown 404 negotiation", () => {
   }
 
   /** Makes a request for a missing page on a preview origin. */
-  function request(accept, method = "GET") {
+  function request(accept, method = "GET", headers = {}) {
     return new Request("https://preview.example/__missing?query=ignored", {
       method,
-      headers: { Accept: accept },
+      headers: { Accept: accept, ...headers },
     });
   }
 
-  test("returns a useful Markdown body with a real 404 and canonical recovery links", async () => {
-    const response = await worker.fetch(request("text/markdown"), missingEnv());
+  test("serves the built /404.md page with a real 404 status", async () => {
+    const response = await worker.fetch(request("text/markdown", "GET", { "If-None-Match": '"html-404"' }), missingEnv());
     assert.equal(response.status, 404);
     assert.equal(response.headers.get("Content-Type"), "text/markdown; charset=utf-8");
     assert.equal(response.headers.get("Vary"), "Origin, Accept");
     const body = await response.text();
-    assert.match(body, /^# Page not found \(404\)/);
-    assert.match(body, /https:\/\/praveenjuge.com\/llms.txt/);
-    assert.match(body, /https:\/\/praveenjuge.com\/sitemap-index.xml/);
-    assert.ok(!body.includes("preview.example"));
+    assert.equal(body, markdownNotFound);
     assert.equal(Number(response.headers.get("Content-Length")), new TextEncoder().encode(body).length);
+  });
+
+  test("falls back to the HTML 404 with Vary: Accept when /404.md is missing", async () => {
+    const response = await worker.fetch(request("text/markdown"), missingEnv(404, "text/html; charset=utf-8", "Origin", false));
+    assert.equal(response.status, 404);
+    assert.match(response.headers.get("Content-Type"), /^text\/html/);
+    assert.equal(response.headers.get("Vary"), "Origin, Accept");
+    assert.equal(await response.text(), "<html>missing</html>");
   });
 
   test("drops stale HTML validators, encoding, and ranges while preserving cache and security headers", async () => {

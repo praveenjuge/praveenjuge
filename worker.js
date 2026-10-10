@@ -8,6 +8,9 @@
  * cannot keep the variants apart. This Worker answers Markdown requests for
  * `/` with the site's llms.txt as its Markdown mirror and adds `Vary: Accept`
  * to HTML responses.
+ *
+ * Astro builds both Markdown documents (src/pages/llms.txt.js and
+ * src/pages/404.md.js); this Worker only negotiates which one to serve.
  */
 
 const markdownContentType = "text/markdown; charset=utf-8";
@@ -124,21 +127,20 @@ async function markdownHomepageResponse(request, env) {
   );
 }
 
-const markdownNotFound = `# Page not found (404)
+/**
+ * Replaces an HTML 404 with the Markdown 404 page Astro builds at /404.md,
+ * without carrying over the HTML representation's metadata.
+ */
+async function markdownNotFoundResponse(request, response, env) {
+  // A plain GET, so the original request's validators and ranges never apply.
+  const source = await env.ASSETS.fetch(
+    new Request(new URL("/404.md", request.url)),
+  );
 
-The requested page does not exist on Praveen Juge's website. It may have moved,
-or the address may be incorrect. Use these links to find an existing page:
+  if (!source.ok) {
+    return null;
+  }
 
-- [Home](https://praveenjuge.com/)
-- [Blog](https://praveenjuge.com/blog/)
-- [Site guide](https://praveenjuge.com/llms.txt)
-- [Sitemap](https://praveenjuge.com/sitemap-index.xml)
-`;
-
-const markdownNotFoundLength = String(new TextEncoder().encode(markdownNotFound).length);
-
-/** Replaces an HTML 404 without carrying over the HTML representation's metadata. */
-function markdownNotFoundResponse(request, response) {
   const headers = new Headers(response.headers);
 
   for (const name of [
@@ -150,10 +152,13 @@ function markdownNotFoundResponse(request, response) {
   }
 
   headers.set("Content-Type", markdownContentType);
-  headers.set("Content-Length", markdownNotFoundLength);
+  const length = source.headers.get("Content-Length");
+  if (length) {
+    headers.set("Content-Length", length);
+  }
   headers.set("Vary", addAcceptToVary(headers.get("Vary")));
 
-  return new Response(request.method === "HEAD" ? null : markdownNotFound, {
+  return new Response(request.method === "HEAD" ? null : source.body, {
     status: 404,
     headers,
   });
@@ -197,7 +202,11 @@ export default {
       .split(";")[0].trim().toLowerCase();
 
     if (acceptsMarkdown && response.status === 404 && contentType === "text/html") {
-      return markdownNotFoundResponse(request, response);
+      const markdown = await markdownNotFoundResponse(request, response, env);
+
+      if (markdown) {
+        return markdown;
+      }
     }
 
     return contentType === "text/html"
