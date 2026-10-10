@@ -1,16 +1,12 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../Layout.astro";
+import { getNewest } from "../../collections.js";
 
-const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
-  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
-);
+const posts = await getNewest("blog");
 
 // Posts are sorted newest first, so years come out in descending order.
-const postsByYear = Map.groupBy(
-  posts,
-  (post) => post.data.pubDate?.getUTCFullYear() ?? "Undated"
+const postsByYear = Map.groupBy(posts, (post) =>
+  post.data.pubDate.getUTCFullYear()
 );
 
 const postDate = new Intl.DateTimeFormat("en-US", {
@@ -51,14 +47,12 @@ const postDate = new Intl.DateTimeFormat("en-US", {
                   <span class="font-medium text-pretty decoration-current/30 underline-offset-4 group-hover:underline">
                     {post.data.title}
                   </span>
-                  {post.data.pubDate && (
-                    <time
-                      datetime={post.data.pubDate.toISOString()}
-                      class="shrink-0 text-sm tabular-nums opacity-50"
-                    >
-                      {postDate.format(post.data.pubDate)}
-                    </time>
-                  )}
+                  <time
+                    datetime={post.data.pubDate.toISOString()}
+                    class="shrink-0 text-sm tabular-nums opacity-50"
+                  >
+                    {postDate.format(post.data.pubDate)}
+                  </time>
                 </a>
               </li>
             ))}

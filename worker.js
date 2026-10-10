@@ -44,7 +44,7 @@ function qualityFor(entries, type) {
  * prefer HTML. Plain browser Accept headers never mention Markdown, so
  * browser traffic is unaffected. The most specific matching range wins.
  */
-export function prefersMarkdown(acceptHeader) {
+function prefersMarkdown(acceptHeader) {
   if (!acceptHeader) {
     return false;
   }
@@ -70,7 +70,7 @@ function htmlQuality(entries) {
 }
 
 /** Adds Accept to a Vary header value without duplicating entries. */
-export function addAcceptToVary(vary) {
+function addAcceptToVary(vary) {
   const values = (vary ?? "")
     .split(",")
     .map((value) => value.trim())

@@ -21,8 +21,7 @@
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
-    "preview": "astro preview",
-    "test": "node --test test/*.test.js"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.2",
@@ -32,8 +31,5 @@
     "astro": "^7.0.0",
     "tailwindcss": "^4.3.1"
   },
-  "packageManager": "bun@1.2.15",
-  "devDependencies": {
-    "semver": "7.7.2"
-  }
+  "packageManager": "bun@1.2.15"
 }

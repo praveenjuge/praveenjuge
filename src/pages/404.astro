@@ -1,14 +1,9 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
 import { AUTHOR } from "../consts";
+import { getNewest } from "../collections.js";
 import Layout from "../Layout.astro";
 
-const latestPosts: CollectionEntry<"blog">[] = (await getCollection("blog"))
-  .sort(
-    (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-      (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
-  )
-  .slice(0, 5);
+const latestPosts = (await getNewest("blog")).slice(0, 5);
 
 const linkClass =
   "underline decoration-current/30 underline-offset-4 transition-colors hover:decoration-current";
