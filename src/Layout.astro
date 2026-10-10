@@ -2,6 +2,7 @@
 import "tailwindcss/index.css";
 import { Font } from "astro:assets";
 import { SITE, AUTHOR } from "./consts";
+import { SOCIAL_LOGOS } from "./social-logos";
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
@@ -30,6 +31,14 @@ const jsonLd = {
   ],
   sameAs: [AUTHOR.url, ...Object.values(AUTHOR.social)],
 };
+
+// Sizes are optical: X fills its whole square, so it reads larger than the
+// round GitHub and Dribbble marks at the same size.
+const headerSocials = [
+  { name: "GitHub", logo: "github", href: AUTHOR.social.github, size: 18 },
+  { name: "Dribbble", logo: "dribbble", href: AUTHOR.social.dribbble, size: 18 },
+  { name: "X (Twitter)", logo: "x", href: AUTHOR.social.x, size: 16 },
+] as const;
 ---
 
 <html
@@ -116,18 +125,11 @@ const jsonLd = {
           transform: translateX(-69%);
         }
       }
-      @keyframes spin-once {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      .footer-logo.is-visible {
-        animation: spin-once 1.6s cubic-bezier(0.2, 0.7, 0.2, 1);
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .footer-logo.is-visible {
-          animation: none;
-        }
+      /* A short ease on transform smooths out stepped mouse-wheel scrolling. */
+      .footer-logo {
+        transition:
+          rotate 1s,
+          transform 0.2s ease-out;
       }
     </style>
   </head>
@@ -136,7 +138,7 @@ const jsonLd = {
       class="-z-10 pointer-events-none absolute inset-0 h-56 w-full select-none bg-gradient-to-b from-gray-200"
       aria-hidden="true"></span>
     <header
-      class="top-0 mx-auto mb-24 flex max-w-xl flex-col space-y-5 px-4 py-6 font-medium text-sm sm:items-center md:flex-row md:justify-between md:space-y-0"
+      class="top-0 mx-auto mb-24 flex max-w-xl items-center justify-between px-4 py-6 font-medium text-sm"
     >
       <a href="/" title="Go to Home Page">
         <svg
@@ -153,91 +155,31 @@ const jsonLd = {
         </svg>
       </a>
       <nav
-        aria-label="Main Navigation"
-        class="flex items-center gap-6 md:gap-4"
+        aria-label="Social Links"
+        class="flex items-center gap-4"
       >
-        <a href="/design/">Designs</a>
-        <a href="/blog/">Blog</a>
-
-        <a
-          title="GitHub"
-          href={AUTHOR.social.github}
-          target="_blank"
-          rel="noopener noreferrer me"
-        >
-          <svg
-            role="presentation"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.75"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>GitHub</title>
-            <path
-              d="M15.172 15.299c1.202-.25 2.293-.682 3.14-1.316 1.448-1.084 2.188-2.758 2.188-4.411 0-1.16-.44-2.243-1.204-3.16-.425-.511.819-3.872-.286-3.359-1.105.514-2.725 1.198-3.574.947-.909-.268-1.9-.416-2.936-.416-.9 0-1.766.111-2.574.317-1.174.298-2.296-.363-3.426-.848-1.13-.484-.513 3.008-.849 3.422C4.921 7.38 4.5 8.44 4.5 9.572c0 1.653.895 3.327 2.343 4.41.965.722 2.174 1.183 3.527 1.41"
-            ></path><path
-              d="M10.37 15.391q-.87.954-.869 1.813V21m5.671-5.701q.823 1.078.823 1.936V21M3.5 15.668q.675.081 1 .618c.326.537 1.537 2.526 2.913 2.526H9.5"
-            ></path></svg
-          >
-        </a>
-
-        <a
-          title="Dribbble"
-          href={AUTHOR.social.dribbble}
-          target="_blank"
-          rel="noopener noreferrer me"
-        >
-          <svg
-            role="presentation"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.75"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Dribbble</title>
-            <path
-              d="M21 12c-1.313 0-4.936-.495-8.178.928-3.522 1.547-6.072 3.946-7.184 5.438"
-            ></path><path
-              d="M8.625 3.654c1.409 1.3 4.482 4.61 5.625 7.896s1.566 7.326 1.827 8.476"
-            ></path><path
-              d="M3.07 10.875c1.7.102 6.2.195 9.08-1.035s5.358-3.492 6.208-4.21"
-            ></path><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18"></path></svg
-          >
-        </a>
-        <a
-          title="X (Twitter)"
-          href={AUTHOR.social.x}
-          target="_blank"
-          rel="noopener noreferrer me"
-        >
-          <svg
-            role="presentation"
-            width="20"
-            height="20"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.75"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>X (Twitter)</title>
-            <path
-              d="m19 4-5.93 6.93M5 20l5.93-6.93m0 0 5.795 6.587c.19.216.483.343.794.343h1.474c.836 0 1.307-.85.793-1.435L13.07 10.93m-2.14 2.14L4.214 5.435C3.7 4.85 4.17 4 5.007 4h1.474c.31 0 .604.127.794.343l5.795 6.587"
-            ></path></svg
-          >
-        </a>
+        {
+          headerSocials.map(({ name, logo, href, size }) => (
+            <a
+              title={name}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer me"
+              class="transition-transform hover:scale-110"
+            >
+              <svg
+                role="presentation"
+                width={size}
+                height={size}
+                viewBox={SOCIAL_LOGOS[logo].viewBox}
+                fill={SOCIAL_LOGOS[logo].color}
+                class="block"
+                xmlns="http://www.w3.org/2000/svg"
+                set:html={`<title>${name}</title>${SOCIAL_LOGOS[logo].body}`}
+              />
+            </a>
+          ))
+        }
         <a rel="me" href={AUTHOR.social.mastodon} style={{ display: "none" }}>
           Mastodon
         </a>
@@ -262,7 +204,7 @@ const jsonLd = {
             role="presentation"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
-            class="footer-logo transition duration-1000 hover:rotate-180"
+            class="footer-logo hover:rotate-180"
           >
             <title>Go to Home Page</title>
             <path
@@ -288,15 +230,23 @@ const jsonLd = {
       </div>
     </footer>
     <script>
-      // Spin the footer logomark once, the first time it scrolls into view.
-      const footerLogo = document.querySelector(".footer-logo");
-      if (footerLogo) {
-        const observer = new IntersectionObserver(([entry]) => {
-          if (!entry?.isIntersecting) return;
-          footerLogo.classList.add("is-visible");
-          observer.disconnect();
-        }, { threshold: 1 });
-        observer.observe(footerLogo);
+      // Turn the footer logomark with the page scroll, in both directions.
+      const footerLogo = document.querySelector<SVGElement>(".footer-logo");
+      const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+      if (footerLogo && !reduceMotion.matches) {
+        let frame = 0;
+        const spin = () => {
+          frame = 0;
+          footerLogo.style.transform = `rotate(${scrollY * 0.3}deg)`;
+        };
+        addEventListener(
+          "scroll",
+          () => {
+            frame ||= requestAnimationFrame(spin);
+          },
+          { passive: true }
+        );
+        spin();
       }
     </script>
     <script

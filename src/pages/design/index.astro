@@ -5,6 +5,9 @@ import { getImage, Image } from "astro:assets";
 
 const DESIGN_PREVIEW_WIDTH = 1600;
 const DESIGN_PREVIEW_HEIGHT = 1200;
+// Multiples of 6 so every batch fills complete rows in the 1, 2 and 3 column grids.
+const INITIAL_DESIGN_COUNT = 36;
+const DESIGN_BATCH_SIZE = 96;
 
 const designs: CollectionEntry<"design">[] = (
   await getCollection("design")
@@ -29,13 +32,17 @@ const designCards = await Promise.all(
 
 <Layout title="Designs">
   <h1 class="mx-auto mb-6 max-w-xl px-4 font-bold">Designs</h1>
-  <section class="grid w-full grid-cols-1 gap-2 p-2 sm:grid-cols-2 md:grid-cols-3">
+  <section
+    id="design-grid"
+    class="grid w-full grid-cols-1 gap-2 p-2 sm:grid-cols-2 md:grid-cols-3"
+  >
     {
-      designCards.map((design) => (
+      designCards.map((design, index) => (
         <a
           target="_blank"
           data-astro-prefetch="false"
           href={design.imageHref}
+          hidden={index >= INITIAL_DESIGN_COUNT}
           class="block"
         >
           <Image
@@ -50,4 +57,44 @@ const designCards = await Promise.all(
       ))
     }
   </section>
+  {
+    designCards.length > INITIAL_DESIGN_COUNT && (
+      <div class="px-2">
+        <button
+          id="load-more-designs"
+          type="button"
+          data-batch-size={DESIGN_BATCH_SIZE}
+          class="block w-full cursor-pointer bg-gray-100 px-6 py-8 font-semibold text-lg transition-colors hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-gray-950 focus-visible:outline-offset-2"
+        >
+          Load more designs
+        </button>
+      </div>
+    )
+  }
+  <noscript>
+    <style is:inline>
+      #design-grid > [hidden] {
+        display: block !important;
+      }
+      #load-more-designs {
+        display: none;
+      }
+    </style>
+  </noscript>
 </Layout>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>("#load-more-designs");
+  if (button) {
+    const batchSize = Number(button.dataset.batchSize);
+    button.addEventListener("click", () => {
+      const hiddenCards = document.querySelectorAll<HTMLElement>(
+        "#design-grid > [hidden]"
+      );
+      for (const card of Array.from(hiddenCards).slice(0, batchSize)) {
+        card.hidden = false;
+      }
+      if (hiddenCards.length <= batchSize) button.parentElement?.remove();
+    });
+  }
+</script>
