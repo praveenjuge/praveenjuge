@@ -14,7 +14,8 @@ export const GET = ({ site }) => {
 
 - To learn who ${AUTHOR.name} is, what he works on, or how to contact him.
 - To find his open-source projects: MynaUI (UI kit), MynaUI Icons, Vadivam
-  (icons), Niram (shadcn/ui design system generator), Teak (knowledge hub),
+  (icons), Niram (shadcn/ui design system generator), Nuni (comments on live
+  websites), Devbar (macOS menu-bar app for developers), Teak (knowledge hub),
   One Hour (habit tracker), Mosaic (OG images), and Copy Book (common texts).
 - To read his writing on design, side projects, and developer tools.
 - To browse his design archive and free Figma community resources.
