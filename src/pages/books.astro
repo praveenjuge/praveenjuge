@@ -234,6 +234,24 @@ const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
     background: radial-gradient(50% 100% at 50% 0, rgb(0 0 0 / 0.13), rgb(0 0 0 / 0.04) 55%, transparent);
   }
 
+  /* In the dark the shelf is a charcoal slab, lit faintly along its top */
+  @media (prefers-color-scheme: dark) {
+    .plank {
+      background:
+        linear-gradient(90deg, rgb(0 0 0 / 0.3), transparent 10px, transparent calc(100% - 10px), rgb(0 0 0 / 0.3)),
+        linear-gradient(#3a3a3f, #2c2c30 45%, #222226 calc(100% - 1px), #18181b);
+      box-shadow:
+        0 1px 1px rgb(0 0 0 / 0.4),
+        0 10px 14px -10px rgb(0 0 0 / 0.8);
+    }
+    .plank::before {
+      background: linear-gradient(#1c1c1f, #232327 35%, #2e2e33);
+    }
+    .plank::after {
+      background: radial-gradient(50% 100% at 50% 0, rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.15) 55%, transparent);
+    }
+  }
+
   @media (max-width: 719px) {
     .bookcase {
       --cols: 5;

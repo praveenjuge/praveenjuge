@@ -88,7 +88,7 @@ const links: {
     align-items: center;
     gap: 14px;
     padding: 12px 16px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-gray-200);
     border-radius: 0.5rem;
     transition:
       border-color 0.2s,
@@ -110,8 +110,8 @@ const links: {
 
   .social-link:hover,
   .social-link:focus-visible {
-    border-color: color-mix(in srgb, var(--brand) 35%, white);
-    background-color: color-mix(in srgb, var(--brand) 6%, white);
+    border-color: color-mix(in srgb, var(--brand) 35%, var(--color-white));
+    background-color: color-mix(in srgb, var(--brand) 6%, var(--color-white));
   }
 
   .social-link:hover .social-logo,
