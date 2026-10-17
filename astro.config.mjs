@@ -23,7 +23,7 @@ export default defineConfig({
   },
   integrations: [sitemap({ filter: (page) => !isDesignPage(page) })],
   markdown: {
-    shikiConfig: { theme: "github-light" },
+    shikiConfig: { themes: { light: "github-light", dark: "github-dark" } },
     processor: satteri({
       // Heading ids first, so the anchors can link to them.
       hastPlugins: [satteriHeadingIdsPlugin(), headingAnchors, imageCaptions],
