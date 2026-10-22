@@ -327,6 +327,22 @@ const breadJsonLd = {
 </script>
 
 <style>
+  /* Images break out of the text column, up to 56rem or the viewport less a
+     gutter, and centre on it. Each keeps its own width when that is smaller,
+     and tall ones are capped to the screen and letterboxed. Images wrapped
+     in a link or emphasis bleed the same way. */
+  article :global(p > img),
+  article :global(p > :is(a, strong, em) > img) {
+    --bleed: min(calc(100vw - 2rem), 56rem);
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    display: block;
+    max-width: var(--bleed);
+    max-height: 85svh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+  }
   article :global(:is(h2, h3)[id]) {
     scroll-margin-top: 2rem;
   }

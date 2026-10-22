@@ -242,14 +242,14 @@ const headerSocials = [
               href={href}
               target="_blank"
               rel="noopener noreferrer me"
-              class="transition-transform hover:scale-110"
+              class="opacity-60 transition hover:scale-110 hover:opacity-100"
             >
               <svg
                 role="presentation"
                 width={size}
                 height={size}
                 viewBox={SOCIAL_LOGOS[logo].viewBox}
-                fill={SOCIAL_LOGOS[logo].color}
+                fill="currentColor"
                 class="block"
                 xmlns="http://www.w3.org/2000/svg"
                 set:html={`<title>${name}</title>${SOCIAL_LOGOS[logo].body}`}
