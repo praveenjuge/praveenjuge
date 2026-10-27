@@ -34,10 +34,11 @@ const links: {
   <section class="mx-auto max-w-xl space-y-8 px-4">
     <header class="flex items-center gap-4">
       <Image
-        width={160}
-        height={160}
+        width={64}
+        height={64}
+        densities={[2, 3]}
         src={myPhoto}
-        loading="eager"
+        priority
         alt="Praveen Juge"
         class="size-16 rounded-full object-cover brightness-105"
       />

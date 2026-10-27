@@ -2,6 +2,11 @@
 import { Image } from "astro:assets";
 import Layout from "../Layout.astro";
 import myPhoto from "../images/praveenjuge.jpg";
+import mynauiLogo from "../images/logos/mynaui.png";
+import niramLogo from "../images/logos/niram.png";
+import oneHourLogo from "../images/logos/onehour.jpg";
+import mosaicLogo from "../images/logos/mosaic.png";
+import youtubeLogo from "../images/logos/youtube.png";
 import { AUTHOR } from "../consts";
 import { designLabel } from "../design.js";
 import { getNewest } from "../collections.js";
@@ -22,7 +27,7 @@ const projectGroups = [
       {
         name: "Niram",
         href: "https://www.figma.com/community/plugin/1642487887236877076/niram-shadcn-design-system-generator",
-        logo: "/logos/niram.png",
+        logo: niramLogo,
         description:
           "Generate shadcn/ui design systems as Figma variables and components.",
       },
@@ -42,13 +47,13 @@ const projectGroups = [
       {
         name: "One Hour",
         href: "https://apps.apple.com/in/app/one-hour-fcb6e1/id6756283371",
-        logo: "/logos/onehour.jpg",
+        logo: oneHourLogo,
         description: "Hourly habit tracker to help you build better habits.",
       },
       {
         name: "Mosaic",
         href: "https://mosaic.praveenjuge.com",
-        logo: "/logos/mosaic.png",
+        logo: mosaicLogo,
         description: "Showcase your beautiful website in your OG images",
       },
     ],
@@ -59,13 +64,13 @@ const projectGroups = [
       {
         name: "MynaUI",
         href: "https://mynaui.com",
-        logo: "/logos/mynaui.png",
+        logo: mynauiLogo,
         description: "TailwindCSS and shadcn/ui UI Kit for Figma and React.",
       },
       {
         name: "MynaUI Icons",
         href: "https://mynaui.com/icons",
-        logo: "/logos/mynaui.png",
+        logo: mynauiLogo,
         description: "Beautiful open-source icons for your next project.",
       },
       {
@@ -78,7 +83,7 @@ const projectGroups = [
       {
         name: "Copy Book",
         href: "https://mynaui.com/copy",
-        logo: "/logos/mynaui.png",
+        logo: mynauiLogo,
         description: "Copy book is a collection of commonly used texts.",
       },
     ],
@@ -95,7 +100,7 @@ const projectGroups = [
       {
         name: "YouTube",
         href: AUTHOR.social.youtube,
-        logo: "/logos/youtube.png",
+        logo: youtubeLogo,
         description: "Watch how I design and build things.",
       },
     ],
@@ -106,6 +111,8 @@ const postDate = new Intl.DateTimeFormat("en-US", {
   month: "short",
   year: "numeric",
 });
+
+const logoClass = "size-6 shrink-0 rounded-sm object-contain !bg-transparent";
 
 const linkClass =
   "underline decoration-current/30 underline-offset-4 transition-colors hover:decoration-current";
@@ -123,11 +130,11 @@ const linkClass =
         </a> */
     }
     <Image
-      width={1000}
-      height={1000}
-      quality={100}
+      width={80}
+      height={80}
+      densities={[2, 3]}
       src={myPhoto}
-      loading="eager"
+      priority
       alt="Handsome pic of Praveen Juge"
       class="size-20 rounded-full bg-center bg-cover object-cover brightness-105"
     />
@@ -166,6 +173,8 @@ const linkClass =
           <Image
             width={1600}
             height={1200}
+            widths={[480, 800]}
+            sizes="384px"
             alt={designLabel(design)}
             src={design.data.cover}
             class="even:-rotate-2 block min-h-72 w-96 min-w-96 rounded bg-cover object-cover ring-4 ring-white odd:rotate-2"
@@ -189,14 +198,26 @@ const linkClass =
                   rel="noopener noreferrer"
                   class="group flex items-center gap-4 py-4"
                 >
-                  <img
-                    src={project.logo}
-                    alt=""
-                    width="28"
-                    height="28"
-                    loading="lazy"
-                    class="size-6 shrink-0 rounded-sm object-contain !bg-transparent"
-                  />
+                  {typeof project.logo === "string" ? (
+                    <img
+                      src={project.logo}
+                      alt=""
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
+                      class={logoClass}
+                    />
+                  ) : (
+                    <Image
+                      src={project.logo}
+                      alt=""
+                      width={24}
+                      height={24}
+                      densities={[2, 3]}
+                      class={logoClass}
+                    />
+                  )}
                   <div class="min-w-0 flex-1">
                     <h3 class="font-semibold">{project.name}</h3>
                     <p class="text-pretty opacity-60">{project.description}</p>

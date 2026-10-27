@@ -3,7 +3,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import { satteri, satteriHeadingIdsPlugin } from "@astrojs/markdown-satteri";
-import { headingAnchors, imageCaptions } from "./src/markdown.mjs";
+import { headingAnchors, imageCaptions, responsiveImages } from "./src/markdown.mjs";
 
 // Single design pages are noindex (see src/pages/design/[...slug].astro), so
 // leave them out of the sitemap too. The /design/ archive stays in.
@@ -11,22 +11,29 @@ const isDesignPage = (page) => /^\/design\/[^/]+\/?$/.test(new URL(page).pathnam
 
 export default defineConfig({
   site: "https://praveenjuge.com",
-  prefetch: {
-    prefetchAll: true,
-    defaultStrategy: "load",
-  },
+  // No prefetch script: Layout.astro ships static speculation rules, which
+  // prerender a page on hover or touch instead of every link on load.
   build: {
     inlineStylesheets: "always",
   },
-  experimental: {
-    clientPrerender: true,
+  image: {
+    // Book covers come from Hardcover and get resized at build time.
+    remotePatterns: [{ protocol: "https", hostname: "assets.hardcover.app" }],
+    // Widths for responsive blog images (src/markdown.mjs): the text column's
+    // 56rem bleed at 1x and 2x, and the steps between for phones.
+    breakpoints: [640, 960, 1280, 1792],
   },
   integrations: [sitemap({ filter: (page) => !isDesignPage(page) })],
   markdown: {
     shikiConfig: { themes: { light: "github-light", dark: "github-dark" } },
     processor: satteri({
       // Heading ids first, so the anchors can link to them.
-      hastPlugins: [satteriHeadingIdsPlugin(), headingAnchors, imageCaptions],
+      hastPlugins: [
+        satteriHeadingIdsPlugin(),
+        headingAnchors,
+        imageCaptions,
+        responsiveImages,
+      ],
     }),
   },
   fonts: [

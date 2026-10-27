@@ -68,6 +68,25 @@ const relMeProfiles = [
   AUTHOR.social.bsky,
 ];
 
+const speculationRules = {
+  prerender: [
+    {
+      where: {
+        and: [
+          { href_matches: "/*" },
+          { not: { href_matches: "/*.(xml|txt|jpg|jpeg|png|webp)" } },
+          {
+            not: {
+              selector_matches: "[target=_blank], [download], [data-prerender=false]",
+            },
+          },
+        ],
+      },
+      eagerness: "moderate",
+    },
+  ],
+};
+
 // Sizes are optical: X fills its whole square, so it reads larger than the
 // round GitHub and Dribbble marks at the same size.
 const headerSocials = [
@@ -162,8 +181,18 @@ const headerSocials = [
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={cover.url} />
 
-    <!-- Fonts -->
-    <Font cssVariable="--font-geist" preload />
+    <!-- Instant navigation: Chromium prerenders a same-site page once the
+         pointer rests on its link or a finger touches it, so only pages a
+         reader is about to open cost bandwidth. Data Saver turns it off. -->
+    <script
+      is:inline
+      type="speculationrules"
+      set:html={JSON.stringify(speculationRules)}
+    />
+
+    <!-- Fonts: preload the upright face only; italics are rare, so they
+         load when a page uses them instead of competing with the first paint. -->
+    <Font cssVariable="--font-geist" preload={[{ style: "normal" }]} />
     <style is:global>
       /* The site is drawn in Tailwind's white and gray scale, so dark mode
          swaps that scale for a soft ink one: white becomes the page, gray-950

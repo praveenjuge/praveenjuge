@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from "astro:content";
+import DesignArchive from "../../../DesignArchive.astro";
+import { designPages } from "../../../design.js";
+import { getNewest } from "../../../collections.js";
+
+// Page 1 is /design/ itself, so these start at 2.
+export async function getStaticPaths() {
+  const pages = designPages(await getNewest("design"));
+  return pages.slice(1).map((designs, index) => ({
+    params: { page: String(index + 2) },
+    props: { designs, pageCount: pages.length },
+  }));
+}
+
+type Props = { designs: CollectionEntry<"design">[]; pageCount: number };
+
+const { designs, pageCount } = Astro.props;
+---
+
+<DesignArchive
+  designs={designs}
+  page={Number(Astro.params.page)}
+  pageCount={pageCount}
+/>

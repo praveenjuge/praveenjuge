@@ -55,3 +55,22 @@ export const imageCaptions = {
     },
   },
 };
+
+/**
+ * Give local post images a srcset sized to the text column's bleed (see the
+ * article styles in src/pages/blog/[...slug].astro), so phones get a phone-
+ * sized file instead of the full screenshot. Widths come from
+ * `image.breakpoints` in astro.config.mjs.
+ */
+export const responsiveImages = {
+  name: "responsive-images",
+  element: {
+    filter: ["img"],
+    visit(node, ctx) {
+      const src = node.properties?.src;
+      if (typeof src !== "string" || /^[a-z]+:/i.test(src)) return;
+      ctx.setProperty(node, "layout", "constrained");
+      ctx.setProperty(node, "sizes", "(min-width: 928px) 896px, calc(100vw - 2rem)");
+    },
+  },
+};

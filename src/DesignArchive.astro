@@ -1,0 +1,110 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getImage, Image } from "astro:assets";
+import Layout from "./Layout.astro";
+import { designLabel, designPageHref } from "./design.js";
+
+type Props = {
+  designs: CollectionEntry<"design">[];
+  page: number;
+  pageCount: number;
+};
+
+const { designs, page, pageCount } = Astro.props;
+
+const DESIGN_PREVIEW_WIDTH = 1600;
+const DESIGN_PREVIEW_HEIGHT = 1200;
+// Shared with the homepage strip and single design pages, so the build
+// resizes each design once per width.
+const DESIGN_PREVIEW_WIDTHS = [480, 800, 1200, 1600];
+// The first row is above the fold in every grid, so it loads right away.
+const EAGER_COUNT = 3;
+
+const designCards = await Promise.all(
+  designs.map(async (design) => ({
+    ...design,
+    imageHref: (
+      await getImage({
+        src: design.data.cover,
+        quality: "max",
+        format: design.data.cover.format,
+      })
+    ).src,
+  }))
+);
+---
+
+<Layout
+  title={page === 1 ? "Designs" : `Designs, page ${page}`}
+  description="Praveen Juge's daily UI design archive."
+>
+  <h1 class="mx-auto mb-6 max-w-xl px-4 font-bold">Designs</h1>
+  <section
+    id="design-grid"
+    class="grid w-full grid-cols-1 gap-2 p-2 sm:grid-cols-2 md:grid-cols-3"
+  >
+    {
+      designCards.map((design, index) => (
+        <a target="_blank" href={design.imageHref} class="block">
+          <Image
+            width={DESIGN_PREVIEW_WIDTH}
+            height={DESIGN_PREVIEW_HEIGHT}
+            widths={DESIGN_PREVIEW_WIDTHS}
+            sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+            loading={index < EAGER_COUNT ? "eager" : "lazy"}
+            alt={designLabel(design)}
+            src={design.data.cover}
+            class="block h-full w-full object-cover"
+          />
+        </a>
+      ))
+    }
+  </section>
+  {
+    page < pageCount && (
+      <div class="px-2">
+        <a
+          id="load-more-designs"
+          data-prerender="false"
+          href={designPageHref(page + 1)}
+          class="block w-full bg-gray-100 px-6 py-8 text-center font-semibold text-lg transition-colors hover:bg-gray-200 focus-visible:outline-2 focus-visible:outline-gray-950 focus-visible:outline-offset-2 aria-busy:opacity-60"
+        >
+          Load more designs
+        </a>
+      </div>
+    )
+  }
+</Layout>
+
+<script>
+  // Each archive page holds only its own designs, so the first visit stays
+  // light. "Load more" is a plain link to the next page; with script it
+  // fetches that page and appends its designs here instead.
+  const more = document.querySelector<HTMLAnchorElement>("#load-more-designs");
+  const grid = document.querySelector("#design-grid");
+  if (more && grid) {
+    more.addEventListener("click", async (event) => {
+      event.preventDefault();
+      if (more.ariaBusy === "true") return;
+      more.ariaBusy = "true";
+      try {
+        const response = await fetch(more.href);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const next = new DOMParser().parseFromString(
+          await response.text(),
+          "text/html"
+        );
+        grid.append(...next.querySelectorAll("#design-grid > *"));
+        const nextHref = next
+          .querySelector("#load-more-designs")
+          ?.getAttribute("href");
+        if (nextHref) more.href = nextHref;
+        else more.parentElement?.remove();
+      } catch {
+        location.href = more.href;
+      } finally {
+        more.ariaBusy = null;
+      }
+    });
+  }
+</script>

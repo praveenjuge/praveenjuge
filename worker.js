@@ -11,6 +11,10 @@
  *
  * Astro builds both Markdown documents (src/pages/llms.txt.js and
  * src/pages/404.md.js); this Worker only negotiates which one to serve.
+ *
+ * Hashed build files under /_astro/ skip the Worker (see run_worker_first in
+ * wrangler.json), so images and fonts go straight from the asset cache with
+ * the long-lived headers in public/_headers.
  */
 
 const markdownContentType = "text/markdown; charset=utf-8";
