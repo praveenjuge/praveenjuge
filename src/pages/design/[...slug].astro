@@ -29,9 +29,17 @@ const fullImage = await getImage({
   noindex
 >
   <article class="mx-auto flex max-w-xl flex-col gap-6 p-4 font-medium">
-    <a href="/design">← All Designs</a>
+    <a href="/design/">← All Designs</a>
     <a target="_blank" href={fullImage.src}>
-      <Image width={1600} height={1200} alt={designLabel(post)} src={post.data.cover} />
+      <Image
+        width={1600}
+        height={1200}
+        widths={[480, 800, 1200]}
+        sizes="(min-width: 576px) 544px, calc(100vw - 2rem)"
+        priority
+        alt={designLabel(post)}
+        src={post.data.cover}
+      />
     </a>
   </article>
 </Layout>

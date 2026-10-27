@@ -1,0 +1,5 @@
+# Built assets have content hashes in their names, so browsers can keep them
+# for a year without asking again. Saves a round trip per image on repeat
+# visits, which is what slow connections feel most.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable

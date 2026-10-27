@@ -249,8 +249,9 @@ const breadJsonLd = {
   <footer class="mx-auto mt-16 max-w-xl space-y-12 px-4">
     <div class="flex items-center gap-3 text-sm">
       <Image
-        width={72}
-        height={72}
+        width={36}
+        height={36}
+        densities={[2, 3]}
         src={myPhoto}
         alt=""
         class="size-9 shrink-0 rounded-full object-cover"
@@ -317,7 +318,8 @@ const breadJsonLd = {
       if (image.closest("a")) continue;
       image.classList.add("cursor-zoom-in");
       image.addEventListener("click", () => {
-        zoomImage.src = image.currentSrc || image.src;
+        // The full-size original, not the smaller srcset pick in the text.
+        zoomImage.src = image.src;
         zoomImage.alt = image.alt;
         zoom.showModal();
       });

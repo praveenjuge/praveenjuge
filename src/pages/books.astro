@@ -1,4 +1,5 @@
 ---
+import { getImage } from "astro:assets";
 import Layout from "../Layout.astro";
 
 // Saved copy of the Hardcover "Read" shelf, used when the build can't reach Hardcover.
@@ -65,6 +66,30 @@ const live = await fetchShelf();
 const books = live ?? saved;
 console.info(`[books] ${books.length} books from ${live ? "Hardcover" : "books.json"}`);
 
+// Hardcover serves covers up to 1500px tall; a book on the shelf is at most
+// 124px wide. Crop each to 2:3 and resize for 1x to 3x screens. inferSize
+// reaches the cover now, so one that can't be fetched keeps its original URL
+// here instead of failing the build when the images are generated.
+const COVER_WIDTH = 124;
+async function shelfCover(url: string) {
+  if (!url) return null;
+  try {
+    const image = await getImage({
+      src: url,
+      width: COVER_WIDTH,
+      height: COVER_WIDTH * 1.5,
+      densities: [2, 3],
+      fit: "cover",
+      inferSize: true,
+    });
+    return { src: image.src, srcset: image.srcSet.attribute };
+  } catch (error) {
+    console.warn(`[books] Couldn't resize ${url}: ${error}`);
+    return { src: url, srcset: undefined };
+  }
+}
+const covers = await Promise.all(books.map((book) => shelfCover(book.cover)));
+
 const FALLBACK_COLORS = ["#c2410c", "#1d4ed8", "#15803d", "#a21caf", "#b45309", "#0f766e", "#be123c"];
 
 function hash(value: string) {
@@ -103,7 +128,8 @@ const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
             ))}
           </div>
           <ul class="books">
-            {books.map((book) => {
+            {books.map((book, index) => {
+              const cover = covers[index];
               const h = hash(book.id);
               // Editions differ in size, so each book gets a slightly different height.
               const scale = 0.86 + (h % 15) / 100;
@@ -119,8 +145,16 @@ const shelves = Array.from({ length: Math.ceil(books.length / 3) }, (_, i) => ({
                     aria-label={`${book.title} by ${book.author}`}
                     title={`${book.title} by ${book.author}`}
                   >
-                    {book.cover ? (
-                      <img src={book.cover} alt="" loading="lazy" decoding="async" />
+                    {cover ? (
+                      <img
+                        src={cover.src}
+                        srcset={cover.srcset}
+                        alt=""
+                        width={COVER_WIDTH}
+                        height={COVER_WIDTH * 1.5}
+                        loading="lazy"
+                        decoding="async"
+                      />
                     ) : (
                       <span class="printed">
                         <span class="font-semibold">{book.shortTitle}</span>
