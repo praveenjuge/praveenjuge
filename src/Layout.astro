@@ -1,6 +1,6 @@
 ---
-import "tailwindcss/index.css";
-import { Font } from "astro:assets";
+import "./styles.css";
+import { Font, fontData } from "astro:assets";
 import { SITE, AUTHOR } from "./consts";
 import { SOCIAL_LOGOS } from "./social-logos";
 
@@ -94,6 +94,9 @@ const headerSocials = [
   { name: "Dribbble", logo: "dribbble", href: AUTHOR.social.dribbble, size: 18 },
   { name: "X (Twitter)", logo: "x", href: AUTHOR.social.x, size: 16 },
 ] as const;
+
+// The upright core file; the font provider lists each style's core first.
+const geistCore = fontData["--font-geist"].find((font) => font.style === "normal");
 ---
 
 <html
@@ -190,9 +193,21 @@ const headerSocials = [
       set:html={JSON.stringify(speculationRules)}
     />
 
-    <!-- Fonts: preload the upright face only; italics are rare, so they
-         load when a page uses them instead of competing with the first paint. -->
-    <Font cssVariable="--font-geist" preload={[{ style: "normal" }]} />
+    <!-- Fonts: preload the upright core only (ASCII and common punctuation).
+         Accented letters and italics are rare, so their files load when a
+         page uses them instead of competing with the first paint. -->
+    <Font cssVariable="--font-geist" />
+    {
+      geistCore && (
+        <link
+          rel="preload"
+          href={geistCore.src[0].url}
+          as="font"
+          type="font/woff2"
+          crossorigin
+        />
+      )
+    }
     <style is:global>
       /* The site is drawn in Tailwind's white and gray scale, so dark mode
          swaps that scale for a soft ink one: white becomes the page, gray-950

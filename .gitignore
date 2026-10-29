@@ -7,3 +7,6 @@ dist/
 .astro/
 package-lock.json
 .wrangler
+
+# Geist sources downloaded by scripts/fonts/subset.py
+scripts/fonts/.cache/

@@ -1,0 +1,70 @@
+{
+  "family": "Geist",
+  "source": "https://raw.githubusercontent.com/google/fonts/6157dfaa640ca5738b4d1a7070fe389c3036d7fc/ofl/geist/",
+  "faces": [
+    {
+      "file": "geist-italic-core.woff2",
+      "style": "italic",
+      "weight": "100 900",
+      "subset": "core",
+      "unicodeRange": [
+        "U+0020-007E",
+        "U+00B7",
+        "U+2013-2014",
+        "U+2018-2019",
+        "U+201C-201D",
+        "U+2022",
+        "U+2026"
+      ]
+    },
+    {
+      "file": "geist-italic-ext.woff2",
+      "style": "italic",
+      "weight": "100 900",
+      "subset": "ext",
+      "unicodeRange": [
+        "U+00A0-00AC",
+        "U+00AE-00B6",
+        "U+00B8-0113",
+        "U+0116-012B",
+        "U+012E-0137",
+        "U+0139-013E",
+        "U+0141-0148",
+        "U+014A-014D",
+        "U+0150-017E"
+      ]
+    },
+    {
+      "file": "geist-normal-core.woff2",
+      "style": "normal",
+      "weight": "100 900",
+      "subset": "core",
+      "unicodeRange": [
+        "U+0020-007E",
+        "U+00B7",
+        "U+2013-2014",
+        "U+2018-2019",
+        "U+201C-201D",
+        "U+2022",
+        "U+2026"
+      ]
+    },
+    {
+      "file": "geist-normal-ext.woff2",
+      "style": "normal",
+      "weight": "100 900",
+      "subset": "ext",
+      "unicodeRange": [
+        "U+00A0-00AC",
+        "U+00AE-00B6",
+        "U+00B8-0113",
+        "U+0116-012B",
+        "U+012E-0137",
+        "U+0139-013E",
+        "U+0141-0148",
+        "U+014A-014D",
+        "U+0150-017E"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* The font subsetting script and its output mention words like "italic" and
+   "table", which Tailwind would otherwise turn into utilities on every page. */
+@source not "../scripts";
+@source not "./fonts";

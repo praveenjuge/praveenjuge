@@ -1,0 +1,4 @@
+fonttools==4.68.0
+brotli==1.2.1
+uharfbuzz==0.57.0
+playwright==1.63.0
