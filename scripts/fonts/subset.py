@@ -104,7 +104,11 @@ def fetch(name, sha256):
     path = CACHE / name.replace("%5B", "[").replace("%5D", "]")
     if not path.exists():
         print(f"Downloading {path.name}")
-        with urllib.request.urlopen(SOURCE_BASE + name) as response:
+        url = SOURCE_BASE + name
+        if not url.startswith("https://"):
+            sys.exit(f"Refusing to fetch {url}: only https sources are allowed.")
+        # The URL is a fixed https constant and the file is hash-checked below.
+        with urllib.request.urlopen(url) as response:  # nosec B310
             path.write_bytes(response.read())
     digest = hashlib.sha256(path.read_bytes()).hexdigest()
     if digest != sha256:
