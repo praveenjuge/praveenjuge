@@ -314,7 +314,9 @@ def build_face(source_path, limits, cps, features):
     options.layout_features = sorted(features)
     options.hinting = False  # the source has no glyph instructions, only a prep table
     options.drop_tables += ["meta"]
-    options.name_IDs = [0, 1, 2, 3, 4, 5, 6]
+    # Keep the licence description and URL (13, 14) with the copyright (0):
+    # the OFL asks that every copy carry them.
+    options.name_IDs = [0, 1, 2, 3, 4, 5, 6, 13, 14]
     subsetter = subset.Subsetter(options)
     subsetter.populate(unicodes=cps)
     subsetter.subset(font)
@@ -382,6 +384,8 @@ def check_face(data, source_path, cps, features, limits, runs):
         referenced.add(stat.ElidedFallbackNameID)
     if referenced - name_ids:
         problems.append(f"name IDs {sorted(referenced - name_ids)} are referenced but missing")
+    if not font["name"].getDebugName(13):
+        problems.append("lost its licence description (name ID 13)")
     if "reserved font name" in font["name"].getDebugName(0).lower():
         problems.append("source has a Reserved Font Name: rename the family before shipping a subset")
 

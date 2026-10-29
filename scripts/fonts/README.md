@@ -80,3 +80,5 @@ to the preloaded file.
 
 Geist's licence (`src/fonts/OFL.txt`) declares no Reserved Font Name, so the
 subsets keep the name Geist. The script stops if a source ever declares one.
+Each file keeps the copyright and licence records (name IDs 0, 13 and 14), as
+the OFL asks of every copy.
