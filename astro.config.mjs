@@ -38,10 +38,21 @@ export default defineConfig({
   },
   fonts: [
     {
-      name: "Geist",
-      provider: fontProviders.google(),
-      cssVariable: "--font-geist",
-      weights: ["100 900"],
+      // Geist Serif isn't on Google Fonts yet, so it's self-hosted from the
+      // `geist` npm release. It ships in a single weight with no italics.
+      name: "Geist Serif",
+      provider: fontProviders.local(),
+      cssVariable: "--font-geist-serif",
+      fallbacks: ["Times New Roman", "serif"],
+      options: {
+        variants: [
+          {
+            src: ["./src/fonts/GeistSerif-Regular.woff2"],
+            weight: 400,
+            style: "normal",
+          },
+        ],
+      },
     },
   ],
   vite: { plugins: [tailwindcss()] },
