@@ -3,7 +3,13 @@ import DesignArchive from "../../DesignArchive.astro";
 import { designPages } from "../../design.js";
 import { getNewest } from "../../collections.js";
 
-const pages = designPages(await getNewest("design"));
+const designs = await getNewest("design");
+const pages = designPages(designs);
 ---
 
-<DesignArchive designs={pages[0]} page={1} pageCount={pages.length} />
+<DesignArchive
+  designs={pages[0]}
+  page={1}
+  pageCount={pages.length}
+  total={designs.length}
+/>
