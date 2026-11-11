@@ -8,9 +8,10 @@ type Props = {
   designs: CollectionEntry<"design">[];
   page: number;
   pageCount: number;
+  total: number;
 };
 
-const { designs, page, pageCount } = Astro.props;
+const { designs, page, pageCount, total } = Astro.props;
 
 const DESIGN_PREVIEW_WIDTH = 1600;
 const DESIGN_PREVIEW_HEIGHT = 1200;
@@ -38,7 +39,14 @@ const designCards = await Promise.all(
   title={page === 1 ? "Designs" : `Designs, page ${page}`}
   description="Praveen Juge's daily UI design archive."
 >
-  <h1 class="mx-auto mb-6 max-w-xl px-4 font-bold">Designs</h1>
+  <header class="mx-auto mb-6 max-w-xl space-y-1 px-4">
+    <h1 class="font-bold">Designs</h1>
+    <p class="opacity-60">
+      My daily UI design archive, {total} designs and counting. Open any design
+      to view it full size, or subscribe to the{" "}
+      <a href="/design/rss.xml" class="underline">RSS feed</a>.
+    </p>
+  </header>
   <section
     id="design-grid"
     class="grid w-full grid-cols-1 gap-2 p-2 sm:grid-cols-2 md:grid-cols-3"
