@@ -6,20 +6,26 @@ import { getNewest } from "../../../collections.js";
 
 // Page 1 is /design/ itself, so these start at 2.
 export async function getStaticPaths() {
-  const pages = designPages(await getNewest("design"));
+  const all = await getNewest("design");
+  const pages = designPages(all);
   return pages.slice(1).map((designs, index) => ({
     params: { page: String(index + 2) },
-    props: { designs, pageCount: pages.length },
+    props: { designs, pageCount: pages.length, total: all.length },
   }));
 }
 
-type Props = { designs: CollectionEntry<"design">[]; pageCount: number };
+type Props = {
+  designs: CollectionEntry<"design">[];
+  pageCount: number;
+  total: number;
+};
 
-const { designs, pageCount } = Astro.props;
+const { designs, pageCount, total } = Astro.props;
 ---
 
 <DesignArchive
   designs={designs}
   page={Number(Astro.params.page)}
   pageCount={pageCount}
+  total={total}
 />
